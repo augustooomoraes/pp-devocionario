@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils"
-import { ThemeProvider } from "@/components/theme-provider";
-// import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "@/components/themeToggle/theme-provider";
+import { SideNav } from "@/components/sideNav/side-nav";
  
 const fontSans = Manrope({subsets: ["latin"]})
 
@@ -22,13 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-        <body className={cn(fontSans.className, "min-h-screen")}>
+        <body className={cn(fontSans.className, "min-h-screen flex flex-row")}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
+            <SideNav />
             {children}
           </ThemeProvider>
         </body>
