@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation"
 
 const links = [
   {
-    name: "Da Consagração Total à Santíssima Virgem",
+    name: "Da Devoção e da Consagração Total à Virgem Santíssima",
     href: "/consagracao-completa",
     finished: true,
   },

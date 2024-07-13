@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# :D
 
-## Getting Started
+A coisa vai encrespar.
 
-First, run the development server:
+[Preces](https://github.com/augustooomoraes/pp-preces/tree/287c950088e1086c54f952a9fa24b8863daff68c), ao menos enquanto escrevia isto, pretendia portar a base de dados das orações todas. O princípio desta empreitada organizacional se deu agora no `src/app/consagracao-completa/data.json`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A tipagem toda vai ser um pouquinho complexa, e cheia de funções bem específicas para lidar com a edição dos textos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para já registrar a ideia:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Nome da página, do arquivão.
+  - `title`: String.
+  - `index`: Array de objetos obrigatoriamente com `title` e, se tiver subitens, com outro `index`, no mesmo formato, e assim sucessivamente.
+  - `sessions`: Array de objetos correspondentes aos objetos de primeiro nível do `index`.
+    - `title`: String.
+    - `type`: Enum – aqui é que o negócio realmente começa a encrespar. Baseado neste atributo é que o valor de `content` será tratado.
+      > - `regular-text`
+      >   - `<paragraph>`: Além de rubricar e pesar, acrescenta "§ " antes e "." + tabulação depois.
+      > - `gregorian-chant`
+      >   - `não sei`: Não sei.
+      > - `preces`
+      >   - `não sei`: Não sei.
+      > - Comuns a todos os types
+      >   - `\"`: Aspas duplas.
+      >   - `\'`: Aspas simples (acho que convém *escapar* ambas).
+      >   - `<i>`: Itálico.
+      >   - `<u>`: Sublinhado.
+      >   - `<b>`: Negrito.
+      >   - `<footnote>`: Referência a nota de rodapé. Nem imagino o quão difícil será fazer isso... Sei que o markdown editor do GitHub tem essa função, e talvez seja bem do jeito que eu preciso.
+      >     E esses `<footnotes>` podem aparecer noutros lugares, não só nos elementos do `content`.
+    - `content`: Array de objetos.
+      - `type`: Talvez parte do enum acima seria melhor referido aqui.
+        > - `paragraph`
+        > - `title-1`
+        > - `title-2`
+        > - `não sei`
+      - `content`: String.
+  - `footnotes`: Array de strings, a princípio. Se os elementos estiverem na mesma ordem que os `<footnotes>` nos elementos do `content`, tudo bem; mas talvez seja melhor por, tantoo junto a estas strings como aos `<footnotes>`, um id, e compará-los para fazer os vínculos depois.
