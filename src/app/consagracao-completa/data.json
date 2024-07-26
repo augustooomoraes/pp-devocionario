@@ -2,29 +2,30 @@
   "consagracao-completa": {
     "title": "Da Devoção e da Consagração Total à Virgem Santíssima",
     "index": [
-      {"title": "Preparação e consagração"},
-      {"title": "A devoção na Santa Comunhão"},
-      {"title": "Orações da preparação para a consagração", "index": [
-        {"title": "Vinde, Espírito Criador <i>(Veni Creátor Spíritus)</i>"},
-        {"title": "Ave Estrela do Mar <i>(Ave Maris Stella)</i>"},
-        {"title": "<i>Magníficat</i>"},
-        {"title": "Ladainha do Espírito Santo"},
-        {"title": "Ladainha de Nossa Senhora (ou Ladainha Lauretana)"},
-        {"title": "Oração a Maria (por S. L. M. G. de Montfort)"},
-        {"title": "Ladainha do Santíssimo Nome de Jesus"},
-        {"title": "Oração a Jesus (por S. L. M. G. de Montfort) "},
-        {"title": "Oração a Jesus (por Sto. Agostinho) "}
+      {"id": 1, "title": "Preparação e consagração"},
+      {"id": 2, "title": "A devoção na Santa Comunhão"},
+      {"id": 3, "title": "Orações da preparação para a consagração", "index": [
+        {"id": 4, "title": "Vinde, Espírito Criador <i>(Veni Creátor Spíritus)</i>"},
+        {"id": 5, "title": "Ave Estrela do Mar <i>(Ave Maris Stella)</i>"},
+        {"id": 6, "title": "<i>Magníficat</i>"},
+        {"id": 7, "title": "Ladainha do Espírito Santo"},
+        {"id": 8, "title": "Ladainha de Nossa Senhora (ou Ladainha Lauretana)"},
+        {"id": 9, "title": "Oração a Maria (por S. L. M. G. de Montfort)"},
+        {"id": 10, "title": "Ladainha do Santíssimo Nome de Jesus"},
+        {"id": 11, "title": "Oração a Jesus (por S. L. M. G. de Montfort) "},
+        {"id": 12, "title": "Oração a Jesus (por Sto. Agostinho) "}
       ]},
-      {"title": "Outras orações do consagrado", "index": [
-        {"title": "<i>Magníficat</i>"},
-        {"title": "Ó Jesus, que viveis em Maria"},
-        {"title": "A Pequena Coroa da Santíssima Virgem"},
-        {"title": "À Vossa Proteção <i>(Sub Tuum Præsídium)</i>"}
+      {"id": 13, "title": "Outras orações do consagrado", "index": [
+        {"id": 14, "title": "<i>Magníficat</i>"},
+        {"id": 15, "title": "Ó Jesus, que viveis em Maria"},
+        {"id": 16, "title": "A Pequena Coroa da Santíssima Virgem"},
+        {"id": 17, "title": "À Vossa Proteção <i>(Sub Tuum Præsídium)</i>"}
       ]}
     ],
     "sessions": [
       {
-        "title": "Preparação e consagração<footnote>",
+        "id": 1,
+        "title": "Preparação e consagração<footnote id='1'>",
         "type": "regular-text",
         "content": [
           {
@@ -38,7 +39,7 @@
             "content": "Que tudo o que fizerem seja realizado num espírito de humildade. Com este fim em vista, poderão, se quiserem, meditar no que já deixei dito acerca de nossa natureza corrupta, e se considerarem a si mesmos, durante seis dias da semana, como nada senão caracóis, lesmas, sapos, porcos, cobras e bodes. Ou, por outra, podem meditar nas três ponderações de São Bernardo: \"Lembrai-vos do que éreis – semente corrupta; do que sois – um corpo destinado à decadência; do que sereis – comida para os vermes\"."},
           {
             "type": "paragraph",
-            "content": "Que peçam a Nosso Senhor e ao Espírito Santo para que os iluminem, dizendo: \"Senhor, que eu veja\" (Lc 18, 41), ou \"Senhor, permiti que eu me conheça\", ou o \"Vinde, Espírito Santo\". Todos os dias devem rezar a Ladainha do Espírito Santo, com a oração que se lhe segue, como já foi indicado na primeira parte da presente obra<footnote>. Voltar-se-ão à Santíssima Virgem e lhe implorarão aquela grande graça, que é o fundamento de todas as outras: a graça do autoconhecimento. Nesta intenção rezarão, todos os dias, a <i>Ave Maris Stella</i> e a Ladainha de Nossa Senhora."},
+            "content": "Que peçam a Nosso Senhor e ao Espírito Santo para que os iluminem, dizendo: \"Senhor, que eu veja\" (Lc 18, 41), ou \"Senhor, permiti que eu me conheça\", ou o \"Vinde, Espírito Santo\". Todos os dias devem rezar a Ladainha do Espírito Santo, com a oração que se lhe segue, como já foi indicado na primeira parte da presente obra<footnote id='2'>. Voltar-se-ão à Santíssima Virgem e lhe implorarão aquela grande graça, que é o fundamento de todas as outras: a graça do autoconhecimento. Nesta intenção rezarão, todos os dias, a <i>Ave Maris Stella</i> e a Ladainha de Nossa Senhora."},
           {
             "type": "paragraph",
             "content": "<paragraph>229</paragraph><u>Todos os dias da segunda semana</u> devem eles se esforçar, em todas as suas orações e obras, para adquirir uma compreensão da Santíssima Virgem e pedir ao Espírito Santo por esta graça. Podem ler e meditar no que sobre ela já dissemos aqui. Devem recitar, e isto diariamente, a Ladainha do Espírito Santo e a <i>Ave Maris Stella</i>, como na primeira semana. Em adição, rezarão ao menos cinco dezenas do rosário, para uma melhor compreensão de Maria."},
@@ -47,7 +48,7 @@
             "content": "<paragraph>230</paragraph><u>Durante a terceira semana</u>, devem eles buscar entender melhor Jesus Cristo. Podem ler e meditar o que já deixamos escrito neste livro sobre Ele. Podem rezar a oração de Santo Agostinho, a qual encontrarão no início do segundo capítulo. De novo com Santo Agostinho, podem rezar, repetidamente, \"Senhor, para que eu vos conheça\", ou \"Senhor, para que eu possa ver\". Como na semana anterior, devem recitar a Ladainha do Espírito Santo e a <i>Ave Maris Stella</i>, acrescentando-lhes todos os dias a Ladainha do Santo Nome de Jesus."},
           {
             "type": "paragraph",
-            "content": "<paragraph>231</paragraph><u>No final destas três semanas</u>, devem se confessar e participar da Santa Comunhão com a intenção de se consagrarem a Jesus por meio de Maria, como escravos de amor. Enquanto receberem a Comunhão, poderão seguir o método explicado mais à frente<footnote>. Depois, recitarão o ato de consagração, dado no final deste livro<footnote>. Se não possuírem uma cópia impressa do ato, devem escrevê-lo ou fazer-lhe uma cópia e, depois, assiná-lo no dia mesmo em que o fizerem."},
+            "content": "<paragraph>231</paragraph><u>No final destas três semanas</u>, devem se confessar e participar da Santa Comunhão com a intenção de se consagrarem a Jesus por meio de Maria, como escravos de amor. Enquanto receberem a Comunhão, poderão seguir o método explicado mais à frente<footnote id='3'>. Depois, recitarão o ato de consagração, dado no final deste livro<footnote id='4'>. Se não possuírem uma cópia impressa do ato, devem escrevê-lo ou fazer-lhe uma cópia e, depois, assiná-lo no dia mesmo em que o fizerem."},
           {
             "type": "paragraph",
             "content": "<paragraph>232</paragraph>Seria bastante apropriado, neste dia, oferecerem algum tributo a Jesus e à Sua Mãe, seja como penitência por infidelidades passadas às promessas feitas no batismo, seja como um sinal de sua submissão à soberania de Jesus e Maria. Tal tributo deve estar de acordo com a habilidade e o fervor de cada um, e pode tomar a forma de um jejum, de um ato de autonegação, de uma esmola ou do oferecimento de uma vela votiva. Ainda que dessem apenas um alfinete como símbolo de sua reverência, desde que dado com um bom coração, Jesus com ele estaria satisfeito, pois Ele considera apenas a boa intenção."},
@@ -58,7 +59,8 @@
         ]
       },
       {
-        "title": "A devoção na Santa Comunhão<footnote>",
+        "id": 2,
+        "title": "A devoção na Santa Comunhão<footnote id='5'>",
         "type": "regular-text",
         "content": [
           {
@@ -67,51 +69,1864 @@
           },
           {
             "type": "paragraph",
-            "content": "<paragraph>266</paragraph>1º. Põe-te, humildemente, na presença de Deus.
-
-2º. Renuncia à tua natureza corrupta e às tuas disposições, a despeito de quão boas o teu amor-próprio as possa pintar a ti.
-
-3º. Renova tua consagração, dizendo: \"Eu pertenço inteiramente a vós, querida mãe, e tudo quanto tenho é vosso\".
-
-<i>\"Tuus totus ego sum et omnia mea tua sunt\".</i>
-
-=x=x=x=x= parei aqui =x=x=x=x=
-
-4º. Implora a Maria para que ela empreste a ti o seu coração, a fim de que possas receber o seu Filho com suas disposições. Lembra à Virgem de que a glória de seu Filho exige que Ele não entre num coração tão sujo e inconstante como o teu próprio, que infalivelmente Lhe diminuiria a glória e O faria deixá-lo. Diz-lhe que, se ela fizer em ti sua morada, a fim de receber o seu Filho – o que ela pode fazer, graças à soberania que tem sobre todos os corações –, Ele será recebido por ela de maneira perfeita, sem perigo de ser afrontado ou ser forçado a ir embora. \"Deus está no meio dela, ela não será comovida: Deus a ajudará desde o raiar da manhã\" (Sl 45, 6).
-
-Diz-lhe, confiadamente, que tudo quanto lhe deste de tuas posses é quase nada para honrá-la, mas que na Santa Comunhão desejas dar-lhe os mesmos presentes que o Pai eterno lhe deu. Assim, ela se sentirá mais honrada do que se lhe destes todas as riquezas do mundo. Diz-lhe, enfim, que Jesus, cujo amor por ela é único, ainda deseja ter o Seu prazer e descanso nela, e isto na tua alma mesma, ainda que esta seja mais pobre e suja do que o estábulo no qual Ele prontamente entrou, pois ela lá estava. Implora a ela para que dê a ti seu coração, dizendo: \"Ó Maria, vós sois tudo para mim: dai-me vosso coração\".
-
-Durante a Santa Comunhão
-
-<paragraph>267</paragraph>Após o Pai-Nosso, quando estiveres prestes a receber Nosso Senhor, reza-lhe três vezes a oração: \"Senhor, não sou digno de que entrei em minha morada, mas dizei uma só palavra e serei salvo\".
-
-\"Dómine, non sum dignus ut intres sub tectum meum, sed tanto dic verbo et sanábitur ánima mea.\"
-
-Na primeira vez, reza-a como se estivesse dizendo ao Pai eterno que, por causa dos teus maus pensamentos e tua ingratidão a um Pai tão bom, és indigno de receber o Seu Filho unigêito, mas que ali está Maria, Sua serva, que age em teu nome e cuja presença, \"de uma maneira singular, te firma na esperança do Senhor\" (Sl 4, 10).
-
-<paragraph>268</paragraph>Diz a Deus Filho: \"Senhor, não sou digno etc.\", significando que és indigno de recebê-lo graças às tuas palavras vãs e malignas, e ao teu descuido no Seu serviço, mas Lhe pede assim mesmo que tenha piedade de ti, pois irás dar-lhe as boas-vindas à casa de Sua Mãe, que é também tua, e não O deixarás ir até que Ele a tenha tornado Seu lar. \"E agarrar-me-ei a ele: nem o largarei, até não o introduzir em casa de minha mãe, e levar à câmara daquela que me gerou\" (Ct 3, 4). Implora a Ele que Se levante e venha até o lugar de Seu repouso e a arca de Sua santificação: \"Levanta-te, Senhor, entra no teu repouso; tu e a arca da tua santificação\" (Sl 131, 8). Diz-lhe que não tens fé nos teus méritos, na tua força e prontidão, como Esaú, mas apenas em Maria, tua Mãe, assim como Jacó se fiava em Rebeca, sua mãe. Diz-lhe que, se bem qwue sejas um grande pecador, ainda te queres aproximar d'Ele, apoiado por Sua santa Mãe e adornado com seus méritos e virtudes.
-
-<paragraph>269</paragraph>Diz ao Espírito Santo: \"Senhor, não sou digno etc.\". Diz-lhe que és indigno de receber a obra-prima do Seu amor por causa de tua mornidão, perversidade e resistência às Suas inspirações. Mas que, contudo, pões toda a tua confiança em Maria, Sua Esposa fiel, e diz com São Bernardo: \"Ela é minha maior salvaguarda, todo o fundamento de minha esperança.\" Implora a Ele que encubra Maria, Sua Esposa inseparável, uma vez mais. Seu ventre é tão puro e seu coração tão ardente quanto sempre. Diz-lhe que se Ele não entrar em tua alma, não se formarão ali nem Jesus, nem Maria, e tampouco esta será uma habitação que lhes seja digna.
-
-Após a Santa Comunhão
-
-<paragraph>270</paragraph>Após a Santa Comunhão, fecha teus olhos e te recompõe. Depois, dá as boas-vindas a Jesus no coração de Maria; estarás dando Ele à Sua Mãe, que O há de receber com grande amor e Lhe dar o lugar de honra, adorá-lo profundamente, mostrar-lhe amor perfeito, abraçá-lo intimamente em espírito e verdade, e realizar para Ele muitos trabalhos dos quais nós, em nossa ignorância, nada sabemos.
-
-<paragraph>271</paragraph>Ou, por outra, mantém um coração profundamente humilde na presença de Jesus habitando em Maria. Ou fica a postos, qual um escravo no portão do palácio real, onde o Rei está a falar com a Rainha. Enquanto estiverem a conversar, sem precisarem de ti, vai em espírito até o céu e até o mundo inteiro, e convoca todas as criaturas para que agradeçam, adorem e amem Jesus e Maria por vós: \"Vinde, adoremos\" (Sl 94, 6).
-
-<paragraph>272</paragraph>Ou pede a Jesus vivendo em Maria que venha o Seu reino sobre a terra por meio de Sua santa Mãe. Pede a sabedoria divinina, o amor divino, o perdão dos teus pecados, ou qualquer outra graça, mas isto sempre por meio de Maria e em Maria. Lança sobre ti mesmo um olhar de censura e diz: \"Senhor, não olheis para os meus pecados; que vossos olhos não vejam nada em mim senão as virtudes e os méritos de Maria\". Lembrando-se de teus pecados, poderás acrescentar: \"O homem inimigo é que fez isto (Mt 13, 28). Eu sou meu próprio pior inimigo, e culpado de todos estes pecados\". Ou: \"Livra-me do homem iníquo e enganador\" (Sl 42, 1). Ou ainda: \"Querido Jesus, deveis crescer em minha alma, e eu diminuir (Jo 3, 30). Ó Maria, deveis crescer em mim, e eu continuar a diminuit. Crescei e multiplicai-vos (Gn 1, 28), ó Jesus e Maria: crescei em mim, e nos outros ao meu redor\".
-
-<paragraph>273</paragraph>Há inumeráveis outros pensamentos com os quais o Espírito Santo te inspirará, e que Ele tornará teus se estiverse inteiramente relembrado e mortificado, e fores constantemente fiel à grande e sublime devoção que estive ensinando a ti. Mas lembra-te: quanto mais deixares Maria agir em tua Comunhão, tanto mais Jesus será glorificado. Quanto mais te humilhares e escutar a Jesus e Maria em paz e silêncio – sem qualquer desejo de ver, saborear ou sentir –, tanto mais liberdade darás para Maria agir em nome de Jesus, e tanto mais Jesus haverá de agir em Maria. Pois o homem justo em todos os lugares vive pela fé, mas especialmente na Santa Comunhão, que é um ato de fé: \"O meu justo vive da fé\" (Hb 10, 38).
-"
+            "content": "<paragraph>266</paragraph>1º. Põe-te, humildemente, na presença de Deus."
+          },
+          {
+            "type": "paragraph",
+            "content": "2º. Renuncia à tua natureza corrupta e às tuas disposições, a despeito de quão boas o teu amor-próprio as possa pintar a ti."
+          },
+          {
+            "type": "paragraph",
+            "content": "3º. Renova tua consagração, dizendo: \"Eu pertenço inteiramente a vós, querida mãe, e tudo quanto tenho é vosso\"."
+          },
+          {
+            "type": "paragraph",
+            "content": "<i>\"Tuus totus ego sum et omnia mea tua sunt\".</i>"
+          },
+          {
+            "type": "paragraph",
+            "content": "4º. Implora a Maria para que ela empreste a ti o seu coração, a fim de que possas receber o seu Filho com suas disposições. Lembra à Virgem de que a glória de seu Filho exige que Ele não entre num coração tão sujo e inconstante como o teu próprio, que infalivelmente Lhe diminuiria a glória e O faria deixá-lo. Diz-lhe que, se ela fizer em ti sua morada, a fim de receber o seu Filho – o que ela pode fazer, graças à soberania que tem sobre todos os corações –, Ele será recebido por ela de maneira perfeita, sem perigo de ser afrontado ou ser forçado a ir embora. \"Deus está no meio dela, ela não será comovida: Deus a ajudará desde o raiar da manhã\" (Sl 45, 6)."
+          },
+          {
+            "type": "paragraph",
+            "content": "Diz-lhe, confiadamente, que tudo quanto lhe deste de tuas posses é quase nada para honrá-la, mas que na Santa Comunhão desejas dar-lhe os mesmos presentes que o Pai eterno lhe deu. Assim, ela se sentirá mais honrada do que se lhe destes todas as riquezas do mundo. Diz-lhe, enfim, que Jesus, cujo amor por ela é único, ainda deseja ter o Seu prazer e descanso nela, e isto na tua alma mesma, ainda que esta seja mais pobre e suja do que o estábulo no qual Ele prontamente entrou, pois ela lá estava. Implora a ela para que dê a ti seu coração, dizendo: \"Ó Maria, vós sois tudo para mim: dai-me vosso coração\"."
+          },
+          {
+            "type": "title-1",
+            "content": "Durante a Santa Comunhão"
+          },
+          {
+            "type": "paragraph",
+            "content": "<paragraph>267</paragraph>Após o Pai-Nosso, quando estiveres prestes a receber Nosso Senhor, reza-lhe três vezes a oração: \"Senhor, não sou digno de que entrei em minha morada, mas dizei uma só palavra e serei salvo\"."
+          },
+          {
+            "type": "paragraph",
+            "content": "<i>\"Dómine, non sum dignus ut intres sub tectum meum, sed tanto dic verbo et sanábitur ánima mea.\"</i>"
+          },
+          {
+            "type": "paragraph",
+            "content": "Na primeira vez, reza-a como se estivesse dizendo ao Pai eterno que, por causa dos teus maus pensamentos e tua ingratidão a um Pai tão bom, és indigno de receber o Seu Filho unigêito, mas que ali está Maria, Sua serva, que age em teu nome e cuja presença, \"de uma maneira singular, te firma na esperança do Senhor\" (Sl 4, 10)."
+          },
+          {
+            "type": "paragraph",
+            "content": "<paragraph>268</paragraph>Diz a Deus Filho: \"Senhor, não sou digno etc.\", significando que és indigno de recebê-lo graças às tuas palavras vãs e malignas, e ao teu descuido no Seu serviço, mas Lhe pede assim mesmo que tenha piedade de ti, pois irás dar-lhe as boas-vindas à casa de Sua Mãe, que é também tua, e não O deixarás ir até que Ele a tenha tornado Seu lar. \"E agarrar-me-ei a ele: nem o largarei, até não o introduzir em casa de minha mãe, e levar à câmara daquela que me gerou\" (Ct 3, 4). Implora a Ele que Se levante e venha até o lugar de Seu repouso e a arca de Sua santificação: \"Levanta-te, Senhor, entra no teu repouso; tu e a arca da tua santificação\" (Sl 131, 8). Diz-lhe que não tens fé nos teus méritos, na tua força e prontidão, como Esaú, mas apenas em Maria, tua Mãe, assim como Jacó se fiava em Rebeca, sua mãe. Diz-lhe que, se bem que sejas um grande pecador, ainda te queres aproximar d'Ele, apoiado por Sua santa Mãe e adornado com seus méritos e virtudes."
+          },
+          {
+            "type": "paragraph",
+            "content": "<paragraph>269</paragraph>Diz ao Espírito Santo: \"Senhor, não sou digno etc.\". Diz-lhe que és indigno de receber a obra-prima do Seu amor por causa de tua mornidão, perversidade e resistência às Suas inspirações. Mas que, contudo, pões toda a tua confiança em Maria, Sua Esposa fiel, e diz com São Bernardo: \"Ela é minha maior salvaguarda, todo o fundamento de minha esperança.\" Implora a Ele que encubra Maria, Sua Esposa inseparável, uma vez mais. Seu ventre é tão puro e seu coração tão ardente quanto sempre. Diz-lhe que se Ele não entrar em tua alma, não se formarão ali nem Jesus, nem Maria, e tampouco esta será uma habitação que lhes seja digna."
+          },
+          {
+            "type": "title-1",
+            "content": "Após a Santa Comunhão"
+          },
+          {
+            "type": "paragraph",
+            "content": "<paragraph>270</paragraph>Após a Santa Comunhão, fecha teus olhos e te recompõe. Depois, dá as boas-vindas a Jesus no coração de Maria; estarás dando Ele à Sua Mãe, que O há de receber com grande amor e Lhe dar o lugar de honra, adorá-lo profundamente, mostrar-lhe amor perfeito, abraçá-lo intimamente em espírito e verdade, e realizar para Ele muitos trabalhos dos quais nós, em nossa ignorância, nada sabemos."
+          },
+          {
+            "type": "paragraph",
+            "content": "<paragraph>271</paragraph>Ou, por outra, mantém um coração profundamente humilde na presença de Jesus habitando em Maria. Ou fica a postos, qual um escravo no portão do palácio real, onde o Rei está a falar com a Rainha. Enquanto estiverem a conversar, sem precisarem de ti, vai em espírito até o céu e até o mundo inteiro, e convoca todas as criaturas para que agradeçam, adorem e amem Jesus e Maria por vós: \"Vinde, adoremos\" (Sl 94, 6)."
+          },
+          {
+            "type": "paragraph",
+            "content": "<paragraph>272</paragraph>Ou pede a Jesus vivendo em Maria que venha o Seu reino sobre a terra por meio de Sua santa Mãe. Pede a sabedoria divinina, o amor divino, o perdão dos teus pecados, ou qualquer outra graça, mas isto sempre por meio de Maria e em Maria. Lança sobre ti mesmo um olhar de censura e diz: \"Senhor, não olheis para os meus pecados; que vossos olhos não vejam nada em mim senão as virtudes e os méritos de Maria\". Lembrando-se de teus pecados, poderás acrescentar: \"O homem inimigo é que fez isto (Mt 13, 28). Eu sou meu próprio pior inimigo, e culpado de todos estes pecados\". Ou: \"Livra-me do homem iníquo e enganador\" (Sl 42, 1). Ou ainda: \"Querido Jesus, deveis crescer em minha alma, e eu diminuir (Jo 3, 30). Ó Maria, deveis crescer em mim, e eu continuar a diminuir. Crescei e multiplicai-vos (Gn 1, 28), ó Jesus e Maria: crescei em mim, e nos outros ao meu redor\"."
+          },
+          {
+            "type": "paragraph",
+            "content": "<paragraph>273</paragraph>Há inumeráveis outros pensamentos com os quais o Espírito Santo te inspirará, e que Ele tornará teus se estiveresaa inteiramente relembrado e mortificado, e fores constantemente fiel à grande e sublime devoção que estive ensinando a ti. Mas lembra-te: quanto mais deixares Maria agir em tua Comunhão, tanto mais Jesus será glorificado. Quanto mais te humilhares e escutar a Jesus e Maria em paz e silêncio – sem qualquer desejo de ver, saborear ou sentir –, tanto mais liberdade darás para Maria agir em nome de Jesus, e tanto mais Jesus haverá de agir em Maria. Pois o homem justo em todos os lugares vive pela fé, mas especialmente na Santa Comunhão, que é um ato de fé: \"O meu justo vive da fé\" (Hb 10, 38)."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Orações da preparação para a consagração",
+        "type": "regular-text",
+        "content": [
+          {
+            "type": "title-1",
+            "content": "12 primeiros dias"
+          },
+          {
+            "type": "indication",
+            "content": "Empregados em desapegar-se do espírito do mundo."
+          },
+          {
+            "type": "index",
+            "content": [
+              {"id": 4, "title": "Vinde, Espírito Criador <i>(Veni, Creator Spíritus)</i>"},
+              {"id": 5, "title": "Ave Estrela do Mar <i>(Ave Maris Stella)</i>"},
+              {"id": 6, "title": "<i>Magníficat</i>"}
+            ]
+          },
+          {
+            "type": "title-1",
+            "content": "Primeira semana"
+          },
+          {
+            "type": "indication",
+            "content": "Empregada em adquitir o conhecimento de si mesmo."
+          },
+          {
+            "type": "index",
+            "content": [
+              {"id": 4, "title": "Vinde, Espírito Criador <i>(Veni, Creator Spíritus)</i>"},
+              {"id": 7, "title": "Ladainha do Espírito Santo"},
+              {"id": 5, "title": "Ave Estrela do Mar <i>(Ave Maris Stella)</i>"},
+              {"id": 8, "title": "Ladainha de Nossa Senhora (ou Ladainha Lauretana)"},
+              {"id": 9, "title": "Oração a Maria, por São Luís Maria Grignion de Montfort"}
+            ]
+          },
+          {
+            "type": "title-1",
+            "content": "Segunda semana"
+          },
+          {
+            "type": "indication",
+            "content": "Empregada em adquirir o conhecimento da Santíssima Virgem."
+          },
+          {
+            "type": "index",
+            "content": [
+              {"id": 7, "title": "Ladainha do Espírito Santo"},
+              {"id": 5, "title": "Ave Estrela do Mar <i>(Ave Maris Stella)</i>"},
+              {"id": 0, "title": "Ao menos um terço do Santo Rosário<footnote id='6'>"}
+            ]
+          },
+          {
+            "type": "title-1",
+            "content": "Terceira semana"
+          },
+          {
+            "type": "indication",
+            "content": "Empregada em adquirir o conhecimento de Jesus Cristo."
+          },
+          {
+            "type": "index",
+            "content": [
+              {"id": 7, "title": "Ladainha do Espírito Santo"},
+              {"id": 5, "title": "Ave Estrela do Mar <i>(Ave Maris Stella)</i>"},
+              {"id": 10, "title": "Ladainha do Santíssimo Nome de Jesus"},
+              {"id": 11, "title": "Oração a Jesus, por São Luís Maria Grignion de Montfort"},
+              {"no-list-number": true, "id": 12, "title": "ou Oração a Jesus, por Santo Agostinho"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Vinde, Espírito Criador",
+        "type": "parallel-preces",
+        "content": [
+          {
+            "type": "title-1",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Veni, Creator Spíritus"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Vinde, Espírito Criador"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Veni, Creator Spíritus, mentes tuorum vísita; imple superna gratia quæ tu creasti péctora."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Vinde, Espírito Criador, visitai as almas dos vossos fiéis; enchei de graça celestial os corações que Vós criastes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Qui díceris Paráclitus, altíssimi donum Dei, fons vivus, ignis, cáritas, et spiritalis únctio."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Vós, chamado o Consolador, dom do Deus altíssimo, fonte viva, fogo, caridade e unção espiritual."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Tu, septiformis múnere, dígitus paternæ déxteræ, Tu rite promissum Patris, sermone dictans gúttura."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Vós, com vossos sete dons, sois força da destra de Deus; Vós, o prometido pelo Pai, ditai-nos os gemidos da oração."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Accende lumen sénsibus: infunde amorem córdibus: infirma nostri córporis virtute firmans pérpeti."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Acendei a vossa luz em nossas almas, infundí o vosso amor em nossos corações; e a fraqueza da nossa carne, fortalecei-a com perpétua força."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Hostem repellas lóngius, pacemque dones prótinus: ductore sic te prǽ vio vitemus omne nóxium."
+              },
+              {
+                "language": "pt-BR",
+                "content": "O inimigo, afugentai-o para longe; dai-nos quanto antes a paz; tendo-Vos por guia e condutor, venceremos todos os perigos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per te sciamus da Patrem, noscamus atque Fílium; Teque utriusque Spíritum credamus omne témpore."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Por Vós conheçamos o Pai, e também o Filho: e que em Vós, Espírito de ambos, acreditemos em todo tempo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Deo Patri sit glória, et Fílio, qui a mórtuis surrexit, ac Paráclito, in sæculorum sǽcula. Amen."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Glória a Deus Pai, ao Filho que ressucitou, e ao Espírito Santo Consolador, pelos séculos dos séculos. Amém."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Emitte Spiritum tuum et creabuntur."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Enviai o vosso Espírito e tudo será criado."
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Et renovábis fáciem terræ."
+              },
+              {
+                "language": "pt-BR",
+                "content": "E renovareis a face da terra."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "<i>Oremus:</i> Deus, qui corda fidélium Sancti Spíritus illustratione docuisti: da nobis in eodem Spíritu recta sápere, et de eius semper consolatione gaudere. Per Christum Dóminum nostrum. Amen."
+              },
+              {
+                "language": "pt-BR",
+                "content": "<i>Oremos:</i> Ó Deus, que instruístes os corações dos vossos fiéis com a luz do Espírito Santo, concedei-nos amar, no mesmo espírito, o que é reto, e gozar sempre a sua consolação. Por Cristo, Senhor Nosso. Amém."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Ave Estrela do Mar",
+        "type": "parallel-preces",
+        "content": [
+          {
+            "type": "title-1",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ave Maris Stella"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ave Estrela do Mar"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ave, Maris Stella,<br>Dei Mater alma,<br>atque sempre Virgo,<br>felix cæli porta."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ave, do mar Estrela,<br>Bendita Mãe de Deus,<br>Fecunda e sempre Virgem,<br>Portal feliz dos céus."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sumens illud Ave<br>Gabrielis ore,<br>funda nos in pace,<br>mutans Evæ nomen."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ouvindo aquele Ave<br>do Anjo Gabriel,<br>mudando  de Eva o nome,<br>trazei-nos paz do céu."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Solve víncula reis,<br>profer lumen cæcis,<br>mala nostra pelle,<br>bona cuncta posce."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ao cego alumia,<br>ao réu livrai também,<br>de todo mal guardai-nos<br>e dai-nos todo o bem."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Monstra te esse matrem:<br>sumat per te precem,<br>qui pro nobis natus,<br>tulit esse tuus."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mostrai ser nossa Mãe,<br>levando a nossa voz<br>a Quem, por nós nascido,<br>dignou-se a vir de Vós."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Virgo singularis,<br>inter omnes mitis,<br>nos culpis solutos,<br>mites fac et castos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Suave mais que todas,<br>ó, Virgem sem igual,<br>fazei-nos mansos, puros,<br>guardai-nos contra o mal."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Vitam præsta puram,<br>iter para tutum:<br>ut videntes Iesum<br>sempre collætemur."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Oh, dai-nos vida pura,<br>guiai-nos para a luz,<br>e um dia, ao vosso lado,<br>possamos ver Jesus."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sit laus Deo Patri,<br>summo Christo decus,<br>Spíritui Santo<br>tribus honor unus. Amen."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Louvor a Deus, o Pai,<br>e ao Filho, Sumo Bem,<br>com seu Divino Espírito<br>agora e sempre. Amém."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Magníficat",
+        "type": "parallel-preces",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Magníficat <*> ánima mea Dóminum, "
+              },
+              {
+                "language": "pt-BR",
+                "content": "A minha alma glorifica ao Senhor <*>"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Et exultávit spíritus meus <*> in Deo salvatóre meo."
+              },
+              {
+                "language": "pt-BR",
+                "content": "E o meu espírito se alegra em Deus, meu Salvador."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Quia respéxit humilitátem ancíllæ suæ: <*> ecce enim ex hoc beátam me dícent omnes generatiónes."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Porque pôs os olhos na humildade da sua serva: <*> de hoje em diante me chamarão bem-aventurada todas as gerações."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Quia fecit mihi magna, qui potens est: <*> et sanctum nomen eius."
+              },
+              {
+                "language": "pt-BR",
+                "content": "O Todo-poderoso fez em mim maravilhas: <*> Santo é o seu nome."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Et misericórdia eius a progénies in progénies: <*> timéntibus eum."
+              },
+              {
+                "language": "pt-BR",
+                "content": "A sua misericórdia se estende de geração em geração <*> sobre aqueles que O temem."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Fecit poténtiam in bráchio suo: <*> dispérsit supérbos mente cordi sui."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Manifestou o poder do seu braço <*> e dispersou os soberbos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Depósuit poténtes de sede: <*> et exaltávit húmiles."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Derrubou os poderosos de seus tronos <*> e exaltou os humildes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Esuriéntes implévit bonis: <*> et divítes dimísit inánes."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Aos famintos encheu de bens <*> e aos ricos despediu de mãos vazios."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Suscépit Israël púerum suum: <*> recordátus misericórdiæ suæ."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Acolheu a Israel, seu servo, <*> lembrado da sua misericórdia,"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sicut locútus est ad patres nostros: <*> Abraham, et sémini eius in sǽcula."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Como tinha prometido a nossos pais, <*> a Abraão e à sua descendência para sempre."
+              }
+            ]
+          },
+          {
+            "type": "title-1",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Gloria"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Glória"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Glória Patri, et Fílio, et Spirítui Sancto."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Glória ao Pai, ao Filho, e ao Espírito Santo."
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Assim como era no princípio, agora e sempre, e por todos os séculos dos séculos. Amém."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Ladainha do Espírito Santo",
+        "type": "parallel-preces",
+        "content": [
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Kýrie, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Senhor, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Kýrie, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Senhor, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cristo, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cristo, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus Sancte, audi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Divino Espírito Santo, ouvi-nos."
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus Sancte, audi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Divino Espírito Santo, ouvi-nos."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus Paráclite, exáudi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito Paráclito, atendei-nos."
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus Paráclite, exáudi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito Paráclito, atendei-nos."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Pater de cælis, Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Deus Pai dos céus,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Misérere nobis."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Fili, Redémptor mundi, Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Deus Filho, redentor do mundo,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Misérere nobis."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spíritus sancte, Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Deus Espírito Santo,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Misérere nobis."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sancta Trínitas, unus Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Santíssima Trindade, que sois um só Deus,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Misérere nobis."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus veritatis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito da verdade,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Misérere nobis."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "annotation",
+            "content": [
+              {
+                "language": "latin",
+                "content": "(Hinc simíliter respondétur)"
+              },
+              {
+                "language": "pt-BR",
+                "content": "(Repete-se a mesma resposta a partir daqui)"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus sapiéntiæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito da sabedoria,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus intelléctus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito da inteligência,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus fortitúdinis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito da fortaleza,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus pietátis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito da piedade,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus recti consilit,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito do bom conselho,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus scientiæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito da ciência,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus sancti timoris,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito do santo temor,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spriritus caritátis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito da caridade,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus gáudii,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito da alegria,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus pacis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito da paz,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus virtutum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito das virtudes,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus multifórmis gratiæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito de toda graça,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus adoptionis Filiorum Dei,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito da adoção dos filhos de Deus,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Purificatur animárum nostrarum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Purificador das nossas almas,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ecclesiæ catholicæ sanctificátor et rector,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Santificador e guia da Igreja Católica,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Cælestium donorum distributor,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Distribuidor dos dons celestes,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Discretor cogitationum et intetionum cordis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Conhecedor dos pensamentos e das intenções do coração,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Dulcedo in tuo servitio incipientium,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Doçura dos que começam a vos servir,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Corona perfectorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Coroa dos perfeitos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Gáudium angelórum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Alegria dos anjos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iluminatio patriarcarum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Luz dos patriarcas,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Instpiratio prophetarum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Inspiração dos profetas,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Os et sapientiæ apostolórum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Palavra e sabedoria dos apóstolos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Victoria Martyrium,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Vitória doa mártires,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Scientia Condessorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ciência dos confessores,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Puritas virginum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pureza das virgens,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Unctio sanctórum ómnium,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Unção de todos os santos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Propítius esto,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Sede-nos propício,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Parce nobis, Dómine."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Perdoai-nos, Senhor."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Porpítius esto,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Sede-nos propício,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Exáudi nos, Dómine."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Atendei-nos, Senhor."
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab omni peccáto,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De todo o pecado,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Líbera nos, Dómine."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Livrai-nos, Senhor."
+              }
+            ]
+          },
+          {
+            "type": "annotation",
+            "content": [
+              {
+                "language": "latin",
+                "content": "(Hinc simíliter respondétur)"
+              },
+              {
+                "language": "pt-BR",
+                "content": "(Repete-se a mesma resposta a partir daqui)"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ad ómnibus tentatióninbus et insídiis diáboli,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De todas as tentações e ciladas do demônio,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab ómnine presumptióne e desesperatióne,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De toda a presunção e desesperação."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab impugnatiónem veritátis agnitæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Do ataque à verdade conhecida,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab invidéntia fraternæ gratiæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Da inveja da graça fraterna,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab omni obstinatióne et impœniténtia,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De toda a obstinação e impenitência,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab omni negligéntia et tepore ánimi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De toda a negligência e tepor do espírito,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab omni immundítia mentis et córporis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De toda a impureza da mente e do corpo,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab hærésibus et erróribus universais,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De todas as heresias e erros,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab omni malo spiritu,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De todo o mau espírito,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "A mala et æterna morte,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Da morte má e eterna,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per ætérnam ex Patre ex Filióque processiónem tuam,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa eterna procedência do Pai e do Filho,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per miraculósam conceptiónem Filii Dei,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela milagrosa conceição do Filho de Deus,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per descensiónem tuam super Christum baptizatum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa descida sobre Jesus Cristo batizado,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per sanctam apparitiónem tuam in tranfiguratióne Dómine,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa santa aparição na transfiguração do Senhor,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per adventum tuum super discípulos Christi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa vinda sobre os discípulos do Senhor,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "In die iudícii,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "No dia do juízo,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Peccatores, te rogámus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ainda que pecadores, nós vos rogamos,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Audi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ouvi-nos."
+              }
+            ]
+          },
+          {
+            "type": "annotation",
+            "content": [
+              {
+                "language": "latin",
+                "content": "(Hinc simíliter respondétur)"
+              },
+              {
+                "language": "pt-BR",
+                "content": "(Repete-se a mesma resposta a partir daqui)"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ut ómnia Ecclesia membra vivificáre et sanctificáre dignéris, te rogámus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Para que vos digneis vivificar e santificar todos os membros da Igreja, nós vos rogamos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ut veræ pietatis, devotiónis et oratiónis donum nobis dare dignéris, te rogámus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Para que vos digneis conceder-nos o dom da verdadeira piedade, devoção e oração, nós vos rogamos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ut sincéros misericordiæ charitatísque afféctus nobis inspiráre dignéris, te rogámus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Para que vos digneis inspirar-mos sinceros afetos de misericórdia e de caridade, nós vos rogamos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ut spiritum novum et cor mundum in nobis creáre digneris, te rogámus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Para que vos digneis criar em nós um espírito novo e um coração puro, nós vos rogamos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ut veram pacem et cordis tranquilitátem nobis dare digneris, te rogámus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Para que vos digneis conceder-nos verdadeira paz e tranquilidade no coração, nós vos rogamos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ut ad tollerandas propter iustítiam persecutiónes nos dignos et fortes efficias, te rogámus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Para que vos digneis fazer-nos dignos e fortes, para suportar as perseguições pela justiça, nós vos rogamos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ut nos in grátia tua confirmáre dignéris, te rogámus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Para que vos digneis confirmar-nos em vossa graça, nós vos rogamos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ut nos in númerum electórum tuórum recipias, te rogámus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Para que vos digneis receber-nos o número dos vossos eleitos, nós vos rogamos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ut nos exaudire digneris, te rogámus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Para que vos digneis ouvir-nos, nós vos rogamos,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus Dei, te rogámus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito de Deus, nós vos rogamos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Agnus Dei, qui tollis peccata mundi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cordeiro de Deus, que tirais os pecados do mundo,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Effunde in nos Spiritum Sanctum."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Envia-nos o Espírito Santo."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Agnus Dei, qui tollis peccata mundi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cordeiro de Deus, que tirais os pecados do mundo,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Emítte promissum in nos Patris Spiritum."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mandai-nos o Espírito prometido do Pai."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Agnus Dei, qui tollis peccata mundi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cordeiro de Deus, que tirais os pecados do mundo,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Da nobis Spiritum bonum."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Dai-nos o Espírito bom."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus Sanctum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito Santo,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Audi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ouví-nos."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spiritus Paraclite,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espírito Consolador,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Exáudi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Atendei-nos."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Emitte Spiritum tuum et creabuntur."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Enviai o vosso Espírito e tudo será criado."
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Et renovábis fáciem terræ."
+              },
+              {
+                "language": "pt-BR",
+                "content": "E renovareis a face da terra."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "<i>Oremus:</i> Deus, qui corda fidélium Sancti Spíritus illustratione docuisti: da nobis in eodem Spíritu recta sápere, et de eius semper consolatione gaudere. Per Christum Dóminum nostrum. Amen."
+              },
+              {
+                "language": "pt-BR",
+                "content": "<i>Oremos:</i> Ó Deus, que instruístes os corações dos vossos fiéis com a luz do Espírito Santo, concedei-nos amar, no mesmo espírito, o que é reto, e gozar sempre a sua consolação. Por Cristo, Senhor Nosso. Amém."
+              }
+            ]
           }
         ]
       }
     ],
     "footnotes": [
-      "Retirado do Tratado da Verdadeira Devoção à Santíssima Viegem, de São Luís Maria Grignion de Montfort, Minha Biblioteca Católica, 2018, p. 174–177.",
-      "As orações indicadas aqui e algures se encontram na última seção deste opúsculo.",
-      "Cf. § 266, disponível na seção seguinte.",
-      "Disponível em arquivo separado. linkkkkkkkkkkk"
+      {
+        "id": 1,
+        "content": "Retirado do Tratado da Verdadeira Devoção à Santíssima Viegem, de São Luís Maria Grignion de Montfort, Minha Biblioteca Católica, 2018, p. 174–177."
+      },
+      {
+        "id": 2,
+        "content": "As orações indicadas aqui e algures se encontram na última seção deste opúsculo."
+      },
+      {
+        "id": 3,
+        "content": "Cf. § 266, disponível na seção seguinte."
+      },
+      {
+        "id": 4,
+        "content": "Disponível em arquivo separado. linkkkkkkkkkkk"
+      },
+      {
+        "id": 5,
+        "content": "Retirado do Tratado da Verdadeira Devoção à Santíssima Viegem, de São Luís Maria Grignion de Montfort, Minha Biblioteca Católica, 2018, p. 201–205."
+      },
+      {
+        "id": 6,
+        "content": "Disponível em arquivo separado. linkkkkkkkkkkk"
+      }
     ]
   }
 }

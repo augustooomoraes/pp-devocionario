@@ -10,22 +10,37 @@ Para já registrar a ideia:
 
 - Nome da página, do arquivão.
   - `title`: String.
-  - `index`: Array de objetos obrigatoriamente com `title` e, se tiver subitens, com outro `index`, no mesmo formato, e assim sucessivamente.
-  - `sessions`: Array de objetos correspondentes aos objetos de primeiro nível do `index`.
+  - `index`: Array de objetos obrigatoriamente com `title` e `id` – correpondente ao da `session` referida – e, se tiver subitens, com outro `index`, no mesmo formato, e assim sucessivamente. Também opcional: `no-list-number`.
+    - `"id": 0`: Entrada do índice sem seção correspondente no arquivo. Deve ser raro, mas já neste primeiro acontedeu – no ***Magníficat***, nas **Orações da preparação para a consagração**.
+    - `"no-list-number": true`: Também deve ser raro mas aconteceu aqui. Na mesma lista, em **ou Oração a Jesus, por Santo Agostinho**.
+  - `session`: Array de objetos correspondentes aos objetos de primeiro nível do `index`.
+    - 'id': Integer.
     - `title`: String.
     - `type`: Enum – aqui é que o negócio realmente começa a encrespar. Baseado neste atributo é que o valor de `content` será tratado.
       > - `regular-text`
       >   - `<paragraph>`: Além de rubricar e pesar, acrescenta "§ " antes e "." + tabulação depois.
       > - `gregorian-chant`
       >   - `não sei`: Não sei.
-      > - `preces`
+      > - `parallel-preces`: Os objetos do `content` poderão ter os seguintes `types`:
+      >   - `paragraph`: Texto normal, sem tabulação automática.
+      >   - `v`: ℣
+      >     - Quando há vários versos seguidos, só o primeiro – no caso dos arquivos para impressão, o primeiro de cada página – é precedido pelo caracter especial.
+      >       - Exceto quanto a ele segue um responso, ou quando o precede um verso com `"large-break": true`.
+      >   - `r`: ℟
+      >   - `annotation`: Anotação, em fonte menor e itálica,
+      >   - ``:
       >   - `não sei`: Não sei.
+      >   - Comum a todos esses types:
+      >     - `"larger-break": true`: Os pares verso-responso às vezes tem menos a ver uns com os outros – então a quebra de linha maior fica bem. Basta ver qualquer ladainha para reparar.  
+      >       De toda forma, está liberado para qualquer dos `types`. Vai saber.
       > - Comuns a todos os types
       >   - `\"`: Aspas duplas.
       >   - `\'`: Aspas simples (acho que convém *escapar* ambas).
+      >   - `<*>`: Asterisco rubro.
       >   - `<i>`: Itálico.
       >   - `<u>`: Sublinhado.
       >   - `<b>`: Negrito.
+      >   - `<br>`: Nova linha – a ideia é que seja como o shift + enter dos editores de texto normais.
       >   - `<footnote>`: Referência a nota de rodapé. Nem imagino o quão difícil será fazer isso... Sei que o markdown editor do GitHub tem essa função, e talvez seja bem do jeito que eu preciso.
       >     E esses `<footnotes>` podem aparecer noutros lugares, não só nos elementos do `content`.
     - `content`: Array de objetos.
@@ -33,6 +48,8 @@ Para já registrar a ideia:
         > - `paragraph`
         > - `title-1`
         > - `title-2`
+        > - `indication`
+        > - `index`
         > - `não sei`
-      - `content`: String.
-  - `footnotes`: Array de strings, a princípio. Se os elementos estiverem na mesma ordem que os `<footnotes>` nos elementos do `content`, tudo bem; mas talvez seja melhor por, tantoo junto a estas strings como aos `<footnotes>`, um id, e compará-los para fazer os vínculos depois.
+      - `content`: No caso do `"type": "index"`, array. Se não, string.
+  - `footnotes`: Array de objetos com `id`, que deve corresponder ao contido nos `<footnotes>`, e `content`, com o texto.
