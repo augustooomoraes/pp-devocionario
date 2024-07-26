@@ -12,8 +12,8 @@
         {"id": 8, "title": "Ladainha de Nossa Senhora (ou Ladainha Lauretana)"},
         {"id": 9, "title": "Oração a Maria (por S. L. M. G. de Montfort)"},
         {"id": 10, "title": "Ladainha do Santíssimo Nome de Jesus"},
-        {"id": 11, "title": "Oração a Jesus (por S. L. M. G. de Montfort) "},
-        {"id": 12, "title": "Oração a Jesus (por Sto. Agostinho) "}
+        {"id": 11, "title": "Oração a Jesus (por S. L. M. G. de Montfort)"},
+        {"id": 12, "title": "Oração a Jesus (por Sto. Agostinho)"}
       ]},
       {"id": 13, "title": "Outras orações do consagrado", "index": [
         {"id": 14, "title": "<i>Magníficat</i>"},
@@ -1896,6 +1896,1098 @@
               {
                 "language": "pt-BR",
                 "content": "<i>Oremos:</i> Ó Deus, que instruístes os corações dos vossos fiéis com a luz do Espírito Santo, concedei-nos amar, no mesmo espírito, o que é reto, e gozar sempre a sua consolação. Por Cristo, Senhor Nosso. Amém."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Ladainha de Nossa Senhora (ou Ladainha Lauretana)",
+        "type": "parallel-preces",
+        "content": [
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Kýrie, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Senhor, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Kýrie, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Senhor, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cristo, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cristo, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Kýrie, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Senhor, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Kýrie, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Senhor, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, audi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus Cristo, ouvi-nos."
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, audi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus Cristo, ouvi-nos."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, exaudi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus Cristo, atendei-nos."
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, exaudi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus Cristo, atendei-nos."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Pater de cælis, Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Deus Pai dos céus,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Misérere nobis."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Fili, Redémptor mundi, Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Deus Filho, redentor do mundo,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Misérere nobis."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spíritus sancte, Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Deus Espírito Santo,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Misérere nobis."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sancta Trínitas, unus Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Santíssima Trindade, que sois um só Deus,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Misérere nobis."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sancta Maria,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Santa Maria,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ora pro nobis."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rogai por nós."
+              }
+            ]
+          },
+          {
+            "type": "annotation",
+            "content": [
+              {
+                "language": "latin",
+                "content": "(Hinc simíliter respondétur)"
+              },
+              {
+                "language": "pt-BR",
+                "content": "(Repete-se a mesma resposta a partir daqui)"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sancta Dei Génitrix,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Santa Mãe de Deus,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sancta Virgo Vírginum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Santa Virgem das Virgens,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater Christi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe de Jesus Cristo,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater Ecclésiæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe da Igreja,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater misericordiæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe da misericórdia,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater divinæ grátiæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe da divina graça,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater spei,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe da esperança,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater puríssima,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe puríssima,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater castíssima,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe castíssima,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater inviolata,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe imaculada,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater intemerata,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe intacta,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater amábilis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe amável,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater admirábilis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe admirável,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater boni consílii,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe do bom conselho,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater Creatoris,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe do Criador,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Mater Salvatoris,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Mãe do Salvador,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Virgo prudentíssima,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Virgem prudentíssima,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Virgo veneranda,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Virgem veneranda,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Virgo prædicanda,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Virgem digna de louvor,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Virgo potens,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Virgem poderosa,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Virgo clemens,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Virgem clemente,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Virgo fidelis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Virgem fiel,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spéculum iustítiæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Espelho da justiça,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sedes sapiéntiæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Sede da sabedoria,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Causa nostræ lætítiæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Causa da nossa alegria,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Vas spirituale,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Vaso espiritual,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Vas honorábile,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Vaso honorável,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Vaso insigne devotionis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Vaso insigne de devoção,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Rosa mýstica,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rosa mística,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Turris Davídica,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Torre de Davi,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Turris ebúrnea,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Torre de marfim,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Domus áurea,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Casa de ouro,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Fœderis arca,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Arca da aliança,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iánua cæli,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Porta do Céu,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Stella matutina,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Estrela da manhã,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Salus infirmorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Saúde dos enfermos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Refúgium peccatorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Refúgio dos pecadores,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Solacium migrantium,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Conforto dos migrantes,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Consolatrix afflictorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Consoladora dos aflitos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Auxílium christianorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Auxílio dos cristãos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina Angelorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha dos Anjos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina Patriarcharum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha dos Patriarcas,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina Prophetarum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha dos Profetas,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina Apostolorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha dos Apóstolos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina Mártyrum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha dos Mártires,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina Confessorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha dos Confessores,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina Vírginum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha das Virgens,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina Sanctórum ómnium,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha de todos os Santos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina sine labe originali concepta,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha concebida sem pecado original,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina in cælum assumpta,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha assunta aos Céus,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina Sacratíssimi Rosárii,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha do Santíssimo Rosário,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina famíliæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha da Família,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Regina pacis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rainha da Paz,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Agnus Dei, qui tollis peccata mundi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cordeiro de Deus, que tirais os pecados do mundo,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Parce nobis, Dómine."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Perdoai-nos, Senhor."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Agnus Dei, qui tollis peccata mundi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cordeiro de Deus, que tirais os pecados do mundo,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Exaudi nos, Dómine."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ouvi-nos, Senhor."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Agnus Dei, qui tollis peccata mundi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cordeiro de Deus, que tirais os pecados do mundo,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Miserere nobis"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ora pro nobis, Sancta Dei Génitrix."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Rogai por nós, Santa Mãe de Deus."
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ut digni efficiámur promissiónibus Christi."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Para que sejamos dignos das promessas de Cristo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "<i>Orémus:</i> Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia. Per Christum Dóminum Nostrum. Amen."
+              },
+              {
+                "language": "pt-BR",
+                "content": "<i>Oremos:</i> Senhor Deus, nós Vos suplicamos que concedais aos vossos servos perpétua saúde de alma e de corpo; e que, pela gloriosa intercessão da bem-aventurada sempre Virgem Maria, sejamos livres da tristeza do século e gozemos da eterna alegria. Por Cristo, Senhor Nosso. Amém."
               }
             ]
           }
