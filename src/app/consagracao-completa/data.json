@@ -25,33 +25,41 @@
     "sessions": [
       {
         "id": 1,
-        "title": "Preparação e consagração<footnote id='1'>",
+        "title": "Preparação e consagração<footnote id=1>",
         "type": "regular-text",
         "content": [
           {
             "type": "paragraph",
-            "content": "<paragraph>227</paragraph>Os que desejam tomar parte nessa devoção especial (que não foi erigida e transformada numa confraria, se bem que isso fosse desejável) deveriam passar <u>ao menos doze dias</u> esvaziando-se do espírito deste mundo, que se opõe ao espírito de Jesus, como já o recomendei na primeira parte desta preparação para o reinado de Jesus Cristo. Devem passar três semanas inbuindo-se do espírito de Jesus, por meio da Santíssima Virgem. Aqui está um passo a passo que podem seguir:"},
+            "content": "<paragraph>227</paragraph>Os que desejam tomar parte nessa devoção especial (que não foi erigida e transformada numa confraria, se bem que isso fosse desejável) deveriam passar <u>ao menos doze dias</u> esvaziando-se do espírito deste mundo, que se opõe ao espírito de Jesus, como já o recomendei na primeira parte desta preparação para o reinado de Jesus Cristo. Devem passar três semanas inbuindo-se do espírito de Jesus, por meio da Santíssima Virgem. Aqui está um passo a passo que podem seguir:"
+          },
           {
             "type": "paragraph",
-            "content": "<paragraph>228</paragraph><u>Durante a primeira semana</u>, devem oferecer todas as suas orações e atos de devoção para que consigam conhecimento sobre si mesmos e contrição pelos seus pecados."},
+            "content": "<paragraph>228</paragraph><u>Durante a primeira semana</u>, devem oferecer todas as suas orações e atos de devoção para que consigam conhecimento sobre si mesmos e contrição pelos seus pecados."
+          },
           {
             "type": "paragraph",
-            "content": "Que tudo o que fizerem seja realizado num espírito de humildade. Com este fim em vista, poderão, se quiserem, meditar no que já deixei dito acerca de nossa natureza corrupta, e se considerarem a si mesmos, durante seis dias da semana, como nada senão caracóis, lesmas, sapos, porcos, cobras e bodes. Ou, por outra, podem meditar nas três ponderações de São Bernardo: \"Lembrai-vos do que éreis – semente corrupta; do que sois – um corpo destinado à decadência; do que sereis – comida para os vermes\"."},
+            "content": "Que tudo o que fizerem seja realizado num espírito de humildade. Com este fim em vista, poderão, se quiserem, meditar no que já deixei dito acerca de nossa natureza corrupta, e se considerarem a si mesmos, durante seis dias da semana, como nada senão caracóis, lesmas, sapos, porcos, cobras e bodes. Ou, por outra, podem meditar nas três ponderações de São Bernardo: \"Lembrai-vos do que éreis – semente corrupta; do que sois – um corpo destinado à decadência; do que sereis – comida para os vermes\"."
+          },
           {
             "type": "paragraph",
-            "content": "Que peçam a Nosso Senhor e ao Espírito Santo para que os iluminem, dizendo: \"Senhor, que eu veja\" (Lc 18, 41), ou \"Senhor, permiti que eu me conheça\", ou o \"Vinde, Espírito Santo\". Todos os dias devem rezar a Ladainha do Espírito Santo, com a oração que se lhe segue, como já foi indicado na primeira parte da presente obra<footnote id='2'>. Voltar-se-ão à Santíssima Virgem e lhe implorarão aquela grande graça, que é o fundamento de todas as outras: a graça do autoconhecimento. Nesta intenção rezarão, todos os dias, a <i>Ave Maris Stella</i> e a Ladainha de Nossa Senhora."},
+            "content": "Que peçam a Nosso Senhor e ao Espírito Santo para que os iluminem, dizendo: \"Senhor, que eu veja\" (Lc 18, 41), ou \"Senhor, permiti que eu me conheça\", ou o \"Vinde, Espírito Santo\". Todos os dias devem rezar a Ladainha do Espírito Santo, com a oração que se lhe segue, como já foi indicado na primeira parte da presente obra<footnote id=2>. Voltar-se-ão à Santíssima Virgem e lhe implorarão aquela grande graça, que é o fundamento de todas as outras: a graça do autoconhecimento. Nesta intenção rezarão, todos os dias, a <i>Ave Maris Stella</i> e a Ladainha de Nossa Senhora."
+          },
           {
             "type": "paragraph",
-            "content": "<paragraph>229</paragraph><u>Todos os dias da segunda semana</u> devem eles se esforçar, em todas as suas orações e obras, para adquirir uma compreensão da Santíssima Virgem e pedir ao Espírito Santo por esta graça. Podem ler e meditar no que sobre ela já dissemos aqui. Devem recitar, e isto diariamente, a Ladainha do Espírito Santo e a <i>Ave Maris Stella</i>, como na primeira semana. Em adição, rezarão ao menos cinco dezenas do rosário, para uma melhor compreensão de Maria."},
+            "content": "<paragraph>229</paragraph><u>Todos os dias da segunda semana</u> devem eles se esforçar, em todas as suas orações e obras, para adquirir uma compreensão da Santíssima Virgem e pedir ao Espírito Santo por esta graça. Podem ler e meditar no que sobre ela já dissemos aqui. Devem recitar, e isto diariamente, a Ladainha do Espírito Santo e a <i>Ave Maris Stella</i>, como na primeira semana. Em adição, rezarão ao menos cinco dezenas do rosário, para uma melhor compreensão de Maria."
+          },
           {
             "type": "paragraph",
-            "content": "<paragraph>230</paragraph><u>Durante a terceira semana</u>, devem eles buscar entender melhor Jesus Cristo. Podem ler e meditar o que já deixamos escrito neste livro sobre Ele. Podem rezar a oração de Santo Agostinho, a qual encontrarão no início do segundo capítulo. De novo com Santo Agostinho, podem rezar, repetidamente, \"Senhor, para que eu vos conheça\", ou \"Senhor, para que eu possa ver\". Como na semana anterior, devem recitar a Ladainha do Espírito Santo e a <i>Ave Maris Stella</i>, acrescentando-lhes todos os dias a Ladainha do Santo Nome de Jesus."},
+            "content": "<paragraph>230</paragraph><u>Durante a terceira semana</u>, devem eles buscar entender melhor Jesus Cristo. Podem ler e meditar o que já deixamos escrito neste livro sobre Ele. Podem rezar a oração de Santo Agostinho, a qual encontrarão no início do segundo capítulo. De novo com Santo Agostinho, podem rezar, repetidamente, \"Senhor, para que eu vos conheça\", ou \"Senhor, para que eu possa ver\". Como na semana anterior, devem recitar a Ladainha do Espírito Santo e a <i>Ave Maris Stella</i>, acrescentando-lhes todos os dias a Ladainha do Santo Nome de Jesus."
+          },
           {
             "type": "paragraph",
-            "content": "<paragraph>231</paragraph><u>No final destas três semanas</u>, devem se confessar e participar da Santa Comunhão com a intenção de se consagrarem a Jesus por meio de Maria, como escravos de amor. Enquanto receberem a Comunhão, poderão seguir o método explicado mais à frente<footnote id='3'>. Depois, recitarão o ato de consagração, dado no final deste livro<footnote id='4'>. Se não possuírem uma cópia impressa do ato, devem escrevê-lo ou fazer-lhe uma cópia e, depois, assiná-lo no dia mesmo em que o fizerem."},
+            "content": "<paragraph>231</paragraph><u>No final destas três semanas</u>, devem se confessar e participar da Santa Comunhão com a intenção de se consagrarem a Jesus por meio de Maria, como escravos de amor. Enquanto receberem a Comunhão, poderão seguir o método explicado mais à frente<footnote id=3>. Depois, recitarão o ato de consagração, dado no final deste livro<footnote id=4>. Se não possuírem uma cópia impressa do ato, devem escrevê-lo ou fazer-lhe uma cópia e, depois, assiná-lo no dia mesmo em que o fizerem."
+          },
           {
             "type": "paragraph",
-            "content": "<paragraph>232</paragraph>Seria bastante apropriado, neste dia, oferecerem algum tributo a Jesus e à Sua Mãe, seja como penitência por infidelidades passadas às promessas feitas no batismo, seja como um sinal de sua submissão à soberania de Jesus e Maria. Tal tributo deve estar de acordo com a habilidade e o fervor de cada um, e pode tomar a forma de um jejum, de um ato de autonegação, de uma esmola ou do oferecimento de uma vela votiva. Ainda que dessem apenas um alfinete como símbolo de sua reverência, desde que dado com um bom coração, Jesus com ele estaria satisfeito, pois Ele considera apenas a boa intenção."},
+            "content": "<paragraph>232</paragraph>Seria bastante apropriado, neste dia, oferecerem algum tributo a Jesus e à Sua Mãe, seja como penitência por infidelidades passadas às promessas feitas no batismo, seja como um sinal de sua submissão à soberania de Jesus e Maria. Tal tributo deve estar de acordo com a habilidade e o fervor de cada um, e pode tomar a forma de um jejum, de um ato de autonegação, de uma esmola ou do oferecimento de uma vela votiva. Ainda que dessem apenas um alfinete como símbolo de sua reverência, desde que dado com um bom coração, Jesus com ele estaria satisfeito, pois Ele considera apenas a boa intenção."
+          },
           {
             "type": "paragraph",
             "content": "<paragraph>233</paragraph>Todos os anos, no mínimo, na mesma data, devem eles renovar a consagração, seguindo os mesmos exercícios por três semanas. Podem também renová-la todos os meses, ou até mesmo todos os dias, ao dizer esta curta oração: \"Sou todo vosso, e tudo quanto tenho é de Vós, ó querido Jesus, por meio de Maria, Vossa santa Mãe\"."
@@ -60,7 +68,7 @@
       },
       {
         "id": 2,
-        "title": "A devoção na Santa Comunhão<footnote id='5'>",
+        "title": "A devoção na Santa Comunhão<footnote id=5>",
         "type": "regular-text",
         "content": [
           {
@@ -189,7 +197,7 @@
             "content": [
               {"id": 7, "title": "Ladainha do Espírito Santo"},
               {"id": 5, "title": "Ave Estrela do Mar <i>(Ave Maris Stella)</i>"},
-              {"id": 0, "title": "Ao menos um terço do Santo Rosário<footnote id='6'>"}
+              {"id": 0, "title": "Ao menos um terço do Santo Rosário<footnote id=6>"}
             ]
           },
           {
@@ -361,6 +369,7 @@
       },
       {
         "id": 6,
+        "page-ref": 1,
         "title": "Magníficat",
         "type": "parallel-preces",
         "content": [
@@ -1727,7 +1736,7 @@
           {
             "type": "paragraph",
             "content": {
-              "latin": "<i>Orémus:</i> Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia. Per Christum Dóminum Nostrum. Amen.",
+              "latin": "<i>Oremus:</i> Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia. Per Christum Dóminum Nostrum. Amen.",
               "pt-BR": "<i>Oremos:</i> Senhor Deus, nós Vos suplicamos que concedais aos vossos servos perpétua saúde de alma e de corpo; e que, pela gloriosa intercessão da bem-aventurada sempre Virgem Maria, sejamos livres da tristeza do século e gozemos da eterna alegria. Por Cristo, Senhor Nosso. Amém."
             }
           }
@@ -2421,7 +2430,7 @@
           {
             "type": "paragraph",
             "content": {
-              "latin": "<i>Orémus:</i> Domine Iesu Christi, qui dixisti: Petite, et accipietis; quærite, et invenietis; pulsate, et aperietur vobis; quæsumus, da nobis, petentibus, divinissimi tui amoris affectum, ut te todo corde, ore et opere diligamus et a tua nunquam laude cessemus.",
+              "latin": "<i>Oremus:</i> Domine Iesu Christi, qui dixisti: Petite, et accipietis; quærite, et invenietis; pulsate, et aperietur vobis; quæsumus, da nobis, petentibus, divinissimi tui amoris affectum, ut te todo corde, ore et opere diligamus et a tua nunquam laude cessemus.",
               "pt-BR": "<i>Oremos:</i> Senhor Jesus Cristo, que dissestes: pedi e recebereis; buscai e achareis; batei e abrir-se-vos-á, nós Vos suplicamos que concedais, a nós que Vo-los pedimos, os sentimentos afetivos de vosso divino amor, a fim de que Vos amemos de todo o coração e que esse amor transcenda por nossas ações, sem que deixemos de vos louvar."
             }
           },
@@ -2488,6 +2497,767 @@
             }
           }
         ]
+      },
+      {
+        "id": 13,
+        "title": "Outas orações do consagrado<footnote id=7>",
+        "type": "regular-text",
+        "content": [
+          {
+            "id": 14,
+            "type": "header-2",
+            "content": "Magníficat"
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "print-only": "Oração na página <page id=1>.",
+              "screen-only": "Oração <ref id=1 text='aqui'>."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": "A pauta gregoriana é no segundo tom monástico, solene<footnote id=8>."
+          },
+          {
+            "type": "paragraph",
+            "content": "<paragraph>255</paragraph>A fim de agradecer a Deus as graças que Ele deu a Nossa Senhora, os seus consagrados rezarão, frequentemente, o <i>Magníficat</i>, seguindo nisto o exemplo da beata Maria d'Oignies e de diversos outros santos. O <i>Magníficat</i> é a única oração que foi composta por Nossa Senhora – ou, antes, composta por Jesus nela, pois não foi outro Quem falou por seus lábios. É a maior oferta de louvor já recebida por Deus sob a lei da graça. Por um lado, é humilíssimo hino de ação de graças; por outro, o hino mais sublime e exaltado. Nele estão  mistérios tão grandiosos e ocultos que até mesmo os anjos não os compreendem."
+          },
+          {
+            "subsession-break": true,
+            "type": "paragraph",
+            "content": "[...]"
+          },
+          {
+            "id": 15,
+            "type": "header-2",
+            "content": "Ó Jesus, que viveis em Maria"
+          },
+          {
+            "type": "indication",
+            "content": "Aqui fala-se no Tratado sobre a honra devida pelos consagrados ao mistério da Encarnação, celebrado a 25 de março, e sobre a conveniência da designação deles mesmos como \"escravos de Maria\" ou \"escravos de Jesus\" ou, ainda, \"escravos de Jesus em Maria\"."
+          },
+          {
+            "type": "indication",
+            "content": "Mais sobre nosso dever de retribuição a Jesus, sobre os termos \"servidão\" e \"escravidão\" e sobre os tipos de escravidão: § 68–77."
+          },
+          {
+            "type": "paragraph",
+            "content": "[...]"
+          },
+          {
+            "type": "paragraph",
+            "content": "<paragraph>246</paragraph>2ª: Uma vez que o mistério principal celebrado e honrado nesta devoção é o mistério da Encarnação, no qual encontramos Jesus apenas em Maria, havendo Ele Se encarnado em seu seio,  nos é apropriado dizer \"escravidão de Jesus em Maria\" – de Jesus, habitante e entronado em Maria, de acordo com a belíssima oração, rezada por tantas almas grandiosas: \"Ó Jesus, que viveis em Maria\"."
+          },
+          {
+            "subsession-break": true,
+            "type": "parallel-preces",
+            "content": [
+              {
+                "type": "header-2",
+                "content": {
+                  "latin": "O Iesu, vivens in Maria",
+                  "pt-BR": "Ó Jesus, que viveis em Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "O Iesu, vivens in Maria,",
+                  "pt-BR": "Ó Jesus, que viveis em Maria,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Veni et vive in fámulis tuis,",
+                  "pt-BR": "Vinde e vivei em vossos servos,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "In Spíritus sanctitatis tuæ,",
+                  "pt-BR": "No espírito de Vossa santidade,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "In plenitúdine virtutis tuæ,",
+                  "pt-BR": "Na plenitude de vossa força,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "In perfectione viarum tuarum,",
+                  "pt-BR": "Na perfeição de vossas vias,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "In veritate virtutum tuarum,",
+                  "pt-BR": "Na verdade de vossas virtudes,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "In communione mysteriorum tuorum,",
+                  "pt-BR": "Na comunhão de vossos mistérios,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Dominare omni adversæ potestate,",
+                  "pt-BR": "Dominai a potestade inimiga,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "In Spíritu tuo ad gloriam Patris. Amen.",
+                  "pt-BR": "Em Vosso Espírito para glória do Pai. Amém."
+                }
+              }
+            ]
+          },
+          {
+            "id": 16,
+            "type": "header-2",
+            "content": "A Pequena Coroa da Santíssima Virgem"
+          },
+          {
+            "type": "paragraph",
+            "content": "<paragraph>234</paragraph>[...] Esta oração é antiquíssima, e baseada nas Sagradas Escrituras. São João viu, numa visão, uma mulher coroada com doze estrelas, vestida de Sol e de pé sobre a Lua (Ap 12,1). De acordo com comentadores bíblicos, esta mulher é a Santíssima Virgem."
+          },
+          {
+            "type": "paragraph",
+            "content": "<paragraph>235</paragraph>Há várias maneiras de se rezar a Pequena Coroa, mas nos tomaria muito tempo explicá-las aqui. O Espírito Santo irá ensiná-las aos que viverem esta devoção conscienciosamente. [...]"
+          },
+          {
+            "type": "indication",
+            "content": "Em seguida, as orações básicas que compõe a Pequena Coroa. Após elas, uma forma de rezá-la, com estas orações referenciadas e com outras, que não são repetidas, apresentadas no curso da descrição."
+          },
+          {
+            "subsession-break": true,
+            "type": "parallel-preces",
+            "content": [
+              {
+                "type": "header-2",
+                "content": {
+                  "latin": "Signum Crucis",
+                  "pt-BR": "Sinal da Cruz"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Per signum Crucis, de inimicis nostris líbera nos Deus noster. In nómine Patris et Fílii et Spíritus Sancti. Amen.",
+                  "pt-BR": "Pelo sinal da Santa Cruz, livrai-nos Deus, Nosso Senhor, dos nossos inimigos. Em nome do Pai, do Filho, e do Espírito Santo. Amém."
+                }
+              },
+              {
+                "type": "header-2",
+                "content": {
+                  "latin": "Sýmbolum Apostolórum",
+                  "pt-BR": "Credo I – Símbolo dos Apóstolos"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Credo in Deum Patrem omnipotentem, Creatorem cæli et terræ, et in Iesum Christum, Filium Eius unicum, Dominum nostrum, qui conceptus est de Spíritu Sancto, natus ex Maria Vírgine, passus sub Pontio Pilato, crucifixus, mórtuus, et sepultus, descendit ad ínferos, tértia die resurrexit a mórtuis, ascendit ad cælos, sedet ad déxteram Dei Patris omnipotentis, inde venturus est iudicare vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Eccléiam cathólicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem, vitam æternam. Amen.",
+                  "pt-BR": "Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado; desceu à mansão dos mortos; ressucitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na Santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressureição da carne, na vida eterna. Amém."
+                }
+              },
+              {
+                "type": "annotation",
+                "content": {
+                  "latin": "(Aut óptio)",
+                  "pt-BR": "(Ou)"
+                }
+              },
+              {
+                "type": "header-2",
+                "content": {
+                  "latin": "Sýmbolum Nicænum",
+                  "pt-BR": "Credo II – Símbolo Niceno-Constantinopolitano"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Credo in unum Deum, Patrem omnipotentem, factorem cæli et terræ, visibílium ómnium et invisibílium.",
+                  "pt-BR": "Creio em um só Deus, Pai todo-poderoso, Criador do céu e da terra, de todas as coisas visíveis e invisíveis."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Et in unum Dóminum Iesum Christum, Fílium Dei unigénitum, et ex Patre natum ante ómnia sǽcula. Deum de Deo, Lumen de Lúmine, Deum verum de Deo vero, génitum, non factum, consubstantiálitem Patri; per quem ómnia facta sunt.",
+                  "pt-BR": "Creio em um só Senhor, Jesus Cristo, Filho Unigênito de Deus, nascido do Pai antes de todos os séculos: Deus e Deus, Luz da Luz, Deus verdadeiro de Deus verdadeiro; gerado, não criado, consubstancial ao Pai. Por Ele todas as coisas foram feitas."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Qui propter nos hómines et propter nostram salutem descendit de cælis.",
+                  "pt-BR": "E por nós, homens, e para a nossa salvação, desceu dos céus."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Et incarnatus est de Spíritu Sancto ex Maria Vírginem, et homo factus est.",
+                  "pt-BR": "E se encarnou pelo Espírito Santo, no seio da Virgem Maria, e se fez homem."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Crucifixus étiam pro nobis sub Póntio Pilato, passus et sepultus est.",
+                  "pt-BR": "Também por nós foi crucificado sob Pôncio Pilatos; padeceu e foi sepultado."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Et ressurrexit tértia die, secundum Scripturas, et ascendit in cælum, sedet ad déxteram Patris.",
+                  "pt-BR": "Ressucitou ao terceiro dia, conforme as Escrituras; e subiu aos céus, onde está sentado à direita do Pai."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Et íterum venturus est cum glória, iudicare vivos et mórtuos, cuius regni non erit finis.",
+                  "pt-BR": "E de novo há de vir em sua glória, para julgar os vivos e os mortos; e o seu reino não terá fim."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Et in Spíritum Sanctum, Dóminum et vivificantem, qui ex Patre Filióque procedit.",
+                  "pt-BR": "Creio no Espírito Santo, Senhor que dá a vida, e procede do Pai e do Filho."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Qui cum Patre et Fílio simul adoratur et conglorificatur: qui locutus est per prophetas.",
+                  "pt-BR": "E com o Pai e o FIlho é adorado e conglorificado: Ele que falou pelos Profetas."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Et unam, sanctam, cathólicam et apostólicam Ecclésiam.",
+                  "pt-BR": "Creio na Igreja, una santa, católica e apostólica."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Confíteor unum baptisma in remissionem peccatorum. Et exspecto ressurrectionem mortuorum, et vitam venturi sǽculi. Amen.",
+                  "pt-BR": "Professo um só batismo para remissão dos pecados. E espero a ressurreição dos mortos, e a vida do mundo que há de vir. Amém."
+                }
+              },
+              {
+                "type": "header-2",
+                "content": {
+                  "latin": "Orátio Dominica",
+                  "pt-BR": "Pai Nosso"
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Pater noster, qui es in cælis: sanctificetur nomen tuum; advéniat regnum tuum; fiat voluntas tua, sicut in cælo, et in terra.",
+                  "pt-BR": "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade assim na terra como no céu."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Panem nostrum cotidianum da nobis hódie; et dimitte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris; et ne nos inducas in tentatiónem; sed líbera nos a malo. Amen.",
+                  "pt-BR": "O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido, e não nos deixeis cair em tentação, mas livrai-nos do mal. Amém."
+                }
+              },
+              {
+                "type": "header-2",
+                "content": {
+                  "latin": "Ave Maria",
+                  "pt-BR": "Ave Maria"
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Ave, Maria, grátia plena, Dóminus tecum; benedicta tu in muliéribus, et benedictus fructus ventris tui, Iesus.",
+                  "pt-BR": "Ave Maria, cheia de graça, o Senhor é convosco, bendita sois Vós entre as mulheres e bendito é o fruto do vosso ventre, Jesus."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Sancta Maria, Mater Dei, ora pro nobis peccatóribus, nunc et in hora mortis nostræ. Amen.",
+                  "pt-BR": "Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora da nossa morte. Amém."
+                }
+              },
+              {
+                "type": "header-2",
+                "content": {
+                  "latin": "Glória Patri",
+                  "pt-BR": "Glória"
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Glória Patri, et Fílio, et Spirítui Sancto.",
+                  "pt-BR": "Glória ao Pai, ao Filho, e ao Espírito Santo."
+                }
+              },
+              {
+                "horizontal-line": "full",
+                "type": "r",
+                "content": {
+                  "latin": "Sicut erat in princípio et nunc et semper, et in sǽcula sæculórum. Amen.",
+                  "pt-BR": "<i>[Assim]</i> como era no princípio, agora e sempre, <i>[e por todos os séculos dos séculos]</i>. Amém."
+                }
+              },
+              {
+                "type": "header-2",
+                "content": {
+                  "latin": "Rosarium Beatæ Vírginis Mariæ Corona",
+                  "pt-BR": "A Pequena Coroa da Santíssima Virgem"
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Dignare me laudare te, Virgo sacrata.",
+                  "pt-BR": "Concedei-me que vos louve, Virgem sagrada."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Da mihi virtutem contra hostes tuos.",
+                  "pt-BR": "Dai-me valor contra os vossos inimigos."
+                }
+              },
+              {
+                "horizontal-line": "two-halves",
+                "type": "indication",
+                "content": {
+                  "latin": "Credo",
+                  "pt-BR": "Credo"
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "I. Orátio Dominica, Ave Maria",
+                  "pt-BR": "I. Pai Nosso, Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Beata es, Virgo Maria, quæ Dóminum portasti, Creatorem mundi: genuísti qui te fecit, et in æternum permanes Virgo.",
+                  "pt-BR": "Sois bem-aventurada, Virgem Maria, que levastes em vosso seio o Senhor, Criador do mundo; destes à luz a quem vos formou, e sois Virgem perpétua."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "Ave Maria",
+                  "pt-BR": "Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Sancta et Immaculata Virginitas, quibus te laudibus efferam nescio? Quia quem cæli capere non poterant, tuo gremio contulisti.",
+                  "pt-BR": "Ó santa e imaculada virgindade, não sei com que louvores vos possa exaltar; pois quem os céus não podem conter, vós o levastes em vosso seio."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "Ave Maria",
+                  "pt-BR": "Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Tota pulchra es, Maria, et mácula originalis non est in te.",
+                  "pt-BR": "Sois toda formosa, Virgem Maria, e não há mancha em vós."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "Ave Maria",
+                  "pt-BR": "Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Tot tibi sunt dotes, Virgo, quot sidera cælo.",
+                  "pt-BR": "Possuís, ó Virgem Santíssima, tantos privilégios, quantas são as estrelas no céu."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "horizontal-line": "two-halves",
+                "type": "indication",
+                "content": {
+                  "latin": "Glória Patri",
+                  "pt-BR": "Glória"
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "II. Orátio Dominica, Ave Maria",
+                  "pt-BR": "II. Pai Nosso, Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Gloria tibi sit, Imperatrix poli: tecum nos perducas ad gaudia cæli.",
+                  "pt-BR": "Glória a vós, imperatriz do céu; conduzi-nos convosco aos gozos do paraíso."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "Ave Maria",
+                  "pt-BR": "Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Gloria tibi sit, Thesauriaria gratiárum Dómini, fac nos partícipes thesauri tui.",
+                  "pt-BR": "Glória a vós, tesoureira das graças do Senhor; dai-nos parte em vosso tesouro."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "Ave Maria",
+                  "pt-BR": "Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Gloria tibi sit, Mediatrix inter Deum et hóminem, fac nobis propítium Omnipotentem.",
+                  "pt-BR": "Glória a vós, medianeira entre Deus e os homens; tornai-nos propício o Todo-poderoso."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "Ave Maria",
+                  "pt-BR": "Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Gloria tibi sit, hæresum et dǽmonum intereptrix, sis pia nostra gubernatrix.",
+                  "pt-BR": "Glória a vós, que esmagais as heresias e o demônio: sede nossa bondosa guia."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "horizontal-line": "two-halves",
+                "type": "indication",
+                "content": {
+                  "latin": "Glória Patri",
+                  "pt-BR": "Glória"
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "III. Orátio Dominica, Ave Maria",
+                  "pt-BR": "III. Pai Nosso, Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Gloria tibi sit, refugium peccatórum, intercede pro nobis ad Dóminum.",
+                  "pt-BR": "Glória a vós, refúgio dos pecadores; intercedei por nós junto ao Senhor."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "Ave Maria",
+                  "pt-BR": "Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Gloria tibi sit, orphanorum Mater, fac nobis propítius sit Omnípotens Pater.",
+                  "pt-BR": "Glória a vós, Mãe dos órfãos; fazei que nos seja propício o Pai todo-poderoso."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "Ave Maria",
+                  "pt-BR": "Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Gloria tibi sit, lætítia iustorum, tecum nos perducas ad gaudia cælorum.",
+                  "pt-BR": "Glória a vós, alegria dos justos; conduzi-nos convosco às alegrias do céu."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "type": "indication",
+                "content": {
+                  "latin": "Ave Maria",
+                  "pt-BR": "Ave Maria"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Gloria tibi sit, in vita et morte adiutrix præsentissima, tecum nos perducas ad cælorum regna.",
+                  "pt-BR": "Glória a vós, nossa Auxiliadora mui prestimosa na vida e na morte; conduzi-nos convosco ao reino do céu."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude, Maria Virgo.",
+                  "pt-BR": "Alegrai-vos, Virgem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Gaude míllies.",
+                  "pt-BR": "Alegrai-vos mil vezes."
+                }
+              },
+              {
+                "horizontal-line": "two-halves",
+                "type": "indication",
+                "content": {
+                  "latin": "Glória Patri",
+                  "pt-BR": "Glória"
+                }
+              },
+              {
+                "subsession-break": true,
+                "type": "paragraph",
+                "content": {
+                  "latin": "<i>Oremus:</i> Ave Maria, Filia Dei Patris. Ave Maria, Mater Dei Fili. Ave Maria, Sponsa Fidelíssima Spíritus Sancti. Ave Maria, Templum totius trinitatis! Ave Maria, Dómina mea, bona mea, rosa mea, regina cordis mei, mater, vita, dulcedo et spes nostra caríssima, imo cor meum et ánima mea! Tuus ego sum et ómnia mea Tua sunt, o Virgo super ómnia benedicta. Sit ergo in me ánima Tua, ut magníficet Dóminum; sit in me Spíritus Tuus, ut exsultet in Deo. Pone Te, Virgo Fidelis, ut signáculum super cor meum, ut in Te et per Te Deo fidelis invéniar. Largire, o Benigna, ut illis annumerer quos tanquam filios amas, doces, dirigis, foves, protegis. Fac ut, amore Tui, terrenas omnes spernens consolationes, cæléstibus semper inhæream. Donec in me, per Spíritum Sanctum sponsum Tuum fidelíssimum et Te fidelíssimam Eius sponsam, formetur Iesus Christus Filius Tuus ad glóriam Patris. Amen.",
+                  "pt-BR": "<i>Oremos:</i> Ave Maria, Filha de Deus Pai. Ave Maria, Mãe de Deus Filho. Ave Maria, Esposa do Espírito Santo. Ave Maria, templo da Santíssima Trindade. Ave Maria, Senhora minha, meu bem, meu amor, Rainha do meu coração, Mãe, vida, doçura e esperança minha mui querida, meu coração e minha alma. Sou todo vosso, e tudo que possuo é vosso, ó Virgem sobre todos bendita. Esteja, pois, em mim vossa alma, para engrandecer o Senhor; esteja em mim vosso espírito, para rejubilar em Deus. Colocai-vos, ó Virgem fiel, como selo sobre meu coração, para que, em vós e por vós, seja eu achado fiel a Deus. Concede, ó Mãe de misericórdia, que me encontre no número dos que amais, ensinais, guiais, sustentais e protegeis como filhos. Fazei que, por vosso amor, despreze todas as consolações da terra e aspire só às celestes; até que, para a glória do Pai, Jesus Cristo, vosso Filho, seja formado em mim, pelo Espírito Santo, vosso Esposo fidelíssimo, e por vós, sua Esposa mui fiel. Assim seja."
+                }
+              }
+            ]
+          },
+          {
+            "id": 17,
+            "type": "header-2",
+            "content": "À Vossa Proteção"
+          },
+          {
+            "type": "paragraph",
+            "content": "São Luís Maria recomenda a récita desta oração ao final da Pequena Coroa. Também se pode rezá-la antes de \"Rogai por nós, Santa Mãe de Deus etc.\", ao final da Ladainha Lauretana."
+          },
+          {
+            "subsession-break": true,
+            "type": "parallel-preces",
+            "content": [
+              {
+                "type": "header-2",
+                "content": {
+                  "latin": "Sub Tuum Præsídium",
+                  "pt-BR": "À Vossa Proteção"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Sub tuum præsídium confugimus, Sancta Dei Génitrix; nostras deprecationes ne despicias in necessitátibus, sed a perículis cunctis líbera nos semper, Virgo gloriósa et benedícta.",
+                  "pt-BR": "À vossa proteção nos acolhemos, Santa Mãe de Deus; não desprezeis as súplicas que em nossas necessidades Vos dirigimos, mas livrai-nos sempre de todos os perigos, ó Virgem gloriosa e bendita."
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "footnotes": [
@@ -2514,6 +3284,14 @@
       {
         "id": 6,
         "content": "Disponível em arquivo separado. linkkkkkkkkkkk"
+      },
+      {
+        "id": 7,
+        "content": "Os textos iniciados por um sinal de parágrafo são retirados do Tratado da Verdadeira Devoção à Santíssima Viegem, de São Luís Maria Grignion de Montfort, Minha Biblioteca Católica, 2018, páginas várias."
+      },
+      {
+        "id": 8,
+        "content": "Para saber mais sobre canto gregoriano e sobre salmodias, veja os opúsculos ~~tal~~ e ~~tal~~. linkkkkkkkkkkks"
       }
     ]
   }
