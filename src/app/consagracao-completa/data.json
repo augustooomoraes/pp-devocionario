@@ -64,7 +64,7 @@
         "type": "regular-text",
         "content": [
           {
-            "type": "title-1",
+            "type": "header-1",
             "content": "Antes da Santa Comunhão"
           },
           {
@@ -92,7 +92,7 @@
             "content": "Diz-lhe, confiadamente, que tudo quanto lhe deste de tuas posses é quase nada para honrá-la, mas que na Santa Comunhão desejas dar-lhe os mesmos presentes que o Pai eterno lhe deu. Assim, ela se sentirá mais honrada do que se lhe destes todas as riquezas do mundo. Diz-lhe, enfim, que Jesus, cujo amor por ela é único, ainda deseja ter o Seu prazer e descanso nela, e isto na tua alma mesma, ainda que esta seja mais pobre e suja do que o estábulo no qual Ele prontamente entrou, pois ela lá estava. Implora a ela para que dê a ti seu coração, dizendo: \"Ó Maria, vós sois tudo para mim: dai-me vosso coração\"."
           },
           {
-            "type": "title-1",
+            "type": "header-1",
             "content": "Durante a Santa Comunhão"
           },
           {
@@ -116,7 +116,7 @@
             "content": "<paragraph>269</paragraph>Diz ao Espírito Santo: \"Senhor, não sou digno etc.\". Diz-lhe que és indigno de receber a obra-prima do Seu amor por causa de tua mornidão, perversidade e resistência às Suas inspirações. Mas que, contudo, pões toda a tua confiança em Maria, Sua Esposa fiel, e diz com São Bernardo: \"Ela é minha maior salvaguarda, todo o fundamento de minha esperança.\" Implora a Ele que encubra Maria, Sua Esposa inseparável, uma vez mais. Seu ventre é tão puro e seu coração tão ardente quanto sempre. Diz-lhe que se Ele não entrar em tua alma, não se formarão ali nem Jesus, nem Maria, e tampouco esta será uma habitação que lhes seja digna."
           },
           {
-            "type": "title-1",
+            "type": "header-1",
             "content": "Após a Santa Comunhão"
           },
           {
@@ -143,7 +143,7 @@
         "type": "regular-text",
         "content": [
           {
-            "type": "title-1",
+            "type": "header-1",
             "content": "12 primeiros dias"
           },
           {
@@ -159,7 +159,7 @@
             ]
           },
           {
-            "type": "title-1",
+            "type": "header-1",
             "content": "Primeira semana"
           },
           {
@@ -177,7 +177,7 @@
             ]
           },
           {
-            "type": "title-1",
+            "type": "header-1",
             "content": "Segunda semana"
           },
           {
@@ -193,7 +193,7 @@
             ]
           },
           {
-            "type": "title-1",
+            "type": "header-1",
             "content": "Terceira semana"
           },
           {
@@ -218,7 +218,7 @@
         "type": "parallel-preces",
         "content": [
           {
-            "type": "title-1",
+            "type": "header-2",
             "content": [
               {
                 "language": "latin",
@@ -368,7 +368,7 @@
         "type": "parallel-preces",
         "content": [
           {
-            "type": "title-1",
+            "type": "header-2",
             "content": [
               {
                 "language": "latin",
@@ -609,7 +609,7 @@
             ]
           },
           {
-            "type": "title-1",
+            "type": "header-2",
             "content": [
               {
                 "language": "latin",
