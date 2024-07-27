@@ -2992,6 +2992,1338 @@
             ]
           }
         ]
+      },
+      {
+        "id": 9,
+        "title": "Oração a Maria (por São Luís Maria Grignion de Montfort)",
+        "type": "regular-text",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Ave Maria, Filha bem-amada do Pai eterno; ave Maria, Mãe admirável do Filho; ave Maria, Esposa fidelíssima do Espírito Santo; ave Maria, minha querida Mãe, minha amável Senhora e poderosa soberana; ave minha alegria, minha glória, meu coração e minha alma! Vós me pertenceis toda por misericórdia, e eu vos pertenço todo por justiça; mas não vos pertenço bastante ainda; de novo me dou a vós todo inteiro, na qualidade de escravo perpétuo, sem nada reservar para mim ou para outrem."
+          },
+          {
+            "type": "paragraph",
+            "content": "Se vedes em mim qualquer coisa que não vos pertença, eu vos suplico de tirá-la agora, e de vos tornar Senhora absoluta de tudo o que possuo; de destruir e desarraigar e aniquilar tudo o que desagrada a Deus; e de plantar e promover e operar tudo o que vos agradar."
+          },
+          {
+            "type": "paragraph",
+            "content": "Que a luz de vossa fé dissipe as trevas de meu espírito; que vossa humildade profunda tome o lugar de meu orgulho; que vossa contemplação sublime suste as distrações de minha imaginação vagabunda; que a vossa vista contínua de Deus encha a minha memória de Sua presença; que o incêndio de vosso coração dilate e abrase a tibieza e frieza do meu; que vossas virtudes substituam os meus pecados; que vossos méritos sejam o meu ornamento e suplemento perante Deus."
+          },
+          {
+            "type": "paragraph",
+            "content": "Enfim, mui querida e bem-amada Mãe, fazei, se possível for, que não tenha outro espírito senão o vosso, para conhecer Jesus Cristo e suas divinas vontades; que não tenha outra alma senão a vossa, para louvar e glorificar o Senhor; que não tenha outro coração senão o vosso, para amar a Deus com um amor puro e ardente como vós."
+          },
+          {
+            "type": "paragraph",
+            "content": "Não vos peço visões ou revelações ou gozos ou mesmo prazeres, nem mesmo espirituais. É privilégio vosso ver claramente, sem trevas; gozar plenamente, sem amargor; triunfar gloriosamente à direita de vosso Filho, no céu, sem humilhação alguma; dominar absolutamente sobre os anjos, os homens e os demônios, sem resistência, e, enfim, de dispor de todos os bens de Deus, sem restrição alguma."
+          },
+          {
+            "type": "paragraph",
+            "content": "Eis, divina Maria, a ótima parte que o Senhor vos deu e que não vos será tirada; e isto me deleita sobremaneira. Por minha parte, não quero nesta terra senão o que vós tivestes, a saber: crer puramente, sem nada gozar ou ver; sofrer alegremente, sem consolação de criaturas; morrer continuamente a mim mesmo, sem relaxamento; e trabalhar resolutamente, até a morte, por vós, sem interesse algum, como o mais vil dos escravos."
+          },
+          {
+            "type": "paragraph",
+            "content": "A única graça que vos peço, por pura misericórdia, é que, a todos os dias e momentos de minha vida, eu diga três vezes amém: assim seja a tudo que fizestes na terra, enquanto nela vivestes; assim seja a tudo que fazeis agora no céu; assim seja a tudo que operais em minha alma, a fim de que nela só vós estejais para glorificar plenamente a Jesus em mim, no tempo e na eternidade. Assim seja."
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Ladainha do Santíssimo Nome de Jesus",
+        "type": "parallel-preces",
+        "content": [
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Kýrie, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Senhor, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Kýrie, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Senhor, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cristo, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cristo, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Kýrie, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Senhor, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Kýrie, eléison."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Senhor, tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, audi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus Cristo, ouvi-nos."
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, audi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus Cristo, ouvi-nos."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, exaudi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus Cristo, atendei-nos."
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe, exaudi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus Cristo, atendei-nos."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Pater de cælis, Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Deus Pai dos céus,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Misérere nobis."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "annotation",
+            "content": [
+              {
+                "language": "latin",
+                "content": "(Hinc simíliter respondétur)"
+              },
+              {
+                "language": "pt-BR",
+                "content": "(Repete-se a mesma resposta a partir daqui)"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Fili, Redémptor mundi, Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Deus Filho, redentor do mundo,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Spíritus sancte, Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Deus Espírito Santo,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sancta Trínitas, unus Deus,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Santíssima Trindade, que sois um só Deus,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, Filii Dei vivi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, Filho de Deus vivo,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, splendor Patris,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, esplendor do Pai,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, candor lucis æternæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, pureza da luz eterna,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, Rex gloriæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, Rei da glória,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, sol iustitiæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, sol da justiça,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, Fili Mariæ Virginis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, Filho da Virgem Maria,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu amabilis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus amável,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu admirabilis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus admirável,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, Deus fortis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, Deus forte,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, pater futuri sǽculi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, Pai do futuro do século,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, magni consílii ángele,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, Anjo do grande conselho,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu potentíssime,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus poderosíssimo,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu patientíssime,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus pacientíssimo,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu obedientíssime,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus obedientíssimo,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, mitis et húmilis corde,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, manso e humilde de coração,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, amator castitatis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, amante da castidade,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, amator noster,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, amador nosso,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, Deus pacis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, Deus da paz,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, auctor vitæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, autor da vida,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, exemplar virtutum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, exemplar das virtudes,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, zelator animarum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, zelador das almas,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, Deus noster,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, nosso Deus,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, refúgium nostrum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, nosso refúgio,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, pater pauperum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, Pai dos pobres,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, thesaure fidélium,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, tesouro dos fiéis,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, bone pastor,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, bom Pastor,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, lux vera,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, luz verdadeira,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, sapiéntia æterna,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, sabedoria eterna,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, bonitas infinita,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, bondade infinita,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, via et vita nostra,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, nosso caminho e nossa vida,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, gáudium Angelorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, alegria dos anjos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, rex Patriarcharum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, Rei dos patriarcas,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, magister Apostolorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, Mestre dos apóstolos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, doctor Evangelistarum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, Doutor dos evangelistas,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, fortitudo Mártyrum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, fortaleza dos mártires,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, lumen Confessorum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, luz dos confessores,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, púritas Vírginum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, pureza das virgens,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu, corona sanctorum omnium,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus, coroa de todos os santos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Propítius esto,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Sede-nos propício,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Parce nobis, Dómine."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Perdoai-nos, Senhor."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Porpítius esto,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Sede-nos propício,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Exáudi nos, Dómine."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Atendei-nos, Senhor."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab omni malo,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De todo o mal,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Líbera nos, Dómine."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Livrai-nos, Senhor."
+              }
+            ]
+          },
+          {
+            "type": "annotation",
+            "content": [
+              {
+                "language": "latin",
+                "content": "(Hinc simíliter respondétur)"
+              },
+              {
+                "language": "pt-BR",
+                "content": "(Repete-se a mesma resposta a partir daqui)"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab omni peccato,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De todo o pecado,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab ira tua,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De vossa ira,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Ab insídiis diáboli,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Das ciladas do demônio,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "A spíritu fornicationis,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Do espírito da impureza,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "A morte perpétua,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "De morte eterna,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "A neglectu inspirationum tuarum,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Do desprezo das vossas inspirações,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per mystérium sanctæ incarnationis tuæ,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pelo mistério da vossa santa Encarnação,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per nativitatem tuam,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa natividade,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per infántiam tuam,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa infância,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per diviníssimam vitam tuam,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa santíssima vida,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per labores tuos,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pelos vossos trabalhos,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per agoniam et passionem tuam,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa agonia e paixão,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per crucem et derelictionem tuam,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa cruz e desamparo,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per languores tuos,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pelas vossas angústias,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per mortem et sepulturam tuam,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa morte e sepultura,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per resurrectionem tuam,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa ressurreição,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per ascensionem tuam,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa ascensão,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per sanctissimæ Eucharistiæ institutionem tuam,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa instituição da Santíssima Eucaristia,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per gáudia tua,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pelas vossas alegrias,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Per glóriam tuam,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Pela vossa glória,"
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Agnus Dei, qui tollis peccata mundi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cordeiro de Deus, que tirais os pecados do mundo,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Parce nobis, Dómine."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Perdoai-nos, Senhor."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Agnus Dei, qui tollis peccata mundi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cordeiro de Deus, que tirais os pecados do mundo,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Exaudi nos, Dómine."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ouvi-nos, Senhor."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Agnus Dei, qui tollis peccata mundi,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Cordeiro de Deus, que tirais os pecados do mundo,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Miserere nobis"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Tende piedade de nós."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus,"
+              }
+            ]
+          },
+          {
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Audi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ouví-nos."
+              }
+            ]
+          },
+          {
+            "type": "v",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Iesu,"
+              },
+              {
+                "language": "pt-BR",
+                "content": "Jesus,"
+              }
+            ]
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Exáudi nos."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Atendei-nos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "<i>Orémus:</i> Domine Iesu Christi, qui dixisti: Petite, et accipietis; quærite, et invenietis; pulsate, et aperietur vobis; quæsumus, da nobis, petentibus, divinissimi tui amoris affectum, ut te todo corde, ore et opere diligamus et a tua nunquam laude cessemus."
+              },
+              {
+                "language": "pt-BR",
+                "content": "<i>Oremos:</i> Senhor Jesus Cristo, que dissestes: pedi e recebereis; buscai e achareis; batei e abrir-se-vos-á, nós Vos suplicamos que concedais, a nós que Vo-los pedimos, os sentimentos afetivos de vosso divino amor, a fim de que Vos amemos de todo o coração e que esse amor transcenda por nossas ações, sem que deixemos de vos louvar."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Sancti nominis tui, Domine, timorem pariter et amorem fac nos habere perpetuum; quia nunquam tua gubernatione destituis, quos in soliditate tuæ dilectionis instituis. Qui vivis et regnas in sæcula sæculorum. Amen."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Permiti que tenhamos sempre, Senhor, um igual temor e amor pelo vosso Santo Nome; pois não deixais de governar aqueles que estabeleceis na firmeza do vosso amor. Vós que viveis e reinais pelos séculos dos séculos. Amém."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "title": "Oração a Jesus (por São Luís Maria Grignion de Montfort)",
+        "type": "regular-text",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Meu amável Jesus, permiti que me dirija a vós para testemunhar o meu reconhecimento pela graça que me concedestes, dando-me a vossa santa Mãe pela devoção da escravidão, para ser minha advogada junto de vossa Majestade, e meu suplemento universal em minha grandíssima miséria."
+          },
+          {
+            "type": "paragraph",
+            "content": "Ai de mim! Senhor, sou tão miserável, que sem esta boa Mãe estaria irremediavelmente perdido. Sim: Maria me é necessária junto de Vós, em toda parte: necessária para Vos aplacar em Vossa justa cólera, pois Vos tenho ofendido todos os dias; necessária, para sustar os castigos eternos de Vossa justiça, que mereço; necessária para contemplar-Vos, falar-Vos, rogar-Vos, aproximar-me de Vós e Vos agradar; necessária para salvar minha alma e a dos outros; necessária, em uma palavra, para fazer sempre a Vossa vontade e procurar em tudo a Vossa maior glória."
+          },
+          {
+            "type": "paragraph",
+            "content": "Ah! Quem me dera publicar por todo o universo esta misericórdia que tivestes para comigo! E que todo o mundo soubesse que sem Maria já estaria condenado! Pudesse eu render-Vos dignas ações de graças por tão grande benefício! Maria está em mim – haec facta est mihi. Oh! Que tesouro! Que consolo! E eu não seria, depois disso, todo dela? Que ingratidão, meu Salvador amado! Enviai-me a morte antes que me aconteça tal desgraça: pois prefiro morrer que viver sem ser todo de Maria."
+          },
+          {
+            "type": "paragraph",
+            "content": "Mil e mil vezes tomei-a, com São João Evangelista ao pé da cruz, por todo o meu bem, e outras tantas vezes dei-me a ela; mas se até agora não o fiz bem, conforme desejas, ó Jesus amado, faço-o agora como quereis que o faça, e se vedes em minha alma e em meu corpo algo que não pertença a essa augusta Princesa eu vos rogo que o arranqueis e o jogueis para longe de mim, pois que o que não é de Maria não é digno de vós."
+          },
+          {
+            "type": "paragraph",
+            "content": "Ó Espírito Santo, concedei-me todas essas graças e plantai, regai e cultivai em minha alma a amável Maria, que é a Árvore da Vida verdadeira, a fim de que cresça, floresça e suscite frutos de vida com abundância. Ó Espírito Santo, dai-me uma grande devoção e uma grande inclinação para com vossa divina Esposa, um grande apoio sobre seu seio maternal e recurso contínuo à sua misericórdia, a fim de que nela formeis em mim a Jesus Cristo, grande e poderoso, até a plenitude de sua idade perfeita. Assim seja."
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "title": "Oração a Jesus (por Santo Agostinho)",
+        "type": "parallel-preces",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Tu es Christus, pater meus sanctus, Deus meus pius, rex meus magnus, pastor meus bonus, magister meus unus, adiutor meus optimus, dilectus meus pulcherrimus, panis meus vivus, sacerdos meus in æternum, duz meus ad patriam, lux mea vera, dulcedo mesma sancta, via mea recta, sapientia mea præclara, simplicitas mea pura, concordia mea pacifica, custodia mea tota, portio mea bona, salus mea sempiterna."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Vós sois, ó Jesus, o Cristo, meu Pai santo, meu Deus misericordioso, meu Rei infinitamente grande; sois meu bom pastor, meu único mestre, meu auxílio cheio de bondade, meu bem-amado de uma beleza maravilhosa, meu pão vivo, meu sacerdote eterno, meu guia para a pátria, minha verdadeira luz, minha santa doçura, meu reto caminho, sapiência minha preclara, minha pura simplicidade, minha paz e concórdia; sois, enfim, toda a minha salvaguarda, minha herança preciosa, minha eterna salvação."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "Christe Iesu, amabilis Dómine, cur amavi, quare concupivi omni vita mea quidquam præter te Iesusm Deum meum? Ubi era quando tecum mente non eram? Iam ex hoc nunc, omnia desiderai mea, incaliscite et effluite in Dóminum Iesum; currite, satis hactenus tardastis; properate quo pergitis; quærite que quæritis. Iesu, qui non amat, anathema sit; qui non amat, amaritudinibus repleatur."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ó Jesus Cristo, amável Senhor, por que, em toda minha vida, amei, por que desejei outra coisa senão vós? Onde estava eu quando não pensava em vós? Ah! que, pelo menos, a partir deste momento meu coração só deseje a vós e por vós se abrase, Senhor Jesus! Desejos de minha alma, correi, que já bastante tardastes; apressai-vos para o fim a que aspirais; procurai em verdade aquele que procurais. Ó Jesus, anátema seja quem não vos ama. Aquele que não vos ama seja repleto de amarguras."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "language": "latin",
+                "content": "O dulci Iesu, te amet, in te delectetur, te admiretur omnis sensus bonus tuæ conveniens laudi. Deus cordis mei et pars mea, Christe Iesu, deficiat cor meum spiritu suo, et vivas tu in me, et concalescat in spiritu meo vivus carbo amoris tui et excrescat in ignem perfectum; ardeat iugiter in ara cordis mei, ferveat in medullis meis, flagret in absconditis animæ meæ; in die consummationis meæ consummatus inveniar apud te. Amen."
+              },
+              {
+                "language": "pt-BR",
+                "content": "Ó doce Jesus, sede o amor, as delícias, a admiração de todo coração dignamente consagrado à vossa glória. Deus de meu coração e minha partilha, Jesus Cristo, que em vós meu coração desfaleça, e sede vós mesmo a minha vida. Acenda-se em minha alma a brasa ardente de vosso amor e se converta num incêndio todo divino, a arder para sempre no altar de meu coração; que inflame o íntimo de meu ser, e abrase o âmago de minha alma; para que no dia de minha morte eu apareça diante de vós inteiramente consumido em vosso amor. Amém."
+              }
+            ]
+          }
+        ]
       }
     ],
     "footnotes": [
