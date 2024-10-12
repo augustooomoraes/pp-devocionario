@@ -27,7 +27,7 @@
         "id": 1,
         "title": "Preparação e consagração<footnote id=1>",
         "type": "regular-text",
-        "content": [
+        "contents": [
           {
             "type": "paragraph",
             "content": "<paragraph>227</paragraph>Os que desejam tomar parte nessa devoção especial (que não foi erigida e transformada numa confraria, se bem que isso fosse desejável) deveriam passar <u>ao menos doze dias</u> esvaziando-se do espírito deste mundo, que se opõe ao espírito de Jesus, como já o recomendei na primeira parte desta preparação para o reinado de Jesus Cristo. Devem passar três semanas inbuindo-se do espírito de Jesus, por meio da Santíssima Virgem. Aqui está um passo a passo que podem seguir:"
@@ -70,7 +70,7 @@
         "id": 2,
         "title": "A devoção na Santa Comunhão<footnote id=5>",
         "type": "regular-text",
-        "content": [
+        "contents": [
           {
             "type": "header-1",
             "content": "Antes da Santa Comunhão"
@@ -149,7 +149,7 @@
         "id": 3,
         "title": "Orações da preparação para a consagração",
         "type": "regular-text",
-        "content": [
+        "contents": [
           {
             "type": "header-1",
             "content": "12 primeiros dias"
@@ -160,7 +160,7 @@
           },
           {
             "type": "index",
-            "content": [
+            "contents": [
               {"id": 4, "title": "Vinde, Espírito Criador <i>(Veni, Creator Spíritus)</i>"},
               {"id": 5, "title": "Ave Estrela do Mar <i>(Ave Maris Stella)</i>"},
               {"id": 6, "title": "<i>Magníficat</i>"}
@@ -176,7 +176,7 @@
           },
           {
             "type": "index",
-            "content": [
+            "contents": [
               {"id": 4, "title": "Vinde, Espírito Criador <i>(Veni, Creator Spíritus)</i>"},
               {"id": 7, "title": "Ladainha do Espírito Santo"},
               {"id": 5, "title": "Ave Estrela do Mar <i>(Ave Maris Stella)</i>"},
@@ -194,7 +194,7 @@
           },
           {
             "type": "index",
-            "content": [
+            "contents": [
               {"id": 7, "title": "Ladainha do Espírito Santo"},
               {"id": 5, "title": "Ave Estrela do Mar <i>(Ave Maris Stella)</i>"},
               {"id": 0, "title": "Ao menos um terço do Santo Rosário<footnote id=6>"}
@@ -210,7 +210,7 @@
           },
           {
             "type": "index",
-            "content": [
+            "contents": [
               {"id": 7, "title": "Ladainha do Espírito Santo"},
               {"id": 5, "title": "Ave Estrela do Mar <i>(Ave Maris Stella)</i>"},
               {"id": 10, "title": "Ladainha do Santíssimo Nome de Jesus"},
@@ -224,7 +224,7 @@
         "id": 4,
         "title": "Vinde, Espírito Criador",
         "type": "parallel-preces",
-        "content": [
+        "contents": [
           {
             "type": "header-2",
             "content": {
@@ -308,7 +308,7 @@
         "id": 5,
         "title": "Ave Estrela do Mar",
         "type": "parallel-preces",
-        "content": [
+        "contents": [
           {
             "type": "header-2",
             "content": {
@@ -372,7 +372,7 @@
         "page-ref": 1,
         "title": "Magníficat",
         "type": "parallel-preces",
-        "content": [
+        "contents": [
           {
             "type": "paragraph",
             "content": {
@@ -470,7 +470,7 @@
         "id": 7,
         "title": "Ladainha do Espírito Santo",
         "type": "parallel-preces",
-        "content": [
+        "contents": [
           {
             "type": "v",
             "content": {
@@ -1152,7 +1152,7 @@
         "id": 8,
         "title": "Ladainha de Nossa Senhora (ou Ladainha Lauretana)",
         "type": "parallel-preces",
-        "content": [
+        "contents": [
           {
             "type": "v",
             "content": {
@@ -1746,7 +1746,7 @@
         "id": 9,
         "title": "Oração a Maria (por São Luís Maria Grignion de Montfort)",
         "type": "regular-text",
-        "content": [
+        "contents": [
           {
             "type": "paragraph",
             "content": "Ave Maria, Filha bem-amada do Pai eterno; ave Maria, Mãe admirável do Filho; ave Maria, Esposa fidelíssima do Espírito Santo; ave Maria, minha querida Mãe, minha amável Senhora e poderosa soberana; ave minha alegria, minha glória, meu coração e minha alma! Vós me pertenceis toda por misericórdia, e eu vos pertenço todo por justiça; mas não vos pertenço bastante ainda; de novo me dou a vós todo inteiro, na qualidade de escravo perpétuo, sem nada reservar para mim ou para outrem."
@@ -1781,7 +1781,7 @@
         "id": 10,
         "title": "Ladainha do Santíssimo Nome de Jesus",
         "type": "parallel-preces",
-        "content": [
+        "contents": [
           {
             "type": "v",
             "content": {
@@ -2447,7 +2447,7 @@
         "id": 11,
         "title": "Oração a Jesus (por São Luís Maria Grignion de Montfort)",
         "type": "regular-text",
-        "content": [
+        "contents": [
           {
             "type": "paragraph",
             "content": "Meu amável Jesus, permiti que me dirija a vós para testemunhar o meu reconhecimento pela graça que me concedestes, dando-me a vossa santa Mãe pela devoção da escravidão, para ser minha advogada junto de vossa Majestade, e meu suplemento universal em minha grandíssima miséria."
@@ -2474,7 +2474,7 @@
         "id": 12,
         "title": "Oração a Jesus (por Santo Agostinho)",
         "type": "parallel-preces",
-        "content": [
+        "contents": [
           {
             "type": "paragraph",
             "content": {
@@ -2502,7 +2502,7 @@
         "id": 13,
         "title": "Outas orações do consagrado<footnote id=7>",
         "type": "regular-text",
-        "content": [
+        "contents": [
           {
             "id": 14,
             "type": "header-2",
@@ -2552,7 +2552,7 @@
           {
             "subsession-break": true,
             "type": "parallel-preces",
-            "content": [
+            "contents": [
               {
                 "type": "header-2",
                 "content": {
@@ -2645,7 +2645,7 @@
           {
             "subsession-break": true,
             "type": "parallel-preces",
-            "content": [
+            "contents": [
               {
                 "type": "header-2",
                 "content": {
@@ -3240,7 +3240,7 @@
           {
             "subsession-break": true,
             "type": "parallel-preces",
-            "content": [
+            "contents": [
               {
                 "type": "header-2",
                 "content": {

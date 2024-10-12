@@ -20,12 +20,12 @@ Para já registrar a ideia:
   - `session`: Array de objetos correspondentes aos objetos de primeiro nível do `index`.
     - 'id': Integer.
     - `title`: String.
-    - `type`: Enum – aqui é que o negócio realmente começa a encrespar. Baseado neste atributo é que o valor de `content` será tratado.
+    - `type`: Enum – aqui é que o negócio realmente começa a encrespar. Baseado neste atributo é que o valor de `contents` será tratado.
       > - `regular-text`
       >   - `<paragraph>`: Além de rubricar e pesar, acrescenta "§ " antes e "." + tabulação depois.
       > - `gregorian-chant`
       >   - `não sei`: Não sei.
-      > - `parallel-preces`: Os objetos do `content` poderão ter os seguintes `types`:
+      > - `parallel-preces`: Os objetos do `contents` poderão ter os seguintes `types`:
       >   - `paragraph`: Texto normal, sem tabulação automática.
       >   - `v`: ℣
       >     - Quando há vários versos seguidos, só o primeiro – no caso dos arquivos para impressão, o primeiro de cada página – é precedido pelo caracter especial.
@@ -47,8 +47,8 @@ Para já registrar a ideia:
       >   - `<b>`: Negrito.
       >   - `<br>`: Nova linha – a ideia é que seja como o shift + enter dos editores de texto normais.
       >   - `<footnote>`: Referência a nota de rodapé. Nem imagino o quão difícil será fazer isso... Sei que o markdown editor do GitHub tem essa função, e talvez seja bem do jeito que eu preciso.
-      >     E esses `<footnotes>` podem aparecer noutros lugares, não só nos elementos do `content`.
-    - `content`: Array de objetos.
+      >     E esses `<footnotes>` podem aparecer noutros lugares, não só nos elementos do `contents`.
+    - `contents`: Array de objetos.
       - `type`: Talvez parte do enum acima seria melhor referido aqui.
         > - `paragraph`
         > - `header-1`
