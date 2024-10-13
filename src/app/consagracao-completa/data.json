@@ -2500,7 +2500,7 @@
       },
       {
         "id": 13,
-        "title": "Outas orações do consagrado<footnote id=7>",
+        "title": "Outras orações do consagrado<footnote id=7>",
         "type": "regular-text",
         "contents": [
           {
@@ -2509,7 +2509,7 @@
             "content": "Magníficat"
           },
           {
-            "type": "paragraph",
+            "type": "media-relative",
             "content": {
               "print-only": "Oração na página <page id=1>.",
               "screen-only": "Oração <ref id=1 text='aqui'>."

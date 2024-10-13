@@ -1,3 +1,4 @@
+import clsx from "clsx"
 import React from "react"
 
 type DevocionarioFile = {
@@ -22,7 +23,8 @@ type Sessions = {
 
 type SessionContents = {
   type: SessionContentTypes | ParallelPrecesTypes,
-  content: string | Index | ParallelPreces,
+  content?: string | MediaRelativeContent,
+  contents?: Index | ParallelPreces,
   "subsession-break"?: boolean, // Isso aqui não está no README.
 }[]
 
@@ -31,11 +33,16 @@ type ParallelPreces = {
   content: ParallelPrecesContent,
   "larger-break"?: boolean,
   "horizontal-line"?: HorizontalLineTypes,
-}
+}[]
 
 type ParallelPrecesContent = {
   latin: string,
   "pt-BR": string,
+}
+
+type MediaRelativeContent = {
+  "print-only": string,
+  "screen-only": string,
 }
 
 type HorizontalLineTypes = (
@@ -54,6 +61,7 @@ type SessionContentTypes = (
   "header-2" |
   "paragraph" |
   "parallel-preces" | // Vide ~ l. 2554 (O Iesu, vivens in Maria) e outras depois
+  "media-relative" |
   "indication" |
   "index"
 )
@@ -74,12 +82,12 @@ type Footnotes = {
 
 export function DevocionarioFile({ file } : { file: any }) {
 
-  // function replaceUnderline(text: string) {
-  //   return text.split(/(<underline>.*?<\/underline>)/g).map((part, index) => {
-  //     if (part.startsWith("<underline>")) {
+  // function replaceParagraph(text: string) {
+  //   return text.split(/(<paragraph>.*?<\/paragraph>)/g).map((part, index) => {
+  //     if (part.startsWith("<paragraph>")) {
   //       return (
-  //         <span key={index} className="underline">
-  //           {part.replace(/<\/?underline>/g, "")}
+  //         <span key={index} className="font-bold text-red-600">
+  //           {"§ " + part.replace(/<\/?paragraph>/g, "") + ". "}
   //         </span>
   //       );
   //     }
@@ -87,25 +95,116 @@ export function DevocionarioFile({ file } : { file: any }) {
   //   });
   // }
 
-  // function replaceBreak(text: string) {
-  //   return text.split("<break>").map((part, index) => (
-  //     <React.Fragment key={index}>
-  //       {index > 0 && <br />}
-  //       {part}
-  //     </React.Fragment>
-  //   ));
+  // function replaceItalic(text: string) {
+  //   return text.split(/(<i>.*?<\/i>)/g).map((part, index) => {
+  //     if (part.startsWith("<i>")) {
+  //       return (
+  //         <span key={index} className="italic">
+  //           {part.replace(/<\/?i>/g, "")}
+  //         </span>
+  //       );
+  //     }
+  //     return part;
+  //   });
   // }
 
-  function renderIndex(index: Index) {
-    return (
-      <ol className="list-none space-y-2">
+  // function replaceBold(text: string) {
+  //   return text.split(/(<b>.*?<\/b>)/g).map((part, index) => {
+  //     if (part.startsWith("<b>")) {
+  //       return (
+  //         <span key={index} className="font-semibold">
+  //           {part.replace(/<\/?b>/g, "")}
+  //         </span>
+  //       );
+  //     }
+  //     return part;
+  //   });
+  // }
 
-        {index.map(item => {
-          return <li key={item.id} className="grid grid-cols-[44px_1fr] mt-1 first:!mt-0">
-            <span>{item.id}.</span>
+  // function replaceUnderline(text: string) {
+  //   return text.split(/(<u>.*?<\/u>)/g).map((part, index) => {
+  //     if (part.startsWith("<u>")) {
+  //       return (
+  //         <span key={index} className="underline">
+  //           {part.replace(/<\/?u>/g, "")}
+  //         </span>
+  //       );
+  //     }
+  //     return part;
+  //   });
+  // }
+
+  // function replaceAllStyles(text: string) {
+  // }
+
+  function replaceAllStyleTags(text: string) {
+    return text
+      .split(/(<paragraph>.*?<\/paragraph>|<i>.*?<\/i>|<b>.*?<\/b>|<u>.*?<\/u>)/g)
+      .map((part, index) => {
+        if (part.startsWith("<paragraph>")) {
+          return (
+            <span key={index} className="font-bold text-red-600">
+              {"§ " + part.replace(/<\/?paragraph>/g, "") + ". "}
+            </span>
+          );
+        }
+        if (part.startsWith("<i>")) {
+          return (
+            <span key={index} className="italic">
+              {part.replace(/<\/?i>/g, "")}
+            </span>
+          );
+        }
+        if (part.startsWith("<b>")) {
+          return (
+            <span key={index} className="font-semibold">
+              {part.replace(/<\/?b>/g, "")}
+            </span>
+          );
+        }
+        if (part.startsWith("<u>")) {
+          return (
+            <span key={index} className="underline">
+              {part.replace(/<\/?u>/g, "")}
+            </span>
+          );
+        }
+        return part; // Return plain text as-is
+      });
+  }
+
+  function replaceAsterisk(text: string) { // TODO: ckeck if this is working
+    return text.split("<*>").map((part, index) => {
+      if (part.startsWith("<*>")) {
+        return (
+          <span key={index} className="font-bold text-red-600">
+            {part.replace(/"<\*>"/g, "*")}
+          </span>
+        );
+      }
+      return part;
+    });
+  }
+
+  function replaceBreak(text: string) {
+    return text.split("<br>").map((part, index) => (
+      <React.Fragment key={index}>
+        {index > 0 && <br />}
+        {part}
+      </React.Fragment>
+    ));
+  }
+
+  function renderIndex(index: Index) { // TODO: handle "no-list-number" (v. l. 218 or so ("ou Oração a Jesus, por Santo Agostinho"))
+    return (
+      <ol className="list-none space-y-1">
+
+        {index.map((item, index) => {
+          return <li key={item.id} className="grid grid-cols-[28px_1fr]">
+            <span>{index + 1}.</span>
             <span>{item.title}</span>
             {item.index && (
-              <div className="grid grid-cols-[44px_1fr] mt-2.5 col-span-2">
+              <div className="grid grid-cols-[28px_1fr] mt-1 col-span-2">
                 <span />
                 {renderIndex(item.index)}
               </div>
@@ -118,11 +217,11 @@ export function DevocionarioFile({ file } : { file: any }) {
 
   function renderSessions(sessions: Sessions) {
     return (
-      <div className="mt-5">
+      <div className="mt-5 first">
 
         {sessions.map(session => {
           return <div>
-            <h2 className="text-2xl font-medium mb-3">{session.title}</h2>
+            <h2 className="text-2xl font-medium mb-3 mt-3">{session.title}</h2>
             {renderSessionContents(session.type, session.contents)}
           </div>
         })}
@@ -135,48 +234,58 @@ export function DevocionarioFile({ file } : { file: any }) {
     switch(sessionType) {
       case "regular-text":
         return (
-          /*
-              Considerar aqui:
-              • subsession-break              
-          */
           contents.map((content, index) => {
             switch(content.type) {
               case "header-1":
-                return <></>
+                return <h3 className={clsx(
+                  content["subsession-break"] && "mb-4",
+                  "text-xl font-medium mt-3 mb-1"
+                )}>
+                  {content.content as string}
+                </h3>
+
               case "header-2":
-                return <></>
+                return <h4 className={clsx(
+                  content["subsession-break"] && "mb-4",
+                  "text-base font-medium mt-2 mb-1"
+                )}>
+                  {content.content as string}
+                </h4>
+
               case "paragraph":
-                return <></>
-              case "index":
-                return <></>
+                return <p className={clsx(
+                  content["subsession-break"] && "mb-4",
+                  "mt-0.5"
+                )}>
+                  {replaceAllStyleTags(content.content as string)}
+                </p>
+
               case "indication":
-                return <></>
+                return <div className={clsx(
+                  content["subsession-break"] && "mb-4",
+                  "ml-[28px] my-1"
+                )}>
+                  <span className="text-base italic">{content.content as string}</span>
+                </div>
+
+              case "index":
+                return renderIndex(content.contents as Index)
+
+              case "media-relative":
+                return <span className={clsx(
+                  content["subsession-break"] && "mb-4",
+                  "block"
+                )}>
+                  [media-relative]
+                </span>
+
               default:
                 return
             }
           })
         )
       case "parallel-preces":
-        return (
-          contents.map((content, index) => {
-            /*
-                Considerar aqui:
-                • larger-break              
-            */
-            switch(content.type) {
-              case "header-2":
-                return <></>
-              case "paragraph":
-                return <></>
-              case "v":
-                return <></>
-              case "r":
-                return <></>
-              case "annotation":
-                return <></>
-            }
-          })
-        )
+        return renderParallelPreces(contents as unknown as ParallelPreces)
       case "gregorian-chant":
         return <></>
       default:
@@ -184,62 +293,63 @@ export function DevocionarioFile({ file } : { file: any }) {
     }
   }
 
+  function renderParallelPreces(contents: ParallelPreces) {
+    return (
+      contents.map(content => {
+        switch(content.type) {
+          case "v":
+            return <div className={clsx(
+              content["subsession-break"] && "mb-4",
+              "grid grid-cols-2 gap-3"
+            )}>
+              <div className="grid grid-cols-[24px_1fr]">
+                <span className="font-bold text-red-600">℣.</span>
+                <span>{content.content["pt-BR"]}</span>
+              </div>
+              <div className="grid grid-cols-[24px_1fr]">
+                <span className="font-bold text-red-600">℣.</span>
+                <span>{content.content["latin"]}</span>
+              </div>
+            </div>
+
+          case "r":
+            return <div className={clsx(
+              content["subsession-break"] && "mb-4",
+              "grid grid-cols-2 gap-3"
+            )}>
+              <div className="grid grid-cols-[24px_1fr]">
+                <span className="font-bold text-red-600">℟.</span>
+                <span>{content.content["pt-BR"]}</span>
+              </div>
+              <div className="grid grid-cols-[24px_1fr]">
+                <span className="font-bold text-red-600">℟.</span>
+                <span>{content.content["latin"]}</span>
+              </div>
+            </div>
+
+          default:
+            return <div className={clsx(
+              content["subsession-break"] && "mb-4",
+              "grid grid-cols-2 gap-3",
+              content.type === "header-2" && "text-xl font-medium",
+              content.type === "paragraph" && "mt-0.5",
+              content.type === "indication" && "",
+              content.type === "annotation" && ""
+            )}>
+              <div className="">{replaceAllStyleTags(content.content["pt-BR"])}</div>
+              <div className="">{replaceAllStyleTags(content.content["latin"])}</div>
+            </div>
+        }
+      })
+    )
+  }
+
   return (
-    <div className="mb-2">
+    <div className="mb-2 max-w-prose text-justify hyphens-auto">
       <h1 className="text-3xl font-medium mb-5">{file.title}</h1>
       {renderIndex(file.index)}
       {renderSessions(file.sessions)}
-
-      {/* {list.items.map((item, subIndex) => {
-        return (
-          <ol key={subIndex} className="list-none space-y-2">
-            {
-              typeof item === "string"
-                ? <li className="grid grid-cols-[44px_1fr] mt-1 !first:mt-0">
-                  <span className="inline-block w-8">{index + 1}.{subIndex + 1}.</span>
-                  <span>{
-                    replaceUnderline(item).map(part => {
-                      if (typeof part === "string") {
-                        return replaceBreak(part)
-                      }
-                      return part;
-                    })
-                  }</span>
-                </li>
-                : <li className="grid grid-cols-[44px_1fr] mt-1 !first:mt-0">
-                  <span className="inline-block w-8">{index + 1}.{subIndex + 1}.</span>
-                  <span className="whitespace-pre-line">{item.text}</span>
-                  <ol key={subIndex} className="list-none space-y-2 col-span-2">
-                    {item.subItems.map((subItem, subSubIndex) => {
-                      return (
-                        <li key={subSubIndex} className={clsx(
-                          "grid ml-[44px] !mt-1",
-                          item.orderType === "letter"
-                            ? "grid-cols-[24px_1fr]"
-                            : "grid-cols-[60px_1fr]"
-                        )}>
-                          <span className="inline-block w-8">{
-                            item.orderType === "letter"
-                              ? String.fromCharCode(97 + subSubIndex)
-                              : `${index + 1}.${subIndex + 1}.${subSubIndex + 1}`
-                            }.</span>
-                          <span className="whitespace-pre-line">{
-                            replaceUnderline(subItem).map(part => {
-                              if (typeof part === "string") {
-                                return replaceBreak(part)
-                              }
-                              return part;
-                            })
-                          }</span>
-                        </li>
-                      )
-                    })}
-                  </ol>
-                </li>
-            }
-          </ol>
-        )
-      })} */}
+      {/* {renderFootnotes(file.footnotes)} // TODO: this. */}
     </div>
   )
 }
