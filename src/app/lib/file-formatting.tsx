@@ -26,6 +26,8 @@ type SessionContents = {
   content?: string | MediaRelativeContent,
   contents?: Index | ParallelPreces,
   "subsession-break"?: boolean, // Isso aqui não está no README.
+  "increased-vertical-spacing"?: boolean, // Isso aqui não está no README.
+  "no-margin-bottom"?: boolean, // Isso aqui não está no README.
 }[]
 
 type ParallelPreces = {
@@ -138,7 +140,7 @@ export function DevocionarioFile({ file } : { file: any }) {
   // }
 
   function replaceAllStyleTags(text: string) {
-    return text
+    return replaceBreakAndAsterisk(text
       .split(/(<paragraph>.*?<\/paragraph>|<i>.*?<\/i>|<b>.*?<\/b>|<u>.*?<\/u>)/g)
       .map((part, index) => {
         if (part.startsWith("<paragraph>")) {
@@ -170,29 +172,28 @@ export function DevocionarioFile({ file } : { file: any }) {
           );
         }
         return part; // Return plain text as-is
-      });
+      }))
   }
 
-  function replaceAsterisk(text: string) { // TODO: ckeck if this is working
-    return text.split("<*>").map((part, index) => {
-      if (part.startsWith("<*>")) {
-        return (
-          <span key={index} className="font-bold text-red-600">
-            {part.replace(/"<\*>"/g, "*")}
-          </span>
-        );
+  function replaceBreakAndAsterisk(parts: (string | React.JSX.Element)[]) {
+    return parts.flatMap((part, index) => {
+      if (typeof part === "string") {
+        return part.split("<br>").flatMap((subPart, subIndex) => {
+          const elements: (string | React.ReactNode)[] = [];
+          if (subIndex > 0) elements.push(<br key={`${index}-${subIndex}-br`} />);
+          
+          const replaced = subPart.split("<*>").flatMap((segment, i) => 
+            i > 0 ? [<span
+              key={`${index}-${subIndex}-span-${i}`}
+              className="font-bold text-red-600"
+            >*</span>, segment] : [segment]
+          );
+          
+          return elements.concat(replaced);
+        });
       }
       return part;
     });
-  }
-
-  function replaceBreak(text: string) {
-    return text.split("<br>").map((part, index) => (
-      <React.Fragment key={index}>
-        {index > 0 && <br />}
-        {part}
-      </React.Fragment>
-    ));
   }
 
   function renderIndex(index: Index) { // TODO: handle "no-list-number" (v. l. 218 or so ("ou Oração a Jesus, por Santo Agostinho"))
@@ -202,7 +203,7 @@ export function DevocionarioFile({ file } : { file: any }) {
         {index.map((item, index) => {
           return <li key={item.id} className="grid grid-cols-[28px_1fr]">
             <span>{index + 1}.</span>
-            <span>{item.title}</span>
+            <span>{replaceAllStyleTags(item.title)}</span>
             {item.index && (
               <div className="grid grid-cols-[28px_1fr] mt-1 col-span-2">
                 <span />
@@ -221,7 +222,7 @@ export function DevocionarioFile({ file } : { file: any }) {
 
         {sessions.map(session => {
           return <div>
-            <h2 className="text-2xl font-medium mb-3 mt-3">{session.title}</h2>
+            <h2 className="text-2xl text-center font-medium mb-3 mt-5 bg-amber-300/20">{session.title}</h2>
             {renderSessionContents(session.type, session.contents)}
           </div>
         })}
@@ -238,23 +239,26 @@ export function DevocionarioFile({ file } : { file: any }) {
             switch(content.type) {
               case "header-1":
                 return <h3 className={clsx(
-                  content["subsession-break"] && "mb-4",
-                  "text-xl font-medium mt-3 mb-1"
+                  content["subsession-break"] && "mb-5",
+                  content["no-margin-bottom"] === true ? "" : "mb-1",
+                  "text-xl font-medium mt-3",
+                  // "bg-emerald-300/20", // TODO: remove teststyle
                 )}>
-                  {content.content as string}
+                  {replaceAllStyleTags(content.content as string)}
                 </h3>
 
-              case "header-2":
+              case "header-2": // TODO: change style when inside parallel-preces or... any other case:
                 return <h4 className={clsx(
-                  content["subsession-break"] && "mb-4",
-                  "text-base font-medium mt-2 mb-1"
+                  content["subsession-break"] && "mb-5",
+                  "text-lg font-semibold mt-2 mb-1",
+                  // "bg-fuchsia-300/20", // TODO: remove teststyle
                 )}>
-                  {content.content as string}
+                  {replaceAllStyleTags(content.content as string)}
                 </h4>
 
               case "paragraph":
                 return <p className={clsx(
-                  content["subsession-break"] && "mb-4",
+                  content["subsession-break"] && "mb-5",
                   "mt-0.5"
                 )}>
                   {replaceAllStyleTags(content.content as string)}
@@ -262,19 +266,25 @@ export function DevocionarioFile({ file } : { file: any }) {
 
               case "indication":
                 return <div className={clsx(
-                  content["subsession-break"] && "mb-4",
-                  "ml-[28px] my-1"
+                  content["subsession-break"] && "mb-5",
+                  content["increased-vertical-spacing"] === true ? "my-5" : "my-1",
+                  "ml-[28px]",
+                  // "bg-red-300/20", // TODO: remove teststyle
                 )}>
-                  <span className="text-base italic">{content.content as string}</span>
+                  <span className="text-base italic font-light">{replaceAllStyleTags(content.content as string)}</span>
                 </div>
 
               case "index":
                 return renderIndex(content.contents as Index)
 
+                case "parallel-preces": // TODO: check if these cases (and other) need more spacing before the title
+                  return renderParallelPreces(content.contents as unknown as ParallelPreces)
+
               case "media-relative":
                 return <span className={clsx(
-                  content["subsession-break"] && "mb-4",
-                  "block"
+                  content["subsession-break"] && "mb-5",
+                  "block",
+                  "bg-red-800/20 py-1.5 italic"
                 )}>
                   [media-relative]
                 </span>
@@ -297,16 +307,23 @@ export function DevocionarioFile({ file } : { file: any }) {
     return (
       contents.map(content => {
         switch(content.type) {
-          case "v":
+          case "v": // TODO: don't render "℣." when the element from before is also type="v"
             return <div className={clsx(
-              content["subsession-break"] && "mb-4",
-              "grid grid-cols-2 gap-3"
+              content["larger-break"] && "mb-2",
+              content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
+              "grid grid-cols-2 gap-3",
             )}>
-              <div className="grid grid-cols-[24px_1fr]">
+              <div className={clsx(
+                "grid grid-cols-[24px_1fr]",
+                content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
+              )}>
                 <span className="font-bold text-red-600">℣.</span>
                 <span>{content.content["pt-BR"]}</span>
               </div>
-              <div className="grid grid-cols-[24px_1fr]">
+              <div className={clsx(
+                "grid grid-cols-[24px_1fr]",
+                content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
+              )}>
                 <span className="font-bold text-red-600">℣.</span>
                 <span>{content.content["latin"]}</span>
               </div>
@@ -314,14 +331,21 @@ export function DevocionarioFile({ file } : { file: any }) {
 
           case "r":
             return <div className={clsx(
-              content["subsession-break"] && "mb-4",
-              "grid grid-cols-2 gap-3"
+              content["larger-break"] && "mb-2",
+              content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
+              "grid grid-cols-2 gap-3",
             )}>
-              <div className="grid grid-cols-[24px_1fr]">
+              <div className={clsx(
+                "grid grid-cols-[24px_1fr]",
+                content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
+              )}>
                 <span className="font-bold text-red-600">℟.</span>
                 <span>{content.content["pt-BR"]}</span>
               </div>
-              <div className="grid grid-cols-[24px_1fr]">
+              <div className={clsx(
+                "grid grid-cols-[24px_1fr]",
+                content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
+              )}>
                 <span className="font-bold text-red-600">℟.</span>
                 <span>{content.content["latin"]}</span>
               </div>
@@ -329,15 +353,25 @@ export function DevocionarioFile({ file } : { file: any }) {
 
           default:
             return <div className={clsx(
-              content["subsession-break"] && "mb-4",
+              content["subsession-break"] && "mb-5",
+              content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
               "grid grid-cols-2 gap-3",
-              content.type === "header-2" && "text-xl font-medium",
-              content.type === "paragraph" && "mt-0.5",
-              content.type === "indication" && "",
-              content.type === "annotation" && ""
+              content.type === "header-2" && "text-lg font-medium",
+              // content.type === "header-2" && "bg-cyan-300/20", // TODO: remove teststyle
+              content.type === "paragraph" && "[&:not(:last-of-type)]:mb-1.5 mt-1.5",
+              content.type === "indication" && "my-1.5 leading-tight italic text-base font-light",
+              content.type === "annotation" && "my-1 leading-tight italic text-base font-light"
             )}>
-              <div className="">{replaceAllStyleTags(content.content["pt-BR"])}</div>
-              <div className="">{replaceAllStyleTags(content.content["latin"])}</div>
+              <div className={clsx(
+                content.type === "header-2" && "mx-5",
+                content.type === "indication" && "mx-5",
+                content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
+              )}>{replaceAllStyleTags(content.content["pt-BR"])}</div>
+              <div className={clsx(
+                content.type === "header-2" && "mx-5",
+                content.type === "indication" && "mx-5",
+                content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
+              )}>{replaceAllStyleTags(content.content["latin"])}</div>
             </div>
         }
       })

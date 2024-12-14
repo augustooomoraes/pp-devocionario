@@ -151,6 +151,7 @@
         "type": "regular-text",
         "contents": [
           {
+            "no-margin-bottom": true,
             "type": "header-1",
             "content": "12 primeiros dias"
           },
@@ -167,12 +168,13 @@
             ]
           },
           {
+            "no-margin-bottom": true,
             "type": "header-1",
             "content": "Primeira semana"
           },
           {
             "type": "indication",
-            "content": "Empregada em adquitir o conhecimento de si mesmo."
+            "content": "Empregada em adquirir o conhecimento de si mesmo."
           },
           {
             "type": "index",
@@ -185,6 +187,7 @@
             ]
           },
           {
+            "no-margin-bottom": true,
             "type": "header-1",
             "content": "Segunda semana"
           },
@@ -201,6 +204,7 @@
             ]
           },
           {
+            "no-margin-bottom": true,
             "type": "header-1",
             "content": "Terceira semana"
           },
@@ -263,7 +267,7 @@
           {
             "type": "paragraph",
             "content": {
-              "latin": "Hostem repellas lóngius, pacemque dones prótinus: ductore sic te prǽ vio vitemus omne nóxium.",
+              "latin": "Hostem repellas lóngius, pacemque dones prótinus: ductore sic te prǽvio vitemus omne nóxium.",
               "pt-BR": "O inimigo, afugentai-o para longe; dai-nos quanto antes a paz; tendo-Vos por guia e condutor, venceremos todos os perigos."
             }
           },
@@ -2639,6 +2643,7 @@
             "content": "<paragraph>235</paragraph>Há várias maneiras de se rezar a Pequena Coroa, mas nos tomaria muito tempo explicá-las aqui. O Espírito Santo irá ensiná-las aos que viverem esta devoção conscienciosamente. [...]"
           },
           {
+            "increased-vertical-spacing": true,
             "type": "indication",
             "content": "Em seguida, as orações básicas que compõe a Pequena Coroa. Após elas, uma forma de rezá-la, com estas orações referenciadas e com outras, que não são repetidas, apresentadas no curso da descrição."
           },
