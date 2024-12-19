@@ -101,61 +101,6 @@ export function DevocionarioFile({ file } : { file: any }) {
 
   // TODO: use human-like identifiers
 
-  // function replaceParagraph(text: string) {
-  //   return text.split(/(<paragraph>.*?<\/paragraph>)/g).map((part, index) => {
-  //     if (part.startsWith("<paragraph>")) {
-  //       return (
-  //         <span key={index} className="font-bold text-red-600">
-  //           {"§ " + part.replace(/<\/?paragraph>/g, "") + ". "}
-  //         </span>
-  //       );
-  //     }
-  //     return part;
-  //   });
-  // }
-
-  // function replaceItalic(text: string) {
-  //   return text.split(/(<i>.*?<\/i>)/g).map((part, index) => {
-  //     if (part.startsWith("<i>")) {
-  //       return (
-  //         <span key={index} className="italic">
-  //           {part.replace(/<\/?i>/g, "")}
-  //         </span>
-  //       );
-  //     }
-  //     return part;
-  //   });
-  // }
-
-  // function replaceBold(text: string) {
-  //   return text.split(/(<b>.*?<\/b>)/g).map((part, index) => {
-  //     if (part.startsWith("<b>")) {
-  //       return (
-  //         <span key={index} className="font-semibold">
-  //           {part.replace(/<\/?b>/g, "")}
-  //         </span>
-  //       );
-  //     }
-  //     return part;
-  //   });
-  // }
-
-  // function replaceUnderline(text: string) {
-  //   return text.split(/(<u>.*?<\/u>)/g).map((part, index) => {
-  //     if (part.startsWith("<u>")) {
-  //       return (
-  //         <span key={index} className="underline">
-  //           {part.replace(/<\/?u>/g, "")}
-  //         </span>
-  //       );
-  //     }
-  //     return part;
-  //   });
-  // }
-
-  // function replaceAllStyles(text: string) {
-  // }
-
   function replaceAllStyleTags(text: string) {
     return replaceBreakAndAsterisk(text
       .split(/(<paragraph>.*?<\/paragraph>|<i>.*?<\/i>|<b>.*?<\/b>|<u>.*?<\/u>)/g)
