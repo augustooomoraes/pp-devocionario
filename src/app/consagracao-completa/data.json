@@ -352,7 +352,7 @@
             "type": "paragraph",
             "content": {
               "latin": "Virgo singularis,<br>inter omnes mitis,<br>nos culpis solutos,<br>mites fac et castos.",
-              "pt-BR": "Suave mais que todas,<br>ó, Virgem sem igual,<br>fazei-nos mansos, puros,<br>guardai-nos contra o mal."
+              "pt-BR": "Suave mais que todas,<br>ó Virgem sem igual,<br>fazei-nos mansos, puros,<br>guardai-nos contra o mal."
             }
           },
           {
@@ -2550,6 +2550,7 @@
             "content": "[...]"
           },
           {
+            "end-break": true,
             "type": "paragraph",
             "content": "<paragraph>246</paragraph>2ª: Uma vez que o mistério principal celebrado e honrado nesta devoção é o mistério da Encarnação, no qual encontramos Jesus apenas em Maria, havendo Ele Se encarnado em seu seio,  nos é apropriado dizer \"escravidão de Jesus em Maria\" – de Jesus, habitante e entronado em Maria, de acordo com a belíssima oração, rezada por tantas almas grandiosas: \"Ó Jesus, que viveis em Maria\"."
           },
@@ -2680,6 +2681,7 @@
                 }
               },
               {
+                "end-break": true,
                 "type": "annotation",
                 "content": {
                   "latin": "(Aut óptio)",
@@ -2785,6 +2787,7 @@
                 }
               },
               {
+                "end-break": true,
                 "type": "r",
                 "content": {
                   "latin": "Panem nostrum cotidianum da nobis hódie; et dimitte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris; et ne nos inducas in tentatiónem; sed líbera nos a malo. Amen.",
@@ -2806,6 +2809,7 @@
                 }
               },
               {
+                "end-break": true,
                 "type": "r",
                 "content": {
                   "latin": "Sancta Maria, Mater Dei, ora pro nobis peccatóribus, nunc et in hora mortis nostræ. Amen.",
@@ -3224,7 +3228,6 @@
                 }
               },
               {
-                "subsession-break": true,
                 "type": "paragraph",
                 "content": {
                   "latin": "<i>Oremus:</i> Ave Maria, Filia Dei Patris. Ave Maria, Mater Dei Fili. Ave Maria, Sponsa Fidelíssima Spíritus Sancti. Ave Maria, Templum totius trinitatis! Ave Maria, Dómina mea, bona mea, rosa mea, regina cordis mei, mater, vita, dulcedo et spes nostra caríssima, imo cor meum et ánima mea! Tuus ego sum et ómnia mea Tua sunt, o Virgo super ómnia benedicta. Sit ergo in me ánima Tua, ut magníficet Dóminum; sit in me Spíritus Tuus, ut exsultet in Deo. Pone Te, Virgo Fidelis, ut signáculum super cor meum, ut in Te et per Te Deo fidelis invéniar. Largire, o Benigna, ut illis annumerer quos tanquam filios amas, doces, dirigis, foves, protegis. Fac ut, amore Tui, terrenas omnes spernens consolationes, cæléstibus semper inhæream. Donec in me, per Spíritum Sanctum sponsum Tuum fidelíssimum et Te fidelíssimam Eius sponsam, formetur Iesus Christus Filius Tuus ad glóriam Patris. Amen.",
@@ -3239,6 +3242,7 @@
             "content": "À Vossa Proteção"
           },
           {
+            "end-break": true,
             "type": "paragraph",
             "content": "São Luís Maria recomenda a récita desta oração ao final da Pequena Coroa. Também se pode rezá-la antes de \"Rogai por nós, Santa Mãe de Deus etc.\", ao final da Ladainha Lauretana."
           },
