@@ -1,5 +1,9 @@
+"use client"
+// TODO: check if this would ruin pre-fetching/pre-rendering, considering that data.json would be fetched from mongodb or whatever
+
 import clsx from "clsx"
 import React from "react"
+import { useRouter } from "next/navigation";
 
 type DevocionarioFile = {
   title: string,
@@ -23,6 +27,7 @@ type Sessions = {
 }[]
 
 type SessionContents = {
+  id?: number,
   type: SessionContentTypes | ParallelPrecesTypes,
   content?: string | MediaRelativeContent,
   contents?: Index | ParallelPreces,
@@ -87,6 +92,14 @@ type Footnotes = {
 }[]
 
 export function DevocionarioFile({ file } : { file: any }) {
+
+  const router = useRouter();
+
+  const handleNavigation = (id: string) => {
+    router.push(`#${id}`);
+  };
+
+  // TODO: use human-like identifiers
 
   // function replaceParagraph(text: string) {
   //   return text.split(/(<paragraph>.*?<\/paragraph>)/g).map((part, index) => {
@@ -205,9 +218,17 @@ export function DevocionarioFile({ file } : { file: any }) {
       <ol className="list-none space-y-1">
 
         {index.map((item, index) => {
-          return <li key={item.id} className="grid grid-cols-[28px_1fr]">
-            <span>{item["no-list-number"] ? "" : `${index + 1}.`}</span>
-            <span>{replaceAllStyleTags(item.title)}</span>
+          return <li key={index} className="grid grid-cols-[28px_1fr]">
+            <span className="pl-1.5">{item["no-list-number"] ? "" : `${index + 1}.`}</span>
+            <a
+              href={`#${item.id}`}
+              className="
+                hover:bg-black/5 active:bg-black/10 transition-colors
+                px-1.5 rounded-md
+              "
+            >
+              {replaceAllStyleTags(item.title)}
+            </a>
             {item.index && (
               <div className="grid grid-cols-[28px_1fr] mt-1 col-span-2">
                 <span />
@@ -225,8 +246,17 @@ export function DevocionarioFile({ file } : { file: any }) {
       <div className="mt-5 first">
 
         {sessions.map(session => {
-          return <div>
-            <h2 className="text-2xl text-center font-medium mb-3 mt-5">{session.title}</h2>
+          return <div id={`${session.id}`}>
+            <h2
+              onClick={ () => handleNavigation(`${session.id}`) }
+              className="
+                text-2xl text-center font-medium
+                mb-3 mt-5
+                cursor-pointer hover:underline
+              "
+            >
+              {session.title}
+            </h2>
             {renderSessionContents(session.type, session.contents)}
           </div>
         })}
@@ -242,19 +272,29 @@ export function DevocionarioFile({ file } : { file: any }) {
           contents.map((content, index) => {
             switch(content.type) {
               case "header-1":
-                return <h3 className={clsx(
-                  content["subsession-break"] && "mb-5",
-                  content["no-margin-bottom"] === true ? "" : "mb-1",
-                  "text-xl font-medium mt-3",
-                )}>
+                return <h3
+                  className={clsx(
+                    content["id"] && "cursor-pointer hover:underline",
+                    content["subsession-break"] && "mb-5",
+                    content["no-margin-bottom"] === true ? "" : "mb-1",
+                    "text-xl font-medium mt-3",
+                  )}
+                  id={content["id"] ? `${content.id}` : undefined}
+                  onClick={content["id"] ? () => handleNavigation(`${content.id}`) : undefined}
+                >
                   {replaceAllStyleTags(content.content as string)}
                 </h3>
 
               case "header-2":
-                return <h4 className={clsx(
-                  content["subsession-break"] && "mb-5",
-                  "text-lg font-semibold mt-2 mb-1",
-                )}>
+                return <h4
+                  className={clsx(
+                    content["id"] && "cursor-pointer hover:underline",
+                    content["subsession-break"] && "mb-5",
+                    "text-lg font-semibold mt-2 mb-1",
+                  )}
+                  id={content["id"] ? `${content.id}` : undefined}
+                  onClick={content["id"] ? () => handleNavigation(`${content.id}`) : undefined}
+                >
                   {replaceAllStyleTags(content.content as string)}
                 </h4>
 
