@@ -5,98 +5,9 @@ import clsx from "clsx"
 import React from "react"
 import { useRouter } from "next/navigation";
 import FootnoteTooltip from "@/components/tooltip/footnote-tooltip";
+import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SessionContents, Sessions, SessionTypes } from "./types";
+import { replaceAllStyleTags, replaceBreakAndAsteriskAndFootnoteTags, replaceLinkTags } from "./tags-replacing";
 
-type DevocionarioFile = {
-  title: string,
-  index: Index,
-  sessions: Sessions,
-  footnotes: Footnotes,
-  "section-map": SectionMap,
-}
-
-type Index = {
-  id: number,
-  title: string,
-  index?: Index
-  "no-list-number"?: boolean,
-}[]
-
-type Sessions = {
-  id: number,
-  title: string,
-  type: SessionTypes,
-  contents: SessionContents,
-}[]
-
-type SessionContents = {
-  id?: number,
-  type: SessionContentTypes | ParallelPrecesTypes,
-  content?: string | MediaRelativeContent,
-  contents?: Index | ParallelPreces,
-  "end-break": true,
-  "subsession-break"?: boolean, // Isso aqui não está no README.
-  "increased-vertical-spacing"?: boolean, // Isso aqui não está no README.
-  "no-margin-bottom"?: boolean, // Isso aqui não está no README.
-}[]
-
-type ParallelPreces = {
-  type: ParallelPrecesTypes,
-  content: ParallelPrecesContent,
-  "end-break"?: boolean,
-  "larger-break"?: boolean,
-  "subsession-break"?: boolean, // Isso aqui não está no README.
-  "horizontal-line"?: HorizontalLineTypes,
-}[]
-
-type ParallelPrecesContent = {
-  latin: string,
-  "pt-BR": string,
-}
-
-type MediaRelativeContent = {
-  "print-only": string,
-  "screen-only": string,
-}
-
-type HorizontalLineTypes = (
-  "full" |
-  "two-halves"
-)
-
-type SessionTypes = (
-  "regular-text" |
-  "gregorian-chant" |
-  "parallel-preces"
-)
-
-type SessionContentTypes = (
-  "header-1" |
-  "header-2" |
-  "paragraph" |
-  "parallel-preces" | // Vide ~ l. 2554 (O Iesu, vivens in Maria) e outras depois
-  "media-relative" |
-  "indication" |
-  "index"
-)
-
-type ParallelPrecesTypes = (
-  "header-2" |
-  "paragraph" |
-  "v" |
-  "r" |
-  "indication" | // Vide ~ l. 3066 (próximo de Gloria tibi sit, hæresum et dǽmonum intereptrix) e outras depois
-  "annotation"
-)
-
-type Footnotes = {
-  id: number,
-  content: string,
-}[]
-
-type SectionMap = {
-  id: number,
-  title: string,
-}[]
 
 export function DevocionarioFile({ file } : { file: any }) {
 
@@ -108,88 +19,6 @@ export function DevocionarioFile({ file } : { file: any }) {
       router.push(`#${sectionName}`);
     }
   };
-
-  function replaceAllStyleTags(text: string) {
-    return replaceBreakAndAsteriskAndFootnoteTags(text
-      .split(/(<paragraph>.*?<\/paragraph>|<i>.*?<\/i>|<b>.*?<\/b>|<u>.*?<\/u>)/g)
-      .map((part, index) => {
-        if (part.startsWith("<paragraph>")) {
-          return (
-            <span key={index} className="font-bold text-red-600">
-              {"§ " + part.replace(/<\/?paragraph>/g, "") + ". "}
-            </span>
-          );
-        }
-        if (part.startsWith("<i>")) {
-          return (
-            <span key={index} className="italic">
-              {part.replace(/<\/?i>/g, "")}
-            </span>
-          );
-        }
-        if (part.startsWith("<b>")) {
-          return (
-            <span key={index} className="font-semibold">
-              {part.replace(/<\/?b>/g, "")}
-            </span>
-          );
-        }
-        if (part.startsWith("<u>")) {
-          return (
-            <span key={index} className="underline">
-              {part.replace(/<\/?u>/g, "")}
-            </span>
-          );
-        }
-        return part; // Return plain text as-is
-      }),
-      file.footnotes
-    );
-  }
-
-  function replaceBreakAndAsteriskAndFootnoteTags(parts: (string | React.JSX.Element)[], footnotes: Footnotes) {
-    return parts.flatMap((part, index) => {
-      if (typeof part === "string") {
-        return part.split("<br>").flatMap((subPart, subIndex) => {
-          const elements: (string | React.ReactNode)[] = [];
-          if (subIndex > 0) elements.push(<br key={`${index}-${subIndex}-br`} />);
-
-          const replaced = subPart.split("<*>").flatMap((segment, i) => 
-            i > 0 ? [<span
-              key={`${index}-${subIndex}-span-${i}`}
-              className="font-bold text-red-600"
-            >*</span>, segment] : [segment]
-          );
-
-          const footnoteReplaced = replaced.flatMap((segment, i) => 
-            typeof segment === "string"
-              ? segment
-                .split(/(<footnote id=\d+>)/g)
-                .map((footnotePart, footnoteIndex) => {
-                  if (footnotePart.startsWith("<footnote")) {
-                    const match = footnotePart.match(/<footnote id=(\d+)>/);
-                    if (match) {
-                      const footnoteId = match[1];
-                      return (
-                        <FootnoteTooltip
-                          key={`${i}-${footnoteIndex}-footnote`}
-                          footnoteId={Number(footnoteId)}
-                          footnotes={footnotes}
-                        />
-                      );
-                    }
-                  }
-                  return footnotePart;
-                })
-              : [segment]
-          );
-
-          return elements.concat(footnoteReplaced);
-        });
-      }
-      return part;
-    });
-  }
 
   function renderIndex(index: Index, sectionMap: SectionMap) {
     return (
@@ -205,7 +34,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                 px-1.5 rounded-md
               "
             >
-              {replaceAllStyleTags(item.title)}
+              {replaceAllStyleTags(item.title, file.footnotes, file["link-map"])}
             </a>
             {item.index && (
               <div className="grid grid-cols-[28px_1fr] mt-1 col-span-2">
@@ -219,7 +48,7 @@ export function DevocionarioFile({ file } : { file: any }) {
     )
   }
 
-  function renderSessions(sessions: Sessions, sectionMap: SectionMap) {
+  function renderSessions(sessions: Sessions, sectionMap: SectionMap, linkMap: LinkMap) {
     return (
       <div className="mt-5 first">
 
@@ -233,9 +62,9 @@ export function DevocionarioFile({ file } : { file: any }) {
                 cursor-pointer hover:underline
               "
             >
-              {replaceBreakAndAsteriskAndFootnoteTags([session.title], file.footnotes)}
+              {replaceBreakAndAsteriskAndFootnoteTags([session.title], file.footnotes, file["link-map"])}
             </h2>
-            {renderSessionContents(session.type, session.contents, sectionMap)}
+            {renderSessionContents(session.type, session.contents, sectionMap, linkMap)}
           </div>
         })}
 
@@ -243,7 +72,7 @@ export function DevocionarioFile({ file } : { file: any }) {
     )
   }
 
-  function renderSessionContents(sessionType: SessionTypes, contents: SessionContents, sectionMap: SectionMap) {
+  function renderSessionContents(sessionType: SessionTypes, contents: SessionContents, sectionMap: SectionMap, linkMap: LinkMap) {
     switch(sessionType) {
       case "regular-text":
         return (
@@ -253,15 +82,23 @@ export function DevocionarioFile({ file } : { file: any }) {
                 return <h3
                   className={clsx(
                     content["id"] && "cursor-pointer hover:underline",
+                    content["link-id"] && "",
                     content["subsession-break"] && "mb-5",
                     content["no-margin-bottom"] === true ? "" : "mb-1",
                     "text-xl font-medium mt-3",
                   )}
-                  id={content["id"] ? sectionMap.filter(section => section.id === content.id)[0].title || "not-found" : undefined}
-                  
+                  id={
+                    content["id"]
+                      ? sectionMap.filter(section => section.id === content.id)[0].title || "not-found"
+                      : content["link-id"]
+                        ? linkMap.filter(link => link.id === content["link-id"])[0].url.startsWith("#")
+                          ? linkMap.filter(link => link.id === content["link-id"])[0].url.slice(1)
+                          : "not-found"
+                        : undefined
+                  }
                   onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
                 >
-                  {replaceAllStyleTags(content.content as string)}
+                  {replaceAllStyleTags(content.content as string, file.footnotes, file["link-map"])}
                 </h3>
 
               case "header-2":
@@ -271,10 +108,18 @@ export function DevocionarioFile({ file } : { file: any }) {
                     content["subsession-break"] && "mb-5",
                     "text-lg font-semibold mt-2 mb-1",
                   )}
-                  id={content["id"] ? sectionMap.filter(section => section.id === content.id)[0].title || "not-found" : undefined}
+                  id={
+                    content["id"]
+                      ? sectionMap.filter(section => section.id === content.id)[0].title || "not-found"
+                      : content["link-id"]
+                        ? linkMap.filter(link => link.id === content["link-id"])[0].url.startsWith("#")
+                          ? linkMap.filter(link => link.id === content["link-id"])[0].url.slice(1)
+                          : "not-found"
+                        : undefined
+                  }
                   onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
                 >
-                  {replaceAllStyleTags(content.content as string)}
+                  {replaceAllStyleTags(content.content as string, file.footnotes, file["link-map"])}
                 </h4>
 
               case "paragraph":
@@ -283,7 +128,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                   content["subsession-break"] && "mb-5",
                   "mt-0.5"
                 )}>
-                  {replaceAllStyleTags(content.content as string)}
+                  {replaceAllStyleTags(content.content as string, file.footnotes, file["link-map"])}
                 </p>
 
               case "indication":
@@ -292,7 +137,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                   content["increased-vertical-spacing"] === true ? "my-5" : "my-1",
                   "ml-[28px]",
                 )}>
-                  <span className="text-base italic font-light">{replaceAllStyleTags(content.content as string)}</span>
+                  <span className="text-base italic font-light">{replaceAllStyleTags(content.content as string, file.footnotes, file["link-map"])}</span>
                 </div>
 
               case "index": return renderIndex(content.contents as Index, sectionMap)
@@ -344,14 +189,14 @@ export function DevocionarioFile({ file } : { file: any }) {
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
               )}>
                 <span className="font-bold text-red-600">℣.</span>
-                <span>{replaceAllStyleTags(content.content["pt-BR"])}</span>
+                <span>{replaceAllStyleTags(content.content["pt-BR"], file.footnotes, file["link-map"])}</span>
               </div>
               <div className={clsx(
                 "grid grid-cols-[24px_1fr]",
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
               )}>
                 <span className="font-bold text-red-600">℣.</span>
-                <span>{replaceAllStyleTags(content.content["latin"])}</span>
+                <span>{replaceAllStyleTags(content.content["latin"], file.footnotes, file["link-map"])}</span>
               </div>
             </div>
 
@@ -368,14 +213,14 @@ export function DevocionarioFile({ file } : { file: any }) {
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
               )}>
                 <span className="font-bold text-red-600">℟.</span>
-                <span>{replaceAllStyleTags(content.content["pt-BR"])}</span>
+                <span>{replaceAllStyleTags(content.content["pt-BR"], file.footnotes, file["link-map"])}</span>
               </div>
               <div className={clsx(
                 "grid grid-cols-[24px_1fr]",
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
               )}>
                 <span className="font-bold text-red-600">℟.</span>
-                <span>{replaceAllStyleTags(content.content["latin"])}</span>
+                <span>{replaceAllStyleTags(content.content["latin"], file.footnotes, file["link-map"])}</span>
               </div>
             </div>
 
@@ -398,19 +243,19 @@ export function DevocionarioFile({ file } : { file: any }) {
                 content.type === "header-2" && "mx-5",
                 content.type === "indication" && "mx-5",
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
-              )}>{replaceAllStyleTags(content.content["pt-BR"])}</div>
+              )}>{replaceAllStyleTags(content.content["pt-BR"], file.footnotes, file["link-map"])}</div>
               <div className={clsx(
                 content.type === "header-2" && "mx-5",
                 content.type === "indication" && "mx-5",
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
-              )}>{replaceAllStyleTags(content.content["latin"])}</div>
+              )}>{replaceAllStyleTags(content.content["latin"], file.footnotes, file["link-map"])}</div>
             </div>
         }
       })
     )
   }
 
-  function renderFootnotes(contents: Footnotes) {
+  function renderFootnotes(contents: Footnotes, linkMap: LinkMap) {
     return (
       <div id="notas" className="border-t border-t-gray-400 mt-14 pt-8">
         <h2
@@ -442,7 +287,9 @@ export function DevocionarioFile({ file } : { file: any }) {
                     {content.id}.
                   </a>
                 </span>
-                  {content.content}
+                <span>
+                  {replaceLinkTags(content.content, linkMap)}
+                </span>
               </li>
             )
           })}
@@ -455,8 +302,8 @@ export function DevocionarioFile({ file } : { file: any }) {
     <div className="mb-2 max-w-prose text-justify hyphens-auto">
       <h1 className="text-3xl font-medium mb-5">{file.title}</h1>
       {renderIndex(file.index, file["section-map"])}
-      {renderSessions(file.sessions, file["section-map"])}
-      {renderFootnotes(file.footnotes)}
+      {renderSessions(file.sessions, file["section-map"], file["link-map"])}
+      {renderFootnotes(file.footnotes, file["link-map"])}
     </div>
   )
 }

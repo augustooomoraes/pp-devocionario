@@ -1,10 +1,13 @@
+import { replaceLinkTags } from "@/app/lib/tags-replacing";
+import { LinkMap } from "@/app/lib/types";
 import React, { useRef, useState, useEffect } from "react";
 
 type TooltipProps = {
-  text: string;
+  text: string,
+  links: LinkMap,
 };
 
-const Tooltip: React.FC<TooltipProps> = ({ text }) => {
+const Tooltip: React.FC<TooltipProps> = ({ text, links }) => {
   const [tooltipStyle, setTooltipStyle] = useState<React.CSSProperties>({});
   const tooltipRef = useRef<HTMLDivElement>(null);
 
@@ -68,7 +71,9 @@ const Tooltip: React.FC<TooltipProps> = ({ text }) => {
         border rounded shadow-lg
       "
     >
-      {text}
+      <span>
+        {replaceLinkTags(text, links)}
+      </span>
     </div>
   );
 };

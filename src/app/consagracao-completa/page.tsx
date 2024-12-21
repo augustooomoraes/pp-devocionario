@@ -1,4 +1,4 @@
-import { DevocionarioFile } from "../lib/file-formatting";
+import { DevocionarioFile } from "../lib/file-rendering";
 import file from "./data.json"
 
 export default function Page() {

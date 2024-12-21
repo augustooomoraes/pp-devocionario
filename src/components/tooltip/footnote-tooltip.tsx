@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import Tooltip from "./tooltip";
+import { LinkMap } from "@/app/lib/types";
 
 type FootnoteTooltipProps = {
-  footnoteId: number;
-  footnotes: { id: number, content: string }[];
+  footnoteId: number,
+  footnotes: { id: number, content: string }[],
+  links: LinkMap,
 };
 
-const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes }) => {
+const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes, links }) => {
   const [visible, setVisible] = useState(false);
 
   const footnote = footnotes.find(f => f.id === footnoteId);
@@ -42,8 +44,8 @@ const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes
         </span>
       </sup>
 
-      {visible && <Tooltip text={footnote.content} />}
-
+      {visible && <Tooltip text={footnote.content} links={links}/>}
+      {/* TODO: Make sure the tooltip itself can be hovered – right now, this is only possible on headers' footnotes, but the toolbar disappears before the cursor gets over it on text bodies' footnotes. */}
 
     </span>
   );
