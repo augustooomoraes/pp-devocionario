@@ -3302,6 +3302,25 @@
         "id": 8,
         "content": "Para saber mais sobre canto gregoriano e sobre salmodias, veja os opúsculos ~~tal~~ e ~~tal~~. linkkkkkkkkkkks"
       }
+    ],
+    "section-map": [
+      {"id": 1, "title": "1-preparacao-e-consagracao"},
+      {"id": 2, "title": "2-a-devocao-na-santa-comunhao"},
+      {"id": 3, "title": "3-oracoes-da-preparacao-para-a-consagracao"},
+      {"id": 4, "title": "3-1-vinde-espirito-criador"},
+      {"id": 5, "title": "3-2-ave-estrela-do-mar"},
+      {"id": 6, "title": "3-3-magnificat"},
+      {"id": 7, "title": "3-4-ladainha-do-espirito-santo"},
+      {"id": 8, "title": "3-5-ladainha-de-nossa-senhora"},
+      {"id": 9, "title": "3-6-oracao-a-maria"},
+      {"id": 10, "title": "3-7-ladainha-do-santissimo-nome-de-jesus"},
+      {"id": 11, "title": "3-8-oracao-a-jesus-montford"},
+      {"id": 12, "title": "3-9-oracao-a-jesus-agostinho"},
+      {"id": 13, "title": "4-outras-oracoes-do-consagrado"},
+      {"id": 14, "title": "4-1-magnificat"},
+      {"id": 15, "title": "4-2-o-jesus-que-viveis-em-maria"},
+      {"id": 16, "title": "4-3-a-pequena-coroa-da-santissima-virgem"},
+      {"id": 17, "title": "4-4-a-vossa-protecao"}
     ]
   }
 }

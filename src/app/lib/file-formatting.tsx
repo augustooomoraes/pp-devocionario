@@ -10,6 +10,7 @@ type DevocionarioFile = {
   index: Index,
   sessions: Sessions,
   footnotes: Footnotes,
+  "section-map": SectionMap,
 }
 
 type Index = {
@@ -91,15 +92,21 @@ type Footnotes = {
   content: string,
 }[]
 
+type SectionMap = {
+  id: number,
+  title: string,
+}[]
+
 export function DevocionarioFile({ file } : { file: any }) {
 
   const router = useRouter();
 
-  const handleNavigation = (id: string) => {
-    router.push(`#${id}`);
+  const handleNavigation = (id: number, sectionMap: SectionMap) => {
+    const sectionName = sectionMap.filter(section => section.id === id)[0].title || "not-found";
+    if (sectionName) {
+      router.push(`#${sectionName}`);
+    }
   };
-
-  // TODO: use human-like identifiers
 
   function replaceAllStyleTags(text: string) {
     return replaceBreakAndAsterisk(text
@@ -158,7 +165,7 @@ export function DevocionarioFile({ file } : { file: any }) {
     });
   }
 
-  function renderIndex(index: Index) {
+  function renderIndex(index: Index, sectionMap: SectionMap) {
     return (
       <ol className="list-none space-y-1">
 
@@ -166,7 +173,7 @@ export function DevocionarioFile({ file } : { file: any }) {
           return <li key={index} className="grid grid-cols-[28px_1fr]">
             <span className="pl-1.5">{item["no-list-number"] ? "" : `${index + 1}.`}</span>
             <a
-              href={`#${item.id}`}
+              href={"#" + sectionMap.filter(section => section.id === item.id)[0]?.title || "not-found"}
               className="
                 hover:bg-black/5 active:bg-black/10 transition-colors
                 px-1.5 rounded-md
@@ -177,7 +184,7 @@ export function DevocionarioFile({ file } : { file: any }) {
             {item.index && (
               <div className="grid grid-cols-[28px_1fr] mt-1 col-span-2">
                 <span />
-                {renderIndex(item.index)}
+                {renderIndex(item.index, sectionMap)}
               </div>
             )}
           </li>
@@ -186,14 +193,14 @@ export function DevocionarioFile({ file } : { file: any }) {
     )
   }
 
-  function renderSessions(sessions: Sessions) {
+  function renderSessions(sessions: Sessions, sectionMap: SectionMap) {
     return (
       <div className="mt-5 first">
 
         {sessions.map(session => {
-          return <div id={`${session.id}`}>
+          return <div id={sectionMap.filter(section => section.id === session.id)[0].title || "not-found"}>
             <h2
-              onClick={ () => handleNavigation(`${session.id}`) }
+              onClick={ () => handleNavigation(session.id, sectionMap) }
               className="
                 text-2xl text-center font-medium
                 mb-3 mt-5
@@ -202,7 +209,7 @@ export function DevocionarioFile({ file } : { file: any }) {
             >
               {session.title}
             </h2>
-            {renderSessionContents(session.type, session.contents)}
+            {renderSessionContents(session.type, session.contents, sectionMap)}
           </div>
         })}
 
@@ -210,7 +217,7 @@ export function DevocionarioFile({ file } : { file: any }) {
     )
   }
 
-  function renderSessionContents(sessionType: SessionTypes, contents: SessionContents) {
+  function renderSessionContents(sessionType: SessionTypes, contents: SessionContents, sectionMap: SectionMap) {
     switch(sessionType) {
       case "regular-text":
         return (
@@ -224,8 +231,9 @@ export function DevocionarioFile({ file } : { file: any }) {
                     content["no-margin-bottom"] === true ? "" : "mb-1",
                     "text-xl font-medium mt-3",
                   )}
-                  id={content["id"] ? `${content.id}` : undefined}
-                  onClick={content["id"] ? () => handleNavigation(`${content.id}`) : undefined}
+                  id={content["id"] ? sectionMap.filter(section => section.id === content.id)[0].title || "not-found" : undefined}
+                  
+                  onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
                 >
                   {replaceAllStyleTags(content.content as string)}
                 </h3>
@@ -237,8 +245,8 @@ export function DevocionarioFile({ file } : { file: any }) {
                     content["subsession-break"] && "mb-5",
                     "text-lg font-semibold mt-2 mb-1",
                   )}
-                  id={content["id"] ? `${content.id}` : undefined}
-                  onClick={content["id"] ? () => handleNavigation(`${content.id}`) : undefined}
+                  id={content["id"] ? sectionMap.filter(section => section.id === content.id)[0].title || "not-found" : undefined}
+                  onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
                 >
                   {replaceAllStyleTags(content.content as string)}
                 </h4>
@@ -261,7 +269,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                   <span className="text-base italic font-light">{replaceAllStyleTags(content.content as string)}</span>
                 </div>
 
-              case "index": return renderIndex(content.contents as Index)
+              case "index": return renderIndex(content.contents as Index, sectionMap)
 
                 case "parallel-preces":
                 return <div className={clsx(
@@ -379,8 +387,8 @@ export function DevocionarioFile({ file } : { file: any }) {
   return (
     <div className="mb-2 max-w-prose text-justify hyphens-auto">
       <h1 className="text-3xl font-medium mb-5">{file.title}</h1>
-      {renderIndex(file.index)}
-      {renderSessions(file.sessions)}
+      {renderIndex(file.index, file["section-map"])}
+      {renderSessions(file.sessions, file["section-map"])}
       {/* {renderFootnotes(file.footnotes)} // TODO: this. */}
     </div>
   )
