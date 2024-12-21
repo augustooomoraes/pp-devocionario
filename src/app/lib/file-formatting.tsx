@@ -4,6 +4,7 @@
 import clsx from "clsx"
 import React from "react"
 import { useRouter } from "next/navigation";
+import FootnoteTooltip from "@/components/tooltip/footnote-tooltip";
 
 type DevocionarioFile = {
   title: string,
@@ -109,7 +110,7 @@ export function DevocionarioFile({ file } : { file: any }) {
   };
 
   function replaceAllStyleTags(text: string) {
-    return replaceBreakAndAsterisk(text
+    return replaceBreakAndAsteriskAndFootnoteTags(text
       .split(/(<paragraph>.*?<\/paragraph>|<i>.*?<\/i>|<b>.*?<\/b>|<u>.*?<\/u>)/g)
       .map((part, index) => {
         if (part.startsWith("<paragraph>")) {
@@ -141,24 +142,49 @@ export function DevocionarioFile({ file } : { file: any }) {
           );
         }
         return part; // Return plain text as-is
-      }))
+      }),
+      file.footnotes
+    );
   }
 
-  function replaceBreakAndAsterisk(parts: (string | React.JSX.Element)[]) {
+  function replaceBreakAndAsteriskAndFootnoteTags(parts: (string | React.JSX.Element)[], footnotes: Footnotes) {
     return parts.flatMap((part, index) => {
       if (typeof part === "string") {
         return part.split("<br>").flatMap((subPart, subIndex) => {
           const elements: (string | React.ReactNode)[] = [];
           if (subIndex > 0) elements.push(<br key={`${index}-${subIndex}-br`} />);
-          
+
           const replaced = subPart.split("<*>").flatMap((segment, i) => 
             i > 0 ? [<span
               key={`${index}-${subIndex}-span-${i}`}
               className="font-bold text-red-600"
             >*</span>, segment] : [segment]
           );
-          
-          return elements.concat(replaced);
+
+          const footnoteReplaced = replaced.flatMap((segment, i) => 
+            typeof segment === "string"
+              ? segment
+                .split(/(<footnote id=\d+>)/g)
+                .map((footnotePart, footnoteIndex) => {
+                  if (footnotePart.startsWith("<footnote")) {
+                    const match = footnotePart.match(/<footnote id=(\d+)>/);
+                    if (match) {
+                      const footnoteId = match[1];
+                      return (
+                        <FootnoteTooltip
+                          key={`${i}-${footnoteIndex}-footnote`}
+                          footnoteId={Number(footnoteId)}
+                          footnotes={footnotes}
+                        />
+                      );
+                    }
+                  }
+                  return footnotePart;
+                })
+              : [segment]
+          );
+
+          return elements.concat(footnoteReplaced);
         });
       }
       return part;
@@ -207,7 +233,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                 cursor-pointer hover:underline
               "
             >
-              {session.title}
+              {replaceBreakAndAsteriskAndFootnoteTags([session.title], file.footnotes)}
             </h2>
             {renderSessionContents(session.type, session.contents, sectionMap)}
           </div>
@@ -384,12 +410,53 @@ export function DevocionarioFile({ file } : { file: any }) {
     )
   }
 
+  function renderFootnotes(contents: Footnotes) {
+    return (
+      <div id="notas" className="border-t border-t-gray-400 mt-14 pt-8">
+        <h2
+          className="
+            mb-3
+            text-lg font-medium
+            cursor-pointer hover:underline
+          "
+          onClick={ () => router.push(`#notas`) }
+        >
+          Notas
+        </h2>
+        <ul className="list-none space-y-1">
+          {contents.map( content => {
+            return (
+              <li
+                key={content.id}
+                id={`rodape-conteudo-${content.id}`}
+                className="grid grid-cols-[34px_1fr]"
+              >
+                <span>
+                  <a
+                    href={"#rodape-origem-" + content.id}
+                    className="
+                      hover:bg-black/5 active:bg-black/10 transition-colors
+                      w-full px-1.5 rounded-md
+                    "
+                  >
+                    {content.id}.
+                  </a>
+                </span>
+                  {content.content}
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+    )
+  }
+
   return (
     <div className="mb-2 max-w-prose text-justify hyphens-auto">
       <h1 className="text-3xl font-medium mb-5">{file.title}</h1>
       {renderIndex(file.index, file["section-map"])}
       {renderSessions(file.sessions, file["section-map"])}
-      {/* {renderFootnotes(file.footnotes)} // TODO: this. */}
+      {renderFootnotes(file.footnotes)}
     </div>
   )
 }
