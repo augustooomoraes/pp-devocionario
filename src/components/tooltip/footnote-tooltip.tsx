@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Tooltip from "./tooltip";
+import React, { useState, useRef } from 'react';
+import Tooltip from './tooltip';
 import { LinkMap } from "@/app/lib/types";
 
 type FootnoteTooltipProps = {
@@ -10,12 +10,26 @@ type FootnoteTooltipProps = {
 
 const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes, links }) => {
   const [visible, setVisible] = useState(false);
+  const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const footnote = footnotes.find(f => f.id === footnoteId);
 
   if (!footnote) {
     return null;
   }
+
+  const handleMouseEnter = () => {
+    if (hideTimeoutRef.current) {
+      clearTimeout(hideTimeoutRef.current);
+    }
+    setVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    hideTimeoutRef.current = setTimeout(() => {
+      setVisible(false);
+    }, 300);
+  };
 
   const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -27,8 +41,8 @@ const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes
 
   return (
     <span
-      onMouseEnter={() => setVisible(true)}
-      onMouseLeave={() => setVisible(false)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       className="relative"
     >
       <sup
@@ -36,17 +50,14 @@ const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes
         className="
           hover:bg-black/5 active:bg-black/10 transition-colors
           px-0.5 rounded-sm
-        "
+          "
         onClick={handleClick}
       >
         <span className="cursor-pointer">
           {footnoteId}
         </span>
       </sup>
-
-      {visible && <Tooltip text={footnote.content} links={links}/>}
-      {/* TODO: Make sure the tooltip itself can be hovered – right now, this is only possible on headers' footnotes, but the toolbar disappears before the cursor gets over it on text bodies' footnotes. */}
-
+      <Tooltip text={footnote.content} links={links} visible={visible} setVisible={setVisible} />
     </span>
   );
 };

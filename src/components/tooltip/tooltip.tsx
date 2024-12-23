@@ -3,15 +3,19 @@ import { LinkMap } from "@/app/lib/types";
 import React, { useRef, useState, useEffect } from "react";
 
 type TooltipProps = {
-  text: string,
-  links: LinkMap,
+  text: string;
+  links: LinkMap;
+  visible: boolean;
+  setVisible: (visible: boolean) => void;
 };
 
-const Tooltip: React.FC<TooltipProps> = ({ text, links }) => {
+const Tooltip: React.FC<TooltipProps> = ({ text, links, visible, setVisible }) => {
   const [tooltipStyle, setTooltipStyle] = useState<React.CSSProperties>({});
   const tooltipRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!visible) return;
+
     const handleTooltipPosition = () => {
       if (!tooltipRef.current) return;
 
@@ -56,7 +60,11 @@ const Tooltip: React.FC<TooltipProps> = ({ text, links }) => {
     handleTooltipPosition();
     window.addEventListener("resize", handleTooltipPosition);
     return () => window.removeEventListener("resize", handleTooltipPosition);
-  }, [window.innerWidth]);
+  }, [visible]);
+
+  if (!visible) {
+    return null;
+  }
 
   return (
     <div
@@ -70,6 +78,8 @@ const Tooltip: React.FC<TooltipProps> = ({ text, links }) => {
         text-base font-normal text-left
         border rounded shadow-lg
       "
+      onMouseEnter={() => setVisible(true)}
+      onMouseLeave={() => setVisible(false)}
     >
       <span>
         {replaceLinkTags(text, links)}
