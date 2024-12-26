@@ -10,14 +10,14 @@ Para já registrar a ideia:
 
 - Nome da página, do arquivão.
   - `title`: String.
-  - `index`: Array de objetos obrigatoriamente com `title` e `id` – correpondente ao da `session` referida – e, se tiver subitens, com outro `index`, no mesmo formato, e assim sucessivamente. Também opcional: `no-list-number`. Também opcional: `page-ref`.
+  - `index`: Array de objetos obrigatoriamente com `title` e `id` – correpondente ao da `section` referida – e, se tiver subitens, com outro `index`, no mesmo formato, e assim sucessivamente. Também opcional: `no-list-number`. Também opcional: `page-ref`.
     - `"id": 0`: Entrada do índice sem seção correspondente no arquivo. Deve ser raro, mas já neste primeiro acontedeu – no ***Magníficat***, nas **Orações da preparação para a consagração**.
     - `"no-list-number": true`: Também deve ser raro mas aconteceu aqui. Na mesma lista, em **ou Oração a Jesus, por Santo Agostinho**.
     - `"page-ref": integer`: Referência a ser acessada dentro de `contents` com as tags:
       - `<page id=integer>`, para mostrar o número da página referida.
       - `<ref id=integer text='text'>`, para mostrar um link para a seção referida.
       - Como os textos são diferentes para print e para screen
-  - `session`: Array de objetos correspondentes aos objetos de primeiro nível do `index`.
+  - `section`: Array de objetos correspondentes aos objetos de primeiro nível do `index`.
     - 'id': Integer.
     - `title`: String.
     - `type`: Enum – aqui é que o negócio realmente começa a encrespar. Baseado neste atributo é que o valor de `contents` será tratado.

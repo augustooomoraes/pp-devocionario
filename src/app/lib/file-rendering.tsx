@@ -5,7 +5,7 @@ import clsx from "clsx"
 import React from "react"
 import { useRouter } from "next/navigation";
 import FootnoteTooltip from "@/components/tooltip/footnote-tooltip";
-import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SessionContents, Sessions, SessionTypes } from "./types";
+import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes } from "./types";
 import { replaceAllStyleTags, replaceBreakAndAsteriskAndFootnoteTags, replaceLinkTags } from "./tags-replacing";
 
 
@@ -61,23 +61,23 @@ export function DevocionarioFile({ file } : { file: any }) {
     )
   }
 
-  function renderSessions(sessions: Sessions, sectionMap: SectionMap, linkMap: LinkMap) {
+  function renderSections(sections: Sections, sectionMap: SectionMap, linkMap: LinkMap) {
     return (
       <div className="mt-5 first">
 
-        {sessions.map(session => {
-          return <div id={sectionMap.filter(sectionIndex => sectionIndex.id === session.id)[0].title || "not-found"}>
+        {sections.map(section => {
+          return <div id={sectionMap.filter(sectionIndex => sectionIndex.id === section.id)[0].title || "not-found"}>
             <h2
-              onClick={ () => handleNavigation(session.id, sectionMap) }
+              onClick={ () => handleNavigation(section.id, sectionMap) }
               className="
                 text-2xl text-center font-medium
                 mb-3 mt-5
                 cursor-pointer hover:underline
               "
             >
-              {replaceBreakAndAsteriskAndFootnoteTags([session.title], file.footnotes, file["link-map"])}
+              {replaceBreakAndAsteriskAndFootnoteTags([section.title], file.footnotes, file["link-map"])}
             </h2>
-            {renderSessionContents(session.type, session.contents, sectionMap, linkMap)}
+            {renderSectionContents(section.type, section.contents, sectionMap, linkMap)}
           </div>
         })}
 
@@ -85,8 +85,8 @@ export function DevocionarioFile({ file } : { file: any }) {
     )
   }
 
-  function renderSessionContents(sessionType: SessionTypes, contents: SessionContents, sectionMap: SectionMap, linkMap: LinkMap) {
-    switch(sessionType) {
+  function renderSectionContents(sectionType: SectionTypes, contents: SectionContents, sectionMap: SectionMap, linkMap: LinkMap) {
+    switch(sectionType) {
       case "regular-text":
         return (
           contents.map((content, index) => {
@@ -96,7 +96,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                   className={clsx(
                     content["id"] && "cursor-pointer hover:underline",
                     content["link-id"] && "",
-                    content["subsession-break"] && "mb-5",
+                    content["subsection-break"] && "mb-5",
                     content["no-margin-bottom"] === true ? "" : "mb-1",
                     "text-xl font-medium mt-3",
                   )}
@@ -118,7 +118,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                 return <h4
                   className={clsx(
                     content["id"] && "cursor-pointer hover:underline",
-                    content["subsession-break"] && "mb-5",
+                    content["subsection-break"] && "mb-5",
                     "text-lg font-semibold mt-2 mb-1",
                   )}
                   id={
@@ -138,7 +138,7 @@ export function DevocionarioFile({ file } : { file: any }) {
               case "paragraph":
                 return <p className={clsx(
                   content["end-break"] && "mb-1.5",
-                  content["subsession-break"] && "mb-5",
+                  content["subsection-break"] && "mb-5",
                   "mt-0.5"
                 )}>
                   {replaceAllStyleTags(content.content as string, file.footnotes, file["link-map"])}
@@ -146,7 +146,7 @@ export function DevocionarioFile({ file } : { file: any }) {
 
               case "indication":
                 return <div className={clsx(
-                  content["subsession-break"] && "mb-5",
+                  content["subsection-break"] && "mb-5",
                   content["increased-vertical-spacing"] === true ? "my-5" : "my-1",
                   "ml-[28px]",
                 )}>
@@ -157,14 +157,14 @@ export function DevocionarioFile({ file } : { file: any }) {
 
                 case "parallel-preces":
                 return <div className={clsx(
-                  content["subsession-break"] && "mb-5",
+                  content["subsection-break"] && "mb-5",
                 )}>{
                   renderParallelPreces(content.contents as unknown as ParallelPreces)
                 }</div>
 
               case "media-relative":
                 return <span className={clsx(
-                  content["subsession-break"] && "mb-5",
+                  content["subsection-break"] && "mb-5",
                   "block",
                   "bg-red-800/20 py-1.5 italic"
                 )}>
@@ -193,7 +193,7 @@ export function DevocionarioFile({ file } : { file: any }) {
             return <div className={clsx(
               content["end-break"] && "mb-1.5",
               content["larger-break"] && "mb-2",
-              content["subsession-break"] && "mb-5",
+              content["subsection-break"] && "mb-5",
               content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
               "grid grid-cols-2 gap-3",
             )}>
@@ -217,7 +217,7 @@ export function DevocionarioFile({ file } : { file: any }) {
             return <div className={clsx(
               content["end-break"] && "mb-1.5",
               content["larger-break"] && "mb-2",
-              content["subsession-break"] && "mb-5",
+              content["subsection-break"] && "mb-5",
               content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
               "grid grid-cols-2 gap-3",
             )}>
@@ -241,7 +241,7 @@ export function DevocionarioFile({ file } : { file: any }) {
             return <div className={clsx(
               content["end-break"] && "mb-1.5",
               content["larger-break"] && "mb-2",
-              content["subsession-break"] && "mb-5",
+              content["subsection-break"] && "mb-5",
               content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
               "grid grid-cols-2 gap-3",
               content.type === "header-2" && "text-lg font-medium",
@@ -328,7 +328,7 @@ export function DevocionarioFile({ file } : { file: any }) {
     <div className="mb-2 max-w-prose text-justify hyphens-auto">
       <h1 className="text-3xl font-medium mb-5">{file.title}</h1>
       {renderIndex(file.index, file["section-map"])}
-      {renderSessions(file.sessions, file["section-map"], file["link-map"])}
+      {renderSections(file.sections, file["section-map"], file["link-map"])}
       {renderFootnotes(file.footnotes, file["link-map"])}
     </div>
   )

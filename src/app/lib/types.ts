@@ -2,7 +2,7 @@
 export type DevocionarioFile = {
   title: string,
   index: Index,
-  sessions: Sessions,
+  sections: Sections,
   footnotes: Footnotes,
   "section-map": SectionMap,
 }
@@ -14,21 +14,21 @@ export type Index = {
   "no-list-number"?: boolean,
 }[]
 
-export type Sessions = {
+export type Sections = {
   id: number,
   title: string,
-  type: SessionTypes,
-  contents: SessionContents,
+  type: SectionTypes,
+  contents: SectionContents,
 }[]
 
-export type SessionContents = {
+export type SectionContents = {
   id?: number,
   "link-id"?: number,
-  type: SessionContentTypes | ParallelPrecesTypes,
+  type: SectionContentTypes | ParallelPrecesTypes,
   content?: string | MediaRelativeContent,
   contents?: Index | ParallelPreces,
   "end-break": true,
-  "subsession-break"?: boolean, // Isso aqui não está no README.
+  "subsection-break"?: boolean, // Isso aqui não está no README.
   "increased-vertical-spacing"?: boolean, // Isso aqui não está no README.
   "no-margin-bottom"?: boolean, // Isso aqui não está no README.
 }[]
@@ -38,7 +38,7 @@ export type ParallelPreces = {
   content: ParallelPrecesContent,
   "end-break"?: boolean,
   "larger-break"?: boolean,
-  "subsession-break"?: boolean, // Isso aqui não está no README.
+  "subsection-break"?: boolean, // Isso aqui não está no README.
   "horizontal-line"?: HorizontalLineTypes,
 }[]
 
@@ -57,13 +57,13 @@ export type HorizontalLineTypes = (
   "two-halves"
 )
 
-export type SessionTypes = (
+export type SectionTypes = (
   "regular-text" |
   "gregorian-chant" |
   "parallel-preces"
 )
 
-export type SessionContentTypes = (
+export type SectionContentTypes = (
   "header-1" |
   "header-2" |
   "paragraph" |

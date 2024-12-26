@@ -22,7 +22,7 @@
         {"id": 17, "title": "À Vossa Proteção <i>(Sub Tuum Præsídium)</i>"}
       ]}
     ],
-    "sessions": [
+    "sections": [
       {
         "id": 1,
         "title": "Preparação e consagração<footnote id=1>",
@@ -2526,7 +2526,7 @@
             "content": "<paragraph>255</paragraph>A fim de agradecer a Deus as graças que Ele deu a Nossa Senhora, os seus consagrados rezarão, frequentemente, o <i>Magníficat</i>, seguindo nisto o exemplo da beata Maria d'Oignies e de diversos outros santos. O <i>Magníficat</i> é a única oração que foi composta por Nossa Senhora – ou, antes, composta por Jesus nela, pois não foi outro Quem falou por seus lábios. É a maior oferta de louvor já recebida por Deus sob a lei da graça. Por um lado, é humilíssimo hino de ação de graças; por outro, o hino mais sublime e exaltado. Nele estão  mistérios tão grandiosos e ocultos que até mesmo os anjos não os compreendem."
           },
           {
-            "subsession-break": true,
+            "subsection-break": true,
             "type": "paragraph",
             "content": "[...]"
           },
@@ -2553,7 +2553,7 @@
             "content": "<paragraph>246</paragraph>2ª: Uma vez que o mistério principal celebrado e honrado nesta devoção é o mistério da Encarnação, no qual encontramos Jesus apenas em Maria, havendo Ele Se encarnado em seu seio,  nos é apropriado dizer \"escravidão de Jesus em Maria\" – de Jesus, habitante e entronado em Maria, de acordo com a belíssima oração, rezada por tantas almas grandiosas: \"Ó Jesus, que viveis em Maria\"."
           },
           {
-            "subsession-break": true,
+            "subsection-break": true,
             "type": "parallel-preces",
             "contents": [
               {
@@ -2647,7 +2647,7 @@
             "content": "Em seguida, as orações básicas que compõe a Pequena Coroa. Após elas, uma forma de rezá-la, com estas orações referenciadas e com outras, que não são repetidas, apresentadas no curso da descrição."
           },
           {
-            "subsession-break": true,
+            "subsection-break": true,
             "type": "parallel-preces",
             "contents": [
               {
@@ -3245,7 +3245,7 @@
             "content": "São Luís Maria recomenda a récita desta oração ao final da Pequena Coroa. Também se pode rezá-la antes de \"Rogai por nós, Santa Mãe de Deus etc.\", ao final da Ladainha Lauretana."
           },
           {
-            "subsession-break": true,
+            "subsection-break": true,
             "type": "parallel-preces",
             "contents": [
               {
