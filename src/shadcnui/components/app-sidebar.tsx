@@ -2,7 +2,6 @@ import * as React from "react"
 import { ChevronRight } from "lucide-react"
 
 import { SearchForm } from "@/shadcnui/components/search-form"
-import { VersionSwitcher } from "@/shadcnui/components/version-switcher"
 import {
   Collapsible,
   CollapsibleContent,
@@ -20,142 +19,43 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/shadcnui/components/ui/sidebar"
+import { ThemeToggle } from "@/components/themeToggle/theme-toggle"
+import Link from "next/link"
 
-// This is sample data.
 const data = {
-  versions: ["1.0.1", "1.1.0-alpha", "2.0.0-beta1"],
   navMain: [
     {
-      title: "Getting Started",
+      title: "Devocionários",
       url: "#",
       items: [
         {
-          title: "Installation",
+          title: "Da Devoção e da Consagração Total à Virgem Santíssima",
+          url: "/consagracao-completa",
+        },
+        {
+          title: "Da Ordem Terceira do Carmo",
           url: "#",
         },
         {
-          title: "Project Structure",
+          title: "Da Consagração a São José",
+          url: "#",
+        },
+        {
+          title: "Da Consagração a São Miguel Arcanjo",
           url: "#",
         },
       ],
     },
     {
-      title: "Building Your Application",
+      title: "Orações",
       url: "#",
       items: [
         {
-          title: "Routing",
+          title: "Ave Maria",
           url: "#",
         },
         {
-          title: "Data Fetching",
-          url: "#",
-          isActive: true,
-        },
-        {
-          title: "Rendering",
-          url: "#",
-        },
-        {
-          title: "Caching",
-          url: "#",
-        },
-        {
-          title: "Styling",
-          url: "#",
-        },
-        {
-          title: "Optimizing",
-          url: "#",
-        },
-        {
-          title: "Configuring",
-          url: "#",
-        },
-        {
-          title: "Testing",
-          url: "#",
-        },
-        {
-          title: "Authentication",
-          url: "#",
-        },
-        {
-          title: "Deploying",
-          url: "#",
-        },
-        {
-          title: "Upgrading",
-          url: "#",
-        },
-        {
-          title: "Examples",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "API Reference",
-      url: "#",
-      items: [
-        {
-          title: "Components",
-          url: "#",
-        },
-        {
-          title: "File Conventions",
-          url: "#",
-        },
-        {
-          title: "Functions",
-          url: "#",
-        },
-        {
-          title: "next.config.js Options",
-          url: "#",
-        },
-        {
-          title: "CLI",
-          url: "#",
-        },
-        {
-          title: "Edge Runtime",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Architecture",
-      url: "#",
-      items: [
-        {
-          title: "Accessibility",
-          url: "#",
-        },
-        {
-          title: "Fast Refresh",
-          url: "#",
-        },
-        {
-          title: "Next.js Compiler",
-          url: "#",
-        },
-        {
-          title: "Supported Browsers",
-          url: "#",
-        },
-        {
-          title: "Turbopack",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Community",
-      url: "#",
-      items: [
-        {
-          title: "Contribution Guide",
+          title: "Pai Nosso",
           url: "#",
         },
       ],
@@ -166,15 +66,29 @@ const data = {
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
+
       <SidebarHeader>
-        <VersionSwitcher
-          versions={data.versions}
-          defaultVersion={data.versions[0]}
-        />
+        <div className="flex flex-row gap-2 mb-0.5">
+          <Link
+            className="
+              flex items-center justify-start
+              pl-3 
+              grow
+              font-semibold text-lg
+              hover:bg-accent rounded-sm
+            "
+            href="/"
+          >
+            Devocionário
+          </Link>
+          <div className="shrink-0">
+            <ThemeToggle />
+          </div>
+        </div>
         <SearchForm />
       </SidebarHeader>
+
       <SidebarContent className="gap-0">
-        {/* We create a collapsible SidebarGroup for each parent. */}
         {data.navMain.map((item) => (
           <Collapsible
             key={item.title}
@@ -183,6 +97,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             className="group/collapsible"
           >
             <SidebarGroup>
+
               <SidebarGroupLabel
                 asChild
                 className="group/label text-sm text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
@@ -192,12 +107,17 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <ChevronRight className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-90" />
                 </CollapsibleTrigger>
               </SidebarGroupLabel>
+
               <CollapsibleContent>
                 <SidebarGroupContent>
                   <SidebarMenu>
                     {item.items.map((item) => (
                       <SidebarMenuItem key={item.title}>
-                        <SidebarMenuButton asChild isActive={item.isActive}>
+                        <SidebarMenuButton
+                          asChild
+                          size={"auto"}
+                          // isActive={item.isActive}
+                        >
                           <a href={item.url}>{item.title}</a>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
@@ -205,11 +125,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   </SidebarMenu>
                 </SidebarGroupContent>
               </CollapsibleContent>
+
             </SidebarGroup>
           </Collapsible>
         ))}
+
       </SidebarContent>
+
       <SidebarRail />
+
     </Sidebar>
   )
 }

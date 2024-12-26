@@ -3,6 +3,7 @@
 import { useState, useEffect} from "react"
 import { useTheme } from "next-themes";
 import { Toggle } from "../../shadcnui/components/ui/toggle";
+import { Moon, Sun } from "lucide-react";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -15,8 +16,8 @@ export function ThemeToggle() {
   if (!mounted) return null;
 
   return (
-    <Toggle onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-      {theme === 'dark' ? 'Claro' : 'Escuro'}
+    <Toggle variant={"theme"} size={"sm"} onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+      {theme === 'dark' ? <Sun /> : <Moon />}
     </Toggle>
   )
 }

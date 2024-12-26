@@ -24,7 +24,7 @@
     --primary-foreground: 43 0.06% 92.1%;
     --secondary: 43 0.15% 96.05%;
     --secondary-foreground: 43 1.18% 12.1%;
-    --accent: 43 0.15% 96.05%;
+    --accent: 43 25.15% 93.42%;
     --accent-foreground: 43 1.18% 12.1%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -36,14 +36,14 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-background: var(--background);
+    --sidebar-foreground: var(--foreground);
     --sidebar-primary: 240 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent: var(--accent);
     --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
   }
 
   .dark {
@@ -68,7 +68,7 @@
     --primary-foreground: 32 1.40% 9.1%;
     --secondary: 32 7% 27.3%;
     --secondary-foreground: 32 1.40% 99.55%;
-    --accent: 32 7% 27.3%;
+    --accent: 32 9.1% 17.28%;
     --accent-foreground: 32 1.40% 99.55%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 32 1.40% 99.55%;
@@ -79,23 +79,20 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-background: var(--background);
+    --sidebar-foreground: var(--foreground);
     --sidebar-primary: 224.3 76.3% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent: var(--accent);
     --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
   }
 }
 
-@layer base {
+@layer base { /* shadcn will write the other stuff again every time */
   * {
-    @apply border-border scroll-smooth;
-  }
-  body {
-    @apply bg-background text-foreground;
+    @apply scroll-smooth;
   }
 }
 

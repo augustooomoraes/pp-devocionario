@@ -36,7 +36,7 @@ export function DevocionarioFile({ file } : { file: any }) {
             <span className="pl-1.5">{item["no-list-number"] ? "" : `${index + 1}.`}</span>
             <span
               className="
-                hover:bg-black/5 active:bg-black/10 transition-colors
+                hover:bg-accent active:bg-black/10 transition-colors
                 px-1.5 rounded-md
                 cursor-pointer
               "
@@ -295,7 +295,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                 <span>
                   <span
                     className="
-                      hover:bg-black/5 active:bg-black/10 transition-colors
+                      hover:bg-accent active:bg-black/10 transition-colors
                       w-full px-1.5 rounded-md
                       cursor-pointer
                     "
@@ -317,7 +317,7 @@ export function DevocionarioFile({ file } : { file: any }) {
 
   return (
     <div className="mb-2 max-w-prose text-justify hyphens-auto">
-      <h1 className="text-3xl font-medium mb-5">{file.title}</h1>
+      <h1 className="text-3xl font-medium mb-12 mx-6 text-center">{file.title}</h1>
       {renderIndex(file.index, file["section-map"])}
       {renderSections(file.sections, file["section-map"], file["link-map"])}
       {renderFootnotes(file.footnotes, file["link-map"])}

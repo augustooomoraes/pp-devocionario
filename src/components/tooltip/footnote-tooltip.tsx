@@ -52,8 +52,9 @@ const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes
       <sup
         id={`rodape-origem-${footnoteId}`}
         className="
-          hover:bg-black/5 active:bg-black/10 transition-colors
+          hover:bg-accent active:bg-black/10 transition-colors
           px-0.5 rounded-sm
+          -z-10
           "
         onClick={handleClick( "#rodape-conteudo-" + (footnoteId || "not-found") )}
       >
