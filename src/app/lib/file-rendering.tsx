@@ -14,7 +14,7 @@ export function DevocionarioFile({ file } : { file: any }) {
   const router = useRouter();
 
   const handleNavigation = (id: number, sectionMap: SectionMap) => {
-    const sectionName = sectionMap.filter(section => section.id === id)[0].title || "not-found";
+    const sectionName = sectionMap.filter(sectionIndex => sectionIndex.id === id)[0].title || "not-found";
     if (sectionName) {
       router.push(`#${sectionName}`);
     }
@@ -45,7 +45,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                 px-1.5 rounded-md
                 cursor-pointer
               "
-              onClick={handleClick("#" + sectionMap.filter(section => section.id === item.id)[0]?.title || "not-found")}
+              onClick={handleClick("#" + sectionMap.filter(sectionIndex => sectionIndex.id === item.id)[0]?.title || "not-found")}
             >
               {replaceAllStyleTags(item.title, file.footnotes, file["link-map"])}
             </span>
@@ -66,7 +66,7 @@ export function DevocionarioFile({ file } : { file: any }) {
       <div className="mt-5 first">
 
         {sessions.map(session => {
-          return <div id={sectionMap.filter(section => section.id === session.id)[0].title || "not-found"}>
+          return <div id={sectionMap.filter(sectionIndex => sectionIndex.id === session.id)[0].title || "not-found"}>
             <h2
               onClick={ () => handleNavigation(session.id, sectionMap) }
               className="
@@ -102,7 +102,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                   )}
                   id={
                     content["id"]
-                      ? sectionMap.filter(section => section.id === content.id)[0].title || "not-found"
+                      ? sectionMap.filter(sectionIndex => sectionIndex.id === content.id)[0].title || "not-found"
                       : content["link-id"]
                         ? linkMap.filter(link => link.id === content["link-id"])[0].url.startsWith("#")
                           ? linkMap.filter(link => link.id === content["link-id"])[0].url.slice(1)
@@ -123,7 +123,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                   )}
                   id={
                     content["id"]
-                      ? sectionMap.filter(section => section.id === content.id)[0].title || "not-found"
+                      ? sectionMap.filter(sectionIndex => sectionIndex.id === content.id)[0].title || "not-found"
                       : content["link-id"]
                         ? linkMap.filter(link => link.id === content["link-id"])[0].url.startsWith("#")
                           ? linkMap.filter(link => link.id === content["link-id"])[0].url.slice(1)
