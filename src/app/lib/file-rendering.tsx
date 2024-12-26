@@ -4,7 +4,6 @@
 import clsx from "clsx"
 import React from "react"
 import { useRouter } from "next/navigation";
-import FootnoteTooltip from "@/components/tooltip/footnote-tooltip";
 import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes } from "./types";
 import { replaceAllStyleTags, replaceBreakAndAsteriskAndFootnoteTags, replaceLinkTags } from "./tags-replacing";
 
@@ -22,14 +21,10 @@ export function DevocionarioFile({ file } : { file: any }) {
 
   function renderIndex(index: Index, sectionMap: SectionMap) {
 
-    const handleClick = (target: string | undefined) => {
-      const router = useRouter();
-    
+    const handleClick = (target: string) => {    
       return (e: React.MouseEvent) => {
         e.stopPropagation();
-        if (target) {
-          router.push(target);
-        }
+        router.push(target);
       };
     };
 
@@ -270,14 +265,10 @@ export function DevocionarioFile({ file } : { file: any }) {
 
   function renderFootnotes(contents: Footnotes, linkMap: LinkMap) {
 
-    const handleClick = (target: string | undefined) => {
-      const router = useRouter();
-    
+    const handleClick = (target: string) => {    
       return (e: React.MouseEvent) => {
         e.stopPropagation();
-        if (target) {
-          router.push(target);
-        }
+        router.push(target);
       };
     };
 
@@ -308,7 +299,7 @@ export function DevocionarioFile({ file } : { file: any }) {
                       w-full px-1.5 rounded-md
                       cursor-pointer
                     "
-                    onClick={handleClick("#rodape-origem-" + content.id)}
+                    onClick={handleClick( "#rodape-origem-" + (content.id || "not-found") )}
                   >
                     {content.id}.
                   </span>

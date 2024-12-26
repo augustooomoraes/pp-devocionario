@@ -1,6 +1,9 @@
+"use client"
+
 import React, { useState, useRef } from 'react';
 import Tooltip from './tooltip';
 import { LinkMap } from "@/app/lib/types";
+import { useRouter } from "next/navigation";
 
 type FootnoteTooltipProps = {
   footnoteId: number,
@@ -13,6 +16,8 @@ const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes
   const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const footnote = footnotes.find(f => f.id === footnoteId);
+
+  const router = useRouter();
 
   if (!footnote) {
     return null;
@@ -31,12 +36,11 @@ const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes
     }, 300);
   };
 
-  const handleClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    const target = document.getElementById(`rodape-conteudo-${footnoteId}`);
-    if (target) {
-      target.scrollIntoView();
-    }
+  const handleClick = (target: string) => {
+    return (e: React.MouseEvent) => {
+      e.stopPropagation();
+      router.push(target);
+    };
   };
 
   return (
@@ -51,7 +55,7 @@ const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes
           hover:bg-black/5 active:bg-black/10 transition-colors
           px-0.5 rounded-sm
           "
-        onClick={handleClick}
+        onClick={handleClick( "#rodape-conteudo-" + (footnoteId || "not-found") )}
       >
         <span className="cursor-pointer">
           {footnoteId}
