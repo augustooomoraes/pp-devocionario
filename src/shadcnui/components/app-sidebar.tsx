@@ -69,6 +69,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 
       <SidebarHeader>
         <div className="flex flex-row gap-2 mb-0.5">
+          {/* TODO: logo */}
           <Link
             className="
               flex items-center justify-start
@@ -88,7 +89,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SearchForm />
       </SidebarHeader>
 
-      <SidebarContent className="gap-0">
+      <SidebarContent className="gap-0 pt-2">
         {data.navMain.map((item) => (
           <Collapsible
             key={item.title}
@@ -98,9 +99,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           >
             <SidebarGroup>
 
+              <div className="h-0.5 mb-2 bg-border" />
+
               <SidebarGroupLabel
                 asChild
-                className="group/label text-sm text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+                className="
+                  group/label
+                  text-sm font-semibold text-sidebar-foreground
+                  hover:bg-sidebar-accent
+                  hover:text-sidebar-accent-foreground"
               >
                 <CollapsibleTrigger>
                   {item.title}{" "}
