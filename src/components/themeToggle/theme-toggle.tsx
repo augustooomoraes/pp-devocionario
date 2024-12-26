@@ -2,7 +2,7 @@
  
 import { useState, useEffect} from "react"
 import { useTheme } from "next-themes";
-import { Toggle } from "../ui/toggle";
+import { Toggle } from "../../shadcnui/components/ui/toggle";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();

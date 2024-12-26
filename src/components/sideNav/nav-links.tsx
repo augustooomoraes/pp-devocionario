@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/shadcnui/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation"
 
