@@ -2,39 +2,42 @@ import FootnoteTooltip from "@/components/tooltip/footnote-tooltip";
 import { Footnotes, LinkMap } from "./types";
 
 export function replaceAllStyleTags(text: string, footnotes: Footnotes, links: LinkMap) {
-  return replaceBreakAndAsteriskAndFootnoteTags(text
-    .split(/(<paragraph>.*?<\/paragraph>|<i>.*?<\/i>|<b>.*?<\/b>|<u>.*?<\/u>)/g)
-    .map((part, index) => {
-      if (part.startsWith("<paragraph>")) {
-        return (
-          <span key={index} className="font-bold text-red-600">
-            {"§ " + part.replace(/<\/?paragraph>/g, "") + ". "}
-          </span>
-        );
+  return replaceBreakAndAsteriskAndFootnoteTags(
+    replaceLinkTags(text
+      .split(/(<paragraph>.*?<\/paragraph>|<i>.*?<\/i>|<b>.*?<\/b>|<u>.*?<\/u>)/g)
+      .map((part, index) => {
+        if (part.startsWith("<paragraph>")) {
+          return (
+            <span key={index} className="font-bold text-red-600">
+              {"§ " + part.replace(/<\/?paragraph>/g, "") + ". "}
+            </span>
+          );
+        }
+        if (part.startsWith("<i>")) {
+          return (
+            <span key={index} className="italic">
+              {part.replace(/<\/?i>/g, "")}
+            </span>
+          );
+        }
+        if (part.startsWith("<b>")) {
+          return (
+            <span key={index} className="font-semibold">
+              {part.replace(/<\/?b>/g, "")}
+            </span>
+          );
+        }
+        if (part.startsWith("<u>")) {
+          return (
+            <span key={index} className="underline">
+              {part.replace(/<\/?u>/g, "")}
+            </span>
+          );
+        }
+        return part; // Return plain text as-is
       }
-      if (part.startsWith("<i>")) {
-        return (
-          <span key={index} className="italic">
-            {part.replace(/<\/?i>/g, "")}
-          </span>
-        );
-      }
-      if (part.startsWith("<b>")) {
-        return (
-          <span key={index} className="font-semibold">
-            {part.replace(/<\/?b>/g, "")}
-          </span>
-        );
-      }
-      if (part.startsWith("<u>")) {
-        return (
-          <span key={index} className="underline">
-            {part.replace(/<\/?u>/g, "")}
-          </span>
-        );
-      }
-      return part; // Return plain text as-is
-    }),
+    ), links
+  ),
     footnotes,
     links,
   );
@@ -85,29 +88,40 @@ export function replaceBreakAndAsteriskAndFootnoteTags(parts: (string | React.JS
   });
 }
 
-export function replaceLinkTags(text: string, links: LinkMap) {
-  return text
-    .split(/(<link id=\d+>.*?<\/link>)/g)
-    .map((part, index) => {
-      if (part.startsWith("<link")) {
-        const match = part.match(/<link id=(\d+)>/);
-        if (match) {
-          const linkId = Number(match[1]);
-          const link = links.find(link => link.id === linkId);
-          if (link) {
-            return (
-              <a
-                key={index}
-                className="underline hover:text-blue-600"
-                href={link.url}
-                title={link.alt}
-              >
-                {part.replace(/<link id=\d+>|<\/link>/g, "")}
-              </a>
-            );
+export function replaceLinkTags(
+  part: (string | JSX.Element)[],
+  links: LinkMap
+): (string | JSX.Element)[] {
+  return part.flatMap((subPart, index) => {
+    if (typeof subPart === "string") {
+      // Process strings for <link> tags
+      return subPart
+        .split(/(<link id=\d+>.*?<\/link>)/g)
+        .map((textPart, textIndex) => {
+          if (textPart.startsWith("<link")) {
+            const match = textPart.match(/<link id=(\d+)>/);
+            if (match) {
+              const linkId = Number(match[1]);
+              const link = links.find((link) => link.id === linkId);
+              if (link) {
+                return (
+                  <a
+                    key={`${index}-${textIndex}`}
+                    className="underline hover:text-blue-600"
+                    href={link.url}
+                    title={link.alt}
+                  >
+                    {textPart.replace(/<link id=\d+>|<\/link>/g, "")}
+                  </a>
+                );
+              }
+            }
           }
-        }
-      }
-      return part;
-    });
+          return textPart;
+        });
+    } else {
+      // Keep JSX elements unchanged
+      return subPart;
+    }
+  });
 }

@@ -21,21 +21,34 @@ export function DevocionarioFile({ file } : { file: any }) {
   };
 
   function renderIndex(index: Index, sectionMap: SectionMap) {
+
+    const handleClick = (target: string | undefined) => {
+      const router = useRouter();
+    
+      return (e: React.MouseEvent) => {
+        e.stopPropagation();
+        if (target) {
+          router.push(target);
+        }
+      };
+    };
+
     return (
       <ol className="list-none space-y-1">
 
         {index.map((item, index) => {
           return <li key={index} className="grid grid-cols-[28px_1fr]">
             <span className="pl-1.5">{item["no-list-number"] ? "" : `${index + 1}.`}</span>
-            <a
-              href={"#" + sectionMap.filter(section => section.id === item.id)[0]?.title || "not-found"}
+            <span
               className="
                 hover:bg-black/5 active:bg-black/10 transition-colors
                 px-1.5 rounded-md
+                cursor-pointer
               "
+              onClick={handleClick("#" + sectionMap.filter(section => section.id === item.id)[0]?.title || "not-found")}
             >
               {replaceAllStyleTags(item.title, file.footnotes, file["link-map"])}
-            </a>
+            </span>
             {item.index && (
               <div className="grid grid-cols-[28px_1fr] mt-1 col-span-2">
                 <span />
@@ -256,6 +269,18 @@ export function DevocionarioFile({ file } : { file: any }) {
   }
 
   function renderFootnotes(contents: Footnotes, linkMap: LinkMap) {
+
+    const handleClick = (target: string | undefined) => {
+      const router = useRouter();
+    
+      return (e: React.MouseEvent) => {
+        e.stopPropagation();
+        if (target) {
+          router.push(target);
+        }
+      };
+    };
+
     return (
       <div id="notas" className="border-t border-t-gray-400 mt-14 pt-8">
         <h2
@@ -277,18 +302,19 @@ export function DevocionarioFile({ file } : { file: any }) {
                 className="grid grid-cols-[34px_1fr]"
               >
                 <span>
-                  <a
-                    href={"#rodape-origem-" + content.id}
+                  <span
                     className="
                       hover:bg-black/5 active:bg-black/10 transition-colors
                       w-full px-1.5 rounded-md
+                      cursor-pointer
                     "
+                    onClick={handleClick("#rodape-origem-" + content.id)}
                   >
                     {content.id}.
-                  </a>
+                  </span>
                 </span>
                 <span>
-                  {replaceLinkTags(content.content, linkMap)}
+                  {replaceLinkTags([content.content], linkMap)}
                 </span>
               </li>
             )

@@ -82,7 +82,7 @@ const Tooltip: React.FC<TooltipProps> = ({ text, links, visible, setVisible }) =
       onMouseLeave={() => setVisible(false)}
     >
       <span>
-        {replaceLinkTags(text, links)}
+        {replaceLinkTags([text], links)}
       </span>
     </div>
   );

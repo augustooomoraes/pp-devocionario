@@ -375,7 +375,7 @@
       {
         "id": 6,
         "page-ref": 1,
-        "title": "Magníficat",
+        "title": "Magníficat<footnote id=7>",
         "type": "parallel-preces",
         "contents": [
           {
@@ -2505,7 +2505,7 @@
       },
       {
         "id": 13,
-        "title": "Outras orações do consagrado<footnote id=7>",
+        "title": "Outras orações do consagrado<footnote id=8>",
         "type": "regular-text",
         "contents": [
           {
@@ -2514,15 +2514,12 @@
             "content": "Magníficat"
           },
           {
-            "type": "media-relative",
-            "content": {
-              "print-only": "Oração na página <page id=1>.",
-              "screen-only": "Oração <ref id=1 text='aqui'>."
-            }
+            "type": "paragraph",
+            "content": "Oração na <link id=8>segunda seção deste opúsculo</link>."
           },
           {
             "type": "paragraph",
-            "content": "A pauta gregoriana é no segundo tom monástico, solene<footnote id=8>."
+            "content": "A pauta gregoriana é no segundo tom monástico, solene<footnote id=9>."
           },
           {
             "type": "paragraph",
@@ -3277,7 +3274,7 @@
       },
       {
         "id": 2,
-        "content": "As orações indicadas aqui e algures se encontram <link id=1>na última seção deste opúsculo</link>."
+        "content": "As orações indicadas aqui e algures se encontram na <link id=1>última seção deste opúsculo</link>."
       },
       {
         "id": 3,
@@ -3297,11 +3294,15 @@
       },
       {
         "id": 7,
-        "content": "Os textos iniciados por um sinal de parágrafo são retirados do Tratado da Verdadeira Devoção à Santíssima Virgem, de São Luís Maria Grignion de Montfort, Minha Biblioteca Católica, 2018, páginas várias."
+        "content": "Mais sobre o Magníficat na <link id=5>última seção deste opúsculo</link>."
       },
       {
         "id": 8,
-        "content": "Para saber mais sobre canto gregoriano e sobre salmodias, veja os opúsculos <link id=5>[nome do opúsculo]</link> e <link id=6>[nome do opúsculo]</link>."
+        "content": "Os textos iniciados por um sinal de parágrafo são retirados do Tratado da Verdadeira Devoção à Santíssima Virgem, de São Luís Maria Grignion de Montfort, Minha Biblioteca Católica, 2018, páginas várias."
+      },
+      {
+        "id": 9,
+        "content": "Para saber mais sobre canto gregoriano e sobre salmodias, veja os opúsculos <link id=6>[nome do opúsculo]</link> e <link id=7>[nome do opúsculo]</link>."
       }
     ],
     "section-map": [
@@ -3328,8 +3329,10 @@
       {"id": 2, "url": "#antes-da-santa-comunhao", "alt": "Antes da Santa Comunhão"},
       {"id": 3, "url": "", "alt": "Ato de consagração"},
       {"id": 4, "url": "", "alt": "O Santo Rosário"},
-      {"id": 5, "url": "", "alt": "[Opúsculo de canto gregoriano #1]"},
-      {"id": 6, "url": "", "alt": "[Opúsculo de canto gregoriano #2]"}
+      {"id": 5, "url": "#4-1-magnificat", "alt": "Outras orações do consagrado: Magníficat"},
+      {"id": 6, "url": "", "alt": "[Opúsculo de canto gregoriano #1]"},
+      {"id": 7, "url": "", "alt": "[Opúsculo de canto gregoriano #2]"},
+      {"id": 8, "url": "#3-3-magnificat", "alt": "Orações da preparação para a consagração: Magníficat"}
     ]
   }
 }
