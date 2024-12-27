@@ -30,19 +30,19 @@ const data = {
       items: [
         {
           title: "Da Devoção e da Consagração Total à Virgem Santíssima",
-          url: "/consagracao-completa",
+          url: "/consagracao-a-virgem-santissima",
         },
         {
           title: "Da Ordem Terceira do Carmo",
-          url: "#",
+          url: "/ordem-terceira-do-carmo",
         },
         {
           title: "Da Consagração a São José",
-          url: "#",
+          url: "/consagracao-a-sao-jose",
         },
         {
           title: "Da Consagração a São Miguel Arcanjo",
-          url: "#",
+          url: "/consagracao-a-sao-miguel-arcanjo",
         },
       ],
     },
