@@ -44,6 +44,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             Devocionário
           </Link>
           <div className="shrink-0">
+            {/* TODO: fix loading issues with this component */}
             <ThemeToggle />
           </div>
         </div>

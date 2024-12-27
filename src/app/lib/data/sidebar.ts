@@ -1,3 +1,5 @@
+import { DevStage } from "../types/common"
+
 type SidebarData = {
   navMain: {
     title: string,
@@ -9,8 +11,6 @@ type SidebarData = {
     }[]
   }[],
 }
-
-type DevStage = "done" | "mvp" | "started" | "notStarted"
 
 export const sidebarData: SidebarData = {
   navMain: [

@@ -4,7 +4,7 @@
 import clsx from "clsx"
 import React from "react"
 import { useRouter } from "next/navigation";
-import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes } from "./types";
+import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes } from "./types/devocionarios";
 import { replaceAllStyleTags, replaceBreakAndAsteriskAndFootnoteTags, replaceLinkTags } from "./tags-replacing";
 
 

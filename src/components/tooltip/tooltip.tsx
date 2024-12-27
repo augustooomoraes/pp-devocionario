@@ -1,5 +1,5 @@
 import { replaceLinkTags } from "@/app/lib/tags-replacing";
-import { LinkMap } from "@/app/lib/types";
+import { LinkMap } from "@/app/lib/types/devocionarios";
 import React, { useRef, useState, useEffect } from "react";
 
 type TooltipProps = {

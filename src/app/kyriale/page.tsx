@@ -1,14 +1,10 @@
-import WorkInProgress from "@/components/workInProgress/work-in-progess";
+import KyrialeList from "@/components/kyrialeList/kyriale-list";
+import file from "@/app/lib/data/musica-liturgica.json"
 
 export default function Page() {
   return (
     <main className="flex flex-col items-center pt-24 px-2">
-      <WorkInProgress
-        title="Kyriale"
-        subtitles={[
-          "Tudo...",
-        ]}
-      />
+      <KyrialeList file={file["kyriale"]} />
     </main>
   );
 }

@@ -1,5 +1,5 @@
 import FootnoteTooltip from "@/components/tooltip/footnote-tooltip";
-import { Footnotes, LinkMap } from "./types";
+import { Footnotes, LinkMap } from "./types/devocionarios";
 
 export function replaceAllStyleTags(text: string, footnotes: Footnotes, links: LinkMap) {
   return replaceBreakAndAsteriskAndFootnoteTags(
