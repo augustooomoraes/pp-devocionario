@@ -21,8 +21,11 @@ export default function WorkInProgress({
         }
       </div>
 
-      <div className="flex items-center justify-center h-96 w-full my-8">
-        <WorkInProgressIcon className="text-current max-w-full max-h-full" />
+      <div className="
+        flex items-center justify-center
+        text-primary
+        h-96 w-full my-8">
+        <WorkInProgressIcon className="fill-current max-w-full max-h-full" />
       </div>
 
     </>
