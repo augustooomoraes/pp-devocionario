@@ -1,4 +1,3 @@
-import Image from "next/image"
 import WorkInProgressIcon from "@/public/work-in-progess-780-825.svg"
 
 export default function WorkInProgress({
@@ -23,15 +22,7 @@ export default function WorkInProgress({
       </div>
 
       <div className="flex items-center justify-center h-96 w-full my-8">
-        <div className="relative w-full h-full">
-          <Image
-            src={WorkInProgressIcon}
-            layout="fill"
-            objectFit="contain"
-            alt={"work in progess"}
-            // TODO: a good svg component that updates the fill color based on the selected theme
-          />
-        </div>
+        <WorkInProgressIcon className="text-current max-w-full max-h-full" />
       </div>
 
     </>
