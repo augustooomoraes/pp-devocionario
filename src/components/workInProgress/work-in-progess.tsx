@@ -22,9 +22,11 @@ export default function WorkInProgress({
       </div>
 
       <div className="
-        flex items-center justify-center
+        flex flex-col items-center justify-center gap-4
         text-primary
-        h-96 w-full my-8">
+        h-96 w-full my-8
+      ">
+        <span className="uppercase font-semibold text-sm">Work in progess</span>
         <WorkInProgressIcon className="fill-current max-w-full max-h-full" />
       </div>
 

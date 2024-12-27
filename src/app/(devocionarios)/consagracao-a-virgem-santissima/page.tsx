@@ -1,5 +1,5 @@
 import { DevocionarioFile } from "../../lib/file-rendering";
-import file from "./data.json"
+import file from "@/app/lib/data/devocionarios.json"
 
 export default function Page() {
   return (

@@ -21,47 +21,8 @@ import {
 } from "@/shadcnui/components/ui/sidebar"
 import { ThemeToggle } from "@/components/themeToggle/theme-toggle"
 import Link from "next/link"
-
-const data = {
-  navMain: [
-    {
-      title: "Devocionários",
-      url: "#",
-      items: [
-        {
-          title: "Da Devoção e da Consagração Total à Virgem Santíssima",
-          url: "/consagracao-a-virgem-santissima",
-        },
-        {
-          title: "Da Ordem Terceira do Carmo",
-          url: "/ordem-terceira-do-carmo",
-        },
-        {
-          title: "Da Consagração a São José",
-          url: "/consagracao-a-sao-jose",
-        },
-        {
-          title: "Da Consagração a São Miguel Arcanjo",
-          url: "/consagracao-a-sao-miguel-arcanjo",
-        },
-      ],
-    },
-    {
-      title: "Orações",
-      url: "#",
-      items: [
-        {
-          title: "Ave Maria",
-          url: "#",
-        },
-        {
-          title: "Pai Nosso",
-          url: "#",
-        },
-      ],
-    },
-  ],
-}
+import { sidebarData } from "@/app/lib/data/sidebar"
+import clsx from "clsx"
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -90,7 +51,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
 
       <SidebarContent className="gap-0 pt-2">
-        {data.navMain.map((item) => (
+        {sidebarData.navMain.map((item) => (
           <Collapsible
             key={item.title}
             title={item.title}
@@ -125,7 +86,20 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                           size={"auto"}
                           // isActive={item.isActive}
                         >
-                          <a href={item.url}>{item.title}</a>
+                          <a href={item.url}>
+                            <div className="flex flex-row items-center gap-2">
+                              <div className={clsx(
+                                "rounded-full w-2 h-2 shrink-0",
+                                {
+                                  "bg-red-500": item.devStage === "notStarted",
+                                  "bg-yellow-500": item.devStage === "started",
+                                  "bg-blue-500": item.devStage === "mvp",
+                                  "bg-green-500": item.devStage === "done",
+                                },
+                              )} />
+                              <span>{item.title}</span>
+                            </div>
+                          </a>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
                     ))}

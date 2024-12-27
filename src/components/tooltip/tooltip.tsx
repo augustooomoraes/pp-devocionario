@@ -74,7 +74,7 @@ const Tooltip: React.FC<TooltipProps> = ({ text, links, visible, setVisible }) =
         absolute z-10
         max-w-2xl w-max
         py-1 px-3
-        bg-background brightness-95
+        bg-accent
         text-base font-normal text-left
         border rounded shadow-lg
       "
