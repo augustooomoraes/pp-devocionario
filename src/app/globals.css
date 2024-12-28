@@ -16,8 +16,8 @@
     --muted-foreground: 43 0.15% 42.1%;
     --popover: 43 87.6% 92.1%;
     --popover-foreground: 43 0.3% 1.05%;
-    --card: 43 87.6% 92.1%;
-    --card-foreground: 43 0.3% 1.05%;
+    --card: var(--accent);
+    --card-foreground: var(--foreground);
     --border: 43 5.3% 89.84%;
     --input: 43 5.3% 89.84%;
     --primary: 43 3% 21%;
@@ -60,8 +60,8 @@
     --muted-foreground: 32 1.40% 59.1%;
     --popover: 32 62.2% 11.83%;
     --popover-foreground: 32 1.40% 99.55%;
-    --card: 32 62.2% 11.83%;
-    --card-foreground: 32 1.40% 99.55%;
+    --card: var(--accent);
+    --card-foreground: var(--foreground);
     --border: 32 7% 27.3%;
     --input: 32 7% 27.3%;
     --primary: 32 14% 91%;

@@ -26,7 +26,7 @@
         "id": 2,
         "number": 2,
         "title": "Kyrie fons bonitatis",
-        "indication": "Para festas de primeira classe (1)",
+        "indication": "Para festas de primeira classe",
         "url": "/kyriale/missa-2",
         "parts": {
           "kyrie": [""],
@@ -45,7 +45,7 @@
         "id": 3,
         "number": 3,
         "title": "Kyrie Deus sempiterne",
-        "indication": "Para festas de primeira classe (2)",
+        "indication": "Para festas de primeira classe",
         "url": "/kyriale/missa-3",
         "parts": {
           "kyrie": [""],
@@ -64,7 +64,7 @@
         "id": 4,
         "number": 4,
         "title": "Cunctipotens Genitor Deus",
-        "indication": "Para festas de segunda classe (1)",
+        "indication": "Para festas de segunda classe",
         "url": "/kyriale/missa-4",
         "parts": {
           "kyrie": [""],
@@ -83,8 +83,304 @@
         "id": 5,
         "number": 5,
         "title": "Kyrie magnæ Deus potentiæ",
-        "indication": "Para festas de segunda classe (2)",
+        "indication": "Para festas de segunda classe",
         "url": "/kyriale/missa-5",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 6,
+        "number": 6,
+        "title": "Kyrie Rex Genitor",
+        "indication": "Para festas de segunda classe",
+        "url": "/kyriale/missa-6",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 7,
+        "number": 7,
+        "title": "Kyrie Rex splendens",
+        "indication": "Para festas de segunda classe",
+        "url": "/kyriale/missa-7",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 8,
+        "number": 8,
+        "title": "De Angelis",
+        "indication": "Para festas de segunda classe",
+        "url": "/kyriale/missa-8",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 9,
+        "number": 9,
+        "title": "Cum jubilo",
+        "indication": "Para festas da Bem-Aventurada Virgem Maria",
+        "url": "/kyriale/missa-9",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 10,
+        "number": 10,
+        "title": "Alme Pater",
+        "indication": "Para festas da Bem-Aventurada Virgem Maria",
+        "url": "/kyriale/missa-10",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 11,
+        "number": 11,
+        "title": "Orbis Factor",
+        "indication": "Para domingos",
+        "url": "/kyriale/missa-11",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 12,
+        "number": 12,
+        "title": "Pater cuncta",
+        "indication": "Para festas de terceira classe",
+        "url": "/kyriale/missa-12",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 13,
+        "number": 13,
+        "title": "Stelliferi Conditor orbis",
+        "indication": "Para festas de terceira classe",
+        "url": "/kyriale/missa-13",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 14,
+        "number": 14,
+        "title": "Jesu Redemptor",
+        "indication": "Para festas de terceira classe",
+        "url": "/kyriale/missa-14",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 15,
+        "number": 15,
+        "title": "Dominator Deus",
+        "indication": "Para comemorações e férias do Tempo do Natal",
+        "url": "/kyriale/missa-15",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 16,
+        "number": 16,
+        "indication": "Para férias",
+        "url": "/kyriale/missa-16",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 17,
+        "number": 17,
+        "indication": "Para domingos do Advento e da Quaresma",
+        "url": "/kyriale/missa-17",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 18,
+        "number": 18,
+        "title": "Deus Genitor alme",
+        "indication": "Para férias do Advento e da Quaresma",
+        "url": "/kyriale/missa-18",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 19,
+        "title": "Missa Sancti Hildegardis",
+        "url": "/kyriale/missa-sancti-hildegardis",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 20,
+        "title": "Missa Regia I",
+        "url": "/kyriale/missa-regia-1",
+        "parts": {
+          "kyrie": [""],
+          "gloria": [""],
+          "sanctus": [""],
+          "agnus": [""],
+          "ite": {
+            "ite": [""],
+            "benedicamus": [""],
+            "requiescant": [""]
+          }
+        }
+      },
+      {
+        "devStage": "notStarted",
+        "id": 21,
+        "title": "Missa pro defunctis",
+        "url": "/kyriale/missa-pro-defunctis",
         "parts": {
           "kyrie": [""],
           "gloria": [""],

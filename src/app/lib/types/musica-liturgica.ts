@@ -9,7 +9,7 @@ export type Missa = {
   devStage: DevStage,
   id: number,
   number?: number,
-  title: string,
+  title?: string,
   indication?: string,
   url: string,
   parts: MissaePartes, // TODO: check pig latin
