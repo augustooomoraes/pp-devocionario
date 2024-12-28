@@ -394,5 +394,26 @@
         }
       }
     ]
+  },
+  "graduale-simplex": {
+    "title": "Gradual Simples",
+    "subtitle": "Em português e latim",
+    "missae": [
+      {
+        "devStage": "notStarted",
+        "id": 1,
+        "group": "tempus-adventus",
+        "title": "Missa 1",
+        "url": "/graduale-simplex/tempus-adventus/missa-1",
+        "parts": {
+          "introitus": [""],
+          "psalmus-responsorius": [""],
+          "alleluia": [""],
+          "psalmus-alleluiaticus": [""],
+          "offertorium": [""],
+          "communio": [""]          
+        }
+      }
+    ]
   }
 }
