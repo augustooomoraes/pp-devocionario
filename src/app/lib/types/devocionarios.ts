@@ -19,6 +19,7 @@ export type Sections = {
   title: string,
   type: SectionTypes,
   contents: SectionContents,
+  badges?: { "badge": number, "content": string }[]
 }[]
 
 export type SectionContents = {
@@ -31,6 +32,7 @@ export type SectionContents = {
   "subsection-break"?: boolean, // Isso aqui não está no README.
   "increased-vertical-spacing"?: boolean, // Isso aqui não está no README.
   "no-margin-bottom"?: boolean, // Isso aqui não está no README.
+  "badge"?: number,
 }[]
 
 export type ParallelPreces = {
@@ -97,3 +99,13 @@ export type LinkMap = {
   alt: string,
   title?: string,
 }[]
+
+// =x=x=x=x=x=x=x=x=
+
+export type BadgeData = {
+  badge: number,
+  surface: string,
+  surfaceDark: string,
+  text: string,
+  textDark: string
+}

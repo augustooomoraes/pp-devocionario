@@ -4,11 +4,17 @@
 import clsx from "clsx"
 import React from "react"
 import { useRouter } from "next/navigation";
-import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes } from "./types/devocionarios";
+import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes, BadgeData } from "./types/devocionarios";
 import { replaceAllStyleTags, replaceBreakAndAsteriskAndFootnoteTags, replaceLinkTags } from "./tags-replacing";
 
 
-export function DevocionarioFile({ file } : { file: any }) {
+export function DevocionarioFile({
+  file,
+  badges,
+} : {
+  file: any,
+  badges?: BadgeData[],
+}) {
 
   const router = useRouter();
 
@@ -61,7 +67,7 @@ export function DevocionarioFile({ file } : { file: any }) {
     )
   }
 
-  function renderSections(sections: Sections, sectionMap: SectionMap, linkMap: LinkMap) {
+  function renderSections(sections: Sections, sectionMap: SectionMap, linkMap: LinkMap, badges?: BadgeData[]) {
     return (
       <div className="mt-5 first">
 
@@ -80,7 +86,14 @@ export function DevocionarioFile({ file } : { file: any }) {
             >
               {replaceBreakAndAsteriskAndFootnoteTags([section.title], file.footnotes, file["link-map"])}
             </h2>
-            {renderSectionContents(section.type, section.contents, sectionMap, linkMap, index)}
+            {renderSectionContents(
+              section.type,
+              section.contents,
+              sectionMap,
+              linkMap,
+              index,
+              badges || undefined
+            )}
           </div>
         })}
 
@@ -88,35 +101,68 @@ export function DevocionarioFile({ file } : { file: any }) {
     )
   }
 
-  function renderSectionContents(sectionType: SectionTypes, contents: SectionContents, sectionMap: SectionMap, linkMap: LinkMap, key: number) {
+  function renderSectionContents(sectionType: SectionTypes, contents: SectionContents, sectionMap: SectionMap, linkMap: LinkMap, key: number, badges?: BadgeData[]) {
     switch(sectionType) {
       case "regular-text":
         return (
           contents.map((content, index) => {
+            let badgeData;
+            if (content["badge"] && badges) {
+              badgeData = badges.filter(badge => badge.badge === content["badge"])[0]
+            }
+
+            // const getBadgeClasses = (badgeData: BadgeData) => {
+            //   return [
+            //     'w-4 h-4 rounded-full',
+            //     `bg-${badgeData.surface}`,
+            //     `text-${badgeData.text}`,
+            //     `dark:bg-${badgeData.surfaceDark}`,
+            //     `dark:text-${badgeData.textDark}`
+            //   ].join(' ');
+            // };
+
             switch(content.type) {
               case "header-1":
-                return <h3
-                  key={index}
-                  className={clsx(
-                    content["id"] && "cursor-pointer hover:underline",
-                    content["link-id"] && "",
-                    content["subsection-break"] && "mb-5",
-                    content["no-margin-bottom"] === true ? "" : "mb-1",
-                    "text-xl font-medium mt-3",
-                  )}
-                  id={
-                    content["id"]
-                      ? sectionMap.filter(sectionIndex => sectionIndex.id === content.id)[0].title || "not-found"
-                      : content["link-id"]
-                        ? linkMap.filter(link => link.id === content["link-id"])[0].url.startsWith("#")
-                          ? linkMap.filter(link => link.id === content["link-id"])[0].url.slice(1)
-                          : "not-found"
-                        : undefined
-                  }
-                  onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
-                >
-                  {replaceAllStyleTags(content.content as string, file.footnotes, file["link-map"])}
-                </h3>
+                return <div className="flex items-center gap-2.5 mt-3" key={index}>
+                  <h3
+                    
+                    className={clsx(
+                      content["id"] && "cursor-pointer hover:underline",
+                      content["link-id"] && "",
+                      content["subsection-break"] && "mb-5",
+                      content["no-margin-bottom"] === true ? "" : "mb-1",
+                      "text-xl font-medium",
+                      content["badge"] && "inline",
+                    )}
+                    id={
+                      content["id"]
+                        ? sectionMap.filter(sectionIndex => sectionIndex.id === content.id)[0].title || "not-found"
+                        : content["link-id"]
+                          ? linkMap.filter(link => link.id === content["link-id"])[0].url.startsWith("#")
+                            ? linkMap.filter(link => link.id === content["link-id"])[0].url.slice(1)
+                            : "not-found"
+                          : undefined
+                    }
+                    onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
+                  >
+                    {replaceAllStyleTags(content.content as string, file.footnotes, file["link-map"])}
+                  </h3>
+
+                  {badgeData && <div className={`
+                    w-4 h-4 rounded-full
+                    bg-${badgeData.surface} text-${badgeData.text}
+                    dark:bg-${badgeData.surfaceDark} dark:text-${badgeData.textDark}
+                  `} />}
+
+                  {/* {badgeData && <div className={clsx(
+                    "w-4 h-4 rounded-full",
+                    `bg-${badgeData.surface} text-${badgeData.text}`,
+                    `dark:bg-${badgeData.surfaceDark} dark:text-${badgeData.textDark}`,
+                  )}/>} */}
+
+                  {/* {badgeData && <div className={getBadgeClasses(badgeData)} />} */}
+
+                </div>
 
               case "header-2":
                 return <h4
@@ -338,7 +384,7 @@ export function DevocionarioFile({ file } : { file: any }) {
     <div className="mb-2 max-w-prose text-justify hyphens-auto">
       <h1 className="text-3xl font-medium mb-12 mx-6 text-center">{file.title}</h1>
       {renderIndex(file.index, file["section-map"])}
-      {renderSections(file.sections, file["section-map"], file["link-map"])}
+      {renderSections(file.sections, file["section-map"], file["link-map"], badges || undefined)}
       {renderFootnotes(file.footnotes, file["link-map"])}
     </div>
   )
