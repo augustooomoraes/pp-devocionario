@@ -117,8 +117,8 @@ export const sidebarData: SidebarData = {
           devStage: "notStarted",
         },
         {
-          title: "Outros",
-          url: "#",
+          title: "Outras músicas",
+          url: "/outras-musicas",
           devStage: "notStarted",
         },
       ],
