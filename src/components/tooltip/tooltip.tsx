@@ -26,7 +26,10 @@ const Tooltip: React.FC<TooltipProps> = ({ text, links, visible, setVisible }) =
       const viewportWidth = window.innerWidth;
 
       const maxTooltipWidth = 672;
-      const minTooltipWidth = Math.min(512, tooltipRect.width); // too much for mobile → TODO: make it responsive
+      const minTooltipWidth = Math.min(
+        Math.min(512, viewportWidth - 40 ),
+        tooltipRect.width
+      ); // too much for mobile → TODO: make it responsive
 
       let shouldDisplace =
         (viewportWidth - (parentRect?.right || 0) - 20) < minTooltipWidth
