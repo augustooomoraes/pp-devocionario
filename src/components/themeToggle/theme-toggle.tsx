@@ -13,7 +13,15 @@ export function ThemeToggle() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;
+  if (!mounted) return <div className="
+    inline-flex items-center justify-center
+    rounded-md
+    text-sm font-medium
+    ring-offset-background transition-colors
+    hover:bg-muted hover:text-muted-foreground
+    h-9 px-2.5
+    cursor-not-allowed
+  "><Sun className="text-muted-foreground" /></div>;
 
   return (
     <Toggle variant={"theme"} size={"sm"} onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
