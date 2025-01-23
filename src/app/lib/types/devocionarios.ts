@@ -68,7 +68,6 @@ export type SectionContentTypes = (
   "header-2" |
   "paragraph" |
   "parallel-preces" | // Vide ~ l. 2554 (O Iesu, vivens in Maria) e outras depois
-  "media-relative" |
   "indication" |
   "index"
 )

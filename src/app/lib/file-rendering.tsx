@@ -19,7 +19,7 @@ export function DevocionarioFile({ file } : { file: any }) {
     }
   };
 
-  function renderIndex(index: Index, sectionMap: SectionMap) {
+  function renderIndex(index: Index, sectionMap: SectionMap, key?: number | string) {
 
     const handleClick = (target: string) => {    
       return (e: React.MouseEvent) => {
@@ -28,11 +28,16 @@ export function DevocionarioFile({ file } : { file: any }) {
       };
     };
 
+    const parsedKey = key ? key : "main";
+
     return (
       <ol className="list-none space-y-1">
 
         {index.map((item, index) => {
-          return <li key={index} className="grid grid-cols-[28px_1fr]">
+          return <li
+            key={`${parsedKey}-${index}`}
+            className="grid grid-cols-[28px_1fr]"
+          >
             <span className="pl-1.5">{item["no-list-number"] ? "" : `${index + 1}.`}</span>
             <span
               className="
@@ -47,7 +52,7 @@ export function DevocionarioFile({ file } : { file: any }) {
             {item.index && (
               <div className="grid grid-cols-[28px_1fr] mt-1 col-span-2">
                 <span />
-                {renderIndex(item.index, sectionMap)}
+                {renderIndex(item.index, sectionMap, `${parsedKey}-${index}`)}
               </div>
             )}
           </li>
@@ -60,8 +65,11 @@ export function DevocionarioFile({ file } : { file: any }) {
     return (
       <div className="mt-5 first">
 
-        {sections.map(section => {
-          return <div id={sectionMap.filter(sectionIndex => sectionIndex.id === section.id)[0].title || "not-found"}>
+        {sections.map((section, index) => {
+          return <div
+            key={index}
+            id={sectionMap.filter(sectionIndex => sectionIndex.id === section.id)[0].title || "not-found"}
+          >
             <h2
               onClick={ () => handleNavigation(section.id, sectionMap) }
               className="
@@ -72,7 +80,7 @@ export function DevocionarioFile({ file } : { file: any }) {
             >
               {replaceBreakAndAsteriskAndFootnoteTags([section.title], file.footnotes, file["link-map"])}
             </h2>
-            {renderSectionContents(section.type, section.contents, sectionMap, linkMap)}
+            {renderSectionContents(section.type, section.contents, sectionMap, linkMap, index)}
           </div>
         })}
 
@@ -80,7 +88,7 @@ export function DevocionarioFile({ file } : { file: any }) {
     )
   }
 
-  function renderSectionContents(sectionType: SectionTypes, contents: SectionContents, sectionMap: SectionMap, linkMap: LinkMap) {
+  function renderSectionContents(sectionType: SectionTypes, contents: SectionContents, sectionMap: SectionMap, linkMap: LinkMap, key: number) {
     switch(sectionType) {
       case "regular-text":
         return (
@@ -88,6 +96,7 @@ export function DevocionarioFile({ file } : { file: any }) {
             switch(content.type) {
               case "header-1":
                 return <h3
+                  key={index}
                   className={clsx(
                     content["id"] && "cursor-pointer hover:underline",
                     content["link-id"] && "",
@@ -111,6 +120,7 @@ export function DevocionarioFile({ file } : { file: any }) {
 
               case "header-2":
                 return <h4
+                  key={index}
                   className={clsx(
                     content["id"] && "cursor-pointer hover:underline",
                     content["subsection-break"] && "mb-5",
@@ -131,40 +141,39 @@ export function DevocionarioFile({ file } : { file: any }) {
                 </h4>
 
               case "paragraph":
-                return <p className={clsx(
-                  content["end-break"] && "mb-1.5",
-                  content["subsection-break"] && "mb-5",
-                  "mt-0.5"
-                )}>
+                return <p
+                  key={index}
+                  className={clsx(
+                    content["end-break"] && "mb-1.5",
+                    content["subsection-break"] && "mb-5",
+                    "mt-0.5"
+                  )}
+                >
                   {replaceAllStyleTags(content.content as string, file.footnotes, file["link-map"])}
                 </p>
 
               case "indication":
-                return <div className={clsx(
-                  content["subsection-break"] && "mb-5",
-                  content["increased-vertical-spacing"] === true ? "my-5" : "my-1",
-                  "ml-[28px]",
-                )}>
+                return <div
+                  key={index}
+                  className={clsx(
+                    content["subsection-break"] && "mb-5",
+                    content["increased-vertical-spacing"] === true ? "my-5" : "my-1",
+                    "ml-[28px]",
+                  )}
+                >
                   <span className="text-base italic font-light">{replaceAllStyleTags(content.content as string, file.footnotes, file["link-map"])}</span>
                 </div>
 
-              case "index": return renderIndex(content.contents as Index, sectionMap)
+              case "index":
+                return renderIndex(content.contents as Index, sectionMap, `section-${key}-${index}`)
 
-                case "parallel-preces":
-                return <div className={clsx(
-                  content["subsection-break"] && "mb-5",
-                )}>{
-                  renderParallelPreces(content.contents as unknown as ParallelPreces)
-                }</div>
-
-              case "media-relative":
-                return <span className={clsx(
-                  content["subsection-break"] && "mb-5",
-                  "block",
-                  "bg-red-800/20 py-1.5 italic"
-                )}>
-                  [media-relative]
-                </span>
+              case "parallel-preces":
+              return <div
+                key={index}
+                className={clsx(content["subsection-break"] && "mb-5",)}
+              >{
+                renderParallelPreces(content.contents as unknown as ParallelPreces, index)
+              }</div>
 
               default:
                 return
@@ -172,26 +181,31 @@ export function DevocionarioFile({ file } : { file: any }) {
           })
         )
       case "parallel-preces":
-        return renderParallelPreces(contents as unknown as ParallelPreces)
+        return renderParallelPreces(contents as unknown as ParallelPreces, 0)
+
       case "gregorian-chant":
         return <></>
+
       default:
         return
     }
   }
 
-  function renderParallelPreces(contents: ParallelPreces) {
+  function renderParallelPreces(contents: ParallelPreces, index: number) {
     return (
-      contents.map(content => {
+      contents.map((content, subindex) => {
         switch(content.type) {
           case "v": // TODO: don't render "℣." when the element from before is also type="v"
-            return <div className={clsx(
-              content["end-break"] && "mb-1.5",
-              content["larger-break"] && "mb-2",
-              content["subsection-break"] && "mb-5",
-              content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
-              "grid grid-cols-2 gap-3",
-            )}>
+            return <div
+              key={`${index}-${subindex}`}
+              className={clsx(
+                content["end-break"] && "mb-1.5",
+                content["larger-break"] && "mb-2",
+                content["subsection-break"] && "mb-5",
+                content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
+                "grid grid-cols-2 gap-3",
+              )}
+            >
               <div className={clsx(
                 "grid grid-cols-[24px_1fr]",
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
@@ -209,13 +223,16 @@ export function DevocionarioFile({ file } : { file: any }) {
             </div>
 
           case "r":
-            return <div className={clsx(
-              content["end-break"] && "mb-1.5",
-              content["larger-break"] && "mb-2",
-              content["subsection-break"] && "mb-5",
-              content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
-              "grid grid-cols-2 gap-3",
-            )}>
+            return <div
+              key={`${index}-${subindex}`}
+              className={clsx(
+                content["end-break"] && "mb-1.5",
+                content["larger-break"] && "mb-2",
+                content["subsection-break"] && "mb-5",
+                content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
+                "grid grid-cols-2 gap-3",
+              )}
+            >
               <div className={clsx(
                 "grid grid-cols-[24px_1fr]",
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
@@ -233,18 +250,20 @@ export function DevocionarioFile({ file } : { file: any }) {
             </div>
 
           default:
-            return <div className={clsx(
-              content["end-break"] && "mb-1.5",
-              content["larger-break"] && "mb-2",
-              content["subsection-break"] && "mb-5",
-              content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
-              "grid grid-cols-2 gap-3",
-              content.type === "header-2" && "text-lg font-medium",
-              "",
-              content.type === "paragraph" && "mb-1.5 mt-1.5",
-              content.type === "indication" && "my-1.5 leading-tight italic text-base font-light",
-              content.type === "annotation" && "my-1 leading-tight italic text-ann font-light"
-            )}
+            return <div
+              key={`${index}-${subindex}`}
+              className={clsx(
+                content["end-break"] && "mb-1.5",
+                content["larger-break"] && "mb-2",
+                content["subsection-break"] && "mb-5",
+                content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
+                "grid grid-cols-2 gap-3",
+                content.type === "header-2" && "text-lg font-medium",
+                "",
+                content.type === "paragraph" && "mb-1.5 mt-1.5",
+                content.type === "indication" && "my-1.5 leading-tight italic text-base font-light",
+                content.type === "annotation" && "my-1 leading-tight italic text-ann font-light"
+              )}
             // style={content.type === "header-2" ? { fontVariant: "small-caps"} : {}} // TODO: check if there's any next/font with true small caps
             >
               <div className={clsx(
@@ -285,10 +304,10 @@ export function DevocionarioFile({ file } : { file: any }) {
           Notas
         </h2>
         <ul className="list-none space-y-1">
-          {contents.map( content => {
+          {contents.map((content, index) => {
             return (
               <li
-                key={content.id}
+                key={index}
                 id={`rodape-conteudo-${content.id}`}
                 className="grid grid-cols-[34px_1fr]"
               >
