@@ -86,7 +86,18 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                           size={"auto"}
                           // isActive={item.isActive}
                         >
-                          <a href={item.url}>
+                          <a
+                            href={item.url}
+                            title={
+                              item.devStage === "notStarted"
+                                ? "Não iniciado"
+                                : item.devStage === "started"
+                                  ? "Recém iniciado"
+                                  : item.devStage === "mvp"
+                                    ? "MVP"
+                                    : "done"
+                            }
+                          >
                             <div className="flex flex-row items-center gap-2">
                               <div className={clsx(
                                 "rounded-full w-2 h-2 shrink-0",
