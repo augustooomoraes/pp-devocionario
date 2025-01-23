@@ -1,0 +1,16 @@
+import WorkInProgress from "@/components/workInProgress/work-in-progess";
+
+export default function Page() {
+  return (
+    <main className="flex flex-col items-center pt-24 px-2">
+      <WorkInProgress
+        title="Tempo Comum"
+        subtitles={[
+          "Santíssima Trindade",
+          "Domingo após o de Pentecostes",
+          "Solenidade",
+        ]}
+      />
+    </main>
+  );
+}
