@@ -1,9 +1,9 @@
-import WorkInProgress from "@/components/workInProgress/work-in-progess";
+import DevocionarioTitleLogoSunHeart from "@/components/logo/devocionario-logo";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center p-24">
-      <WorkInProgress title="homepage" />
+    <main className="flex flex-col items-center pt-24 px-2">
+      <DevocionarioTitleLogoSunHeart />
     </main>
   );
 }

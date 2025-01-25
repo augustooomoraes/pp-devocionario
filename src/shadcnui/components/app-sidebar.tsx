@@ -1,5 +1,9 @@
 import * as React from "react"
 import { ChevronRight } from "lucide-react"
+import { cn } from "@/shadcnui/lib/utils";
+
+import { EB_Garamond } from "next/font/google";
+const devocionarioFont = EB_Garamond({subsets: ["latin"]})
 
 import { SearchForm } from "@/shadcnui/components/search-form"
 import {
@@ -32,13 +36,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <div className="flex flex-row gap-2 mb-0.5">
           {/* TODO: logo */}
           <Link
-            className="
+            className={cn(devocionarioFont.className, `
               flex items-center justify-start
               pl-3 
               grow
-              font-semibold text-lg
+              font-semibold text-xl
               hover:bg-accent rounded-sm
-            "
+            `)}
             href="/"
           >
             Devocionário
