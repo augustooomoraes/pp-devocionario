@@ -15,6 +15,39 @@ export const metadata: Metadata = {
     template: "%s - Devocionário"
   },
   description: "Projeto do portfólio de Augusto Moraes.",
+  metadataBase: new URL("https://devocionario.augustooomoraes.com/"),
+  openGraph: {
+    url: "https://devocionario.augustooomoraes.com",
+    type: "website",
+    title: "Devocionário",
+    description: "Projeto do portfólio de Augusto Moraes.",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 800,
+        height: 400,
+        alt: "Augusto Moraes OpenGraph Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    // domain: "devocionario.augustooomoraes.com",
+    // url: "https://devocionario.augustooomoraes.com",
+    site: "https://devocionario.augustooomoraes.com",
+    title: "Devocionário",
+    creator: "Augusto Moraes",
+    description: "Projeto do portfólio de Augusto Moraes.",
+    // image: "/opengraph-image.png",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 800,
+        height: 400,
+        alt: "Augusto Moraes OpenGraph Image",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
