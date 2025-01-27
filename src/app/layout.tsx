@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/themeToggle/theme-provider";
 import { SidebarProvider} from "@/shadcnui/components/ui/sidebar";
 import { AppSidebar } from "@/shadcnui/components/app-sidebar";
 import TopBar from "@/components/topbar/topbar";
+import { BackToTopButton } from "@/components/backToTopButton";
  
 const fontSans = Manrope({subsets: ["latin"]})
 
@@ -67,6 +68,7 @@ export default function RootLayout({
             <SidebarProvider>
               <AppSidebar />
               <TopBar children={children} />
+              <BackToTopButton />
             </SidebarProvider>
           </ThemeProvider>
         </body>
