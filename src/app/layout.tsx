@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/shadcnui/lib/utils"
 import { ThemeProvider } from "@/components/themeToggle/theme-provider";
 import { SidebarProvider} from "@/shadcnui/components/ui/sidebar";
 import { AppSidebar } from "@/shadcnui/components/app-sidebar";
@@ -64,8 +63,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={cn(fontSans.className, fontSerif.className)}>
-        <body className={cn( "min-h-screen flex flex-row")}>
+    <html lang="en" suppressHydrationWarning>
+        <body className="min-h-screen flex flex-row">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"

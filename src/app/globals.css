@@ -10,8 +10,9 @@
 
     /* CSS: .bg-gradient { background: var(--gradient) } */
 
-    --font-sans: "Manrope";
-    --font-serif: "EB_Garamond";
+    --font-sans: "Manrope", sans-serif;
+    --font-serif: "EB_Garamond", serif;
+    --font-family: var(--font-sans);
 
     --color-font-link-hover: 37 99 235;   /* #2563eb → blue-600 */
     --color-font-link-active: 59 130 246; /* #3b82f6 → blue-500 */
@@ -114,12 +115,16 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-sans), sans-serif;
+    font-family: var(--font-family);
   }
 }
 
-@media (prefers-serif-font: serif) {
+.serif {
+  --font-family: var(--font-serif);
+}
+
+/* @media (prefers-serif-font: serif) {
   html {
     font-family: var(--font-serif), serif;
   }
-}
+} */
