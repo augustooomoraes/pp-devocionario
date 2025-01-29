@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { EB_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/shadcnui/lib/utils"
 import { ThemeProvider } from "@/components/themeToggle/theme-provider";
@@ -8,7 +8,14 @@ import { AppSidebar } from "@/shadcnui/components/app-sidebar";
 import TopBar from "@/components/topbar/topbar";
 import { BackToTopButton } from "@/components/backToTopButton";
  
-const fontSans = Manrope({subsets: ["latin"]})
+const fontSans = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+})
+const fontSerif = EB_Garamond({
+  subsets: ["latin"],
+  variable: "--font-eb-garamond",
+})
 
 export const metadata: Metadata = {
   title: {
@@ -57,8 +64,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-        <body className={cn(fontSans.className, "min-h-screen flex flex-row")}>
+    <html lang="en" suppressHydrationWarning className={cn(fontSans.className, fontSerif.className)}>
+        <body className={cn( "min-h-screen flex flex-row")}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
