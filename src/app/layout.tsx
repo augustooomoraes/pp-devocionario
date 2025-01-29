@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/shadcnui/lib/utils"
 import { ThemeProvider } from "@/components/themeToggle/theme-provider";
 import { SidebarProvider} from "@/shadcnui/components/ui/sidebar";
 import { AppSidebar } from "@/shadcnui/components/app-sidebar";

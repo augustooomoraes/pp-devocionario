@@ -27,6 +27,7 @@ import { ThemeToggle } from "@/components/themeToggle/theme-toggle"
 import Link from "next/link"
 import { sidebarData } from "@/app/lib/data/sidebar"
 import clsx from "clsx"
+import { FontToggle } from "@/components/fontToggle/font-toggle";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -48,6 +49,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             Devocionário
           </Link>
           <div className="shrink-0">
+            <FontToggle />
             <ThemeToggle />
           </div>
         </div>
