@@ -8,7 +8,7 @@ export function replaceAllStyleTags(text: string, footnotes: Footnotes, links: L
       .map((part, index) => {
         if (part.startsWith("<paragraph>")) {
           return (
-            <span key={index} className="font-bold text-red-600">
+            <span key={index} className="font-bold text-rubrics">
               {"§ " + part.replace(/<\/?paragraph>/g, "") + ". "}
             </span>
           );
@@ -53,7 +53,7 @@ export function replaceBreakAndAsteriskAndFootnoteTags(parts: (string | React.JS
         const replaced = subPart.split("<*>").flatMap((segment, i) => 
           i > 0 ? [<span
             key={`${index}-${subIndex}-span-${i}`}
-            className="font-bold text-red-600"
+            className="font-bold text-rubrics"
           >*</span>, segment] : [segment]
         );
 
@@ -107,7 +107,7 @@ export function replaceLinkTags(
                 return (
                   <a
                     key={`${index}-${textIndex}`}
-                    className="underline hover:text-blue-600"
+                    className="underline hover:text-linkHover active:text-linkActive"
                     href={link.url}
                     title={link.alt}
                   >
