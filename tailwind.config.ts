@@ -23,6 +23,9 @@ const config = {
   			ann: '0.9375rem'
   		},
   		colors: {
+				linkHover: "rgb(var(--color-font-link-hover))",
+				linkActive: "rgb(var(--color-font-link-active))",
+				rubrics: "rgb(var(--color-font-rubrics))",
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
