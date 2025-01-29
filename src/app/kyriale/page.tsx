@@ -1,10 +1,11 @@
 import KyrialeList from "@/components/kyrialeList/kyriale-list";
 import file from "@/app/lib/data/musica-liturgica.json"
+import RegularMain from "@/components/regularMain/regular-main";
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center pt-24 px-2">
+    <RegularMain>
       <KyrialeList file={file["kyriale"]} />
-    </main>
+    </RegularMain>
   );
 }
