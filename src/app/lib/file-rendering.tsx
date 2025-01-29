@@ -311,6 +311,7 @@ export function DevocionarioFile({
                 content.type === "annotation" && "my-1 leading-tight italic text-ann font-light"
               )}
             // style={content.type === "header-2" ? { fontVariant: "small-caps"} : {}} // TODO: check if there's any next/font with true small caps
+            // Possibility: use local fonts without losing Nextjs font optimization: https://youtu.be/DqGr8YwO52Q?si=7f3Cyjgu6xBe_ZAg&t=299
             >
               <div className={clsx(
                 content.type === "header-2" && "mx-5",
