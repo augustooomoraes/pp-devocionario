@@ -9,6 +9,8 @@
        URL: https://gradient.page */
 
     /* CSS: .bg-gradient { background: var(--gradient) } */
+    --font-sans: "Manrope";
+    --font-serif: "EB_Garamond";
     --gradient: #363533;
     --background: 43 95.15% 98.42%;
     --foreground: 43 0.3% 0.84%;
@@ -102,5 +104,12 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans), sans-serif;
+  }
+}
+
+@media (prefers-serif-font: serif) {
+  html {
+    font-family: var(--font-serif), serif;
   }
 }
