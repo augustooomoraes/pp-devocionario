@@ -1,6 +1,7 @@
 import { BadgeData } from "@/app/lib/types/devocionarios";
 import { DevocionarioFile } from "../../lib/file-rendering";
 import file from "@/app/lib/data/devocionarios.json"
+import RegularMain from "@/components/regularMain/regular-main";
 
 const badges: BadgeData[] = [
   {badge: 1, surface: "orange-400", surfaceDark: "orange-700", text: "black", textDark: "white"},
@@ -11,9 +12,9 @@ const badges: BadgeData[] = [
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center pt-24 px-2">
+    <RegularMain>
       <DevocionarioFile file={file["consagracao-a-virgem-santissima"]} badges={badges} />
       {/* TODO: add badges, linked to the third section, below each prayer title, relative to the preparation steps they belong and which order, in that step, they occupy */}
-    </main>
+    </RegularMain>
   );
 }

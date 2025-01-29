@@ -1,8 +1,9 @@
+import RegularMain from "@/components/regularMain/regular-main";
 import WorkInProgress from "@/components/workInProgress/work-in-progess";
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center pt-24 px-2">
+    <RegularMain>
       <WorkInProgress
         title="Tempo do Natal"
         subtitles={[
@@ -11,6 +12,6 @@ export default function Page() {
           "Festa",
         ]}
       />
-    </main>
+    </RegularMain>
   );
 }

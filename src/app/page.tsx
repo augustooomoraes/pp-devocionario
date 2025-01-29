@@ -1,9 +1,10 @@
 import DevocionarioTitleLogoSunHeart from "@/components/logo/devocionario-logo";
+import RegularMain from "@/components/regularMain/regular-main";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center pt-24 px-2">
+    <RegularMain>
       <DevocionarioTitleLogoSunHeart />
-    </main>
+    </RegularMain>
   );
 }
