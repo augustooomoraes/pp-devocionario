@@ -64,8 +64,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={cn(fontSans.className, fontSerif.className)}>
-        <body className={cn( "min-h-screen flex flex-row")}>
+    <html lang="en" suppressHydrationWarning>
+        <body className="min-h-screen flex flex-row">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
