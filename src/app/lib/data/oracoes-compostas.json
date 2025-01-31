@@ -1,0 +1,400 @@
+{
+  "coroa-angelica": {
+    "title": "Coroa Angélica",
+    "index": [
+      {"id": 1, "title": "Orações básicas", "index": [
+        {"id": 2, "title": "Pai Nosso"},
+        {"id": 3, "title": "Ave Maria"},
+        {"id": 4, "title": "Santo Anjo"},
+        {"id": 5, "title": "Glória ao Pai"}
+      ]},
+      {"id": 6, "title": "Início", "index": [
+        {"id": 7, "title": "Sinal da Cruz"},
+        {"id": 8, "title": "Invitatório"}
+      ]},
+      {"id": 9, "title": "Saudações aos Coros Angélicos", "index": [
+        {"id": 10, "title": "Primeira Saudação ao Primeiro Coro Angélico"},
+        {"id": 11, "title": "Segunda Saudação ao Segundo Coro Angélico"},
+        {"id": 12, "title": "Terceira Saudação ao Terceiro Coro Angélico"},
+        {"id": 13, "title": "Quarta Saudação ao Quarto Coro Angélico"},
+        {"id": 14, "title": "Quinta Saudação ao Quinto Coro Angélico"},
+        {"id": 15, "title": "Sexta Saudação ao Sexto Coro Angélico"},
+        {"id": 16, "title": "Sétima Saudação ao Sétimo Coro Angélico"},
+        {"id": 17, "title": "Oitava Saudação ao Oitavo Coro Angélico"},
+        {"id": 18, "title": "Nona Saudação ao Nono Coro Angélico"}
+      ]},
+      {"id": 19, "title": "Final", "index": [
+        {"id": 20, "title": "Antífona"},
+        {"id": 21, "title": "Oração"}
+      ]}
+    ],
+    "sections": [
+      {
+        "id": 1,
+        "title": "Orações básicas",
+        "type": "parallel-preces",
+        "contents": [
+          {
+            "id": 2,
+            "type": "header-2",
+            "content": {
+              "latin": "Pater Noster",
+              "pt-BR": "Pai Nosso"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Pater noster qui es in cælis, sanctificétur nomen tuum. Advéniat regnum tuum. Fiat volúntas tua sicut in cælo et in terra.",
+              "pt-BR": "Pai nosso que estais nos céus, santificado seja o Vosso nome. Venha a nós o Vosso reino. Seja feita a Vossa vontade assim na terra como no céu."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Panem nostrum cotidiánum da nobis hódie. Et dimítte nobis débita nostra sicut et nos dimíttimus debitóribus nostris. Et ne nos indúcas in tentatiónem, sed líbera nos a malo. Ámen.",
+              "pt-BR": "O pão nosso de cada dia nos dai hoje. Perdoai-nos as nossas dívidas assim como nós perdoamos aos nossos devedores. E não nos deixeis cair em tentação, mas livrai-nos do mal. Amém."
+            }
+          },
+          {
+            "id": 3,
+            "type": "header-2",
+            "content": {
+              "latin": "Ave María",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Ave María, grátia plena, Dóminus tecum. Benedícta tu in muliéribus et benedíctus fructus ventris tui, Iesus.",
+              "pt-BR": "Ave Maria, cheia de graça, o Senhor é convosco. Bendita sois Vós entre as mulheres e bendito é o fruto do Vosso ventre, Jesus."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Sancta María, Mater Dei, ora pro nobis, peccatóribus, nunc et in hora mortis nostræ. Ámen.",
+              "pt-BR": "Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora de nossa morte. Amém."
+            }
+          },
+          {
+            "id": 4,
+            "type": "header-2",
+            "content": {
+              "latin": "Ángele Dei",
+              "pt-BR": "Santo Anjo"
+            }
+          },
+          {
+            "end-break": true,
+            "type": "paragraph",
+            "content": {
+              "latin": "Ángele Dei, qui custos es mei; me tibi comíssum pietáte supérna illúmina, custódi, rege et gubérna. Ámen.",
+              "pt-BR": "Santo Anjo do Senhor, meu zeloso guardador; se a ti me confiou a piedade divina, sempre me rege, guarda, governa, ilumina. Amém."
+            }
+          },
+          {
+            "id": 5,
+            "type": "header-2",
+            "content": {
+              "latin": "Glória Patri",
+              "pt-BR": "Glória ao Pai"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Glória Patri, et Fílio, et Spirítui Sancto.",
+              "pt-BR": "Glória ao Pai, ao Filho, e ao Espírito Santo."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Ámen.",
+              "pt-BR": "<i>[Assim]</i> como era no princípio, agora e sempre <i>[, e por todos os séculos dos séculos]</i>. Amém."
+            }
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Início",
+        "type": "parallel-preces",
+        "contents": [
+          {
+            "id": 7,
+            "type": "header-2",
+            "content": {
+              "latin": "Per Signum Crucis",
+              "pt-BR": "Sinal da Cruz"
+            }
+          },
+          {
+            "end-break": true,
+            "type": "paragraph",
+            "content": {
+              "latin": "Per signum Crucis de inimícis nostris nostris líbera nos, Deus noster.<br>In nómine Patris, et Fílii, et Spíritus Sancti. Ámen.",
+              "pt-BR": "Pelo sinal da Santa Cruz livrai-nos, Deus, dos nossos inimigos.<br>Em nome do pai, e do Filho, e do Espírito Santo. Amém"
+            }
+          },
+          {
+            "id": 8,
+            "type": "header-2",
+            "content": {
+              "latin": "Invitatórium",
+              "pt-BR": "Invitatório"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Deus, in audiutórium meum inténde.",
+              "pt-BR": "Ó Deus, vinde em meu auxílio."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Dómine, ad adiuvándum me festína.",
+              "pt-BR": "Senhor, apressai-Vos em me socorrer."
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Glória",
+              "pt-BR": "Glória"
+            }
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Saudações aos Coros Angélicos",
+        "type": "regular-text",
+        "contents": [
+          {
+            "id": 10,
+            "type": "header-1",
+            "content": "Primeira Saudação ao Primeiro Coro Angélico"
+          },
+          {
+            "type": "indication",
+            "content": "Pai Nosso, Ave Maria, Santo Anjo, Glória."
+          },
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Pela intercessão de São Miguel e do celeste Coro dos Serafins, faça-nos o Senhor dignos das chamas de perfeita caridade. Amém."
+          },
+          {
+            "id": 11,
+            "type": "header-1",
+            "content": "Segunda Saudação ao Segundo Coro Angélico"
+          },
+          {
+            "type": "indication",
+            "content": "Pai Nosso, Ave Maria, Santo Anjo, Glória."
+          },
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Pela intercessão de São Miguel e do celeste Coro dos Querubins, queira o Senhor dar-nos a graça de abandonarmos o caminho do pecado e perlustrarmos o da perfeição cristã. Amém."
+          },
+          {
+            "id": 12,
+            "type": "header-1",
+            "content": "Terceira Saudação ao Terceiro Coro Angélico"
+          },
+          {
+            "type": "indication",
+            "content": "Pai Nosso, Ave Maria, Santo Anjo, Glória."
+          },
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Pela intercessão de São Miguel e do sacro Coro dos Tronos, infunda-nos o Senhor no coração um espírito de verdadeira e sincera humildade. Amém."
+          },
+          {
+            "id": 13,
+            "type": "header-1",
+            "content": "Quarta Saudação ao Quarto Coro Angélico"
+          },
+          {
+            "type": "indication",
+            "content": "Pai Nosso, Ave Maria, Santo Anjo, Glória."
+          },
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Pela intercessão de São Miguel e do sacro Coro das Dominações, dê-nos o Senhor a graça de dominarmos os nossos sentidos e nos corrigirmos das depravadas paixões. Amém."
+          },
+          {
+            "id": 14,
+            "type": "header-1",
+            "content": "Quinta Saudação ao Quinto Coro Angélico"
+          },
+          {
+            "type": "indication",
+            "content": "Pai Nosso, Ave Maria, Santo Anjo, Glória."
+          },
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Pela intercessão de São Miguel e do celeste Coro das Potestades, digne-se o Senhor de proteger as nossas almas das insídias e tentações do demônio. Amém."
+          },
+          {
+            "id": 15,
+            "type": "header-1",
+            "content": "Sexta Saudação ao Sexto Coro Angélico"
+          },
+          {
+            "type": "indication",
+            "content": "Pai Nosso, Ave Maria, Santo Anjo, Glória."
+          },
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Pela intercessão de São Miguel e do Coro das admiráveis Virtudes celestiais, não nos deixe o Senhor sucumbirmos nas tentações, mas livre-nos do mal. Amém."
+          },
+          {
+            "id": 16,
+            "type": "header-1",
+            "content": "Sétima Saudação ao Sétimo Coro Angélico"
+          },
+          {
+            "type": "indication",
+            "content": "Pai Nosso, Ave Maria, Santo Anjo, Glória."
+          },
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Pela intercessão de São Miguel e do celeste Coro dos Principados, farte-nos o Senhor do espírito de verdadeira e sincera obediência. Amém."
+          },
+          {
+            "id": 17,
+            "type": "header-1",
+            "content": "Oitava Saudação ao Oitavo Coro Angélico"
+          },
+          {
+            "type": "indication",
+            "content": "Pai Nosso, Ave Maria, Santo Anjo, Glória."
+          },
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Pela intercessão de São Miguel e do celeste Coro dos Arcanjos, conceda-nos o Senhor o dom da perseverança na fé e nas boas obras para podermos chegar à aquisição da glória do Paraíso. Amém."
+          },
+          {
+            "id": 18,
+            "type": "header-1",
+            "content": "Nona Saudação ao Nono Coro Angélico"
+          },
+          {
+            "type": "indication",
+            "content": "Pai Nosso, Ave Maria, Santo Anjo, Glória."
+          },
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Pela intercessão de São Miguel e do celeste Coro de todos os Anjos, digne-se o Senhor de conceder-nos sermos guardados por eles nesta presente vida mortal e sermos, depois, conduzidos à glória sempiterna. Amém"
+          },
+          {
+            "type": "indication",
+            "content": "Recite-se ao fim desta coroa quatro Pai Nossos: um a São Miguel, outro a São Gabriel, outro a São Rafael e o último ao nosso Anjo Custódio."
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "title": "Final",
+        "type": "regular-text",
+        "contents": [
+          {
+            "type": "indication",
+            "content": "Completa-se este devoto exercício com o que segue:"
+          },
+          {
+            "subsection-break": true,
+            "type": "parallel-preces",
+            "contents": [
+              {
+                "id": 20,
+                "type": "header-2",
+                "content": {
+                  "latin": "Antíphona",
+                  "pt-BR": "Antífona"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "O Prínceps glorióse Sancte Míchæl, Dux et præpósite cæléstium exercítuum, Custos animárum, Dómitor spirítuum rebéllum, Serve in domu divíni Regis, et noster condúctor mirábilis, qui cum excelléntia et virtúte cælésti fulges, líbera nos a malo, qui ad te cum confidéntia convértimus, et nos propítio præsídio tuo fac, quotídie Deum magis fidéliter servíre. Ámen.",
+                  "pt-BR": "Gloriosíssimo São Miguel, chefe e guia do celeste exército, depositário das almas, debelador dos espíritos rebeldes, doméstico da Régia divina; depois de Jesus, nosso admirável Guia, repleto de sobrenatural excelência e virtude: dignai-vos de libertar-nos de todo o mal a todos nós que, confiados, a vós recorremos. Fazei que, pela vossa incomparável proteção, cada um de nós se avantaje em servir fielmente ao nosso Deu"
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Ora pro nobis, o Glorióse Sancte Míchæl, Prínceps Ecclésiæ Iesu Christi.",
+                  "pt-BR": "Rogai por nós, ó beatíssimo São Miguel, Príncipe na Igreja de Cristo Jesus."
+                }
+              },
+              {
+                "subsection-break": true,
+                "type": "r",
+                "content": {
+                  "latin": "Ut digni efficiámur promissiónibus Eius.",
+                  "pt-BR": "Para que sejamos dignos das Suas promessas."
+                }
+              },
+              {
+                "id": 21,
+                "type": "header-2",
+                "content": {
+                  "latin": "Orátio",
+                  "pt-BR": "Oração"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Omnípotens ætérne Deus, Qui prodígio bonitátis et cleménte volens salve omnes hómines, gloriosíssimum Archángelum Sanctum Míchælem, Príncipem Ecclésiæ tuæ constituísti, fac nos dignos, te rogámus, liberári ab adversáriis cunctis, ne nos vexent, in hora mortis nostræ, sed nos perdúcti simus ab eo in præséntiam tuam. Hoc orémus méritis Iesu Christi, Dómini nostri. Ámen.",
+                  "pt-BR": "Onipotente, sempiterno Deus, que, com prodigiosa bondade e misericórdia, elegestes, para salvação comum dos homens, a Príncipe da Vossa Igreja, o gloriosíssimo Arcanjo São Miguel: fazei-nos, nós Vos suplicamos, dignos de sermos libertados, por sua benéfica proteção, de todos os nossos inimigos, de sorte que nenhum deles nos possa molestar, e seja-nos dado podermos, por ele mesmo, ser conduzidos diante da Vossa excelsa e divina Majestade. Pelos méritos de Jesus Cristo, Nosso Senhor. Amém."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "section-map": [
+      {"id": 1, "title": "1-oracoes-basicas"},
+      {"id": 2, "title": "1-1-pai-nosso"},
+      {"id": 3, "title": "1-2-ave-maria"},
+      {"id": 4, "title": "1-3-santo-anjo"},
+      {"id": 5, "title": "1-4-gloria-ao-pai"},
+      {"id": 6, "title": "2-inicio"},
+      {"id": 7, "title": "2-1-sinal-da-cruz"},
+      {"id": 8, "title": "2-2-invitatorio"},
+      {"id": 9, "title": "3-saudacoes-aos-coros-angelicos"},
+      {"id": 10, "title": "3-1-primeira-saudacao"},
+      {"id": 11, "title": "3-2-segunda-saudacao"},
+      {"id": 12, "title": "3-3-terceira-saudacao"},
+      {"id": 13, "title": "3-4-quarta-saudacao"},
+      {"id": 14, "title": "3-5-quinta-saudacao"},
+      {"id": 15, "title": "3-6-sexta-saudacao"},
+      {"id": 16, "title": "3-7-setima-saudacao"},
+      {"id": 17, "title": "3-8-oitava-saudacao"},
+      {"id": 18, "title": "3-9-nona-saudacao"},
+      {"id": 19, "title": "4-final"},
+      {"id": 20, "title": "4-1-antifona"},
+      {"id": 21, "title": "4-2-oracao"}
+    ]
+  }
+}

@@ -1,10 +1,11 @@
 import RegularMain from "@/components/regularMain/regular-main";
-import WorkInProgress from "@/components/workInProgress/work-in-progess";
+import { DevocionarioFile } from "@/app/lib/file-rendering";
+import file from "@/app/lib/data/oracoes-compostas.json"
 
 export default function Page() {
   return (
     <RegularMain>
-      <WorkInProgress title="Coroa Angélica" />
+      <DevocionarioFile file={file["coroa-angelica"]} />
     </RegularMain>
   );
 }

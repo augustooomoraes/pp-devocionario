@@ -35,7 +35,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 
       <SidebarHeader>
         <div className="flex flex-row gap-2 mb-0.5">
-          {/* TODO: logo */}
           <Link
             className={cn(devocionarioFont.className, `
               flex items-center justify-start
