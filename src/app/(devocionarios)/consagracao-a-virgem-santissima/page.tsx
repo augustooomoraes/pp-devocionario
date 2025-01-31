@@ -3,6 +3,10 @@ import { DevocionarioFile } from "../../lib/file-rendering";
 import file from "@/app/lib/data/devocionarios.json"
 import RegularMain from "@/components/regularMain/regular-main";
 
+export const metadata = {
+  title: "Da Devoção e da Consagração Total à Virgem Santíssima",
+};
+
 const badges: BadgeData[] = [
   {badge: 1, surface: "orange-400", surfaceDark: "orange-700", text: "black", textDark: "white"},
   {badge: 2, surface: "green-400", surfaceDark: "green-700", text: "black", textDark: "black"},

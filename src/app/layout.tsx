@@ -19,7 +19,7 @@ const fontSerif = EB_Garamond({
 export const metadata: Metadata = {
   title: {
     default: "Devocionário",
-    template: "%s - Devocionário"
+    template: "%s"
   },
   description: "Projeto do portfólio de Augusto Moraes.",
   metadataBase: new URL("https://devocionario.augustooomoraes.com/"),
