@@ -75,9 +75,9 @@ export const sidebarData: SidebarData = {
           devStage: "started",
         },
         {
-          title: "Pequena Coroa de Nossa Senhora",
-          url: "/pequena-coroa-de-nossa-senhora",
-          devStage: "notStarted",
+          title: "Pequena Coroa da Santíssima Virgem",
+          url: "/pequena-coroa-da-santissima-virgem",
+          devStage: "mvp",
         },
         {
           title: "Coroa Angélica",

@@ -304,8 +304,8 @@ export function DevocionarioFile({
                 content["subsection-break"] && "mb-5",
                 content["horizontal-line"] === "full" && "after:content-[''] after:block after:h-[1px] after:bg-gray-400 after:mx-5 after:mb-2.5 after:col-span-2",
                 "grid grid-cols-2 gap-3",
+                content.type === "header-1" && "text-base font-semibold text-center",
                 content.type === "header-2" && "text-lg font-medium",
-                "",
                 content.type === "paragraph" && "mb-1.5 mt-1.5",
                 content.type === "indication" && "my-1.5 leading-tight italic text-base font-light",
                 content.type === "annotation" && "my-1 leading-tight italic text-ann font-light"

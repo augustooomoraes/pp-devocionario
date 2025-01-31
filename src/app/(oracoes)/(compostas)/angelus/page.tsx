@@ -3,7 +3,7 @@ import { DevocionarioFile } from "@/app/lib/file-rendering";
 import file from "@/app/lib/data/oracoes-compostas.json"
 
 export const metadata = {
-  title: "Coroa Angélica",
+  title: "Ángelus",
 };
 
 export default function Page() {

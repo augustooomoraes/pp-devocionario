@@ -541,5 +541,626 @@
       {"id": 1, "title": "1-oracao-basica"},
       {"id": 2, "title": "2-angelus"}
     ]
+  },
+  "pequena-coroa-da-santissima-virgem": {
+    "title": "A Pequena Coroa da Santíssima Virgem",
+    "index": [
+      {"id": 1, "title": "Orações básicas", "index": [
+        {"id": 2, "title": "Credo", "index": [
+          {"id": 3, "title": "Símbolo dos Apóstolos"},
+          {"id": 4, "title": "Símbolo Niceno-Constantinopolitano"}
+        ]},
+        {"id": 5, "title": "Pai Nosso"},
+        {"id": 6, "title": "Ave Maria"},
+        {"id": 7, "title": "Glória ao Pai"}
+      ]},
+      {"id": 8, "title": "A Pequena Coroa da Santíssima Virgem"}
+    ],
+    "sections": [
+      {
+        "id": 1,
+        "title": "Orações básicas",
+        "type": "parallel-preces",
+        "contents": [
+          {
+            "id": 2,
+            "type": "header-1",
+            "content": {
+              "latin": "Credo",
+              "pt-BR": "Credo"
+            }
+          },
+          {
+            "id": 3,
+            "type": "header-2",
+            "content": {
+              "latin": "Sýmbolum Apostolórum",
+              "pt-BR": "Credo I – Símbolo dos Apóstolos"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Credo in Deum Patrem omnipotentem, Creatorem cæli et terræ, et in Iesum Christum, Filium Eius unicum, Dominum nostrum, qui conceptus est de Spíritu Sancto, natus ex Maria Vírgine, passus sub Pontio Pilato, crucifixus, mórtuus, et sepultus, descendit ad ínferos, tértia die resurrexit a mórtuis, ascendit ad cælos, sedet ad déxteram Dei Patris omnipotentis, inde venturus est iudicare vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Eccléiam cathólicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem, vitam æternam. Amen.",
+              "pt-BR": "Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado; desceu à mansão dos mortos; ressucitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na Santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressureição da carne, na vida eterna. Amém."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "annotation",
+            "content": {
+              "latin": "(Aut óptio)",
+              "pt-BR": "(Ou)"
+            }
+          },
+          {
+            "id": 4,
+            "type": "header-2",
+            "content": {
+              "latin": "Sýmbolum Nicænum",
+              "pt-BR": "Credo II – Símbolo Niceno-Constantinopolitano"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Credo in unum Deum, Patrem omnipotentem, factorem cæli et terræ, visibílium ómnium et invisibílium.",
+              "pt-BR": "Creio em um só Deus, Pai todo-poderoso, Criador do céu e da terra, de todas as coisas visíveis e invisíveis."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et in unum Dóminum Iesum Christum, Fílium Dei unigénitum, et ex Patre natum ante ómnia sǽcula. Deum de Deo, Lumen de Lúmine, Deum verum de Deo vero, génitum, non factum, consubstantiálitem Patri; per quem ómnia facta sunt.",
+              "pt-BR": "Creio em um só Senhor, Jesus Cristo, Filho Unigênito de Deus, nascido do Pai antes de todos os séculos: Deus e Deus, Luz da Luz, Deus verdadeiro de Deus verdadeiro; gerado, não criado, consubstancial ao Pai. Por Ele todas as coisas foram feitas."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Qui propter nos hómines et propter nostram salutem descendit de cælis.",
+              "pt-BR": "E por nós, homens, e para a nossa salvação, desceu dos céus."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et incarnatus est de Spíritu Sancto ex Maria Vírginem, et homo factus est.",
+              "pt-BR": "E se encarnou pelo Espírito Santo, no seio da Virgem Maria, e se fez homem."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Crucifixus étiam pro nobis sub Póntio Pilato, passus et sepultus est.",
+              "pt-BR": "Também por nós foi crucificado sob Pôncio Pilatos; padeceu e foi sepultado."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et ressurrexit tértia die, secundum Scripturas, et ascendit in cælum, sedet ad déxteram Patris.",
+              "pt-BR": "Ressucitou ao terceiro dia, conforme as Escrituras; e subiu aos céus, onde está sentado à direita do Pai."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et íterum venturus est cum glória, iudicare vivos et mórtuos, cuius regni non erit finis.",
+              "pt-BR": "E de novo há de vir em sua glória, para julgar os vivos e os mortos; e o seu reino não terá fim."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et in Spíritum Sanctum, Dóminum et vivificantem, qui ex Patre Filióque procedit.",
+              "pt-BR": "Creio no Espírito Santo, Senhor que dá a vida, e procede do Pai e do Filho."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Qui cum Patre et Fílio simul adoratur et conglorificatur: qui locutus est per prophetas.",
+              "pt-BR": "E com o Pai e o FIlho é adorado e conglorificado: Ele que falou pelos Profetas."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et unam, sanctam, cathólicam et apostólicam Ecclésiam.",
+              "pt-BR": "Creio na Igreja, una santa, católica e apostólica."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Confíteor unum baptisma in remissionem peccatorum. Et exspecto ressurrectionem mortuorum, et vitam venturi sǽculi. Amen.",
+              "pt-BR": "Professo um só batismo para remissão dos pecados. E espero a ressurreição dos mortos, e a vida do mundo que há de vir. Amém."
+            }
+          },
+          {
+            "id": 5,
+            "type": "header-2",
+            "content": {
+              "latin": "Pater Noster",
+              "pt-BR": "Pai Nosso"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Pater noster qui es in cælis, sanctificétur nomen tuum. Advéniat regnum tuum. Fiat volúntas tua sicut in cælo et in terra.",
+              "pt-BR": "Pai nosso que estais nos céus, santificado seja o Vosso nome. Venha a nós o Vosso reino. Seja feita a Vossa vontade assim na terra como no céu."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Panem nostrum cotidiánum da nobis hódie. Et dimítte nobis débita nostra sicut et nos dimíttimus debitóribus nostris. Et ne nos indúcas in tentatiónem, sed líbera nos a malo. Ámen.",
+              "pt-BR": "O pão nosso de cada dia nos dai hoje. Perdoai-nos as nossas dívidas assim como nós perdoamos aos nossos devedores. E não nos deixeis cair em tentação, mas livrai-nos do mal. Amém."
+            }
+          },
+          {
+            "id": 6,
+            "type": "header-2",
+            "content": {
+              "latin": "Ave María",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Ave María, grátia plena, Dóminus tecum. Benedícta tu in muliéribus et benedíctus fructus ventris tui, Iesus.",
+              "pt-BR": "Ave Maria, cheia de graça, o Senhor é convosco. Bendita sois Vós entre as mulheres e bendito é o fruto do Vosso ventre, Jesus."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Sancta María, Mater Dei, ora pro nobis, peccatóribus, nunc et in hora mortis nostræ. Ámen.",
+              "pt-BR": "Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora de nossa morte. Amém."
+            }
+          },
+          {
+            "id": 7,
+            "type": "header-2",
+            "content": {
+              "latin": "Glória Patri",
+              "pt-BR": "Glória ao Pai"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Glória Patri, et Fílio, et Spirítui Sancto.",
+              "pt-BR": "Glória ao Pai, ao Filho, e ao Espírito Santo."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Ámen.",
+              "pt-BR": "<i>[Assim]</i> como era no princípio, agora e sempre <i>[, e por todos os séculos dos séculos]</i>. Amém."
+            }
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "A Pequena Coroa da Santíssima Virgem",
+        "type": "parallel-preces",
+        "contents": [
+          {
+            "type": "header-2",
+            "content": {
+              "latin": "Rosarium Beatæ Vírginis Mariæ Corona",
+              "pt-BR": "A Pequena Coroa da Santíssima Virgem"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Dignare me laudare te, Virgo sacrata.",
+              "pt-BR": "Concedei-me que vos louve, Virgem sagrada."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Da mihi virtutem contra hostes tuos.",
+              "pt-BR": "Dai-me valor contra os vossos inimigos."
+            }
+          },
+          {
+            "horizontal-line": "two-halves",
+            "type": "indication",
+            "content": {
+              "latin": "Credo",
+              "pt-BR": "Credo"
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "I. Pater Noster, Ave Maria",
+              "pt-BR": "I. Pai Nosso, Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Beata es, Virgo Maria, quæ Dóminum portasti, Creatorem mundi: genuísti qui te fecit, et in æternum permanes Virgo.",
+              "pt-BR": "Sois bem-aventurada, Virgem Maria, que levastes em vosso seio o Senhor, Criador do mundo; destes à luz a quem vos formou, e sois Virgem perpétua."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Ave Maria",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Sancta et Immaculata Virginitas, quibus te laudibus efferam nescio? Quia quem cæli capere non poterant, tuo gremio contulisti.",
+              "pt-BR": "Ó santa e imaculada virgindade, não sei com que louvores vos possa exaltar; pois quem os céus não podem conter, vós o levastes em vosso seio."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Ave Maria",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Tota pulchra es, Maria, et mácula originalis non est in te.",
+              "pt-BR": "Sois toda formosa, Virgem Maria, e não há mancha em vós."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Ave Maria",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Tot tibi sunt dotes, Virgo, quot sidera cælo.",
+              "pt-BR": "Possuís, ó Virgem Santíssima, tantos privilégios, quantas são as estrelas no céu."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "horizontal-line": "two-halves",
+            "type": "indication",
+            "content": {
+              "latin": "Glória Patri",
+              "pt-BR": "Glória"
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "II. Pater Noster, Ave Maria",
+              "pt-BR": "II. Pai Nosso, Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Gloria tibi sit, Imperatrix poli: tecum nos perducas ad gaudia cæli.",
+              "pt-BR": "Glória a vós, imperatriz do céu; conduzi-nos convosco aos gozos do paraíso."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Ave Maria",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Gloria tibi sit, Thesauriaria gratiárum Dómini, fac nos partícipes thesauri tui.",
+              "pt-BR": "Glória a vós, tesoureira das graças do Senhor; dai-nos parte em vosso tesouro."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Ave Maria",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Gloria tibi sit, Mediatrix inter Deum et hóminem, fac nobis propítium Omnipotentem.",
+              "pt-BR": "Glória a vós, medianeira entre Deus e os homens; tornai-nos propício o Todo-poderoso."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Ave Maria",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Gloria tibi sit, hæresum et dǽmonum intereptrix, sis pia nostra gubernatrix.",
+              "pt-BR": "Glória a vós, que esmagais as heresias e o demônio: sede nossa bondosa guia."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "horizontal-line": "two-halves",
+            "type": "indication",
+            "content": {
+              "latin": "Glória Patri",
+              "pt-BR": "Glória"
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "III. Pater Noster, Ave Maria",
+              "pt-BR": "III. Pai Nosso, Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Gloria tibi sit, refugium peccatórum, intercede pro nobis ad Dóminum.",
+              "pt-BR": "Glória a vós, refúgio dos pecadores; intercedei por nós junto ao Senhor."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Ave Maria",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Gloria tibi sit, orphanorum Mater, fac nobis propítius sit Omnípotens Pater.",
+              "pt-BR": "Glória a vós, Mãe dos órfãos; fazei que nos seja propício o Pai todo-poderoso."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Ave Maria",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Gloria tibi sit, lætítia iustorum, tecum nos perducas ad gaudia cælorum.",
+              "pt-BR": "Glória a vós, alegria dos justos; conduzi-nos convosco às alegrias do céu."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Ave Maria",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Gloria tibi sit, in vita et morte adiutrix præsentissima, tecum nos perducas ad cælorum regna.",
+              "pt-BR": "Glória a vós, nossa Auxiliadora mui prestimosa na vida e na morte; conduzi-nos convosco ao reino do céu."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude, Maria Virgo.",
+              "pt-BR": "Alegrai-vos, Virgem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Gaude míllies.",
+              "pt-BR": "Alegrai-vos mil vezes."
+            }
+          },
+          {
+            "horizontal-line": "two-halves",
+            "type": "indication",
+            "content": {
+              "latin": "Glória Patri",
+              "pt-BR": "Glória"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "<i>Oremus:</i> Ave Maria, Filia Dei Patris. Ave Maria, Mater Dei Fili. Ave Maria, Sponsa Fidelíssima Spíritus Sancti. Ave Maria, Templum totius trinitatis! Ave Maria, Dómina mea, bona mea, rosa mea, regina cordis mei, mater, vita, dulcedo et spes nostra caríssima, imo cor meum et ánima mea! Tuus ego sum et ómnia mea Tua sunt, o Virgo super ómnia benedicta. Sit ergo in me ánima Tua, ut magníficet Dóminum; sit in me Spíritus Tuus, ut exsultet in Deo. Pone Te, Virgo Fidelis, ut signáculum super cor meum, ut in Te et per Te Deo fidelis invéniar. Largire, o Benigna, ut illis annumerer quos tanquam filios amas, doces, dirigis, foves, protegis. Fac ut, amore Tui, terrenas omnes spernens consolationes, cæléstibus semper inhæream. Donec in me, per Spíritum Sanctum sponsum Tuum fidelíssimum et Te fidelíssimam Eius sponsam, formetur Iesus Christus Filius Tuus ad glóriam Patris. Amen.",
+              "pt-BR": "<i>Oremos:</i> Ave Maria, Filha de Deus Pai. Ave Maria, Mãe de Deus Filho. Ave Maria, Esposa do Espírito Santo. Ave Maria, templo da Santíssima Trindade. Ave Maria, Senhora minha, meu bem, meu amor, Rainha do meu coração, Mãe, vida, doçura e esperança minha mui querida, meu coração e minha alma. Sou todo vosso, e tudo que possuo é vosso, ó Virgem sobre todos bendita. Esteja, pois, em mim vossa alma, para engrandecer o Senhor; esteja em mim vosso espírito, para rejubilar em Deus. Colocai-vos, ó Virgem fiel, como selo sobre meu coração, para que, em vós e por vós, seja eu achado fiel a Deus. Concede, ó Mãe de misericórdia, que me encontre no número dos que amais, ensinais, guiais, sustentais e protegeis como filhos. Fazei que, por vosso amor, despreze todas as consolações da terra e aspire só às celestes; até que, para a glória do Pai, Jesus Cristo, vosso Filho, seja formado em mim, pelo Espírito Santo, vosso Esposo fidelíssimo, e por vós, sua Esposa mui fiel. Assim seja."
+            }
+          }
+        ]
+      }
+    ],
+    "section-map": [
+      {"id": 1, "title": "1-oracoes-basicas"},
+      {"id": 2, "title": "1-1-credo"},
+      {"id": 3, "title": "1-1-1-credo-apostolico"},
+      {"id": 4, "title": "1-1-2-credo-niceno-constantinopolitano"},
+      {"id": 5, "title": "1-2-pai-nosso"},
+      {"id": 6, "title": "1-3-ave-maria"},
+      {"id": 7, "title": "1-4-gloria-ao-pai"},
+      {"id": 8, "title": "2-a-pequena-coroa-da-santissima-virgem"}
+    ]
   }
 }

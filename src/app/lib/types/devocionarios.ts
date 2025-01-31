@@ -77,6 +77,7 @@ export type SectionContentTypes = (
 )
 
 export type ParallelPrecesTypes = (
+  "header-1" |
   "header-2" |
   "paragraph" |
   "v" |

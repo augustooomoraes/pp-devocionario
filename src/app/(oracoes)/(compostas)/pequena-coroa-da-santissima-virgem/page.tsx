@@ -1,5 +1,6 @@
 import RegularMain from "@/components/regularMain/regular-main";
-import WorkInProgress from "@/components/workInProgress/work-in-progess";
+import { DevocionarioFile } from "@/app/lib/file-rendering";
+import file from "@/app/lib/data/oracoes-compostas.json"
 
 export const metadata = {
   title: "Pequena Coroa de Nossa Senhora",
@@ -8,7 +9,7 @@ export const metadata = {
 export default function Page() {
   return (
     <RegularMain>
-      <WorkInProgress title="Pequena Coroa de Nossa Senhora" />
+      <DevocionarioFile file={file["pequena-coroa-da-santissima-virgem"]} />
     </RegularMain>
   );
 }

@@ -102,7 +102,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                                   ? "Recém iniciado"
                                   : item.devStage === "mvp"
                                     ? "MVP"
-                                    : "done"
+                                    : "Pronto"
                             }
                           >
                             <div className="flex flex-row items-center gap-2">
