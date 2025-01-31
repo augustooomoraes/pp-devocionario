@@ -386,7 +386,7 @@ export function DevocionarioFile({
       <h1 className="text-3xl font-medium mb-12 mx-6 text-center">{file.title}</h1>
       {renderIndex(file.index, file["section-map"])}
       {renderSections(file.sections, file["section-map"], file["link-map"], badges || undefined)}
-      {renderFootnotes(file.footnotes, file["link-map"])}
+      {file.footnotes && renderFootnotes(file.footnotes, file["link-map"])}
     </div>
   )
 }
