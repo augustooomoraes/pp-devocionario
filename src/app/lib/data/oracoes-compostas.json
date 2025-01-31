@@ -396,5 +396,150 @@
       {"id": 20, "title": "4-1-antifona"},
       {"id": 21, "title": "4-2-oracao"}
     ]
+  },
+  "angelus": {
+    "title": "Ángelus",
+    "index": [
+      {"id": 1, "title": "Oração básica: Ave Maria"},
+      {"id": 2, "title": "Ángelus"}
+    ],
+    "sections": [
+      {
+        "id": 1,
+        "title": "Oração básica: Ave Maria",
+        "type": "parallel-preces",
+        "contents": [
+          {
+            "type": "header-2",
+            "content": {
+              "latin": "Ave María",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Ave María, grátia plena, Dóminus tecum. Benedícta tu in muliéribus et benedíctus fructus ventris tui, Iesus.",
+              "pt-BR": "Ave Maria, cheia de graça, o Senhor é convosco. Bendita sois Vós entre as mulheres e bendito é o fruto do Vosso ventre, Jesus."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Sancta María, Mater Dei, ora pro nobis, peccatóribus, nunc et in hora mortis nostræ. Ámen.",
+              "pt-BR": "Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora de nossa morte. Amém."
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Ángelus",
+        "type": "parallel-preces",
+        "contents": [
+          {
+            "type": "v",
+            "content": {
+              "latin": "Ángelus Dómini nuntiávit Maríæ.",
+              "pt-BR": "O Anjo do Senhor anunciou a Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Et concépit de Spíritu Sancto.",
+              "pt-BR": "E ela concebeu do Espírito Santo."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "indication",
+            "content": {
+              "latin": "Ave María",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Ecce ancílla Dómini.",
+              "pt-BR": "Eis aqui a escrava do Senhor."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Fiat mihi secundum verbum tuum.",
+              "pt-BR": "Faça-se em mim segundo a vossa palavra."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "indication",
+            "content": {
+              "latin": "Ave María",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Et Verbum caro factum est.",
+              "pt-BR": "E o Verbo de Deus se fez carne."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Et habitavit in nobis.",
+              "pt-BR": "E habitou entre nós."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "indication",
+            "content": {
+              "latin": "Ave María",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Ora pro nobis, sancta Dei Génitrix.",
+              "pt-BR": "Rogai por nós, santa Mãe de Deus."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Ut digni efficiámur promissiónibus Christi.",
+              "pt-BR": "Para que sejamos dignos das promessas de Cristo."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "<i>Oremus:</i> grátiam tuam, quǽsumus, Dómine, méntibus nostris infunde; ut qui, Ángelo nuntiánte, Christi Fílii tui incarnatiónem cognóvimus, per passiónem eius et crucem, ad ressurectiónis glóriam perducámur. Per eúndem Christum Dóminum nostrum.",
+              "pt-BR": "<i>Oremos:</i> infundi, Senhor, nós Vos pedimos, em nossas almas a Vossa graça, para que nós, que conhecemos pela anunciação do Anjo a Encarnação de Jesus Cristo, cheguemos, por Sua Paixão e Cruz, à glória da Ressurreição. Pelo mesmo Jesus Cristo, Senhor Nosso."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Amen.",
+              "pt-BR": "Amém."
+            }
+          }
+        ]
+      }
+    ],
+    "section-map": [
+      {"id": 1, "title": "1-oracao-basica"},
+      {"id": 2, "title": "2-angelus"}
+    ]
   }
 }

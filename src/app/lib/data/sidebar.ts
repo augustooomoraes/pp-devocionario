@@ -65,6 +65,11 @@ export const sidebarData: SidebarData = {
           devStage: "done",
         },
         {
+          title: "Ángelus",
+          url: "/angelus",
+          devStage: "mvp",
+        },
+        {
           title: "Santo Rosário",
           url: "/santo-rosario",
           devStage: "started",
