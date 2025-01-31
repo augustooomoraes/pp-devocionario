@@ -36,6 +36,8 @@ export type SectionContents = {
 }[]
 
 export type ParallelPreces = {
+  id?: number,
+  "link-id"?: number,
   type: ParallelPrecesTypes,
   content: ParallelPrecesContent,
   "end-break"?: boolean,

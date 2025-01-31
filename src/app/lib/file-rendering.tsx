@@ -218,7 +218,7 @@ export function DevocionarioFile({
                 key={index}
                 className={clsx(content["subsection-break"] && "mb-5",)}
               >{
-                renderParallelPreces(content.contents as unknown as ParallelPreces, index)
+                renderParallelPreces(content.contents as unknown as ParallelPreces, index, sectionMap, linkMap)
               }</div>
 
               default:
@@ -227,7 +227,7 @@ export function DevocionarioFile({
           })
         )
       case "parallel-preces":
-        return renderParallelPreces(contents as unknown as ParallelPreces, 0)
+        return renderParallelPreces(contents as unknown as ParallelPreces, 0, sectionMap, linkMap)
 
       case "gregorian-chant":
         return <></>
@@ -237,7 +237,7 @@ export function DevocionarioFile({
     }
   }
 
-  function renderParallelPreces(contents: ParallelPreces, index: number) {
+  function renderParallelPreces(contents: ParallelPreces, index: number, sectionMap: SectionMap, linkMap: LinkMap) {
     return (
       contents.map((content, subindex) => {
         switch(content.type) {
@@ -313,16 +313,52 @@ export function DevocionarioFile({
             // style={content.type === "header-2" ? { fontVariant: "small-caps"} : {}} // TODO: check if there's any next/font with true small caps
             // Possibility: use local fonts without losing Nextjs font optimization: https://youtu.be/DqGr8YwO52Q?si=7f3Cyjgu6xBe_ZAg&t=299
             >
-              <div className={clsx(
-                content.type === "header-2" && "mx-5",
-                content.type === "indication" && "mx-5",
-                content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
-              )}>{replaceAllStyleTags(content.content["pt-BR"], file.footnotes, file["link-map"])}</div>
-              <div className={clsx(
-                content.type === "header-2" && "mx-5",
-                content.type === "indication" && "mx-5",
-                content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
-              )}>{replaceAllStyleTags(content.content["latin"], file.footnotes, file["link-map"])}</div>
+              <div
+                className={clsx(
+                  content.type === "header-2" && "mx-5",
+                  content.type === "indication" && "mx-5",
+                  content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
+                )}
+              >
+                <span
+                  className={clsx(content["id"] && "cursor-pointer hover:underline")}
+                  id={
+                    content["id"]
+                      ? sectionMap.filter(sectionIndex => sectionIndex.id === content.id)[0].title || "not-found"
+                      : content["link-id"]
+                        ? linkMap.filter(link => link.id === content["link-id"])[0].url.startsWith("#")
+                          ? linkMap.filter(link => link.id === content["link-id"])[0].url.slice(1)
+                          : "not-found"
+                        : undefined
+                  }
+                  onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
+                >
+                  {replaceAllStyleTags(content.content["pt-BR"], file.footnotes, file["link-map"])}
+                </span>
+              </div>
+              <div
+                className={clsx(
+                  content.type === "header-2" && "mx-5",
+                  content.type === "indication" && "mx-5",
+                  content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
+                )}
+              >
+                <span
+                  className={clsx(content["id"] && "cursor-pointer hover:underline")}
+                  id={
+                    content["id"]
+                      ? sectionMap.filter(sectionIndex => sectionIndex.id === content.id)[0].title || "not-found"
+                      : content["link-id"]
+                        ? linkMap.filter(link => link.id === content["link-id"])[0].url.startsWith("#")
+                          ? linkMap.filter(link => link.id === content["link-id"])[0].url.slice(1)
+                          : "not-found"
+                        : undefined
+                  }
+                  onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
+                >
+                  {replaceAllStyleTags(content.content["latin"], file.footnotes, file["link-map"])}
+                </span>
+              </div>
             </div>
         }
       })
