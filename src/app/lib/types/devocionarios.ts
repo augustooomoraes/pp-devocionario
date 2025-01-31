@@ -103,6 +103,16 @@ export type LinkMap = {
   title?: string,
 }[]
 
+export type DownloadLinks = {
+  url: string,
+  "direct-link": string,
+  type: DownloadLinkTypes,
+}[]
+
+export type DownloadLinkTypes =
+  "pdf-booklet" |
+  "pdf-digital"
+
 // =x=x=x=x=x=x=x=x=
 
 export type BadgeData = {

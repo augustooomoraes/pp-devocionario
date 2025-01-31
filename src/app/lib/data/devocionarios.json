@@ -3370,6 +3370,20 @@
       {"id": 6, "url": "", "alt": "[Opúsculo de canto gregoriano #1]"},
       {"id": 7, "url": "", "alt": "[Opúsculo de canto gregoriano #2]"},
       {"id": 8, "url": "#3-3-magnificat", "alt": "Orações da preparação para a consagração: Magníficat"}
+    ],
+    "download-links": [
+      {
+        "id": 1,
+        "url": "https://drive.google.com/file/d/1L0TNrtzUvEm5WldG83iHrYUlVQCFTuwj/view?usp=sharing",
+        "direct-link": "https://drive.google.com/uc?export=download&id=1L0TNrtzUvEm5WldG83iHrYUlVQCFTuwj",
+        "type": "pdf-booklet"
+      },
+      {
+        "id": 2,
+        "url": "https://drive.google.com/file/d/1zv5yCh6ahXbH2I3Uy3HaYNuC7JrXdF2h/view?usp=sharing",
+        "direct-link": "https://drive.google.com/uc?export=download&id=1zv5yCh6ahXbH2I3Uy3HaYNuC7JrXdF2h",
+        "type": "pdf-digital"
+      }
     ]
   }
 }

@@ -4,9 +4,9 @@
 import clsx from "clsx"
 import React from "react"
 import { useRouter } from "next/navigation";
-import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes, BadgeData } from "./types/devocionarios";
+import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes, BadgeData, DownloadLinks } from "./types/devocionarios";
 import { replaceAllStyleTags, replaceBreakAndAsteriskAndFootnoteTags, replaceLinkTags } from "./tags-replacing";
-
+import DownloadLinksList from "@/components/downloadLinksList/download-links-list";
 
 export function DevocionarioFile({
   file,
@@ -25,7 +25,7 @@ export function DevocionarioFile({
     }
   };
 
-  function renderIndex(index: Index, sectionMap: SectionMap, key?: number | string) {
+  function renderIndex(index: Index, sectionMap: SectionMap, key?: number | string, footnotes?: boolean, downloadLinks?: boolean) {
 
     const handleClick = (target: string) => {    
       return (e: React.MouseEvent) => {
@@ -35,6 +35,7 @@ export function DevocionarioFile({
     };
 
     const parsedKey = key ? key : "main";
+    const length = index.length;
 
     return (
       <ol className="list-none space-y-1">
@@ -63,6 +64,35 @@ export function DevocionarioFile({
             )}
           </li>
         })}
+
+        {footnotes && <li key="index-footnotes" className="grid grid-cols-[28px_1fr]">
+            <span className="pl-1.5">{length + 1}</span>
+            <span
+              className="
+                hover:bg-accent active:bg-black/10 transition-colors
+                px-1.5 rounded-md
+                cursor-pointer
+              "
+              onClick={handleClick("#notas")}
+            >
+              Notas
+            </span>
+        </li>}
+
+        {downloadLinks && <li key="index-download-links" className="grid grid-cols-[28px_1fr]">
+            <span className="pl-1.5">{footnotes ? length + 2 : length + 1}</span>
+            <span
+              className="
+                hover:bg-accent active:bg-black/10 transition-colors
+                px-1.5 rounded-md
+                cursor-pointer
+              "
+              onClick={handleClick("#download")}
+            >
+              Links para download
+            </span>
+        </li>}
+
       </ol>
     )
   }
@@ -417,12 +447,42 @@ export function DevocionarioFile({
     )
   }
 
+  function renderDownloadLinks(downloadLinks: DownloadLinks) {
+    return (
+      <div id="download" className="border-t border-t-gray-400 mt-14 pt-8">
+        <h2
+          className="
+            mb-3
+            text-lg font-medium
+            cursor-pointer hover:underline
+          "
+          onClick={ () => router.push(`#notas`) }
+        >
+          Download
+        </h2>
+        <DownloadLinksList downloadLinks={downloadLinks} />
+      </div>
+    )
+  }
+
   return (
     <div className="mb-2 max-w-prose text-justify hyphens-auto">
       <h1 className="text-3xl font-medium mb-12 mx-6 text-center">{file.title}</h1>
-      {renderIndex(file.index, file["section-map"])}
-      {renderSections(file.sections, file["section-map"], file["link-map"], badges || undefined)}
+      {renderIndex(
+        file.index,
+        file["section-map"],
+        undefined,
+        file["footnotes"] && true,
+        file["download-links"] && true,
+      )}
+      {renderSections(
+        file.sections,
+        file["section-map"],
+        file["link-map"],
+        badges || undefined
+      )}
       {file.footnotes && renderFootnotes(file.footnotes, file["link-map"])}
+      {file["download-links"] && renderDownloadLinks(file["download-links"])}
     </div>
   )
 }

@@ -395,6 +395,18 @@
       {"id": 19, "title": "4-final"},
       {"id": 20, "title": "4-1-antifona"},
       {"id": 21, "title": "4-2-oracao"}
+    ],
+    "download-links": [
+      {
+        "url": "https://drive.google.com/file/d/1E7JyRkS-66wW07e9aueH8s2-jfsPxFX5/view?usp=sharing",
+        "direct-link": "https://drive.google.com/uc?export=download&id=1E7JyRkS-66wW07e9aueH8s2-jfsPxFX5",
+        "type": "pdf-booklet"
+      },
+      {
+        "url": "https://drive.google.com/file/d/11WQwuc5jHP7U5Y-nl78c_etp3pk3zJQI/view?usp=sharing",
+        "direct-link": "https://drive.google.com/uc?export=download&id=11WQwuc5jHP7U5Y-nl78c_etp3pk3zJQI",
+        "type": "pdf-digital"
+      }
     ]
   },
   "angelus": {
