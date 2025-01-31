@@ -72,7 +72,7 @@ export const sidebarData: SidebarData = {
         {
           title: "Coroa Angélica",
           url: "/coroa-angelica",
-          devStage: "started",
+          devStage: "mvp",
         },
         {
           title: "Coroa do Senhor",
