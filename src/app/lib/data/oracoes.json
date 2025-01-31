@@ -1,0 +1,127 @@
+{
+  "ave-maria": {
+    "title": "Ave Maria",
+    "parallel-preces": [
+      {
+        "type": "header-2",
+        "content": {
+          "latin": "Ave María",
+          "pt-BR": "Ave Maria"
+        }
+      },
+      {
+        "type": "v",
+        "content": {
+          "latin": "Ave María, grátia plena, Dóminus tecum. Benedícta tu in muliéribus et benedíctus fructus ventris tui, Iesus.",
+          "pt-BR": "Ave Maria, cheia de graça, o Senhor é convosco. Bendita sois Vós entre as mulheres e bendito é o fruto do Vosso ventre, Jesus."
+        }
+      },
+      {
+        "type": "r",
+        "content": {
+          "latin": "Sancta María, Mater Dei, ora pro nobis, peccatóribus, nunc et in hora mortis nostræ. Ámen.",
+          "pt-BR": "Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora de nossa morte. Amém."
+        }
+      }
+    ]
+  },
+  "pater-noster": {
+    "title": "Pai Nosso",
+    "parallel-preces": [
+      {
+        "type": "header-2",
+        "content": {
+          "latin": "Pater Noster",
+          "pt-BR": "Pai Nosso"
+        }
+      },
+      {
+        "type": "v",
+        "content": {
+          "latin": "Pater noster qui es in cælis, sanctificétur nomen tuum. Advéniat regnum tuum. Fiat volúntas tua sicut in cælo et in terra.",
+          "pt-BR": "Pai nosso que estais nos céus, santificado seja o Vosso nome. Venha a nós o Vosso reino. Seja feita a Vossa vontade assim na terra como no céu."
+        }
+      },
+      {
+        "type": "r",
+        "content": {
+          "latin": "Panem nostrum cotidiánum da nobis hódie. Et dimítte nobis débita nostra sicut et nos dimíttimus debitóribus nostris. Et ne nos indúcas in tentatiónem, sed líbera nos a malo. Ámen.",
+          "pt-BR": "O pão nosso de cada dia nos dai hoje. Perdoai-nos as nossas dívidas assim como nós perdoamos aos nossos devedores. E não nos deixeis cair em tentação, mas livrai-nos do mal. Amém."
+        }
+      }
+    ]
+  },
+  "gloria-patri": {
+    "title": "Glória ao Pai",
+    "parallel-preces": [
+      {
+        "type": "header-2",
+        "content": {
+          "latin": "Glória Patri",
+          "pt-BR": "Glória ao Pai"
+        }
+      },
+      {
+        "type": "v",
+        "content": {
+          "latin": "Glória Patri, et Fílio, et Spirítui Sancto.",
+          "pt-BR": "Glória ao Pai, ao Filho, e ao Espírito Santo."
+        }
+      },
+      {
+        "type": "r",
+        "content": {
+          "latin": "Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Ámen.",
+          "pt-BR": "<i>[Assim]</i> como era no princípio, agora e sempre <i>[, e por todos os séculos dos séculos]</i>. Amém."
+        }
+      }
+    ]
+  },
+  "angele-dei": {
+    "title": "Santo Anjo",
+    "parallel-preces": [
+      {
+        "id": 4,
+        "type": "header-2",
+        "content": {
+          "latin": "Ángele Dei",
+          "pt-BR": "Santo Anjo"
+        }
+      },
+      {
+        "end-break": true,
+        "type": "paragraph",
+        "content": {
+          "latin": "Ángele Dei, qui custos es mei; me tibi comíssum pietáte supérna illúmina, custódi, rege et gubérna. Ámen.",
+          "pt-BR": "Santo Anjo do Senhor, meu zeloso guardador; se a ti me confiou a piedade divina, sempre me rege, guarda, governa, ilumina. Amém."
+        }
+      }
+    ]
+  },
+  "#": {
+    "title": "#",
+    "parallel-preces": [
+      {
+        "type": "header-2",
+        "content": {
+          "latin": "@",
+          "pt-BR": "#"
+        }
+      },
+      {
+        "type": "v",
+        "content": {
+          "latin": "",
+          "pt-BR": ""
+        }
+      },
+      {
+        "type": "r",
+        "content": {
+          "latin": "",
+          "pt-BR": ""
+        }
+      }
+    ]
+  }
+}

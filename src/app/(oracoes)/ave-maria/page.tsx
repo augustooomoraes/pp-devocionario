@@ -1,5 +1,6 @@
 import RegularMain from "@/components/regularMain/regular-main";
-import WorkInProgress from "@/components/workInProgress/work-in-progess";
+import { OracaoFile } from "@/app/lib/file-rendering-simple";
+import file from "@/app/lib/data/oracoes.json"
 
 export const metadata = {
   title: "Ave Maria",
@@ -8,7 +9,7 @@ export const metadata = {
 export default function Page() {
   return (
     <RegularMain>
-      <WorkInProgress title="Ave Maria" />
+      <OracaoFile file={file["ave-maria"]} />
     </RegularMain>
   );
 }

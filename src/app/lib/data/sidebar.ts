@@ -45,19 +45,24 @@ export const sidebarData: SidebarData = {
       url: "#",
       items: [
         {
-          title: "Ave Maria",
-          url: "/ave-maria",
-          devStage: "notStarted",
+          title: "Pai Nosso",
+          url: "/pater-noster",
+          devStage: "mvp",
         },
         {
-          title: "Pai Nosso",
-          url: "/oratio-dominica",
-          devStage: "notStarted",
+          title: "Ave Maria",
+          url: "/ave-maria",
+          devStage: "mvp",
         },
         {
           title: "Glória ao Pai",
           url: "/gloria-patri",
-          devStage: "notStarted",
+          devStage: "done",
+        },
+        {
+          title: "Santo Anjo",
+          url: "/angele-dei",
+          devStage: "done",
         },
         {
           title: "Santo Rosário",
