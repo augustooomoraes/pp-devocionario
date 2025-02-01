@@ -1,5 +1,6 @@
 import { SidebarInset, SidebarTrigger } from "@/shadcnui/components/ui/sidebar";
 import { Separator } from "@radix-ui/react-separator";
+import AppFooter from "../footer/footer";
 
 export default function TopBar({
   children,
@@ -15,6 +16,7 @@ export default function TopBar({
       </div>
     </header>
     {children}
+    <AppFooter />
   </SidebarInset>
   )
 }

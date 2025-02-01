@@ -11,7 +11,7 @@ export default function DevocionarioTitleLogoSunHeart() {
     <div className={cn(devocionarioFont.className, `
       flex flex-col items-center justify-center gap-6
       text-primary
-      h-[440px] w-full my-8
+      h-[440px] w-full mt-8 mb-32
     `)}>
       <span className="
         font-medium
