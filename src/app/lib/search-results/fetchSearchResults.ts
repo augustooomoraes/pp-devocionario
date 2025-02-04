@@ -61,11 +61,10 @@ export async function fetchSearchResults(query: string) {
     });
   }
 
-  // Configure Fuse.js for fuzzy search
   const fuse = new Fuse(allItems, {
     keys: ["title", "content"],
-    threshold: 0.3, // Adjust for stricter or looser matching
-    distance: 100, // How close words need to be
+    threshold: 0.3,
+    distance: 100,
     findAllMatches: true
   });
 
@@ -78,7 +77,9 @@ export async function fetchSearchResults(query: string) {
   ).sort((a, b) => {
     const orderA = dataFiles.find((d) => d.displayName === a.source)?.order ?? Infinity;
     const orderB = dataFiles.find((d) => d.displayName === b.source)?.order ?? Infinity;
-    return orderA - orderB;
+
+    if (orderA !== orderB) return orderA - orderB;
+    return a.title.localeCompare(b.title, "pt-BR");
   });
 }
 
