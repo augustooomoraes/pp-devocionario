@@ -1,35 +1,33 @@
 // console.log(`\n🧪 items:\n${JSON.stringify(items)}\n`) // TODO: remove testlog
 import fs from "fs";
 import path from "path";
+import Fuse from "fuse.js";
 import { dataFiles, titles } from "./dataFiles";
 
 const dataDir = path.join(process.cwd(), "src/app/lib/data");
 
-function searchInObject(obj: any, query: string): boolean {
-  if (typeof obj !== "object" || obj === null) return false;
+function extractContentValues(obj: any): string[] {
+  if (typeof obj !== "object" || obj === null) return [];
+
+  let results: string[] = [];
 
   for (const key in obj) {
     if (key === "content" || key === "contents" || key === "title") {
       const value = obj[key];
 
-      if (typeof value === "string" && value.toLowerCase().includes(query.toLowerCase())) {
-        return true;
-      }
-      if (typeof value === "object") {
-        if (Object.values(value).some((v) => 
-          typeof v === "string" && v.toLowerCase().includes(query.toLowerCase())
-        )) {
-          return true;
-        }
+      if (typeof value === "string") {
+        results.push(value);
+      } else if (typeof value === "object") {
+        results = results.concat(Object.values(value).filter((v) => typeof v === "string") as string[]);
       }
     }
 
     if (typeof obj[key] === "object") {
-      if (searchInObject(obj[key], query)) return true;
+      results = results.concat(extractContentValues(obj[key]));
     }
   }
 
-  return false;
+  return results;
 }
 
 export async function fetchSearchResults(query: string) {
@@ -37,12 +35,7 @@ export async function fetchSearchResults(query: string) {
 
   const files = fs.readdirSync(dataDir).filter((file) => file.endsWith(".json"));
 
-  let results: {
-    source: string,
-    icon: any,
-    title: string,
-    url: string,
-  }[] = [];
+  let allItems: { source: string; icon: any; title: string; url: string; content: string }[] = [];
 
   for (const file of files) {
     const fileName = file.replace(".json", "");
@@ -50,29 +43,48 @@ export async function fetchSearchResults(query: string) {
     const fileContent = fs.readFileSync(filePath, "utf-8");
     const items = JSON.parse(fileContent);
 
-    const matchingItems = Object.keys(items)
-      .filter((key) => searchInObject(items[key], query))
-      .map((key) => {
-        const fileMeta = dataFiles.find((d) => d.name === fileName);
-        const titleMeta = titles.find((d) => d.title === key);
-        return {
+    const fileMeta = dataFiles.find((d) => d.name === fileName);
+
+    Object.keys(items).forEach((key) => {
+      const contentTexts: string[] = extractContentValues(items[key]);
+      const titleMeta = titles.find((d) => d.title === key);
+
+      contentTexts.forEach((content) => {
+        allItems.push({
           source: fileMeta?.displayName || fileName,
           icon: fileMeta?.icon || null,
           title: titleMeta?.displayName || key,
-          url: `/${key}`
-        };
+          url: `/${key}`,
+          content
+        });
       });
-
-    results = results.concat(matchingItems);
+    });
   }
 
-  return results;
+  // Configure Fuse.js for fuzzy search
+  const fuse = new Fuse(allItems, {
+    keys: ["title", "content"],
+    threshold: 0.3, // Adjust for stricter or looser matching
+    distance: 100, // How close words need to be
+    findAllMatches: true
+  });
+
+  const fuzzyResults = fuse.search(query).map((result) => result.item);
+
+  return Array.from(
+    new Map(
+      fuzzyResults.map(({ source, icon, title, url }) => [title, { source, icon, title, url }])
+    ).values()
+  ).sort((a, b) => {
+    const orderA = dataFiles.find((d) => d.displayName === a.source)?.order ?? Infinity;
+    const orderB = dataFiles.find((d) => d.displayName === b.source)?.order ?? Infinity;
+    return orderA - orderB;
+  });
 }
 
 /*
   TODO:
   - for "musica-liturgica.json", search for content inside "missae" instead of inside the first level objects
-  - fuzzy search
   - pagination
   - searchbar on "busca" page
     - debouncing

@@ -5,6 +5,7 @@ export type DataFileMeta = {
   name: string,
   displayName: string,
   icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>,
+  order: number,
 }
 
 export const dataFiles: DataFileMeta[] = [
@@ -12,22 +13,26 @@ export const dataFiles: DataFileMeta[] = [
     name: "devocionarios",
     displayName: "Devocionários",
     icon: BookOpen,
-  },
-  {
-    name: "musica-liturgica",
-    displayName: "Música litúrgica",
-    icon: Music3,
+    order: 1,
   },
   {
     name: "oracoes-compostas",
     displayName: "Orações compostas",
     icon: FlameKindling,
+    order: 2,
   },
   {
     name: "oracoes",
     displayName: "Orações",
     icon: Flame,
-  }
+    order: 3,
+  },
+  {
+    name: "musica-liturgica",
+    displayName: "Música litúrgica",
+    icon: Music3,
+    order: 4,
+  },
 ]
 
 export type TitleMeta = {
@@ -35,7 +40,7 @@ export type TitleMeta = {
   displayName: string,
 }
 
-export const titles = [
+export const titles: TitleMeta[] = [
   // =x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=
   // =x=x=x=x=x=x=x=x=x= Devocionários
   {
