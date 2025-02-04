@@ -1,4 +1,4 @@
-import { fetchSearchResults } from "@/lib/search-results/fetchSearchResults";
+import { fetchSearchResults } from "@/lib/search-results/fetch-search-results";
 import { SearchForm } from "@/components/common/searchForm";
 import { Suspense } from "react";
 

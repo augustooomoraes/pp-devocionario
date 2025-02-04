@@ -1,8 +1,7 @@
-// console.log(`\n🧪 items:\n${JSON.stringify(items)}\n`) // TODO: remove testlog
 import fs from "fs";
 import path from "path";
 import Fuse from "fuse.js";
-import { dataFiles, titles } from "./dataFiles";
+import { dataFiles, titles } from "./metadata";
 
 const dataDir = path.join(process.cwd(), "src/lib/data");
 
