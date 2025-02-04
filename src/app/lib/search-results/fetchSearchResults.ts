@@ -37,7 +37,12 @@ export async function fetchSearchResults(query: string) {
 
   const files = fs.readdirSync(dataDir).filter((file) => file.endsWith(".json"));
 
-  let results: { source: string; icon: any, name: string }[] = [];
+  let results: {
+    source: string,
+    icon: any,
+    title: string,
+    url: string,
+  }[] = [];
 
   for (const file of files) {
     const fileName = file.replace(".json", "");
@@ -53,7 +58,8 @@ export async function fetchSearchResults(query: string) {
         return {
           source: fileMeta?.displayName || fileName,
           icon: fileMeta?.icon || null,
-          name: titleMeta?.displayName || key,
+          title: titleMeta?.displayName || key,
+          url: `/${key}`
         };
       });
 
@@ -70,7 +76,6 @@ export async function fetchSearchResults(query: string) {
   - pagination
   - searchbar on "busca" page
     - debouncing
-  - redirect on click
   - cache results for better performance
 
   → highlight where the match ocurred: would be difficult (to make look good) because the data files are very different from the data displayed on the pages

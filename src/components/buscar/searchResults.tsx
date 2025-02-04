@@ -20,14 +20,14 @@ export async function SearchResults({ query }: { query: string }) {
                   flex-col sm:flex-row items-start sm:items-center gap-1.5 sm:gap-5
                 "
               >
-        
+
                 <div className="flex flex-row gap-3 shrink-0">
                   <item.icon />
                   <span className="font-semibold">{item.source}</span>
                 </div>
-        
-                <span>{item.name}</span>
-        
+
+                <span><a href={item.url} className="hover:text-linkHover active:text-linkActive hover:underline active:underline">{item.title}</a></span>
+
               </div>
           )))
           : (
