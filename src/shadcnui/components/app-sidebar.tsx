@@ -35,8 +35,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     <Sidebar {...props}>
 
       <SidebarHeader>
-        <div className="flex flex-row gap-2 mb-0.5"> {/* used with <SearchForm /> */}
-        {/* <div className="flex flex-row gap-2"> */}
+        <div className="flex flex-row gap-2 mb-0.5">
           <Link
             className={cn(devocionarioFont.className, `
               flex items-center justify-start
@@ -54,11 +53,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <ThemeToggle />
           </div>
         </div>
-        <SearchForm /> {/* used with <SearchForm />, duh */}
+        <SearchForm />
       </SidebarHeader>
 
-      <SidebarContent className="gap-0 pt-2"> {/* used with <SearchForm /> */}
-      {/* <SidebarContent className="gap-0"> */}
+      <SidebarContent className="gap-0 pt-2">
         {sidebarData.navMain.map((item) => (
           <Collapsible
             key={item.title}
