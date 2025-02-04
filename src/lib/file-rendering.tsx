@@ -38,7 +38,7 @@ export function DevocionarioFile({
     const length = index.length;
 
     return (
-      <ol className="list-none space-y-1">
+      <ol key={key} className="list-none space-y-1">
 
         {index.map((item, index) => {
           return <li
@@ -153,7 +153,7 @@ export function DevocionarioFile({
 
             switch(content.type) {
               case "header-1":
-                return <div className="flex items-center gap-2.5 mt-3" key={index}>
+                return <div key={index} className="flex items-center gap-2.5 mt-3">
                   <h3
                     
                     className={clsx(
@@ -456,7 +456,7 @@ export function DevocionarioFile({
             text-lg font-medium
             cursor-pointer hover:underline
           "
-          onClick={ () => router.push(`#notas`) }
+          onClick={ () => router.push(`#download`) }
         >
           Download
         </h2>

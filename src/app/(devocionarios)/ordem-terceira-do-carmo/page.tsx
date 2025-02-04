@@ -1,5 +1,5 @@
 import WorkInProgress from "@/components/images/workInProgess";
-import { DevocionarioFile } from "../../../lib/file-rendering";
+import { DevocionarioFile } from "@/lib/file-rendering";
 import RegularMain from "@/components/common/regularMain";
 
 export const metadata = {

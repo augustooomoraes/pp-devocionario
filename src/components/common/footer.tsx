@@ -21,6 +21,7 @@ export default function AppFooter() {
             height={533}
             alt="Logo do Devocionário."
             src={AmdgBlack}
+            priority
             className="block dark:hidden"
             style={{
               objectFit: "contain",
@@ -35,6 +36,7 @@ export default function AppFooter() {
             height={533}
             alt="Logo do Devocionário."
             src={AmdgWhite}
+            priority
             className="hidden dark:block"
             style={{
               objectFit: "contain",

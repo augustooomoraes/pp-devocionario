@@ -1,5 +1,5 @@
 import { BadgeData } from "@/lib/types/devocionarios";
-import { DevocionarioFile } from "../../../lib/file-rendering";
+import { DevocionarioFile } from "@/lib/file-rendering";
 import file from "@/lib/data/devocionarios.json"
 import RegularMain from "@/components/common/regularMain";
 

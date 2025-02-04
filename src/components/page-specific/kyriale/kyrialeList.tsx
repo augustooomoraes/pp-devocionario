@@ -16,11 +16,8 @@ export default function KyrialeList({ file } : { file: any }) {
       ">
         {
           file.missae.map((missa: any) => { return (
-            <Link href={missa.url} className="grow">
-              <Card
-                key={missa.id}
-                className="cursor-pointer hover:bg-background transition-colors h-full"
-              >
+            <Link key={missa.id} href={missa.url} className="grow">
+              <Card className="cursor-pointer hover:bg-background transition-colors h-full">
                 <CardHeader>
 
                   {
