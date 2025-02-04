@@ -1,8 +1,8 @@
-import { GradualeSimplexFile } from "@/app/lib/types/musica-liturgica"
+import { GradualeSimplexFile } from "@/lib/types/musica-liturgica"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/shadcnui/components/ui/card"
-import { numberToRoman } from "@/app/lib/utils"
+import { numberToRoman } from "@/lib/utils"
 import Link from "next/link"
-import WorkInProgress from "@/components/images/work-in-progess"
+import WorkInProgress from "@/components/images/workInProgess"
 
 // TODO: use correct typing, fixing whatever's going wrong here
 

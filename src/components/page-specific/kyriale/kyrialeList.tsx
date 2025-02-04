@@ -1,7 +1,7 @@
-import { KyrialeFile } from "@/app/lib/types/musica-liturgica"
-import WorkInProgress from "../../images/work-in-progess"
+import { KyrialeFile } from "@/lib/types/musica-liturgica"
+import WorkInProgress from "../../images/workInProgess"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/shadcnui/components/ui/card"
-import { numberToRoman } from "@/app/lib/utils"
+import { numberToRoman } from "@/lib/utils"
 import Link from "next/link"
 
 // TODO: use correct typing, fixing whatever's going wrong here

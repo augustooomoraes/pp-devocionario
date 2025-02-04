@@ -1,5 +1,5 @@
-import { fetchSearchResults } from "@/app/lib/search-results/fetchSearchResults";
-import { SearchForm } from "@/components/common/search-form";
+import { fetchSearchResults } from "@/lib/search-results/fetchSearchResults";
+import { SearchForm } from "@/components/common/searchForm";
 import { Suspense } from "react";
 
 export async function SearchResults({ query }: { query: string }) {

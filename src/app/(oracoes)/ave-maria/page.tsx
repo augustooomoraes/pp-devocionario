@@ -1,6 +1,6 @@
-import RegularMain from "@/components/common/regular-main";
-import { OracaoFile } from "@/app/lib/file-rendering-simple";
-import file from "@/app/lib/data/oracoes.json"
+import RegularMain from "@/components/common/regularMain";
+import { OracaoFile } from "@/lib/file-rendering-simple";
+import file from "@/lib/data/oracoes.json"
 
 export const metadata = {
   title: "Ave Maria",

@@ -1,6 +1,6 @@
-import RegularMain from "@/components/common/regular-main";
-import { DevocionarioFile } from "@/app/lib/file-rendering";
-import file from "@/app/lib/data/oracoes-compostas.json"
+import RegularMain from "@/components/common/regularMain";
+import { DevocionarioFile } from "@/lib/file-rendering";
+import file from "@/lib/data/oracoes-compostas.json"
 
 export const metadata = {
   title: "Coroa Angélica",

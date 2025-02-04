@@ -4,7 +4,7 @@ import path from "path";
 import Fuse from "fuse.js";
 import { dataFiles, titles } from "./dataFiles";
 
-const dataDir = path.join(process.cwd(), "src/app/lib/data");
+const dataDir = path.join(process.cwd(), "src/lib/data");
 
 function extractContentValues(obj: any): string[] {
   if (typeof obj !== "object" || obj === null) return [];

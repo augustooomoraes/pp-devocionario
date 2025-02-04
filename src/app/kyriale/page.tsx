@@ -1,6 +1,6 @@
-import KyrialeList from "@/components/page-specific/kyriale/kyriale-list";
-import file from "@/app/lib/data/musica-liturgica.json"
-import RegularMain from "@/components/common/regular-main";
+import KyrialeList from "@/components/page-specific/kyriale/kyrialeList";
+import file from "@/lib/data/musica-liturgica.json"
+import RegularMain from "@/components/common/regularMain";
 
 export const metadata = {
   title: "Kyriale",

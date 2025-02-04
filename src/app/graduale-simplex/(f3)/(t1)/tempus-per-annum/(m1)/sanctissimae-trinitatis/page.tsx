@@ -1,5 +1,5 @@
-import RegularMain from "@/components/common/regular-main";
-import WorkInProgress from "@/components/images/work-in-progess";
+import RegularMain from "@/components/common/regularMain";
+import WorkInProgress from "@/components/images/workInProgess";
 
 export const metadata = {
   title: "Santíssima Trindade – Comum – Graduale",
