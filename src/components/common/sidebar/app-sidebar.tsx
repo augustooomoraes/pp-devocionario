@@ -4,14 +4,14 @@ import { cn } from "@/shadcnui/lib/utils";
 import Link from "next/link"
 import clsx from "clsx"
 
-import { ThemeToggle } from "@/components/themeToggle/theme-toggle"
+import { ThemeToggle } from "@/components/common/sidebar/themeToggle/theme-toggle"
+import { FontToggle } from "./font-toggle";
 import { sidebarData } from "@/app/lib/data/sidebar"
-import { FontToggle } from "@/components/fontToggle/font-toggle";
 
 import { EB_Garamond } from "next/font/google";
 const devocionarioFont = EB_Garamond({subsets: ["latin"]})
 
-import { SearchForm } from "@/shadcnui/components/search-form"
+import { SearchForm } from "@/components/common/search-form"
 import {
   Collapsible,
   CollapsibleContent,

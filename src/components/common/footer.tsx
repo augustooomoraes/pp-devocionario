@@ -1,6 +1,6 @@
 import Image from "next/image";
-import AmdgBlack from "@/public/amdg-black-1600-1066.png"
-import AmdgWhite from "@/public/amdg-white-1600-1066.png"
+import AmdgBlack from "@/public/amdg/amdg-black-1600-1066.png"
+import AmdgWhite from "@/public/amdg/amdg-white-1600-1066.png"
 import { Github, Globe, Instagram, Linkedin } from "lucide-react";
 
 export default function AppFooter() {

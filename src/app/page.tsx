@@ -1,5 +1,5 @@
-import DevocionarioTitleLogoSunHeart from "@/components/logo/devocionario-logo";
-import RegularMain from "@/components/regularMain/regular-main";
+import DevocionarioTitleLogoSunHeart from "@/components/images/devocionario-logo";
+import RegularMain from "@/components/common/regular-main";
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
-import { SearchResults } from "@/components/buscar/searchResults";
-import RegularMain from "@/components/regularMain/regular-main";
+import { SearchResults } from "@/components/page-specific/buscar/searchResults";
+import RegularMain from "@/components/common/regular-main";
 
 export default function SearchPage({ searchParams }: { searchParams: { entrada?: string } }) {
   return (

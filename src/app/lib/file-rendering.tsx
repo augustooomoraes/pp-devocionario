@@ -6,7 +6,7 @@ import React from "react"
 import { useRouter } from "next/navigation";
 import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes, BadgeData, DownloadLinks } from "./types/devocionarios";
 import { replaceAllStyleTags, replaceBreakAndAsteriskAndFootnoteTags, replaceLinkTags } from "./tags-replacing";
-import DownloadLinksList from "@/components/downloadLinksList/download-links-list";
+import DownloadLinksList from "@/components/common/download-links-list";
 
 export function DevocionarioFile({
   file,

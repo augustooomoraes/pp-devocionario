@@ -1,5 +1,5 @@
-import RegularMain from "@/components/regularMain/regular-main";
-import WorkInProgress from "@/components/workInProgress/work-in-progess";
+import RegularMain from "@/components/common/regular-main";
+import WorkInProgress from "@/components/images/work-in-progess";
 
 export const metadata = {
   title: "Missa IX – Kyriale",

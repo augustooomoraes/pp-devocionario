@@ -1,5 +1,5 @@
 import { fetchSearchResults } from "@/app/lib/search-results/fetchSearchResults";
-import { SearchForm } from "@/shadcnui/components/search-form";
+import { SearchForm } from "@/components/common/search-form";
 import { Suspense } from "react";
 
 export async function SearchResults({ query }: { query: string }) {

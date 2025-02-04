@@ -1,6 +1,6 @@
-import WorkInProgress from "@/components/workInProgress/work-in-progess";
+import WorkInProgress from "@/components/images/work-in-progess";
 import { DevocionarioFile } from "../../lib/file-rendering";
-import RegularMain from "@/components/regularMain/regular-main";
+import RegularMain from "@/components/common/regular-main";
 
 export const metadata = {
   title: "Da Consagração a São José",

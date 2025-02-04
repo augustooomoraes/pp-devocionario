@@ -1,6 +1,6 @@
 import { cn } from "@/shadcnui/lib/utils";
-import DevocionarioLogoBlack from "@/public/devocionario-sun-heart-logo-black-1600-1600.png"
-import DevocionarioLogoWhite from "@/public/devocionario-sun-heart-logo-white-1600-1600.png"
+import DevocionarioLogoBlack from "@/public/logo/devocionario-sun-heart-logo-black-1600-1600.png"
+import DevocionarioLogoWhite from "@/public/logo/devocionario-sun-heart-logo-white-1600-1600.png"
 
 import { EB_Garamond } from "next/font/google";
 import Image from "next/image";

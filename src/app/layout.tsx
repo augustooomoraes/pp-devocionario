@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/themeToggle/theme-provider";
+import { ThemeProvider } from "@/components/common/sidebar/themeToggle/theme-provider";
 import { SidebarProvider} from "@/shadcnui/components/ui/sidebar";
-import { AppSidebar } from "@/shadcnui/components/app-sidebar";
-import TopBar from "@/components/topbar/topbar";
-import { BackToTopButton } from "@/components/backToTopButton";
+import { AppSidebar } from "@/components/common/sidebar/app-sidebar";
+import { BackToTopButton } from "@/components/common/backToTopButton";
+import TopBar from "@/components/common/sidebar/topbar";
  
 const fontSans = Manrope({
   subsets: ["latin"],

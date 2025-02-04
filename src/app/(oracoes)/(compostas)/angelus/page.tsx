@@ -1,4 +1,4 @@
-import RegularMain from "@/components/regularMain/regular-main";
+import RegularMain from "@/components/common/regular-main";
 import { DevocionarioFile } from "@/app/lib/file-rendering";
 import file from "@/app/lib/data/oracoes-compostas.json"
 

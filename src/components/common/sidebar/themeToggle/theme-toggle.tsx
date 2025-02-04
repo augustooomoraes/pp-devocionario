@@ -2,7 +2,7 @@
  
 import { useState, useEffect} from "react"
 import { useTheme } from "next-themes";
-import { Toggle } from "../../shadcnui/components/ui/toggle";
+import { Toggle } from "../../../../shadcnui/components/ui/toggle";
 import { Moon, Sun } from "lucide-react";
 
 export function ThemeToggle() {

@@ -1,4 +1,4 @@
-import RegularMain from "@/components/regularMain/regular-main";
+import RegularMain from "@/components/common/regular-main";
 import { OracaoFile } from "@/app/lib/file-rendering-simple";
 import file from "@/app/lib/data/oracoes.json"
 

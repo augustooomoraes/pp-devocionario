@@ -1,5 +1,5 @@
-import { GradualeSimplexFile } from "@/app/lib/types/musica-liturgica"
-import WorkInProgress from "../workInProgress/work-in-progess"
+import { KyrialeFile } from "@/app/lib/types/musica-liturgica"
+import WorkInProgress from "../../images/work-in-progess"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/shadcnui/components/ui/card"
 import { numberToRoman } from "@/app/lib/utils"
 import Link from "next/link"
@@ -21,18 +21,7 @@ export default function KyrialeList({ file } : { file: any }) {
                 key={missa.id}
                 className="cursor-pointer hover:bg-background transition-colors h-full"
               >
-                {/* 
-                  Possibilities:
-                  - ✔️ cards according to GradualisMissaGroup type
-                    - with a collapsible section for the missae
-                      - ❌ which would make other cards' responsiveness look horrible
-                    - with the amount of missae written
-                      - linking to another page wigh the missae list
-                        - each missa item linking to yet another page
-                          - ❌ too much redirecting
-                */}
-
-                {/* <CardHeader>
+                <CardHeader>
 
                   {
                     (missa.number && missa.title) &&
@@ -53,7 +42,7 @@ export default function KyrialeList({ file } : { file: any }) {
                     missa.indication &&
                     <CardDescription>{missa.indication}</CardDescription>
                   }
-                </CardHeader> */}
+                </CardHeader>
 
                 <CardContent>
                   <span>:D</span>
