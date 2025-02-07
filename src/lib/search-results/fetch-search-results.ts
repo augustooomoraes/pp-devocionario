@@ -17,7 +17,9 @@ function extractContentValues(obj: any): string[] {
       if (typeof value === "string") {
         results.push(value);
       } else if (typeof value === "object") {
-        results = results.concat(Object.values(value).filter((v) => typeof v === "string") as string[]);
+        results = results.concat(
+          Object.values(value).filter((v) => typeof v === "string") as string[]
+        );
       }
     }
 
@@ -34,7 +36,14 @@ export async function fetchSearchResults(query: string) {
 
   const files = fs.readdirSync(dataDir).filter((file) => file.endsWith(".json"));
 
-  let allItems: { source: string; icon: any; title: string; url: string; content: string }[] = [];
+  let allItems: {
+    source: string,
+    icon: string | null,
+    title: string,
+    url: string,
+    content: string,
+    hasDownloadLinks: boolean,
+  }[] = [];
 
   for (const file of files) {
     const fileName = file.replace(".json", "");
@@ -48,13 +57,18 @@ export async function fetchSearchResults(query: string) {
       const contentTexts: string[] = extractContentValues(items[key]);
       const titleMeta = titles.find((d) => d.title === key);
 
+      const hasDownloadLinks =
+        Array.isArray(items[key]["download-links"]) &&
+        items[key]["download-links"].length > 0;
+
       contentTexts.forEach((content) => {
         allItems.push({
           source: fileMeta?.displayName || fileName,
           icon: fileMeta?.icon || null,
           title: titleMeta?.displayName || key,
           url: `/${key}`,
-          content
+          content,
+          hasDownloadLinks,
         });
       });
     });
@@ -64,14 +78,17 @@ export async function fetchSearchResults(query: string) {
     keys: ["title", "content"],
     threshold: 0.3,
     distance: 100,
-    findAllMatches: true
+    findAllMatches: true,
   });
 
   const fuzzyResults = fuse.search(query).map((result) => result.item);
 
   return Array.from(
     new Map(
-      fuzzyResults.map(({ source, icon, title, url }) => [title, { source, icon, title, url }])
+      fuzzyResults.map(({ source, icon, title, url, hasDownloadLinks }) => [
+        title,
+        { source, icon, title, url, hasDownloadLinks },
+      ])
     ).values()
   ).sort((a, b) => {
     const orderA = dataFiles.find((d) => d.displayName === a.source)?.order ?? Infinity;

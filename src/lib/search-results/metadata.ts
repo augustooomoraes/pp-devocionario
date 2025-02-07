@@ -1,10 +1,8 @@
-import { BookOpen, Flame, FlameKindling, LucideProps, Music3 } from "lucide-react";
-import { ForwardRefExoticComponent, RefAttributes } from "react";
 
 export type DataFileMeta = {
   name: string,
   displayName: string,
-  icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>,
+  icon: string,
   order: number,
 }
 
@@ -12,25 +10,25 @@ export const dataFiles: DataFileMeta[] = [
   {
     name: "devocionarios",
     displayName: "Devocionários",
-    icon: BookOpen,
+    icon: "BookOpen",
     order: 1,
   },
   {
     name: "oracoes-compostas",
     displayName: "Orações compostas",
-    icon: FlameKindling,
+    icon: "FlameKindling",
     order: 2,
   },
   {
     name: "oracoes",
     displayName: "Orações",
-    icon: Flame,
+    icon: "Flame",
     order: 3,
   },
   {
     name: "musica-liturgica",
     displayName: "Música litúrgica",
-    icon: Music3,
+    icon: "Music3",
     order: 4,
   },
 ]
