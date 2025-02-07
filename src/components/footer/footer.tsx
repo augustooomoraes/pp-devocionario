@@ -76,7 +76,7 @@ export default function AppFooter() {
               {/* TODO: link this repo's page (when it's public... if that's gonna happen) */}
               <a
                 target="_blank"
-                href="https://github.com/augustooomoraes"
+                href="https://github.com/augustooomoraes/pp-devocionario"
                 className="hover:text-linkHover active:text-linkActive"
               >
                 <Github />
