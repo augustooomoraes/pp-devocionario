@@ -1,6 +1,12 @@
 import * as React from "react"
 import { ChevronRight } from "lucide-react"
 import { cn } from "@/shadcnui/lib/utils";
+import Link from "next/link"
+import clsx from "clsx"
+
+import { ThemeToggle } from "@/components/themeToggle/theme-toggle"
+import { sidebarData } from "@/app/lib/data/sidebar"
+import { FontToggle } from "@/components/fontToggle/font-toggle";
 
 import { EB_Garamond } from "next/font/google";
 const devocionarioFont = EB_Garamond({subsets: ["latin"]})
@@ -23,19 +29,13 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/shadcnui/components/ui/sidebar"
-import { ThemeToggle } from "@/components/themeToggle/theme-toggle"
-import Link from "next/link"
-import { sidebarData } from "@/app/lib/data/sidebar"
-import clsx from "clsx"
-import { FontToggle } from "@/components/fontToggle/font-toggle";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
 
       <SidebarHeader>
-        {/* <div className="flex flex-row gap-2 mb-0.5"> */} {/* used with <SearchForm /> */}
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 mb-0.5">
           <Link
             className={cn(devocionarioFont.className, `
               flex items-center justify-start
@@ -53,11 +53,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <ThemeToggle />
           </div>
         </div>
-        {/* <SearchForm /> */} {/* used with <SearchForm />, duh */}
+        <SearchForm />
       </SidebarHeader>
 
-      {/* <SidebarContent className="gap-0 pt-2"> */} {/* used with <SearchForm /> */}
-      <SidebarContent className="gap-0">
+      <SidebarContent className="gap-0 pt-2">
         {sidebarData.navMain.map((item) => (
           <Collapsible
             key={item.title}
