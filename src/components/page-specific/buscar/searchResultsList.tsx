@@ -1,7 +1,9 @@
 "use client";
-import { LinkButton, LinksRow } from "@/components/common/downloadLinksList";
+
+import { LinksRow } from "@/components/common/downloadLinksList";
 import { SearchedItem } from "@/lib/types/common";
-import { BookOpen, BookOpenText, FileQuestion, Flame, FlameKindling, Music3, TabletSmartphone } from "lucide-react";
+import { BookOpen, FileQuestion, Flame, FlameKindling, Music3 } from "lucide-react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 
 const iconMap: Record<string, React.FC<{ className?: string }>> = {
@@ -13,10 +15,32 @@ const iconMap: Record<string, React.FC<{ className?: string }>> = {
 
 export function SearchResultsList({
   results,
+  pdf,
 }: {
   results: SearchedItem[];
+  pdf: string;
 }) {
-  const [filterPdf, setFilterPdf] = useState(false);
+  const [filterPdf, setFilterPdf] = useState(pdf === "sim");
+
+  const searchParams = useSearchParams();
+  const defaultQuery = searchParams.get("entrada") || "";
+
+  const params = new URLSearchParams();
+  const router = useRouter();
+
+  function setParams(pdfState: boolean) {
+    if (defaultQuery.trim()) {
+      params.set("entrada", defaultQuery.trim());
+    }
+
+    if (pdfState === true) {
+      params.set("pdf", "sim")
+    } else {
+      params.delete("pdf")
+    };
+
+    router.push(`/busca?${params.toString()}`);
+  }
 
   const filteredResults = filterPdf
     ? results.filter((item) => item.downloadLinks)
@@ -31,7 +55,7 @@ export function SearchResultsList({
         <div className="flex flex-wrap gap-2">
           <button
             type="button"
-            onClick={() => setFilterPdf((prev) => !prev)}
+            onClick={() => {setFilterPdf((prev) => !prev); setParams(!filterPdf)}}
             className={`
               px-3 py-1 rounded-full
               text-sm

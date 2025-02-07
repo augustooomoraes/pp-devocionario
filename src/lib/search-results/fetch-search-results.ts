@@ -93,12 +93,15 @@ export async function fetchSearchResults(query: string) {
 
 /*
   TODO:
+  → "- cache results for better performance"
+    → Same thing, i guess... no need for it now.
+      → Maybe, because the PDF filter refreshes adds a search param and refreshes (router.push) the page when toggled, it would be good to do this now.
+
+  TODO (not really):
   → "- highlight where the match ocurred"
     → Would be difficult (to make look good) because the data files are very different from the data displayed on the pages.
   → "- for "musica-liturgica.json", search for content inside "missae" instead of inside the first level objects"
     → Kyriale missæ's text contents are gonna be all the same – it's enough to give "Música litúrgica – Kyriale" as a result; graduale missæ's contents, however, will need this differentiation.
   → "- pagination"
     → Not needed, at least for now, as there are so little possible results for any query.
-  → "- cache results for better performance"
-    → Same thing, i guess... no need for it now.
 */

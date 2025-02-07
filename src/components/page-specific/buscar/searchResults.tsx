@@ -3,7 +3,13 @@ import { SearchForm } from "@/components/common/searchForm";
 import { Suspense } from "react";
 import { SearchResultsList } from "./searchResultsList";
 
-export async function SearchResults({ query }: { query: string }) {
+export async function SearchResults({
+  query,
+  pdf,
+} : {
+  query: string,
+  pdf: string,
+}) {
   const results = await fetchSearchResults(query);
 
   return (
@@ -12,7 +18,7 @@ export async function SearchResults({ query }: { query: string }) {
       <SearchForm />
 
       <Suspense fallback={<p>Carregando...</p>}>
-        <SearchResultsList results={results} />
+        <SearchResultsList results={results} pdf={pdf} />
       </Suspense>
 
     </div>
