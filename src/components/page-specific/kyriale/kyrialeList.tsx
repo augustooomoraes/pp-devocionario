@@ -1,7 +1,7 @@
-import { GradualeSimplexFile } from "@/app/lib/types/musica-liturgica"
-import WorkInProgress from "../workInProgress/work-in-progess"
+import { KyrialeFile } from "@/lib/types/musica-liturgica"
+import WorkInProgress from "../../images/workInProgess"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/shadcnui/components/ui/card"
-import { numberToRoman } from "@/app/lib/utils"
+import { numberToRoman } from "@/lib/utils"
 import Link from "next/link"
 
 // TODO: use correct typing, fixing whatever's going wrong here
@@ -16,23 +16,9 @@ export default function KyrialeList({ file } : { file: any }) {
       ">
         {
           file.missae.map((missa: any) => { return (
-            <Link href={missa.url} className="grow">
-              <Card
-                key={missa.id}
-                className="cursor-pointer hover:bg-background transition-colors h-full"
-              >
-                {/* 
-                  Possibilities:
-                  - ✔️ cards according to GradualisMissaGroup type
-                    - with a collapsible section for the missae
-                      - ❌ which would make other cards' responsiveness look horrible
-                    - with the amount of missae written
-                      - linking to another page wigh the missae list
-                        - each missa item linking to yet another page
-                          - ❌ too much redirecting
-                */}
-
-                {/* <CardHeader>
+            <Link key={missa.id} href={missa.url} className="grow">
+              <Card className="cursor-pointer hover:bg-background transition-colors h-full">
+                <CardHeader>
 
                   {
                     (missa.number && missa.title) &&
@@ -53,7 +39,7 @@ export default function KyrialeList({ file } : { file: any }) {
                     missa.indication &&
                     <CardDescription>{missa.indication}</CardDescription>
                   }
-                </CardHeader> */}
+                </CardHeader>
 
                 <CardContent>
                   <span>:D</span>

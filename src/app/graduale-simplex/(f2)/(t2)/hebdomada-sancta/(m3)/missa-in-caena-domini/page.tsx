@@ -1,5 +1,5 @@
-import RegularMain from "@/components/regularMain/regular-main";
-import WorkInProgress from "@/components/workInProgress/work-in-progess";
+import RegularMain from "@/components/common/regularMain";
+import WorkInProgress from "@/components/images/workInProgess";
 
 export const metadata = {
   title: "Missa da Ceia do Senhor – Semana Santa – Graduale",

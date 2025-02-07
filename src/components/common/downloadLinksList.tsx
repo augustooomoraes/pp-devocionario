@@ -1,4 +1,4 @@
-import { DownloadLinks } from "@/app/lib/types/devocionarios"
+import { DownloadLinks } from "@/lib/types/devocionarios"
 import { BookOpenText, Download, SquareArrowUpRight, TabletSmartphone } from "lucide-react"
 
 export default function DownloadLinksList({ downloadLinks } : { downloadLinks: DownloadLinks }) {

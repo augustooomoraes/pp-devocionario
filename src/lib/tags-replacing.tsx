@@ -1,4 +1,4 @@
-import FootnoteTooltip from "@/components/tooltip/footnote-tooltip";
+import FootnoteTooltip from "@/components/common/tooltip/footnoteTooltip";
 import { Footnotes, LinkMap } from "./types/devocionarios";
 
 export function replaceAllStyleTags(text: string, footnotes: Footnotes, links: LinkMap) {

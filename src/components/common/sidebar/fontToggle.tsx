@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Toggle } from "../../shadcnui/components/ui/toggle";
 import { Type } from "lucide-react";
 import clsx from "clsx";
+import { Toggle } from "@/shadcnui/components/ui/toggle";
 
 export function FontToggle() {
   const [mounted, setMounted] = useState(false);

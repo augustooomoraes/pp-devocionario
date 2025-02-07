@@ -1,6 +1,6 @@
-import WorkInProgress from "@/components/workInProgress/work-in-progess";
-import { DevocionarioFile } from "../../lib/file-rendering";
-import RegularMain from "@/components/regularMain/regular-main";
+import WorkInProgress from "@/components/images/workInProgess";
+import { DevocionarioFile } from "@/lib/file-rendering";
+import RegularMain from "@/components/common/regularMain";
 
 export const metadata = {
   title: "Da Ordem Terceira do Carmo",

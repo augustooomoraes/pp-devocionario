@@ -14,8 +14,8 @@ export default function WorkInProgress({
         <h1 className="text-3xl font-medium mb-12 mx-6">{title}</h1>
         {
           subtitles && <div className="mb-10">
-            {subtitles.map( (subtitle) => { return (
-              <h2 className="text-lg font-light mb-2">{subtitle}</h2>
+            {subtitles.map( (subtitle, index) => { return (
+              <h2 key={index} className="text-lg font-light mb-2">{subtitle}</h2>
             )})}
           </div>
         }
@@ -26,7 +26,7 @@ export default function WorkInProgress({
         text-primary
         h-96 w-full my-8
       ">
-        <span className="uppercase font-semibold text-sm">Work in progess</span>
+        <span className="uppercase font-semibold text-sm">Work in progress</span>
         <WorkInProgressIcon className="fill-current max-w-full max-h-full" />
       </div>
 

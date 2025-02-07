@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from 'react';
 import Tooltip from './tooltip';
-import { LinkMap } from "@/app/lib/types/devocionarios";
+import { LinkMap } from "@/lib/types/devocionarios";
 import { useRouter } from "next/navigation";
 
 type FootnoteTooltipProps = {
