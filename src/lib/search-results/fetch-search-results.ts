@@ -33,8 +33,7 @@ function extractContentValues(obj: any): string[] {
   return results;
 }
 
-export async function fetchSearchResults(query: string) {
-  if (!query) return [];
+export async function fetchSearchResults(query: string | null) {
 
   const files = fs.readdirSync(dataDir).filter((file) => file.endsWith(".json"));
 
@@ -63,6 +62,23 @@ export async function fetchSearchResults(query: string) {
           downloadLinks,
         });
       });
+    });
+  }
+
+  if (!query || !query.trim()) {
+    return Array.from(
+      new Map(
+        allItems.map(({ source, icon, title, url, downloadLinks }) => [
+          title,
+          { source, icon, title, url, downloadLinks },
+        ])
+      ).values()
+    ).sort((a, b) => {
+      const orderA = dataFiles.find((d) => d.displayName === a.source)?.order ?? Infinity;
+      const orderB = dataFiles.find((d) => d.displayName === b.source)?.order ?? Infinity;
+
+      if (orderA !== orderB) return orderA - orderB;
+      return a.title.localeCompare(b.title, "pt-BR");
     });
   }
 

@@ -9,20 +9,39 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 export function SearchForm({ ...props }: React.ComponentProps<"form">) {
   const searchParams = useSearchParams();
+  const params = new URLSearchParams();
   const router = useRouter();
 
   const defaultQuery = searchParams.get("entrada") || "";
   const [query, setQuery] = useState(defaultQuery);
 
+  const defaultFilterPdf = searchParams.get("pdf") || "";
+  const [filterPdf, setFilterPdf] = useState(defaultFilterPdf)
+
   useEffect(() => {
     setQuery(defaultQuery);
   }, [defaultQuery]);
 
+  useEffect(() => {
+    setFilterPdf(defaultFilterPdf);
+  }, [defaultFilterPdf]);
+
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (query.trim()) {
-      router.push(`/busca?entrada=${encodeURIComponent(query)}`);
+
+    if (query) {
+      params.set("entrada", query.trim())
+    } else {
+      params.delete("entrada")
     }
+
+    if (filterPdf === "sim") {
+      params.set("pdf", "sim")
+    } else {
+      params.delete("pdf")
+    };
+
+    router.push(`/busca?${params.toString()}`);
   };
 
   return (
