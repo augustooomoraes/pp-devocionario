@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import Fuse from "fuse.js";
 import { dataFiles, titles } from "./metadata";
+import { SearchedItem } from "../types/common";
+import { DownloadLink } from "../types/devocionarios";
 
 const dataDir = path.join(process.cwd(), "src/lib/data");
 
@@ -17,7 +19,9 @@ function extractContentValues(obj: any): string[] {
       if (typeof value === "string") {
         results.push(value);
       } else if (typeof value === "object") {
-        results = results.concat(Object.values(value).filter((v) => typeof v === "string") as string[]);
+        results = results.concat(
+          Object.values(value).filter((v) => typeof v === "string") as string[]
+        );
       }
     }
 
@@ -34,7 +38,7 @@ export async function fetchSearchResults(query: string) {
 
   const files = fs.readdirSync(dataDir).filter((file) => file.endsWith(".json"));
 
-  let allItems: { source: string; icon: any; title: string; url: string; content: string }[] = [];
+  let allItems: SearchedItem[] = [];
 
   for (const file of files) {
     const fileName = file.replace(".json", "");
@@ -47,6 +51,7 @@ export async function fetchSearchResults(query: string) {
     Object.keys(items).forEach((key) => {
       const contentTexts: string[] = extractContentValues(items[key]);
       const titleMeta = titles.find((d) => d.title === key);
+      const downloadLinks: DownloadLink[] | undefined = items[key]["download-links"] || undefined;
 
       contentTexts.forEach((content) => {
         allItems.push({
@@ -54,7 +59,8 @@ export async function fetchSearchResults(query: string) {
           icon: fileMeta?.icon || null,
           title: titleMeta?.displayName || key,
           url: `/${key}`,
-          content
+          content,
+          downloadLinks,
         });
       });
     });
@@ -64,14 +70,17 @@ export async function fetchSearchResults(query: string) {
     keys: ["title", "content"],
     threshold: 0.3,
     distance: 100,
-    findAllMatches: true
+    findAllMatches: true,
   });
 
   const fuzzyResults = fuse.search(query).map((result) => result.item);
 
   return Array.from(
     new Map(
-      fuzzyResults.map(({ source, icon, title, url }) => [title, { source, icon, title, url }])
+      fuzzyResults.map(({ source, icon, title, url, downloadLinks }) => [
+        title,
+        { source, icon, title, url, downloadLinks },
+      ])
     ).values()
   ).sort((a, b) => {
     const orderA = dataFiles.find((d) => d.displayName === a.source)?.order ?? Infinity;
@@ -84,12 +93,15 @@ export async function fetchSearchResults(query: string) {
 
 /*
   TODO:
+  → "- cache results for better performance"
+    → Same thing, i guess... no need for it now.
+      → Maybe, because the PDF filter refreshes adds a search param and refreshes (router.push) the page when toggled, it would be good to do this now.
+
+  TODO (not really):
   → "- highlight where the match ocurred"
     → Would be difficult (to make look good) because the data files are very different from the data displayed on the pages.
   → "- for "musica-liturgica.json", search for content inside "missae" instead of inside the first level objects"
     → Kyriale missæ's text contents are gonna be all the same – it's enough to give "Música litúrgica – Kyriale" as a result; graduale missæ's contents, however, will need this differentiation.
   → "- pagination"
     → Not needed, at least for now, as there are so little possible results for any query.
-  → "- cache results for better performance"
-    → Same thing, i guess... no need for it now.
 */

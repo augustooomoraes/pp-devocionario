@@ -4,7 +4,7 @@ import { Search } from "lucide-react"
 
 import { Label } from "@/shadcnui/components/ui/label"
 import { SidebarGroup, SidebarGroupContent, SidebarInput } from "@/shadcnui/components/ui/sidebar"
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 export function SearchForm({ ...props }: React.ComponentProps<"form">) {

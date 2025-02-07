@@ -1,51 +1,62 @@
-import { DownloadLinks } from "@/lib/types/devocionarios"
+import { DownloadLink } from "@/lib/types/devocionarios"
 import { BookOpenText, Download, SquareArrowUpRight, TabletSmartphone } from "lucide-react"
 
-export default function DownloadLinksList({ downloadLinks } : { downloadLinks: DownloadLinks }) {
+export default function DownloadLinksList({ downloadLinks } : { downloadLinks: DownloadLink[] }) {
   return (
       <ul className="list-none gap-4 flex flex-col">
-        {downloadLinks.map((downloadLink, index) => {
-          return (
-            <div
-              key={`download-link-${index + 1}`}
-              className="
-                rounded-lg border bg-card text-card-foreground shadow-sm
-                flex flex-row justify-between items-center p-2 pl-4 h-full
-              "
-            >
-
-              <div className="flex flex-row gap-3">
-                {
-                  downloadLink.type === "pdf-booklet"
-                    ? <>
-                      <BookOpenText />
-                      <span>PDF: livreto</span>
-                    </>
-                    : <>
-                      <TabletSmartphone />
-                      <span>PDF: digital</span>
-                    </>
-                }
-              </div>
-
-              <span className="flex flex-row gap-2">
-                <LinkButton type="direct-link" url={downloadLink["direct-link"]} />
-                <LinkButton type="url" url={downloadLink.url} />
-              </span>
-
-            </div>
-          )
-        })}
+        {downloadLinks.map( (downloadLink, index) => LinksRow(downloadLink, "DownloadLinksList", index) )}
       </ul>
   )
 }
 
-function LinkButton({
+export function LinksRow(
+  downloadLink: DownloadLink,
+  component: "DownloadLinksList" | "SearchResultsList",
+  index?: number,
+) {
+  if (!index) index = 0;
+
+  return (
+    <div
+    key={component === "SearchResultsList" ? undefined :`download-link-${index + 1}`}
+    className={
+      component === "SearchResultsList"
+      ? "flex flex-row justify-between items-center"
+      : `
+        rounded-lg border bg-card text-card-foreground shadow-sm
+        flex flex-row justify-between items-center p-2 pl-4 h-full
+      `
+    }>
+      <div className={`flex flex-row items-center ${component === "SearchResultsList" ? "gap-2" : "gap-3"}`}>
+        {
+          downloadLink.type === "pdf-booklet"
+            ? <>
+              <BookOpenText className={`${component === "SearchResultsList" && "w-4"}`} />
+              <span className={component === "SearchResultsList" ? "text-sm" : ""}>PDF: livreto</span>
+            </>
+            : <>
+              <TabletSmartphone className={`${component === "SearchResultsList" && "w-4"}`} />
+              <span className={component === "SearchResultsList" ? "text-sm" : ""}>PDF: digital</span>
+            </>
+        }
+      </div>
+
+      <span className={`flex flex-row ${component === "SearchResultsList" ? "gap-1" : "gap-2"}`}>
+        {downloadLink["direct-link"] && <LinkButton component={component} type="direct-link" url={downloadLink["direct-link"]} />}
+        {downloadLink.url            && <LinkButton component={component} type="url"         url={downloadLink.url} />}
+      </span>
+    </div>
+  )
+}
+
+export function LinkButton({
   type,
-  url
+  url,
+  component,
 } : {
   type: "url" | "direct-link",
-  url: string
+  url: string,
+  component: "DownloadLinksList" | "SearchResultsList",
 }) {
 
   const title = type === "url" ? "Abrir no Google Drive" : "Fazer download"
@@ -55,16 +66,17 @@ function LinkButton({
     <a
       href={url}
       target={target}
-      className="
+      className={`
         rounded-lg border bg-primary/10 text-card-foreground shadow-sm
-        hover:bg-background transition-colors p-1.5
-      "
+        hover:bg-background transition-colors
+        ${component === "SearchResultsList" ? "p-1" : "p-1.5"}
+      `}
       title={title}
     >
       {
         type === "url"
-          ? <SquareArrowUpRight />
-          : <Download />
+          ? <SquareArrowUpRight className={`${component === "SearchResultsList" && "w-4 h-4"}`} />
+          : <Download className={`${component === "SearchResultsList" && "w-4 h-4"}`} />
       }
     </a>
   )
