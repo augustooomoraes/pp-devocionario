@@ -7,7 +7,7 @@ export async function SearchResults({ query }: { query: string }) {
   const results = await fetchSearchResults(query);
 
   return (
-    <div className="w-prose flex flex-col gap-5">
+    <div className="w-full max-w-prose flex flex-col gap-5">
 
       <SearchForm />
 

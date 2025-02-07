@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import Fuse from "fuse.js";
 import { dataFiles, titles } from "./metadata";
+import { SearchedItem } from "../types/common";
+import { DownloadLink } from "../types/devocionarios";
 
 const dataDir = path.join(process.cwd(), "src/lib/data");
 
@@ -36,14 +38,7 @@ export async function fetchSearchResults(query: string) {
 
   const files = fs.readdirSync(dataDir).filter((file) => file.endsWith(".json"));
 
-  let allItems: {
-    source: string,
-    icon: string | null,
-    title: string,
-    url: string,
-    content: string,
-    hasDownloadLinks: boolean,
-  }[] = [];
+  let allItems: SearchedItem[] = [];
 
   for (const file of files) {
     const fileName = file.replace(".json", "");
@@ -56,10 +51,7 @@ export async function fetchSearchResults(query: string) {
     Object.keys(items).forEach((key) => {
       const contentTexts: string[] = extractContentValues(items[key]);
       const titleMeta = titles.find((d) => d.title === key);
-
-      const hasDownloadLinks =
-        Array.isArray(items[key]["download-links"]) &&
-        items[key]["download-links"].length > 0;
+      const downloadLinks: DownloadLink[] | undefined = items[key]["download-links"] || undefined;
 
       contentTexts.forEach((content) => {
         allItems.push({
@@ -68,7 +60,7 @@ export async function fetchSearchResults(query: string) {
           title: titleMeta?.displayName || key,
           url: `/${key}`,
           content,
-          hasDownloadLinks,
+          downloadLinks,
         });
       });
     });
@@ -85,9 +77,9 @@ export async function fetchSearchResults(query: string) {
 
   return Array.from(
     new Map(
-      fuzzyResults.map(({ source, icon, title, url, hasDownloadLinks }) => [
+      fuzzyResults.map(({ source, icon, title, url, downloadLinks }) => [
         title,
-        { source, icon, title, url, hasDownloadLinks },
+        { source, icon, title, url, downloadLinks },
       ])
     ).values()
   ).sort((a, b) => {

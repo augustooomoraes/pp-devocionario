@@ -103,11 +103,11 @@ export type LinkMap = {
   title?: string,
 }[]
 
-export type DownloadLinks = {
+export type DownloadLink = {
   url: string,
   "direct-link": string,
   type: DownloadLinkTypes,
-}[]
+}
 
 export type DownloadLinkTypes =
   "pdf-booklet" |

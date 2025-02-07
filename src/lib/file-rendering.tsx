@@ -4,7 +4,7 @@
 import clsx from "clsx"
 import React from "react"
 import { useRouter } from "next/navigation";
-import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes, BadgeData, DownloadLinks } from "./types/devocionarios";
+import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes, BadgeData, DownloadLink } from "./types/devocionarios";
 import { replaceAllStyleTags, replaceBreakAndAsteriskAndFootnoteTags, replaceLinkTags } from "./tags-replacing";
 import DownloadLinksList from "@/components/common/downloadLinksList";
 
@@ -447,7 +447,7 @@ export function DevocionarioFile({
     )
   }
 
-  function renderDownloadLinks(downloadLinks: DownloadLinks) {
+  function renderDownloadLinks(downloadLinks: DownloadLink[]) {
     return (
       <div id="download" className="border-t border-t-gray-400 mt-14 pt-8">
         <h2

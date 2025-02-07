@@ -1,5 +1,7 @@
 "use client";
-import { BookOpen, FileQuestion, Flame, FlameKindling, Music3 } from "lucide-react";
+import { LinkButton, LinksRow } from "@/components/common/downloadLinksList";
+import { SearchedItem } from "@/lib/types/common";
+import { BookOpen, BookOpenText, FileQuestion, Flame, FlameKindling, Music3, TabletSmartphone } from "lucide-react";
 import { useState } from "react";
 
 const iconMap: Record<string, React.FC<{ className?: string }>> = {
@@ -12,18 +14,12 @@ const iconMap: Record<string, React.FC<{ className?: string }>> = {
 export function SearchResultsList({
   results,
 }: {
-  results: {
-    source: string;
-    icon: string | null;
-    title: string;
-    url: string;
-    hasDownloadLinks: boolean;
-  }[];
+  results: SearchedItem[];
 }) {
   const [filterPdf, setFilterPdf] = useState(false);
 
   const filteredResults = filterPdf
-    ? results.filter((item) => item.hasDownloadLinks)
+    ? results.filter((item) => item.downloadLinks)
     : results;
 
   return (
@@ -57,26 +53,37 @@ export function SearchResultsList({
             ? (
               filteredResults.map((item, index) => {
                 const IconComponent = item.icon ? iconMap[item.icon] : FileQuestion;
+                const downloadLinks = item.downloadLinks
                 return (
                   <div
                     key={`download-link-${index + 1}`}
-                    className="
+                    className={`
                       rounded-lg border bg-card text-card-foreground shadow-sm
                       pt-3 sm:pt-2 pb-2 px-4 h-full
-                      flex justify-start
-                      flex-col sm:flex-row items-start sm:items-center gap-1.5 sm:gap-5
-                    "
+                      flex
+                      ${filterPdf
+                        ? "flex-col             gap-0.5"
+                        : "flex-col sm:flex-row gap-1.5 sm:gap-5 items-start sm:items-center"
+                      }
+                    `}
                   >
 
                     <div className="flex flex-row gap-3 shrink-0">
-                      <IconComponent />
-                      <span className="font-semibold">{item.source}</span>
+                      {!filterPdf && <IconComponent />}
+                      <span className={`font-semibold ${filterPdf && "text-sm"}`}>{item.source}</span>
                     </div>
 
                     <span><a
                       href={item.url}
                       className="hover:text-linkHover active:text-linkActive hover:underline active:underline"
                     >{item.title}</a></span>
+
+                    {(filterPdf && downloadLinks) && <div className="flex flex-col gap-1">
+                      {downloadLinks.map( link => { return (
+                        LinksRow(link, "SearchResultsList")   
+                      )})}
+                    </div>}
+
                   </div>
                 )
               })
