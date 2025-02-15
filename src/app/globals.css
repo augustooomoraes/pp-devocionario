@@ -126,6 +126,7 @@
 }
 
 .rubrics-font {
-  --font-family: var(--font-rubrics) !important;
+  @apply font-fontJusdon font-fontStixTwoText;
+  /* --font-family: var(--font-rubrics) !important; */
   /* --font-family: var(--font-rubrics-2) !important; */
 }
