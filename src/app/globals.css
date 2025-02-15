@@ -14,6 +14,7 @@
     --font-serif: "EB_Garamond", serif;
     --font-rubrics: "STIX_Two_Text", serif;
     --font-rubrics-2: "Judson", serif;
+    --font-rubrics-3: "Noto_Serif", serif;
     --font-family: var(--font-sans);
 
     --color-font-link-hover: 37 99 235;   /* #2563eb → blue-600 */
@@ -123,10 +124,24 @@
 
 .serif {
   --font-family: var(--font-serif);
+
+  /* .rubrics-font {
+    --font-family: var(--font-rubrics-2) !important;
+    background-color: cyan;
+  } */
 }
 
 .rubrics-font {
-  @apply font-fontJusdon font-fontStixTwoText;
-  /* --font-family: var(--font-rubrics) !important; */
-  /* --font-family: var(--font-rubrics-2) !important; */
+  /* @apply !font-fontStixTwoText; */
+
+  /* @apply !font-fontJusdon; */
+
+  /* font-family: var(--font-rubrics) !important;
+  .serif { font-family: var(--font-rubrics) !important; } */
+  
+  /* font-family: var(--font-rubrics-2) !important;
+  .serif { font-family: var(--font-rubrics-2) !important; } */
+  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+  /* .serif { font-family: var(--font-rubrics-2) !important; } */
 }
