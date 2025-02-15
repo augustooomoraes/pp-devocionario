@@ -286,14 +286,14 @@ export function DevocionarioFile({
                 "grid grid-cols-[24px_1fr]",
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
               )}>
-                <span className="font-bold text-rubrics rubrics-font rubrics-font">℣.</span>
+                <span className="font-bold text-rubrics !font-fontStixTwoText">℣.</span>
                 <span>{replaceAllStyleTags(content.content["pt-BR"], file.footnotes, file["link-map"])}</span>
               </div>
               <div className={clsx(
                 "grid grid-cols-[24px_1fr]",
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
               )}>
-                <span className="font-bold text-rubrics rubrics-font rubrics-font">℣.</span>
+                <span className="font-bold text-rubrics !font-fontStixTwoText">℣.</span>
                 <span>{replaceAllStyleTags(content.content["latin"], file.footnotes, file["link-map"])}</span>
               </div>
             </div>
@@ -313,14 +313,14 @@ export function DevocionarioFile({
                 "grid grid-cols-[24px_1fr]",
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
               )}>
-                <span className="font-bold text-rubrics rubrics-font">℟.</span>
+                <span className="font-bold text-rubrics !font-fontStixTwoText">℟.</span>
                 <span>{replaceAllStyleTags(content.content["pt-BR"], file.footnotes, file["link-map"])}</span>
               </div>
               <div className={clsx(
                 "grid grid-cols-[24px_1fr]",
                 content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
               )}>
-                <span className="font-bold text-rubrics rubrics-font">℟.</span>
+                <span className="font-bold text-rubrics !font-fontStixTwoText">℟.</span>
                 <span>{replaceAllStyleTags(content.content["latin"], file.footnotes, file["link-map"])}</span>
               </div>
             </div>

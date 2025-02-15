@@ -202,11 +202,11 @@ export function OracaoFile({
           case "r":
             return <div key={index} className="grid grid-cols-2 gap-3">
               <div className="grid grid-cols-[24px_1fr]">
-                <span className="font-bold text-rubrics rubrics-font">℟.</span>
+                <span className="font-bold text-rubrics !font-fontStixTwoText">℟.</span>
                 <span>{replaceAllStyleTags(content.content["pt-BR"])}</span>
               </div>
               <div className="grid grid-cols-[24px_1fr]">
-                <span className="font-bold text-rubrics rubrics-font">℟.</span>
+                <span className="font-bold text-rubrics !font-fontStixTwoText">℟.</span>
                 <span>{replaceAllStyleTags(content.content["latin"])}</span>
               </div>
             </div>
