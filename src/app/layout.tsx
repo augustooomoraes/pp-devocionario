@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { EB_Garamond, Manrope } from "next/font/google";
+import { EB_Garamond, Manrope, STIX_Two_Text, Judson } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/common/sidebar/theme-toggle/themeProvider";
 import { SidebarProvider} from "@/shadcnui/components/ui/sidebar";
@@ -15,6 +15,14 @@ const fontSans = Manrope({
 const fontSerif = EB_Garamond({
   subsets: ["latin"],
   variable: "--font-eb-garamond",
+})
+const fontRubrics = STIX_Two_Text({
+  subsets: ["latin"],
+  variable: "--font-stix-two-text",
+})
+const fontRubrics2 = Judson({
+  subsets: ["latin"],
+  weight: ["400"],
 })
 
 const meta = {
