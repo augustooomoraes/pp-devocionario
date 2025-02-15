@@ -12,6 +12,8 @@
 
     --font-sans: "Manrope", sans-serif;
     --font-serif: "EB_Garamond", serif;
+    --font-rubrics: "STIX_Two_Text", serif;
+    --font-rubrics-2: "Judson", serif;
     --font-family: var(--font-sans);
 
     --color-font-link-hover: 37 99 235;   /* #2563eb → blue-600 */
@@ -123,8 +125,7 @@
   --font-family: var(--font-serif);
 }
 
-/* @media (prefers-serif-font: serif) {
-  html {
-    font-family: var(--font-serif), serif;
-  }
-} */
+.rubrics-font {
+  --font-family: var(--font-rubrics) !important;
+  /* --font-family: var(--font-rubrics-2) !important; */
+}
