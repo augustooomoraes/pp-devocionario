@@ -6,6 +6,7 @@ import { SidebarProvider} from "@/shadcnui/components/ui/sidebar";
 import { AppSidebar } from "@/components/common/sidebar/appSidebar";
 import { BackToTopButton } from "@/components/common/backToTopButton";
 import TopBar from "@/components/common/sidebar/topbar";
+import { Analytics } from "@vercel/analytics/react"
  
 const fontSans = Manrope({
   subsets: ["latin"],
@@ -76,6 +77,7 @@ export default function RootLayout({
               <TopBar children={children} />
               <BackToTopButton />
             </SidebarProvider>
+            <Analytics />
           </ThemeProvider>
         </body>
     </html>
