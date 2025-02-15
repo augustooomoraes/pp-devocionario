@@ -100,9 +100,6 @@ const config = {
   		fontFamily: {
   			fontManrope: ["var(--font-manrope)"],
 				fontEbGaramond: ["var(--font-eb-garamond)"],
-				fontStixTwoText: ["var(--font-stix-two-text)"],
-				fontJusdon: ["var(--font-judson)"],
-				fontNotoSerif: ["var(--font-noto-serif)"],
   		}
   	}
   },
