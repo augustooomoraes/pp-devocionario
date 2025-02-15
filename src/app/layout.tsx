@@ -17,44 +17,41 @@ const fontSerif = EB_Garamond({
   variable: "--font-eb-garamond",
 })
 
+const meta = {
+  title: "Devocionário",
+  description: "Orações e práticas espirituais da Santa Igreja. Textos em português e latim.",
+  siteUrl: "https://devocionario.augustooomoraes.com",
+  image: {
+    url: "/opengraph-image.png",
+    width: 800,
+    height: 400,
+    alt: "Augusto Moraes' Devocionário OpenGraph Image",
+  },
+}
+
 export const metadata: Metadata = {
   title: {
-    default: "Devocionário",
+    default: meta.title,
     template: "%s"
   },
-  description: "Projeto do portfólio de Augusto Moraes.",
-  metadataBase: new URL("https://devocionario.augustooomoraes.com/"),
+  description: meta.description,
+  metadataBase: new URL(meta.siteUrl + "/"),
+
   openGraph: {
-    url: "https://devocionario.augustooomoraes.com",
+    url: meta.siteUrl,
     type: "website",
-    title: "Devocionário",
-    description: "Projeto do portfólio de Augusto Moraes.",
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 800,
-        height: 400,
-        alt: "Augusto Moraes OpenGraph Image",
-      },
-    ],
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
   },
+
   twitter: {
     card: "summary_large_image",
-    // domain: "devocionario.augustooomoraes.com",
-    // url: "https://devocionario.augustooomoraes.com",
-    site: "https://devocionario.augustooomoraes.com",
-    title: "Devocionário",
+    site: meta.siteUrl,
+    title: meta.title,
     creator: "Augusto Moraes",
-    description: "Projeto do portfólio de Augusto Moraes.",
-    // image: "/opengraph-image.png",
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 800,
-        height: 400,
-        alt: "Augusto Moraes OpenGraph Image",
-      },
-    ],
+    description: meta.description,
+    images: [meta.image],
   },
 };
 
