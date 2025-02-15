@@ -123,8 +123,6 @@
   --font-family: var(--font-serif);
 }
 
-/* @media (prefers-serif-font: serif) {
-  html {
-    font-family: var(--font-serif), serif;
-  }
-} */
+.rubrics-font {
+  font-family: var(--font-sans) !important;
+}
