@@ -41,29 +41,9 @@ export const sidebarData: SidebarData = {
       ],
     },
     {
-      title: "Orações",
+      title: "Orações compostas",
       url: "#",
       items: [
-        {
-          title: "Pai Nosso",
-          url: "/pater-noster",
-          devStage: "mvp",
-        },
-        {
-          title: "Ave Maria",
-          url: "/ave-maria",
-          devStage: "mvp",
-        },
-        {
-          title: "Glória ao Pai",
-          url: "/gloria-patri",
-          devStage: "done",
-        },
-        {
-          title: "Santo Anjo",
-          url: "/angele-dei",
-          devStage: "done",
-        },
         {
           title: "Ángelus",
           url: "/angelus",
@@ -88,6 +68,32 @@ export const sidebarData: SidebarData = {
           title: "Coroa do Senhor",
           url: "/coroa-do-senhor",
           devStage: "notStarted",
+        },
+      ],
+    },
+    {
+      title: "Orações",
+      url: "#",
+      items: [
+        {
+          title: "Pai Nosso",
+          url: "/pater-noster",
+          devStage: "mvp",
+        },
+        {
+          title: "Ave Maria",
+          url: "/ave-maria",
+          devStage: "mvp",
+        },
+        {
+          title: "Glória ao Pai",
+          url: "/gloria-patri",
+          devStage: "done",
+        },
+        {
+          title: "Santo Anjo",
+          url: "/angele-dei",
+          devStage: "done",
         },
       ],
     },
