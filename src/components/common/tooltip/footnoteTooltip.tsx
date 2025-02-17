@@ -9,9 +9,10 @@ type FootnoteTooltipProps = {
   footnoteId: number,
   footnotes: { id: number, content: string }[],
   links: LinkMap,
+  setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
 };
 
-const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes, links }) => {
+const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes, links, setStateFunction }) => {
   const [visible, setVisible] = useState(false);
   const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -36,11 +37,19 @@ const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes
     }, 300);
   };
 
-  const handleClick = (target: string) => {
-    return (e: React.MouseEvent) => {
-      e.stopPropagation();
-      router.push(target);
-    };
+  const handleClick = () => (e: React.MouseEvent) => {
+
+    e.stopPropagation();
+
+    setStateFunction((prev) =>
+      prev.map((_, index) => index === footnoteId - 1)
+    );
+
+    router.push("#rodape-conteudo-" + (footnoteId || "not-found"));
+
+    setTimeout(() => {
+      setStateFunction((prev) => prev.map(() => false));
+    }, 3500);
   };
 
   return (
@@ -55,7 +64,7 @@ const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes
           hover:bg-accent active:bg-black/10 transition-colors
           px-0.5 rounded-sm
         "
-        onClick={handleClick( "#rodape-conteudo-" + (footnoteId || "not-found") )}
+        onClick={handleClick()}
       >
         <span className="cursor-pointer">
           {footnoteId}

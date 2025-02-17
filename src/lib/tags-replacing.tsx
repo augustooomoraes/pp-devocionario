@@ -1,7 +1,12 @@
 import FootnoteTooltip from "@/components/common/tooltip/footnoteTooltip";
 import { Footnotes, LinkMap } from "./types/devocionarios";
 
-export function replaceAllStyleTags(text: string, footnotes: Footnotes, links: LinkMap) {
+export function replaceAllStyleTags(
+  text: string,
+  footnotes: Footnotes,
+  links: LinkMap,
+  setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
+) {
   return replaceBreakAndAsteriskAndFootnoteTags(
     replaceLinkTags(text
       .split(/(<paragraph>.*?<\/paragraph>|<i>.*?<\/i>|<b>.*?<\/b>|<u>.*?<\/u>)/g)
@@ -40,10 +45,16 @@ export function replaceAllStyleTags(text: string, footnotes: Footnotes, links: L
   ),
     footnotes,
     links,
+    setStateFunction,
   );
 }
 
-export function replaceBreakAndAsteriskAndFootnoteTags(parts: (string | React.JSX.Element)[], footnotes: Footnotes, links: LinkMap) {
+export function replaceBreakAndAsteriskAndFootnoteTags(
+  parts: (string | React.JSX.Element)[],
+  footnotes: Footnotes,
+  links: LinkMap,
+  setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
+) {
   return parts.flatMap((part, index) => {
     if (typeof part === "string") {
       return part.split("<br>").flatMap((subPart, subIndex) => {
@@ -72,6 +83,7 @@ export function replaceBreakAndAsteriskAndFootnoteTags(parts: (string | React.JS
                         footnoteId={Number(footnoteId)}
                         footnotes={footnotes}
                         links={links}
+                        setStateFunction={setStateFunction}
                       />
                     );
                   }
