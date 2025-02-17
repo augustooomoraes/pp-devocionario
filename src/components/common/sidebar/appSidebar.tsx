@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react"
 import { ChevronRight } from "lucide-react"
 import { cn } from "@/shadcnui/lib/utils";
@@ -31,6 +33,26 @@ import {
 } from "@/shadcnui/components/ui/sidebar"
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+
+  const [collapsedState, setCollapsedState] = React.useState<Record<string, boolean>>({});
+
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedState = localStorage.getItem("sidebar-collapsed");
+      if (storedState) {
+        setCollapsedState(JSON.parse(storedState));
+      }
+    }
+  }, []);
+
+  const toggleCollapse = (title: string) => {
+    setCollapsedState((prevState) => {
+      const newState = { ...prevState, [title]: !prevState[title] };
+      localStorage.setItem("sidebar-collapsed", JSON.stringify(newState));
+      return newState;
+    });
+  };
+
   return (
     <Sidebar {...props}>
 
@@ -61,7 +83,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <Collapsible
             key={item.title}
             title={item.title}
-            defaultOpen
+            onOpenChange={() => toggleCollapse(item.title)}
+            open={!collapsedState[item.title]}
             className="group/collapsible"
           >
             <SidebarGroup>
