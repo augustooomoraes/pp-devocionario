@@ -242,6 +242,33 @@ export function DevocionarioFile({
                   )}
                 </h4>
 
+              case "header-3":
+                return <h5
+                  key={index}
+                  className={clsx(
+                    content["id"] && "cursor-pointer hover:underline",
+                    content["subsection-break"] && "mb-5",
+                    "text-sm font-semibold uppercase mt-1.5 mb-0.5",
+                  )}
+                  id={
+                    content["id"]
+                      ? sectionMap.filter(sectionIndex => sectionIndex.id === content.id)[0].title || "not-found"
+                      : content["link-id"]
+                        ? linkMap.filter(link => link.id === content["link-id"])[0].url.startsWith("#")
+                          ? linkMap.filter(link => link.id === content["link-id"])[0].url.slice(1)
+                          : "not-found"
+                        : undefined
+                  }
+                  onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
+                >
+                  {replaceAllStyleTags(
+                    content.content as string,
+                    file.footnotes,
+                    file["link-map"],
+                    setSelectedFootnotes,
+                  )}
+                </h5>
+
               case "paragraph":
                 return <p
                   key={index}
@@ -402,6 +429,7 @@ export function DevocionarioFile({
                 "grid grid-cols-2 gap-3",
                 content.type === "header-1" && "text-base font-semibold text-center",
                 content.type === "header-2" && "text-lg font-medium",
+                content.type === "header-3" && "text-sm font-semibold uppercase",
                 content.type === "paragraph" && "mb-1.5 mt-1.5",
                 content.type === "indication" && "my-1.5 leading-tight italic text-base font-light",
                 content.type === "annotation" && "my-1 leading-tight italic text-ann font-light"
@@ -412,6 +440,7 @@ export function DevocionarioFile({
               <div
                 className={clsx(
                   content.type === "header-2" && "mx-5",
+                  content.type === "header-3" && "mx-2 mt-1",
                   content.type === "indication" && "mx-5",
                   content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
                 )}
@@ -440,6 +469,7 @@ export function DevocionarioFile({
               <div
                 className={clsx(
                   content.type === "header-2" && "mx-5",
+                  content.type === "header-3" && "mx-2 mt-1",
                   content.type === "indication" && "mx-5",
                   content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
                 )}

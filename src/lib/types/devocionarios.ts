@@ -70,6 +70,7 @@ export type SectionTypes = (
 export type SectionContentTypes = (
   "header-1" |
   "header-2" |
+  "header-3" |
   "paragraph" |
   "parallel-preces" | // Vide ~ l. 2554 (O Iesu, vivens in Maria) e outras depois
   "indication" |
@@ -79,6 +80,7 @@ export type SectionContentTypes = (
 export type ParallelPrecesTypes = (
   "header-1" |
   "header-2" |
+  "header-3" |
   "paragraph" |
   "v" |
   "r" |

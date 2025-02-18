@@ -137,8 +137,8 @@
             "end-break": true,
             "type": "paragraph",
             "content": {
-              "latin": "Per signum Crucis de inimícis nostris nostris líbera nos, Deus noster.<br>In nómine Patris, et Fílii, et Spíritus Sancti. Ámen.",
-              "pt-BR": "Pelo sinal da Santa Cruz livrai-nos, Deus, dos nossos inimigos.<br>Em nome do pai, e do Filho, e do Espírito Santo. Amém"
+              "latin": "Per signum Crucis de inimícis nostris nostris líbera nos, Deus noster.<br>In nómine Patris, et Fílii, et Spíritus Sancti. Amen.",
+              "pt-BR": "Pelo sinal da Santa Cruz livrai-nos, Deus, dos nossos inimigos.<br>Em nome do pai, e do Filho, e do Espírito Santo. Amém."
             }
           },
           {
@@ -302,7 +302,7 @@
           {
             "subsection-break": true,
             "type": "paragraph",
-            "content": "Pela intercessão de São Miguel e do celeste Coro de todos os Anjos, digne-se o Senhor de conceder-nos sermos guardados por eles nesta presente vida mortal e sermos, depois, conduzidos à glória sempiterna. Amém"
+            "content": "Pela intercessão de São Miguel e do celeste Coro de todos os Anjos, digne-se o Senhor de conceder-nos sermos guardados por eles nesta presente vida mortal e sermos, depois, conduzidos à glória sempiterna. Amém."
           },
           {
             "type": "indication",
@@ -1173,6 +1173,1700 @@
       {"id": 6, "title": "1-3-ave-maria"},
       {"id": 7, "title": "1-4-gloria-ao-pai"},
       {"id": 8, "title": "2-a-pequena-coroa-da-santissima-virgem"}
+    ]
+  },
+  "antifonas-marianas": {
+    "title": "Antífonas Marianas",
+    "index": [
+      {"id": 1, "title": "alguma coisa..."},
+      {"id": 2, "title": "Antífonas Marianas", "index": [
+        {"id": 3, "title": "Alma Redemptoris"},
+        {"id": 4, "title": "Ave Regina Cælorum"},
+        {"id": 5, "title": "Regina Cæli"},
+        {"id": 6, "title": "Salve Regina"}
+      ]}
+    ],
+    "sections": [
+      {
+        "id": 1,
+        "title": "alguma coisa...",
+        "type": "paragraph",
+        "contents": [
+          {
+            "type": "paragraph",
+            "content": "Sobre a récita no Ofício Divino, sobre os tempos litúrgicos em que são recitadas..."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Antífonas Marianas",
+        "type": "regular-text",
+        "contents": [
+          {
+            "subsection-break": true,
+            "type": "parallel-preces",
+            "contents": [
+              {
+                "id": 3,
+                "type": "header-1",
+                "content": {
+                  "latin": "Alma Redemptoris",
+                  "pt-BR": "Santa Mãe do Redentor"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Alma Redemptoris Mater,",
+                  "pt-BR": "Santa Mãe do Redentor,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Quæ pérvia cæli, Porta manes, et Stella maris,",
+                  "pt-BR": "Que és acesso e porta do céu, estrela do mar,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Súcurre cadenti. Súrgere qui curat pópulo.",
+                  "pt-BR": "socorre ao povo caído que quer se levantar do abismo da culpa."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Tu quæ genuústi, natura mirante, tuum sanctum Genitorem.",
+                  "pt-BR": "Tu que gerastes, ante a natureza maravilhada, vosso santo Criador."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Virgo príus ac postérius, Gabriélis ab ore sumens illud Ave,",
+                  "pt-BR": "Virgem antes e depois de receber aquele Ave da boca de Gabriel,"
+                }
+              },
+              {
+                "horizontal-line": "two-halves",
+                "type": "paragraph",
+                "content": {
+                  "latin": "Peccatórum miserere.",
+                  "pt-BR": "tem misericórdia dos pecadores."
+                }
+              },
+              {
+                "type": "annotation",
+                "content": {
+                  "latin": "",
+                  "pt-BR": "Durante o Advento:"
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Ángelus Dómini nuntiávit Maríæ.",
+                  "pt-BR": "O Anjo do Senhor anunciou a Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Et concépit de Spíritu Sancto.",
+                  "pt-BR": "E ela concebeu do Espírito Santo."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "<i>Oremus:</i> grátiam tuam, quǽsumus, Dómine, méntibus nostris infunde; ut qui, Ángelo nuntiánte, Christi Fílii tui incarnatiónem cognóvimus, per passiónem eius et crucem, ad ressurectiónis glóriam perducámur. Per eúndem Christum Dóminum nostrum.",
+                  "pt-BR": "<i>Oremos:</i> infundi, Senhor, nós Vos pedimos, em nossas almas a Vossa graça, para que nós, que conhecemos pela anunciação do Anjo a Encarnação de Jesus Cristo, cheguemos, por Sua Paixão e Cruz, à glória da Ressurreição. Pelo mesmo Jesus Cristo, Senhor Nosso."
+                }
+              },
+              {
+                "horizontal-line": "two-halves",
+                "type": "r",
+                "content": {
+                  "latin": "Amen.",
+                  "pt-BR": "Amém."
+                }
+              },
+              {
+                "type": "annotation",
+                "content": {
+                  "latin": "",
+                  "pt-BR": "Desde as Vésperas do Natal até à Purificação:"
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Post partum, Virgo, inviolata permansisti.",
+                  "pt-BR": "Depois do parto permanecestes imaculada."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Dei Génetrix, intercede pro nobis.",
+                  "pt-BR": "Intercedei por nós, ó Mãe de Deus."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "<i>Oremus:</i> Deus, qui salutis æternæ beátæ Maríæ virginitate fecunda humano géneri prǽmia præstitisti: tríbue, quǽsumus, ut ipsam pro nobis intercédere sentiámus, per quam merúimus, Auctorem vitæ suscípere Dóminum nostrum Iesum Christum Fílium tuum.",
+                  "pt-BR": "<i>Oremos:</i> Deus, que prestastes ao gênero humano o prêmio da salvação eterna, pela fecunda virgindade da Bem-Aventurada Maria, concedei-nos, suplicamo-Vos, que a sintamos interceder por nós, por quem merecemos receber o autor da vida, nosso Senhor Jesus Cristo, Vosso Filho."
+                }
+              },
+              {
+                "horizontal-line": "full",
+                "type": "r",
+                "content": {
+                  "latin": "Amen.",
+                  "pt-BR": "Amém."
+                }
+              }
+            ]
+          },
+          {
+            "subsection-break": true,
+            "type": "parallel-preces",
+            "contents": [
+              {
+                "id": 4,
+                "type": "header-1",
+                "content": {
+                  "latin": "Ave Regina Cælorum",
+                  "pt-BR": "Ave Rainha do Céu"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Ave, Regina Cælorum,",
+                  "pt-BR": "Ave, Rainha do Céu,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Ave Dómina Angelorum:",
+                  "pt-BR": "Ave, Senhora dos Anjos:"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Salve, radix, salve, porta,",
+                  "pt-BR": "Salve, raiz fecunda, salve, porta do céu,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Ex qua mundo lux est orta:",
+                  "pt-BR": "Pela qual a luz nasceu para o mundo:"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Gaude, Virgo gloriosa,",
+                  "pt-BR": "Alegrai-vos, ó Virgem gloriosa,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Super omnes speciosa.",
+                  "pt-BR": "Entre todas a mais bela."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Vale, o valde decora,",
+                  "pt-BR": "Salve, esplendor radioso,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Et pro nobis Christum exora.",
+                  "pt-BR": "E rogai por nós a Cristo."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Dignare me laudare te, Virgo sacrata.",
+                  "pt-BR": "Dignai-vos aceitar, Senhora, os meus louvores."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Da mihi virtutem contra hostes tuos.",
+                  "pt-BR": "Dai-me coragem para combater os vossos inimigos"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "<i>Oremus:</i> Concede, miséricors Deus, fragilitati nostræ præsídium; ut, qui sanctæ Dei Genetricis memóriam ágimus, intercessionis eíus auxílio, a nostris iniquitátibus resurgámus. Per eúndem Christum Dóminum nóstrum.",
+                  "pt-BR": "<i>Oremos:</i> Concedei, misericordioso Deus, proteção à nossa fragilidade; para que, ao honrarmos a memória da Santa Mãe de Deus, com o auxílio de sua intercessão, ressurjamos de nossas iniquidades. Pelo mesmo Cristo, Senhor nosso."
+                }
+              },
+              {
+                "horizontal-line": "full",
+                "type": "r",
+                "content": {
+                  "latin": "Amen.",
+                  "pt-BR": "Amém."
+                }
+              }
+            ]
+          },
+          {
+            "subsection-break": true,
+            "type": "parallel-preces",
+            "contents": [
+              {
+                "id": 5,
+                "type": "header-1",
+                "content": {
+                  "latin": "Regina Cæli",
+                  "pt-BR": "Rainha do Céu"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Regina cæli, lætare, alleluia,",
+                  "pt-BR": "Rainha do Céu, alegrai-vos, aleluia,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Quia quem meruísti portare, alleluia:",
+                  "pt-BR": "Pois quem mereceste trazer em vosso seio, aleluia:"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Ressurréxit sicut dixit, alleluia.",
+                  "pt-BR": "Ressucitou como disse, aleluia."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Ora pro nobis Deum, alleluia.",
+                  "pt-BR": "Rogai a Deus por nós, aleluia."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Gaude et lætare, Virgo Maria, alleluia.",
+                  "pt-BR": "Alegrai-vos e exultai, Virgem Maria, aleluia."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Quia surrexit Dóminus vere, alleluia.",
+                  "pt-BR": "Pois o Senhor ressucitou verdadeiramente, aleluia."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "<i>Oremus:</i> Deus, qui per ressurrectionem Fílii tui, Dómini nostri Iesu Christi, mundum lætificare dignatus es: præsta, quǽsumus, ut per eius Genitrícem Vírginem Maríam, perpétuæ capiámus gáudia vitæ. Per eúndem Christum Dóminum nostrum.",
+                  "pt-BR": "<i>Oremos:</i> Ó Deus, que Vosdignastes alegrar o mundo com a Ressurreição do Vosso Filho Jesus Cristo, Senhor Nosso: concedei-nos, suplicamo-Vos, que por sua Mãe, a Virgem Maria, alcancemos as alegrias da vida eterna. Pelo mesmo Jesus Cristo, Senhor Nosso."
+                }
+              },
+              {
+                "horizontal-line": "full",
+                "type": "r",
+                "content": {
+                  "latin": "Amen.",
+                  "pt-BR": "Amém."
+                }
+              }
+            ]
+          },
+          {
+            "subsection-break": true,
+            "type": "parallel-preces",
+            "contents": [
+              {
+                "id": 6,
+                "type": "header-1",
+                "content": {
+                  "latin": "Salve Regina",
+                  "pt-BR": "Salve Rainha"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Salve Regina, Mater misericórdiæ,",
+                  "pt-BR": "Salve Rainha, Mãe de misericórdia,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Vita, dulcedo et spes nostra, salve.",
+                  "pt-BR": "Vida, doçura e esperança nossa, salve."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Ad te clamamus, éxsules fílii Evæ,",
+                  "pt-BR": "A vós bradamos, os degredados filhos de Eva,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Ad te suspiramus, gementes et flentes in ac lacrimarum valle.",
+                  "pt-BR": "A vós suspiramos, gemendo e chorando neste vale de lágrimas."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Eia, ergo, advocata nostra,",
+                  "pt-BR": "Eia, pois, advogada nossa,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Illos tuos misericordes óculos ad nos converte.",
+                  "pt-BR": "Esses vossos olhos misericordiosos a nós volvei."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Et Iesum, benedictum fructum ventris tui, nobis post hoc exsílium ostende.",
+                  "pt-BR": "E, depois deste desterro, mostrai-nos Jesus, bendito fruto do vosso ventre."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "O clemens, o pia, o dulcis Virgo Maria.",
+                  "pt-BR": "Ó clemente, ó piedosa, ó doce sempre Vigem Maria."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Ora pro nobis, sancta Dei Génitrix.",
+                  "pt-BR": "Rogai por nós, santa Mãe de Deus."
+                }
+              },
+              {
+                "type": "v",
+                "content": {
+                  "latin": "Ut digni efficiámur promissiónibus Christi.",
+                  "pt-BR": "Para que sejamos dignos das promessas de Cristo."
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "<i>Oremus:</i> Omnípotens sempiterne Deus, qui gloriosæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mereretur, Spíritu Sancto cooperante, præparásti: da, ut cuius commemoratione lætamur, eius pia intercessione, ab instántibus malis et a morte perpétua liberemur. Per eúndem Christum Dóminum nostrum.",
+                  "pt-BR": "<i>Oremos:</i> Deus eterno e todo-poderoso, que, pela cooperação do Espírito Santo, preparastes a alma e o corpo de Maria, gloriosa Virgem e Mãe, para ser um merecedor e digno habitáculo de vosso Filho: concedei que sejamos livres dos males presentes e da morte perpétua, pela pia intercessão daquela que comemoramos alegremente. Pelo mesmo Cristo, nosso Senhor."
+                }
+              },
+              {
+                "type": "r",
+                "content": {
+                  "latin": "Amen.",
+                  "pt-BR": "Amém."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "section-map": [
+      {"id": 1, "title": "1-alguma-coisa"},
+      {"id": 2, "title": "2-antifonas-marianas"},
+      {"id": 3, "title": "2-1-alma-redemptoris"},
+      {"id": 4, "title": "2-2-ave-regina-caelorum"},
+      {"id": 5, "title": "2-3-regina-caeli"},
+      {"id": 6, "title": "2-4-salve-regina"}
+    ]
+  },
+  "santo-rosario": {
+    "title": "Santo Rosário",
+    "index": [
+      {"id": 1, "title": "Sobre o Santo Rosário"},
+      {"id": 1999, "title": "Orações básicas", "index": [
+        {"id": 2999, "title": "Credo", "index": [
+          {"id": 3999, "title": "Símbolo dos Apóstolos"},
+          {"id": 4999, "title": "Símbolo Niceno-Constantinopolitano"}
+        ]},
+        {"id": 5999, "title": "Pai Nosso"},
+        {"id": 6999, "title": "Ave Maria"},
+        {"id": 7999, "title": "Glória ao Pai"},
+        {"id": 8999, "title": "Oração de Fátima"},
+        {"id": 9999, "title": "Salve, Rainha"},
+        {"id": 10999, "title": "Ladainha Lauretana"},
+        {"id": 11999, "title": "À Vossa Proteção"},
+        {"id": 12999, "title": "Oração a São José"},
+        {"id": 13999, "title": "Oração a São Miguel Arcanjo"}
+      ]},
+      {"id": 14999, "title": "Início", "index": [
+        {"id": 15999, "title": "Sinal da Cruz"},
+        {"id": 16999, "title": "Invitatório"}
+      ]},
+      {"id": 17999, "title": "Santo Rosário"}
+    ],
+    "sections": [
+      {
+        "id": 1,
+        "title": "Sobre o Santo Rosário",
+        "type": "regular-text",
+        "contents": [
+          {
+            "type": "paragraph",
+            "content": "Costuma-se dedicar uma parte do Rosário a cada dia da semana. Assim:<br>• às segundas e sábados meditam-se os <i>mistérios gozozos</i>;<br>• às quintas, os <i>luminosos</i>;<br>• às terças e sextas, os <i>dolorosos</i>; e<br>• às quartas e domingos, os <i>gloriosos</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Há quatro partes na recitação de cada mistério do Rosário: a enunciação e meditação da cena, o Pai Nosso, as dez Ave Marias e o Glória. Outras orações podem ser acrescentadas depois, de acordo com as tradições locais, mas não são parte essencial do Rosário. A mais conhecida destas orações é a jaculatória que a própria Santíssima Virgem ensinou às três crianças em Fátima: <i>Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno; levai as almas todas para o Céu e socorrei principalmente as que mais precisarem</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "No final dos cinco mistérios, pode-se rezar a <i>Ladainha Lauretana</i>, um conjunto de invocações e louvores à Santíssima Trindade e à Nossa Senhora."
+          },
+          {
+            "type": "header-1",
+            "content": "Sobre os Mistérios Luminosos"
+          },
+          {
+            "type": "paragraph",
+            "content": "Os Mistérios Luminosos foram instituídos pelo Papa São João Paulo II em 2002, na Carta Apostólica <i>Rosarium Virginis Mariæ</i>. Antes disto, tradicionalmente, meditavem-se os outros mistérios nos seguintes dias:<br>• às segundas e quintas, os <i>gozosos</i>;<br>• às terças e sextas, os <i>dolorosos</i>; e<br>• às quartas, sábados e domingos, os <i>gloriosos</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Outra forma atribui aos <i>domingos</i> a meditação de mistérios conforme o tempo litúrgico, da seguinte forma:<br>• os mistérios gozosos desde o Advento à Quaresma;<br>• os mistérios dolorosos durante a Quaresma; e<br>• os mistérios gloriosos desde a Páscoa até ao Advento,"
+          },
+          {
+            "type": "paragraph",
+            "content": "Permanecendo iguais os mistérios a serem meditados durante os dias da semana."
+          }
+        ]
+      },
+      {
+        "id": 1999,
+        "title": "Orações básicas",
+        "type": "parallel-preces",
+        "contents": [
+          {
+            "id": 2999,
+            "type": "header-1",
+            "content": {
+              "latin": "Credo",
+              "pt-BR": "Credo"
+            }
+          },
+          {
+            "id": 3999,
+            "type": "header-2",
+            "content": {
+              "latin": "Sýmbolum Apostolórum",
+              "pt-BR": "Credo I – Símbolo dos Apóstolos"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Credo in Deum Patrem omnipotentem, Creatorem cæli et terræ, et in Iesum Christum, Filium Eius unicum, Dominum nostrum, qui conceptus est de Spíritu Sancto, natus ex Maria Vírgine, passus sub Pontio Pilato, crucifixus, mórtuus, et sepultus, descendit ad ínferos, tértia die resurrexit a mórtuis, ascendit ad cælos, sedet ad déxteram Dei Patris omnipotentis, inde venturus est iudicare vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Eccléiam cathólicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem, vitam æternam. Amen.",
+              "pt-BR": "Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado; desceu à mansão dos mortos; ressucitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na Santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressureição da carne, na vida eterna. Amém."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "annotation",
+            "content": {
+              "latin": "(Aut óptio)",
+              "pt-BR": "(Ou)"
+            }
+          },
+          {
+            "id": 4999,
+            "type": "header-2",
+            "content": {
+              "latin": "Sýmbolum Nicænum",
+              "pt-BR": "Credo II – Símbolo Niceno-Constantinopolitano"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Credo in unum Deum, Patrem omnipotentem, factorem cæli et terræ, visibílium ómnium et invisibílium.",
+              "pt-BR": "Creio em um só Deus, Pai todo-poderoso, Criador do céu e da terra, de todas as coisas visíveis e invisíveis."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et in unum Dóminum Iesum Christum, Fílium Dei unigénitum, et ex Patre natum ante ómnia sǽcula. Deum de Deo, Lumen de Lúmine, Deum verum de Deo vero, génitum, non factum, consubstantiálem Patri; per quem ómnia facta sunt.",
+              "pt-BR": "Creio em um só Senhor, Jesus Cristo, Filho Unigênito de Deus, nascido do Pai antes de todos os séculos: Deus e Deus, Luz da Luz, Deus verdadeiro de Deus verdadeiro; gerado, não criado, consubstancial ao Pai. Por Ele todas as coisas foram feitas."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Qui propter nos hómines et propter nostram salutem descendit de cælis.",
+              "pt-BR": "E por nós, homens, e para a nossa salvação, desceu dos céus."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et incarnatus est de Spíritu Sancto ex Maria Vírginem, et homo factus est.",
+              "pt-BR": "E se encarnou pelo Espírito Santo, no seio da Virgem Maria, e se fez homem."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Crucifixus étiam pro nobis sub Póntio Pilato, passus et sepultus est.",
+              "pt-BR": "Também por nós foi crucificado sob Pôncio Pilatos; padeceu e foi sepultado."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et ressurrexit tértia die, secundum Scripturas, et ascendit in cælum, sedet ad déxteram Patris.",
+              "pt-BR": "Ressucitou ao terceiro dia, conforme as Escrituras; e subiu aos céus, onde está sentado à direita do Pai."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et íterum venturus est cum glória, iudicare vivos et mórtuos, cuius regni non erit finis.",
+              "pt-BR": "E de novo há de vir em sua glória, para julgar os vivos e os mortos; e o seu reino não terá fim."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et in Spíritum Sanctum, Dóminum et vivificantem, qui ex Patre Filióque procedit.",
+              "pt-BR": "Creio no Espírito Santo, Senhor que dá a vida, e procede do Pai e do Filho."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Qui cum Patre et Fílio simul adoratur et conglorificatur: qui locutus est per prophetas.",
+              "pt-BR": "E com o Pai e o FIlho é adorado e conglorificado: Ele que falou pelos Profetas."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et unam, sanctam, cathólicam et apostólicam Ecclésiam.",
+              "pt-BR": "Creio na Igreja, una santa, católica e apostólica."
+            }
+          },
+          {
+            "horizontal-line": "full",
+            "type": "paragraph",
+            "content": {
+              "latin": "Confíteor unum baptisma in remissionem peccatorum. Et exspecto ressurrectionem mortuorum, et vitam venturi sǽculi. Amen.",
+              "pt-BR": "Professo um só batismo para remissão dos pecados. E espero a ressurreição dos mortos, e a vida do mundo que há de vir. Amém."
+            }
+          },
+          {
+            "id": 5999,
+            "type": "header-2",
+            "content": {
+              "latin": "Pater Noster",
+              "pt-BR": "Pai Nosso"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Pater noster qui es in cælis, sanctificétur nomen tuum. Advéniat regnum tuum. Fiat volúntas tua sicut in cælo et in terra.",
+              "pt-BR": "Pai nosso que estais nos céus, santificado seja o Vosso nome. Venha a nós o Vosso reino. Seja feita a Vossa vontade assim na terra como no céu."
+            }
+          },
+          {
+            "horizontal-line": "full",
+            "type": "r",
+            "content": {
+              "latin": "Panem nostrum cotidiánum da nobis hódie. Et dimítte nobis débita nostra sicut et nos dimíttimus debitóribus nostris. Et ne nos indúcas in tentatiónem, sed líbera nos a malo. Ámen.",
+              "pt-BR": "O pão nosso de cada dia nos dai hoje. Perdoai-nos as nossas dívidas assim como nós perdoamos aos nossos devedores. E não nos deixeis cair em tentação, mas livrai-nos do mal. Amém."
+            }
+          },
+          {
+            "id": 6999,
+            "type": "header-2",
+            "content": {
+              "latin": "Ave María",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Ave María, grátia plena, Dóminus tecum. Benedícta tu in muliéribus et benedíctus fructus ventris tui, Iesus.",
+              "pt-BR": "Ave Maria, cheia de graça, o Senhor é convosco. Bendita sois Vós entre as mulheres e bendito é o fruto do Vosso ventre, Jesus."
+            }
+          },
+          {
+            "horizontal-line": "full",
+            "type": "r",
+            "content": {
+              "latin": "Sancta María, Mater Dei, ora pro nobis, peccatóribus, nunc et in hora mortis nostræ. Ámen.",
+              "pt-BR": "Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora de nossa morte. Amém."
+            }
+          },
+          {
+            "id": 7999,
+            "type": "header-2",
+            "content": {
+              "latin": "Glória Patri",
+              "pt-BR": "Glória ao Pai"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Glória Patri, et Fílio, et Spirítui Sancto.",
+              "pt-BR": "Glória ao Pai, ao Filho, e ao Espírito Santo."
+            }
+          },
+          {
+            "horizontal-line": "full",
+            "type": "r",
+            "content": {
+              "latin": "Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Ámen.",
+              "pt-BR": "<i>[Assim]</i> como era no princípio, agora e sempre <i>[, e por todos os séculos dos séculos]</i>. Amém."
+            }
+          },
+          {
+            "id": 8999,
+            "type": "header-2",
+            "content": {
+              "latin": "Orário Fátimæ",
+              "pt-BR": "Oração de Fátima"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Nostris, o Iesu, débitis indulge. Erue nos ab ígnibus inférni.",
+              "pt-BR": "Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno."
+            }
+          },
+          {
+            "horizontal-line": "full",
+            "type": "r",
+            "content": {
+              "latin": "Cælique portas universis pande. Míseris præsertim.",
+              "pt-BR": "Levai as almas todas para o Céu e socorrei principalmente as que mais precisarem."
+            }
+          },
+          {
+            "id": 9999,
+            "type": "header-2",
+            "content": {
+              "latin": "Salve, Regina",
+              "pt-BR": "Salve, Regina"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Salve Regina, Mater misericórdiæ,",
+              "pt-BR": "Salve Rainha, Mãe de misericórdia,"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Vita, dulcedo et spes nostra, salve.",
+              "pt-BR": "Vida, doçura e esperança nossa, salve."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Ad te clamamus, éxsules fílii Evæ,",
+              "pt-BR": "A vós bradamos, os degredados filhos de Eva,"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Ad te suspiramus, gementes et flentes in ac lacrimarum valle.",
+              "pt-BR": "A vós suspiramos, gemendo e chorando neste vale de lágrimas."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Eia, ergo, advocata nostra,",
+              "pt-BR": "Eia, pois, advogada nossa,"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Illos tuos misericordes óculos ad nos converte.",
+              "pt-BR": "Esses vossos olhos misericordiosos a nós volvei."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Et Iesum, benedictum fructum ventris tui, nobis post hoc exsílium ostende.",
+              "pt-BR": "E, depois deste desterro, mostrai-nos Jesus, bendito fruto do vosso ventre."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "O clemens, o pia, o dulcis Virgo Maria.",
+              "pt-BR": "Ó clemente, ó piedosa, ó doce sempre Vigem Maria."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Ora pro nobis, sancta Dei Génitrix.",
+              "pt-BR": "Rogai por nós, santa Mãe de Deus."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Ut digni efficiámur promissiónibus Christi.",
+              "pt-BR": "Para que sejamos dignos das promessas de Cristo."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "<i>Oremus:</i> Omnípotens sempiterne Deus, qui gloriosæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mereretur, Spíritu Sancto cooperante, præparásti: da, ut cuius commemoratione lætamur, eius pia intercessione, ab instántibus malis et a morte perpétua liberemur. Per eúndem Christum Dóminum nostrum.",
+              "pt-BR": "<i>Oremos:</i> Deus eterno e todo-poderoso, que, pela cooperação do Espírito Santo, preparastes a alma e o corpo de Maria, gloriosa Virgem e Mãe, para ser um merecedor e digno habitáculo de vosso Filho: concedei que sejamos livres dos males presentes e da morte perpétua, pela pia intercessão daquela que comemoramos alegremente. Pelo mesmo Cristo, nosso Senhor."
+            }
+          },
+          {
+            "horizontal-line": "full",
+            "type": "r",
+            "content": {
+              "latin": "Amen.",
+              "pt-BR": "Amém."
+            }
+          },
+          {
+            "id": 10999,
+            "type": "header-2",
+            "content": {
+              "latin": "Litaniæ Lauretanæ",
+              "pt-BR": "Ladainha Lauretana"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Kýrie, eléison.",
+              "pt-BR": "Senhor, tende piedade de nós."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Kýrie, eléison.",
+              "pt-BR": "Senhor, tende piedade de nós."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Christe, eléison.",
+              "pt-BR": "Cristo, tende piedade de nós."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Christe, eléison.",
+              "pt-BR": "Cristo, tende piedade de nós."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Kýrie, eléison.",
+              "pt-BR": "Senhor, tende piedade de nós."
+            }
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Kýrie, eléison.",
+              "pt-BR": "Senhor, tende piedade de nós."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Christe, audi nos.",
+              "pt-BR": "Jesus Cristo, ouvi-nos."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Christe, audi nos.",
+              "pt-BR": "Jesus Cristo, ouvi-nos."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Christe, exaudi nos.",
+              "pt-BR": "Jesus Cristo, atendei-nos."
+            }
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Christe, exaudi nos.",
+              "pt-BR": "Jesus Cristo, atendei-nos."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Pater de cælis, Deus,",
+              "pt-BR": "Deus Pai dos céus,"
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Misérere nobis.",
+              "pt-BR": "Tende piedade de nós."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Fili, Redémptor mundi, Deus,",
+              "pt-BR": "Deus Filho, redentor do mundo,"
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Misérere nobis.",
+              "pt-BR": "Tende piedade de nós."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Spíritus sancte, Deus,",
+              "pt-BR": "Deus Espírito Santo,"
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Misérere nobis.",
+              "pt-BR": "Tende piedade de nós."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Sancta Trínitas, unus Deus,",
+              "pt-BR": "Santíssima Trindade, que sois um só Deus,"
+            }
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Misérere nobis.",
+              "pt-BR": "Tende piedade de nós."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Sancta Maria,",
+              "pt-BR": "Santa Maria,"
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Ora pro nobis.",
+              "pt-BR": "Rogai por nós."
+            }
+          },
+          {
+            "type": "annotation",
+            "content": {
+              "latin": "(Hinc simíliter respondétur)",
+              "pt-BR": "(Repete-se a mesma resposta a partir daqui)"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Sancta Dei Génitrix,",
+              "pt-BR": "Santa Mãe de Deus,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Sancta Virgo Vírginum,",
+              "pt-BR": "Santa Virgem das Virgens,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater Christi,",
+              "pt-BR": "Mãe de Jesus Cristo,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater Ecclésiæ,",
+              "pt-BR": "Mãe da Igreja,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater misericordiæ,",
+              "pt-BR": "Mãe da misericórdia,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater divinæ grátiæ,",
+              "pt-BR": "Mãe da divina graça,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater spei,",
+              "pt-BR": "Mãe da esperança,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater puríssima,",
+              "pt-BR": "Mãe puríssima,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater castíssima,",
+              "pt-BR": "Mãe castíssima,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater inviolata,",
+              "pt-BR": "Mãe imaculada,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater intemerata,",
+              "pt-BR": "Mãe intacta,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater amábilis,",
+              "pt-BR": "Mãe amável,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater admirábilis,",
+              "pt-BR": "Mãe admirável,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater boni consílii,",
+              "pt-BR": "Mãe do bom conselho,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater Creatoris,",
+              "pt-BR": "Mãe do Criador,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Mater Salvatoris,",
+              "pt-BR": "Mãe do Salvador,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Virgo prudentíssima,",
+              "pt-BR": "Virgem prudentíssima,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Virgo veneranda,",
+              "pt-BR": "Virgem veneranda,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Virgo prædicanda,",
+              "pt-BR": "Virgem digna de louvor,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Virgo potens,",
+              "pt-BR": "Virgem poderosa,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Virgo clemens,",
+              "pt-BR": "Virgem clemente,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Virgo fidelis,",
+              "pt-BR": "Virgem fiel,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Spéculum iustítiæ,",
+              "pt-BR": "Espelho da justiça,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Sedes sapiéntiæ,",
+              "pt-BR": "Sede da sabedoria,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Causa nostræ lætítiæ,",
+              "pt-BR": "Causa da nossa alegria,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Vas spirituale,",
+              "pt-BR": "Vaso espiritual,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Vas honorábile,",
+              "pt-BR": "Vaso honorável,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Vaso insigne devotionis,",
+              "pt-BR": "Vaso insigne de devoção,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Rosa mýstica,",
+              "pt-BR": "Rosa mística,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Turris Davídica,",
+              "pt-BR": "Torre de Davi,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Turris ebúrnea,",
+              "pt-BR": "Torre de marfim,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Domus áurea,",
+              "pt-BR": "Casa de ouro,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Fœderis arca,",
+              "pt-BR": "Arca da aliança,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Iánua cæli,",
+              "pt-BR": "Porta do Céu,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Stella matutina,",
+              "pt-BR": "Estrela da manhã,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Salus infirmorum,",
+              "pt-BR": "Saúde dos enfermos,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Refúgium peccatorum,",
+              "pt-BR": "Refúgio dos pecadores,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Solacium migrantium,",
+              "pt-BR": "Conforto dos migrantes,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Consolatrix afflictorum,",
+              "pt-BR": "Consoladora dos aflitos,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Auxílium christianorum,",
+              "pt-BR": "Auxílio dos cristãos,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina Angelorum,",
+              "pt-BR": "Rainha dos Anjos,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina Patriarcharum,",
+              "pt-BR": "Rainha dos Patriarcas,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina Prophetarum,",
+              "pt-BR": "Rainha dos Profetas,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina Apostolorum,",
+              "pt-BR": "Rainha dos Apóstolos,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina Mártyrum,",
+              "pt-BR": "Rainha dos Mártires,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina Confessorum,",
+              "pt-BR": "Rainha dos Confessores,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina Vírginum,",
+              "pt-BR": "Rainha das Virgens,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina Sanctórum ómnium,",
+              "pt-BR": "Rainha de todos os Santos,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina sine labe originali concepta,",
+              "pt-BR": "Rainha concebida sem pecado original,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina in cælum assumpta,",
+              "pt-BR": "Rainha assunta aos Céus,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina Sacratíssimi Rosárii,",
+              "pt-BR": "Rainha do Santíssimo Rosário,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Regina famíliæ,",
+              "pt-BR": "Rainha da Família,"
+            }
+          },
+          {
+            "larger-break": true,
+            "type": "v",
+            "content": {
+              "latin": "Regina pacis,",
+              "pt-BR": "Rainha da Paz,"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Agnus Dei, qui tollis peccata mundi,",
+              "pt-BR": "Cordeiro de Deus, que tirais os pecados do mundo,"
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Parce nobis, Dómine.",
+              "pt-BR": "Perdoai-nos, Senhor."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Agnus Dei, qui tollis peccata mundi,",
+              "pt-BR": "Cordeiro de Deus, que tirais os pecados do mundo,"
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Exaudi nos, Dómine.",
+              "pt-BR": "Ouvi-nos, Senhor."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Agnus Dei, qui tollis peccata mundi,",
+              "pt-BR": "Cordeiro de Deus, que tirais os pecados do mundo,"
+            }
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Miserere nobis",
+              "pt-BR": "Tende piedade de nós."
+            }
+          },
+          {
+            "larger-break": true,
+            "type": "annotation",
+            "content": {
+              "latin": "(Hic orare potes Sub Tuum Præsídium)",
+              "pt-BR": "(Pode-se rezar aqui À Vossa Proteção)"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Ora pro nobis, Sancta Dei Génitrix.",
+              "pt-BR": "Rogai por nós, Santa Mãe de Deus."
+            }
+          },
+          {
+            "larger-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Ut digni efficiámur promissiónibus Christi.",
+              "pt-BR": "Para que sejamos dignos das promessas de Cristo."
+            }
+          },
+          {
+            "horizontal-line": "full",
+            "type": "paragraph",
+            "content": {
+              "latin": "<i>Oremus:</i> Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia. Per Christum Dóminum Nostrum. Amen.",
+              "pt-BR": "<i>Oremos:</i> Senhor Deus, nós Vos suplicamos que concedais aos vossos servos perpétua saúde de alma e de corpo; e que, pela gloriosa intercessão da bem-aventurada sempre Virgem Maria, sejamos livres da tristeza do século e gozemos da eterna alegria. Por Cristo, Senhor Nosso. Amém."
+            }
+          },
+          {
+            "id": 11999,
+            "type": "header-2",
+            "content": {
+              "latin": "Sub Tuum Præsídium",
+              "pt-BR": "À Vossa Proteção"
+            }
+          },
+          {
+            "horizontal-line": "full",
+            "type": "paragraph",
+            "content": {
+              "latin": "Sub tuum præsídium confugimus, Sancta Dei Génitrix; nostras deprecationes ne despicias in necessitátibus, sed a perículis cunctis líbera nos semper, Virgo gloriósa et benedícta.",
+              "pt-BR": "À vossa proteção nos acolhemos, Santa Mãe de Deus; não desprezeis as súplicas que em nossas necessidades Vos dirigimos, mas livrai-nos sempre de todos os perigos, ó Virgem gloriosa e bendita."
+            }
+          },
+
+
+          {
+            "id": 12999,
+            "type": "header-2",
+            "content": {
+              "latin": "Oratio Sancti Ioseph",
+              "pt-BR": "Oração a São José"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Ad te, beate Ioseph, in tribulatione nostra confugimus, atque, implorato Sponsæ tuae sanctíssimae auxílio, patrocinium quoque tuum fidénter expóscimus.",
+              "pt-BR": "A vós recorremos, bem-aventurado São José, em nossas tribulações; e, tendo implorado o auxílio da vossa Santíssima Esposa, solicitamos também confiadamente a vossa proteção."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Per eam, quæsumus, quæ te cum immaculata Virgine Dei Genetrice coniunxit, caritatem, perque paternum, quo Puerum Iesum amplexus es, amorem, supplices deprecamur, ut ad hereditatem, quam Iesus Christus acquisivit Sanguine suo, benignus respicias, ac necessitatibus nostris tua virtute et ope succurras.",
+              "pt-BR": "Pelo afeto que vos uniu à Imaculada Virgem Maria, Mãe de Deus, pelo paternal amor que consagrastes ao Menino Jesus, vos pedimos e suplicamos que olheis benignamente para a herança que Jesus Cristo nos obteve com o Seu sangue, e nos assistais com a vossa virtude e poder nas nossas necessidades."
+            }
+          },
+          {
+            "horizontal-line": "full",
+            "type": "paragraph",
+            "content": {
+              "latin": "Tuere, o Custos providentissime divinæ Familiæ, Iesu Christi subolem electam; prohibe a nobis, amantissime Pater, omnem errorum ac corruptelarum luem; propitius nobis, sospitator noster fortissime, in hoc cum potestate tenebrarum certamine e cælo adesto; et sicut olim Puerum Iesum e summo eripuisti vitæ discrimine, ita nunc Ecclesiam sanctam Dei ab hostílibus insídiis atque ab omni adversitate defende: nosque singulos perpetuo tege patrocinio, ut ad tui exemplar et ope tua suffulti, sancte vivere, pie emori, sempiternamque in cælis beatitudinem assequi possimus. Amen.",
+              "pt-BR": "Protegei, ó prudentíssimo guarda da Divina Família, os filhos escolhidos de Jesus Cristo; preservai-nos, ó Pai amantíssimo, de toda a mancha do erro e da corrupção. Sede-nos propício e assisti-nos do alto do Céu, poderoso libertador nosso, nas lutas com o poder das trevas. E assim como outrora arrancastes o Menino-Deus do perigo da morte, defendei hoje a Santa Igreja de Deus das emboscadas dos seus inimigos e de toda a adversidade. Concedei-nos a todos a vossa perpétua proteção, a fim de que, imitando o vosso exemplo e ajudados pelo vosso auxílio, possamos viver e morrer santamente, para obter no céu a bem-aventurança eterna. Amém."
+            }
+          },
+          {
+            "id": 13999,
+            "type": "header-2",
+            "content": {
+              "latin": "Oratio Sancti Michäelis",
+              "pt-BR": "Oração a São Miguel Arcanjo"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Sancte Míchäel Archángele, defende nos in prælio; contra nequítiam et insídias Diáboli esto præsídium.",
+              "pt-BR": "São Miguel Arcanjo, protegei-nos com o vosso escudo contra as maldades e ciladas do demônio."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Impéret illi Deus, súpplices deprecámur: tuque, Princeps milítiæ cælestis, Sátanam aliosque spíritus malignos, qui ad perditionem animarum pervagantur in mundo, divina virtute in infernum detrude. Amen.",
+              "pt-BR": "Subjugue-o Deus, instantemente o pedimos; e vós, Príncipe da milícia celeste, pelo divino poder precipitai no inferno a Satanás e aos outros espíritos malignos que andam pelo mundo a perder as almas. Amém."
+            }
+          }
+        ]
+      },
+      {
+        "id": 14999,
+        "title": "Início",
+        "type": "parallel-preces",
+        "contents": [
+          {
+            "id": 15999,
+            "type": "header-2",
+            "content": {
+              "latin": "Per Signum Crucis",
+              "pt-BR": "Sinal da Cruz"
+            }
+          },
+          {
+            "horizontal-line": "full",
+            "type": "paragraph",
+            "content": {
+              "latin": "Per signum Crucis de inimícis nostris nostris líbera nos, Deus noster.<br>In nómine Patris, et Fílii, et Spíritus Sancti. Amen.",
+              "pt-BR": "Pelo sinal da Santa Cruz livrai-nos, Deus, dos nossos inimigos.<br>Em nome do pai, e do Filho, e do Espírito Santo. Amém."
+            }
+          },
+          {
+            "id": 16999,
+            "type": "header-2",
+            "content": {
+              "latin": "Invitatórium",
+              "pt-BR": "Invitatório"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Deus, in audiutórium meum inténde.",
+              "pt-BR": "Ó Deus, vinde em meu auxílio."
+            }
+          },
+          {
+            "end-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Dómine, ad adiuvándum me festína.",
+              "pt-BR": "Senhor, apressai-Vos em me socorrer."
+            }
+          }
+        ]
+      },
+      {
+        "id": 17999,
+        "title": "Santo Rosário",
+        "type": "parallel-preces",
+        "contents": [
+          {
+            "type": "header-3",
+            "content": {
+              "latin": "Ad crucem",
+              "pt-BR": "Na cruz"
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Credo",
+              "pt-BR": "Credo"
+            }
+          },
+          {
+            "type": "header-3",
+            "content": {
+              "latin": "Ad grana maióra",
+              "pt-BR": "Nas contas do meio, ou soltas"
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Pater noster",
+              "pt-BR": "Pai Nosso"
+            }
+          },
+          {
+            "type": "header-3",
+            "content": {
+              "latin": "Ad grana minora",
+              "pt-BR": "Nas contas menores"
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Ave Maria",
+              "pt-BR": "Ave Maria"
+            }
+          },
+          {
+            "type": "header-3",
+            "content": {
+              "latin": "Ad fínem decadum",
+              "pt-BR": "Ao final das dezenas"
+            }
+          },
+          {
+            "horizontal-line": "two-halves",
+            "type": "indication",
+            "content": {
+              "latin": "Gloria, Orátio Fátimæ",
+              "pt-BR": "Glória, Oração de Fátima"
+            }
+          },
+          {
+            "type": "annotation",
+            "content": {
+              "latin": "In Féria Sexta Sancta:",
+              "pt-BR": "Na Sexta-Feira Santa, em vez de rezar-se o Glória, reza-se:"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Chritus factus est pro nobis obœdiens usque ad mortem.",
+              "pt-BR": "Cristo se fez por nós obediente até a morte."
+            }
+          },
+          {
+            "horizontal-line": "two-halves",
+            "type": "r",
+            "content": {
+              "latin": "Mortem autem Crucis.",
+              "pt-BR": "E morte de Cruz."
+            }
+          },
+          {
+            "type": "annotation",
+            "content": {
+              "latin": "In Sábbato Sanctu:",
+              "pt-BR": "No Sábado Santo, em vez do Glória, reza-se:"
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Chritus factus est pro nobis obœdiens usque ad mortem, mortem autem Crucis.",
+              "pt-BR": "Cristo se fez por nós obediente até a morte e morte de Cruz."
+            }
+          },
+          {
+            "subsection-break": true,
+            "type": "r",
+            "content": {
+              "latin": "Propter quod et Deus exaltávit illum et dedit illi nomen quod est super omne nomen.",
+              "pt-BR": "Por isso Deus O exaltou e lhe deu um nome que está acima de todo nome."
+            }
+          },
+          {
+            "type": "header-3",
+            "content": {
+              "latin": "Ad fínem quinque decadum",
+              "pt-BR": "Ao final das cinco dezenas"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Gratias infinitas ágimus tibi, Summa Regína, propter beneficios de manu tua quotidie accipimus. Digna-te, nunc et semper, sub tuum præsidium suscipire nos. Et ex vi orationis nostræ, salutamus te.",
+              "pt-BR": "Infinitas graças vos rendemos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos, agora e sempre, tomar-nos debaixo do vosso poderoso amparo. E para mais vos obrigar, saudamo-vos:"
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Salve Regina",
+              "pt-BR": "Salve Rainha"
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "Oratio Sancti Ioseph",
+              "pt-BR": "Oração a São José"
+            }
+          },
+          {
+            "subsection-break": true,
+            "type": "indication",
+            "content": {
+              "latin": "Oratio Sancti Michäelis",
+              "pt-BR": "Oração a São Miguel Arcanjo"
+            }
+          }
+        ]
+      }
+    ],
+    "section-map": [
+      {"id": 1, "title": "1-sobre-o-santo-rosario"},
+      {"id": 1999, "title": "2-oracoes-basicas"},
+      {"id": 2999, "title": "2-1-credo"},
+      {"id": 3999, "title": "2-1-1-credo-apostolico"},
+      {"id": 4999, "title": "2-1-2-credo-niceno-constantinopolitano"},
+      {"id": 5999, "title": "2-2-pai-nosso"},
+      {"id": 6999, "title": "2-3-ave-maria"},
+      {"id": 7999, "title": "2-4-gloria-ao-pai"},
+      {"id": 8999, "title": "2-5-oracao-de-fatima"},
+      {"id": 9999, "title": "2-6-salve-rainha"},
+      {"id": 10999, "title": "2-7-ladainha-lauretana"},
+      {"id": 11999, "title": "2-8-a-vossa-protecao"},
+      {"id": 12999, "title": "2-8-oracao-a-sao-jose"},
+      {"id": 13999, "title": "2-9-oracao-a-sao-miguel-arcanjo"},
+
+      {"id": 14999, "title": "3-inicio"},
+      {"id": 15999, "title": "3-1-sinal-da-cruz"},
+      {"id": 16999, "title": "3-2-invitatorio"},
+      {"id": 17999, "title": "4-santo-rosario"}
     ]
   }
 }
