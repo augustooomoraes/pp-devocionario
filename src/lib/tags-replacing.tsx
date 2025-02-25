@@ -1,10 +1,12 @@
 import FootnoteTooltip from "@/components/common/tooltip/footnoteTooltip";
-import { Footnotes, LinkMap } from "./types/devocionarios";
+import { Footnotes, LinkMap, SectionMap } from "./types/devocionarios";
+import { ArrowUp } from "lucide-react";
 
 export function replaceAllStyleTags(
   text: string,
   footnotes: Footnotes,
   links: LinkMap,
+  sectionMap: SectionMap,
   setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
 ) {
   return replaceBreakAndAsteriskAndFootnoteTags(
@@ -39,12 +41,13 @@ export function replaceAllStyleTags(
             </span>
           );
         }
-        return part; // Return plain text as-is
+        return part;
       }
     ), links
   ),
     footnotes,
     links,
+    sectionMap,
     setStateFunction,
   );
 }
@@ -53,6 +56,7 @@ export function replaceBreakAndAsteriskAndFootnoteTags(
   parts: (string | React.JSX.Element)[],
   footnotes: Footnotes,
   links: LinkMap,
+  sectionMap: SectionMap,
   setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
 ) {
   return parts.flatMap((part, index) => {
@@ -61,18 +65,25 @@ export function replaceBreakAndAsteriskAndFootnoteTags(
         const elements: (string | React.ReactNode)[] = [];
         if (subIndex > 0) elements.push(<br key={`${index}-${subIndex}-br`} />);
 
-        const replaced = subPart.split("<*>").flatMap((segment, i) => 
-          i > 0 ? [<span
-            key={`${index}-${subIndex}-span-${i}`}
-            className="font-bold text-rubrics"
-          >*</span>, segment] : [segment]
+        const replaced = subPart.split("<*>").flatMap((segment, i) =>
+          i > 0
+            ? [
+              <span
+                key={`${index}-${subIndex}-span-${i}`}
+                className="font-bold text-rubrics"
+              >
+                *
+              </span>,
+              segment,
+            ]
+            : [segment]
         );
 
-        const footnoteReplaced = replaced.flatMap((segment, i) => 
+        const footnoteReplaced = replaced.flatMap((segment, i) =>
           typeof segment === "string"
             ? segment
               .split(/(<footnote id=\d+>)/g)
-              .map((footnotePart, footnoteIndex) => {
+              .flatMap((footnotePart, footnoteIndex) => {
                 if (footnotePart.startsWith("<footnote")) {
                   const match = footnotePart.match(/<footnote id=(\d+)>/);
                   if (match) {
@@ -93,7 +104,30 @@ export function replaceBreakAndAsteriskAndFootnoteTags(
             : [segment]
         );
 
-        return elements.concat(footnoteReplaced);
+        const gotoReplaced = footnoteReplaced.flatMap((segment, i) =>
+          typeof segment === "string"
+            ? segment
+              .split(/(<goto id=[^>]+>)/g)
+              .flatMap((gotoPart, gotoIndex) => {
+                const match = gotoPart.match(/<goto id=([^>]+)>/);
+                if (match) {
+                  const gotoId = Number(match[1]);
+                  return (
+                    <a
+                      key={`${i}-${gotoIndex}-goto`}
+                      href={"#" + sectionMap.filter(sectionIndex => sectionIndex.id === gotoId)[0]?.title || "not-found"}
+                      className="inline-flex align-text-top hover:text-linkHover active:text-linkActive"
+                    >
+                      <ArrowUp className="ml-1 inline-block w-4 h-4" />
+                    </a>
+                  );
+                }
+                return gotoPart;
+              })
+            : [segment]
+        );
+
+        return elements.concat(gotoReplaced);
       });
     }
     return part;
@@ -106,7 +140,6 @@ export function replaceLinkTags(
 ): (string | JSX.Element)[] {
   return part.flatMap((subPart, index) => {
     if (typeof subPart === "string") {
-      // Process strings for <link> tags
       return subPart
         .split(/(<link id=\d+>.*?<\/link>)/g)
         .map((textPart, textIndex) => {
@@ -132,7 +165,6 @@ export function replaceLinkTags(
           return textPart;
         });
     } else {
-      // Keep JSX elements unchanged
       return subPart;
     }
   });

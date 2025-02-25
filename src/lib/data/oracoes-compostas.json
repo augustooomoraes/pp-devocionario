@@ -1751,11 +1751,11 @@
           },
           {
             "type": "paragraph",
-            "content": "No final dos cinco mistérios, pode-se rezar a <i>Ladainha Lauretana</i>, um conjunto de invocações e louvores à Santíssima Trindade e à Nossa Senhora."
+            "content": "No final dos cinco mistérios, pode-se rezar a <i>Ladainha Lauretana</i>, um conjunto de invocações e louvores à Santíssima Trindade e à Nossa Senhora<footnote id=1>."
           },
           {
             "type": "header-1",
-            "content": "Sobre os Mistérios Luminosos"
+            "content": "Sobre os Mistérios Luminosos<footnote id=2>"
           },
           {
             "type": "paragraph",
@@ -2815,8 +2815,8 @@
           {
             "type": "indication",
             "content": {
-              "latin": "Credo",
-              "pt-BR": "Credo"
+              "latin": "Credo<goto id=2999>",
+              "pt-BR": "Credo<goto id=2999>"
             }
           },
           {
@@ -2829,8 +2829,8 @@
           {
             "type": "indication",
             "content": {
-              "latin": "Pater noster",
-              "pt-BR": "Pai Nosso"
+              "latin": "Pater noster<goto id=5999>",
+              "pt-BR": "Pai Nosso<goto id=5999>"
             }
           },
           {
@@ -2843,8 +2843,8 @@
           {
             "type": "indication",
             "content": {
-              "latin": "Ave Maria",
-              "pt-BR": "Ave Maria"
+              "latin": "Ave Maria<goto id=6999>",
+              "pt-BR": "Ave Maria<goto id=6999>"
             }
           },
           {
@@ -2858,8 +2858,8 @@
             "horizontal-line": "two-halves",
             "type": "indication",
             "content": {
-              "latin": "Gloria, Orátio Fátimæ",
-              "pt-BR": "Glória, Oração de Fátima"
+              "latin": "Gloria<goto id=7999>, Orátio Fátimæ<goto id=8999>",
+              "pt-BR": "Glória<goto id=7999>, Oração de Fátima<goto id=8999>"
             }
           },
           {
@@ -2965,6 +2965,16 @@
       {"id": 15999, "title": "3-1-sinal-da-cruz"},
       {"id": 16999, "title": "3-2-invitatorio"},
       {"id": 17999, "title": "4-santo-rosario"}
+    ],
+    "footnotes": [
+      {
+        "id": 1,
+        "content": "Retirado da Seleta de Orações, Cultor de Livros, 1ª edição, 2019."
+      },
+      {
+        "id": 2,
+        "content": "Texto baseado sobretudo n'A Chave do Céu – Novíssimo Livro de Missa e Outras Devoções, de Joaquim António Pacheco, Livraria Católica de Sousa Tavares, Lisboa, 4ª edição, 1930."
+      }
     ]
   }
 }
