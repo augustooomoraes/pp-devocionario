@@ -412,16 +412,21 @@
   "angelus": {
     "title": "Ángelus",
     "index": [
-      {"id": 1, "title": "Oração básica: Ave Maria"},
-      {"id": 2, "title": "Ángelus"}
+      {"id": 1, "title": "Orações básicas", "index": [
+        {"id": 2, "title": "Ave Maria"},
+        {"id": 3, "title": "Regina Cæli"}
+      ]},
+      {"id": 4, "title": "Ángelus"},
+      {"id": 5, "title": "Sobre o Ángelus"}
     ],
     "sections": [
       {
         "id": 1,
-        "title": "Oração básica: Ave Maria",
+        "title": "Orações básicas",
         "type": "parallel-preces",
         "contents": [
           {
+            "id": 2,
             "type": "header-2",
             "content": {
               "latin": "Ave María",
@@ -436,17 +441,82 @@
             }
           },
           {
-            "end-break": true,
+            "horizontal-line": "full",
             "type": "r",
             "content": {
               "latin": "Sancta María, Mater Dei, ora pro nobis, peccatóribus, nunc et in hora mortis nostræ. Ámen.",
               "pt-BR": "Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora de nossa morte. Amém."
             }
+          },
+          {
+            "id": 3,
+            "type": "header-2",
+            "content": {
+              "latin": "Regina Cæli",
+              "pt-BR": "Rainha do Céu"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Regina cæli, lætare, alleluia,",
+              "pt-BR": "Rainha do Céu, alegrai-vos, aleluia,"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Quia quem meruísti portare, alleluia:",
+              "pt-BR": "Pois quem mereceste trazer em vosso seio, aleluia:"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Ressurréxit sicut dixit, alleluia.",
+              "pt-BR": "Ressucitou como disse, aleluia."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "Ora pro nobis Deum, alleluia.",
+              "pt-BR": "Rogai a Deus por nós, aleluia."
+            }
+          },
+          {
+            "type": "v",
+            "content": {
+              "latin": "Gaude et lætare, Virgo Maria, alleluia.",
+              "pt-BR": "Alegrai-vos e exultai, Virgem Maria, aleluia."
+            }
+          },
+          {
+            "type": "r",
+            "content": {
+              "latin": "Quia surrexit Dóminus vere, alleluia.",
+              "pt-BR": "Pois o Senhor ressucitou verdadeiramente, aleluia."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "latin": "<i>Oremus:</i> Deus, qui per ressurrectionem Fílii tui, Dómini nostri Iesu Christi, mundum lætificare dignatus es: præsta, quǽsumus, ut per eius Genitrícem Vírginem Maríam, perpétuæ capiámus gáudia vitæ. Per eúndem Christum Dóminum nostrum.",
+              "pt-BR": "<i>Oremos:</i> Ó Deus, que Vosdignastes alegrar o mundo com a Ressurreição do Vosso Filho Jesus Cristo, Senhor Nosso: concedei-nos, suplicamo-Vos, que por sua Mãe, a Virgem Maria, alcancemos as alegrias da vida eterna. Pelo mesmo Jesus Cristo, Senhor Nosso."
+            }
+          },
+          {
+            "horizontal-line": "full",
+            "type": "r",
+            "content": {
+              "latin": "Amen.",
+              "pt-BR": "Amém."
+            }
           }
         ]
       },
       {
-        "id": 2,
+        "id": 4,
         "title": "Ángelus",
         "type": "parallel-preces",
         "contents": [
@@ -539,7 +609,7 @@
             }
           },
           {
-            "end-break": true,
+            "horizontal-line": "full",
             "type": "r",
             "content": {
               "latin": "Amen.",
@@ -547,11 +617,39 @@
             }
           }
         ]
+      },
+      {
+        "id": 5,
+        "title": "Sobre o Ángelus",
+        "type": "regular-text",
+        "contents": [
+          {
+            "type": "paragraph",
+            "content": "As origens do Ángelus encontram-se sem dúvida no costume de recitar três Ave Marias durante o repicar do sino da tarde, que remonta ao século XI: o papa Gregório IX (♱1241) ordenou que se tocasse o sino ao anoitecer, por volta das seis horas, para lembrar os cristãos de rezarem pelos cruzados<footnote id=1>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Hoje em dia costuma-se rezá-lo às seis da manhã, ao meio-dia e às seis da tarde."
+          },
+          {
+            "type": "paragraph",
+            "content": "Durante o tempo pascal, reza-se o <i>Regina Cæli</i> em vez do Ángelus."
+          }
+        ]
       }
     ],
     "section-map": [
-      {"id": 1, "title": "1-oracao-basica"},
-      {"id": 2, "title": "2-angelus"}
+      {"id": 1, "title": "1-oracoes-basicas"},
+      {"id": 2, "title": "1-1-ave-maria"},
+      {"id": 3, "title": "1-2-regina-caeli"},
+      {"id": 4, "title": "2-angelus"},
+      {"id": 5, "title": "3-sobre-o-angelus"}
+    ],
+    "footnotes": [
+      {
+        "id": 1,
+        "content": "Retirado da Seleta de Orações, Cultor de Livros, 1ª edição, 2019."
+      }
     ]
   },
   "pequena-coroa-da-santissima-virgem": {
