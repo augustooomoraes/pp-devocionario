@@ -64,7 +64,6 @@ export function DevocionarioFile({
                 item.title,
                 file.footnotes,
                 file["link-map"],
-                sectionMap,
                 setSelectedFootnotes,
               )}
             </span>
@@ -130,7 +129,6 @@ export function DevocionarioFile({
                 [section.title],
                 file.footnotes,
                 file["link-map"],
-                sectionMap,
                 setSelectedFootnotes,
               )}
             </h2>
@@ -149,7 +147,14 @@ export function DevocionarioFile({
     )
   }
 
-  function renderSectionContents(sectionType: SectionTypes, contents: SectionContents, sectionMap: SectionMap, linkMap: LinkMap, key: number, badges?: BadgeData[]) {
+  function renderSectionContents(
+    sectionType: SectionTypes,
+    contents: SectionContents,
+    sectionMap: SectionMap,
+    linkMap: LinkMap,
+    key: number,
+    badges?: BadgeData[]
+  ) {
     switch(sectionType) {
       case "regular-text":
         return (
@@ -197,8 +202,7 @@ export function DevocionarioFile({
                       content.content as string,
                       file.footnotes,
                       file["link-map"],
-                      sectionMap,
-                      setSelectedFootnotes,
+                        setSelectedFootnotes,
                     )}
                   </h3>
 
@@ -241,7 +245,6 @@ export function DevocionarioFile({
                     content.content as string,
                     file.footnotes,
                     file["link-map"],
-                    sectionMap,
                     setSelectedFootnotes,
                   )}
                 </h4>
@@ -269,7 +272,6 @@ export function DevocionarioFile({
                     content.content as string,
                     file.footnotes,
                     file["link-map"],
-                    sectionMap,
                     setSelectedFootnotes,
                   )}
                 </h5>
@@ -287,7 +289,6 @@ export function DevocionarioFile({
                     content.content as string,
                     file.footnotes,
                     file["link-map"],
-                    sectionMap,
                     setSelectedFootnotes,
                   )}
                 </p>
@@ -306,7 +307,6 @@ export function DevocionarioFile({
                       content.content as string,
                       file.footnotes,
                       file["link-map"],
-                      sectionMap,
                       setSelectedFootnotes,
                     )}
                   </span>
@@ -364,7 +364,6 @@ export function DevocionarioFile({
                     content.content["pt-BR"],
                     file.footnotes,
                     file["link-map"],
-                    sectionMap,
                     setSelectedFootnotes,
                   )}
                 </span>
@@ -379,7 +378,6 @@ export function DevocionarioFile({
                     content.content["latin"],
                     file.footnotes,
                     file["link-map"],
-                    sectionMap,
                     setSelectedFootnotes,
                   )}
                 </span>
@@ -407,7 +405,6 @@ export function DevocionarioFile({
                     content.content["pt-BR"],
                     file.footnotes,
                     file["link-map"],
-                    sectionMap,
                     setSelectedFootnotes,
                   )}
                 </span>
@@ -422,7 +419,6 @@ export function DevocionarioFile({
                     content.content["latin"],
                     file.footnotes,
                     file["link-map"],
-                    sectionMap,
                     setSelectedFootnotes,
                   )}
                 </span>
@@ -473,7 +469,6 @@ export function DevocionarioFile({
                     content.content["pt-BR"],
                     file.footnotes,
                     file["link-map"],
-                    sectionMap,
                     setSelectedFootnotes,
                   )}
                 </span>
@@ -503,7 +498,6 @@ export function DevocionarioFile({
                     content.content["latin"],
                     file.footnotes,
                     file["link-map"],
-                    sectionMap,
                     setSelectedFootnotes,
                   )}
                 </span>
@@ -514,7 +508,11 @@ export function DevocionarioFile({
     )
   }
 
-  function renderFootnotes(contents: Footnotes, linkMap: LinkMap) {
+  function renderFootnotes(
+    contents: Footnotes,
+    linkMap: LinkMap,
+    setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
+  ) {
 
     const handleClick = (target: string) => {    
       return (e: React.MouseEvent) => {
@@ -558,7 +556,14 @@ export function DevocionarioFile({
                   </span>
                 </span>
                 <span>
-                  {replaceLinkTags([content.content], linkMap)}
+                  {
+                    replaceAllStyleTags(
+                      content.content,
+                      contents,
+                      linkMap,
+                      setStateFunction,
+                    )
+                  }
                 </span>
               </li>
             )
@@ -605,6 +610,7 @@ export function DevocionarioFile({
       {file.footnotes && renderFootnotes(
         file.footnotes,
         file["link-map"],
+        setSelectedFootnotes,
       )}
       {file["download-links"] && renderDownloadLinks(
         file["download-links"],

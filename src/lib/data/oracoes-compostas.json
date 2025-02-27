@@ -648,7 +648,7 @@
     "footnotes": [
       {
         "id": 1,
-        "content": "Retirado da Seleta de Orações, Cultor de Livros, 1ª edição, 2019."
+        "content": "Retirado da <i>Seleta de Orações</i>, Cultor de Livros, 1ª edição, 2019."
       }
     ]
   },
@@ -1310,42 +1310,49 @@
                 "type": "header-1",
                 "content": {
                   "latin": "Alma Redemptoris",
-                  "pt-BR": "Santa Mãe do Redentor"
+                  "pt-BR": "Mãe Santa do Redentor"
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Alma Redemptoris Mater,",
-                  "pt-BR": "Santa Mãe do Redentor,"
+                  "pt-BR": "Mãe santa do Redentor,"
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Quæ pérvia cæli, Porta manes, et Stella maris,",
-                  "pt-BR": "Que és acesso e porta do céu, estrela do mar,"
+                  "pt-BR": "Que sois a porta do céu bem como a estrela do mar,"
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Súcurre cadenti. Súrgere qui curat pópulo.",
-                  "pt-BR": "socorre ao povo caído que quer se levantar do abismo da culpa."
+                  "pt-BR": "Socorrei o povo em queda, mas a tentar soerguer-se."
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
-                  "latin": "Tu quæ genuústi, natura mirante, tuum sanctum Genitorem.",
-                  "pt-BR": "Tu que gerastes, ante a natureza maravilhada, vosso santo Criador."
+                  "latin": "Tu quæ genuísti, natura mirante, tuum sanctum Genitorem.",
+                  "pt-BR": "Vós que nos destes à luz o mesmo que Vos gerou, com pasmo da natureza!"
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
-                  "latin": "Virgo príus ac postérius, Gabriélis ab ore sumens illud Ave,",
-                  "pt-BR": "Virgem antes e depois de receber aquele Ave da boca de Gabriel,"
+                  "latin": "Virgo príus ac postérius,",
+                  "pt-BR": "Virgem pura, sempre intacta, antes e depois do parto,"
+                }
+              },
+              {
+                "type": "paragraph",
+                "content": {
+                  "latin": "Gabriélis ab ore sumens illud Ave,",
+                  "pt-BR": "Vós que  aceitastes o Ave! da boca de Gabriel,"
                 }
               },
               {
@@ -1353,7 +1360,7 @@
                 "type": "paragraph",
                 "content": {
                   "latin": "Peccatórum miserere.",
-                  "pt-BR": "tem misericórdia dos pecadores."
+                  "pt-BR": "Compadecei-Vos, Senhora, de todos nós, pecadores."
                 }
               },
               {
@@ -1381,7 +1388,7 @@
                 "type": "paragraph",
                 "content": {
                   "latin": "<i>Oremus:</i> grátiam tuam, quǽsumus, Dómine, méntibus nostris infunde; ut qui, Ángelo nuntiánte, Christi Fílii tui incarnatiónem cognóvimus, per passiónem eius et crucem, ad ressurectiónis glóriam perducámur. Per eúndem Christum Dóminum nostrum.",
-                  "pt-BR": "<i>Oremos:</i> infundi, Senhor, nós Vos pedimos, em nossas almas a Vossa graça, para que nós, que conhecemos pela anunciação do Anjo a Encarnação de Jesus Cristo, cheguemos, por Sua Paixão e Cruz, à glória da Ressurreição. Pelo mesmo Jesus Cristo, Senhor Nosso."
+                  "pt-BR": "<i>Oremos:</i> infundi, Senhor, nós Vos pedimos, a Vossa graça em nossas almas, a fim de que, havendo chegado pela anunciação do Anjo ao conhecimento da Incarnação de Jesus Cristo, vosso Filho, pela sua paixão e morte de cruz, sejamos conduzidos à glória da Ressureição. Pelo mesmo Cristo, Nosso Senhor.<footnote id=1>"
                 }
               },
               {
@@ -1403,21 +1410,21 @@
                 "type": "v",
                 "content": {
                   "latin": "Post partum, Virgo, inviolata permansisti.",
-                  "pt-BR": "Depois do parto permanecestes imaculada."
+                  "pt-BR": "Vós permanecestes imaculada, ó Virgem, depois do parto."
                 }
               },
               {
                 "type": "r",
                 "content": {
                   "latin": "Dei Génetrix, intercede pro nobis.",
-                  "pt-BR": "Intercedei por nós, ó Mãe de Deus."
+                  "pt-BR": "Rogai por nós, Santa Mãe de Deus."
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
-                  "latin": "<i>Oremus:</i> Deus, qui salutis æternæ beátæ Maríæ virginitate fecunda humano géneri prǽmia præstitisti: tríbue, quǽsumus, ut ipsam pro nobis intercédere sentiámus, per quam merúimus, Auctorem vitæ suscípere Dóminum nostrum Iesum Christum Fílium tuum.",
-                  "pt-BR": "<i>Oremos:</i> Deus, que prestastes ao gênero humano o prêmio da salvação eterna, pela fecunda virgindade da Bem-Aventurada Maria, concedei-nos, suplicamo-Vos, que a sintamos interceder por nós, por quem merecemos receber o autor da vida, nosso Senhor Jesus Cristo, Vosso Filho."
+                  "latin": "<i>Oremus:</i> Deus, qui salutis æternæ, beátæ Maríæ virginitate fecunda, humano géneri prǽmia præstitisti: tríbue, quǽsumus, ut ipsam pro nobis intercédere sentiámus, per quam merúimus auctorem vitæ suscípere, Dóminum nostrum Iesum Christum Fílium tuum.",
+                  "pt-BR": "<i>Oremos:</i> Ó Deus, que Vos dignastes fecundar a virgindade de Maria, para dar aos homens o prêmio da salvação eterna, fazei que sintamos a intercessão daquela por meio da qual nos foi dado receber o Autor da vida, Nosso Senhor Jesus Cristo, Vosso Filho."
                 }
               },
               {
@@ -1439,14 +1446,14 @@
                 "type": "header-1",
                 "content": {
                   "latin": "Ave Regina Cælorum",
-                  "pt-BR": "Ave Rainha do Céu"
+                  "pt-BR": "Ave Rainha dos Céus"
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Ave, Regina Cælorum,",
-                  "pt-BR": "Ave, Rainha do Céu,"
+                  "pt-BR": "Ave, Rainha dos Céus,"
                 }
               },
               {
@@ -1460,35 +1467,35 @@
                 "type": "paragraph",
                 "content": {
                   "latin": "Salve, radix, salve, porta,",
-                  "pt-BR": "Salve, raiz fecunda, salve, porta do céu,"
+                  "pt-BR": "Bendita raiz e porta,"
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Ex qua mundo lux est orta:",
-                  "pt-BR": "Pela qual a luz nasceu para o mundo:"
+                  "pt-BR": "Donde veio ao mundo a luz:"
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Gaude, Virgo gloriosa,",
-                  "pt-BR": "Alegrai-vos, ó Virgem gloriosa,"
+                  "pt-BR": "Exultai, Virgem gloriosa,"
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Super omnes speciosa.",
-                  "pt-BR": "Entre todas a mais bela."
+                  "pt-BR": "De beleza sem igual."
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Vale, o valde decora,",
-                  "pt-BR": "Salve, esplendor radioso,"
+                  "pt-BR": "Nós Vos saudamos também, formosura soberana,"
                 }
               },
               {
@@ -1509,14 +1516,14 @@
                 "type": "r",
                 "content": {
                   "latin": "Da mihi virtutem contra hostes tuos.",
-                  "pt-BR": "Dai-me coragem para combater os vossos inimigos"
+                  "pt-BR": "E dai-me coragem para combater os vossos inimigos."
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "<i>Oremus:</i> Concede, miséricors Deus, fragilitati nostræ præsídium; ut, qui sanctæ Dei Genetricis memóriam ágimus, intercessionis eíus auxílio, a nostris iniquitátibus resurgámus. Per eúndem Christum Dóminum nóstrum.",
-                  "pt-BR": "<i>Oremos:</i> Concedei, misericordioso Deus, proteção à nossa fragilidade; para que, ao honrarmos a memória da Santa Mãe de Deus, com o auxílio de sua intercessão, ressurjamos de nossas iniquidades. Pelo mesmo Cristo, Senhor nosso."
+                  "pt-BR": "<i>Oremos:</i> Concedei, Senhor, à nossa fraqueza, o socorro da vossa misericórdia e fazei que, celebrando a memória da Santa Mãe de Deus, nos levantemos com o auxílio dela do abismo das nossas culpas. Pelo mesmo Cristo Nosso Senhor."
                 }
               },
               {
@@ -1545,49 +1552,49 @@
                 "type": "paragraph",
                 "content": {
                   "latin": "Regina cæli, lætare, alleluia,",
-                  "pt-BR": "Rainha do Céu, alegrai-vos, aleluia,"
+                  "pt-BR": "Rainha do Céu, regozijai-Vos, aleluia,"
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Quia quem meruísti portare, alleluia:",
-                  "pt-BR": "Pois quem mereceste trazer em vosso seio, aleluia:"
+                  "pt-BR": "..."
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Ressurréxit sicut dixit, alleluia.",
-                  "pt-BR": "Ressucitou como disse, aleluia."
+                  "pt-BR": "..."
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Ora pro nobis Deum, alleluia.",
-                  "pt-BR": "Rogai a Deus por nós, aleluia."
+                  "pt-BR": "..."
                 }
               },
               {
                 "type": "v",
                 "content": {
                   "latin": "Gaude et lætare, Virgo Maria, alleluia.",
-                  "pt-BR": "Alegrai-vos e exultai, Virgem Maria, aleluia."
+                  "pt-BR": "..."
                 }
               },
               {
                 "type": "r",
                 "content": {
                   "latin": "Quia surrexit Dóminus vere, alleluia.",
-                  "pt-BR": "Pois o Senhor ressucitou verdadeiramente, aleluia."
+                  "pt-BR": "..."
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "<i>Oremus:</i> Deus, qui per ressurrectionem Fílii tui, Dómini nostri Iesu Christi, mundum lætificare dignatus es: præsta, quǽsumus, ut per eius Genitrícem Vírginem Maríam, perpétuæ capiámus gáudia vitæ. Per eúndem Christum Dóminum nostrum.",
-                  "pt-BR": "<i>Oremos:</i> Ó Deus, que Vosdignastes alegrar o mundo com a Ressurreição do Vosso Filho Jesus Cristo, Senhor Nosso: concedei-nos, suplicamo-Vos, que por sua Mãe, a Virgem Maria, alcancemos as alegrias da vida eterna. Pelo mesmo Jesus Cristo, Senhor Nosso."
+                  "pt-BR": "<i>Oremos:</i> ...<footnote id=2>"
                 }
               },
               {
@@ -1708,6 +1715,16 @@
       {"id": 4, "title": "2-2-ave-regina-caelorum"},
       {"id": 5, "title": "2-3-regina-caeli"},
       {"id": 6, "title": "2-4-salve-regina"}
+    ],
+    "footnotes": [
+      {
+        "id": 1,
+        "content": "Do <i>Missal Romano Quotidiano</i>, por Dom Gaspar Lefebvre e os monges Beneditinos de Santo André.<br>Pela <i>Seleta de Orações</i>, Cultor de Livros, 1ª edição, 2019:<br><i>Infundi, Senhor, nós Vos pedimos, em nossas almas a Vossa graça, para que nós, que conhecemos pela anunciação do Anjo a Encarnação de Jesus Cristo, vosso Filho, cheguemos, por Sua Paixão e Sua Cruz, à glória da Ressurreição. Pelo mesmo Jesus Cristo, Senhor Nosso.</i>"
+      },
+      {
+        "id": 2,
+        "content": "Do <i>Missal Romano Quotidiano</i>, por Dom Gaspar Lefebvre e os monges Beneditinos de Santo André.<br>Pela <i>Seleta de Orações</i>, Cultor de Livros, 1ª edição, 2019:<br><i>Rainha do Céu, alegrai-vos, aleluia,</i><br><i>Pois quem mereceste trazer em vosso seio, aleluia:</i><br><i>Ressucitou como disse, aleluia.</i><br><i>V. Alegrai-vos e exultai, Virgem Maria, aleluia.</i><br><i>R. Pois o Senhor ressucitou verdadeiramente, aleluia.</i><br>Oremos:<i> Ó Deus, que Vos dignastes alegrar o mundo com a Ressurreição do Vosso Filho Jesus Cristo, Senhor Nosso: concedei-nos, suplicamo-Vos, que por sua Mãe, a Virgem Maria, alcancemos as alegrias da vida eterna. Pelo mesmo Jesus Cristo, Senhor Nosso.</i>"
+      }
     ]
   },
   "santo-rosario": {
@@ -2815,8 +2832,8 @@
           {
             "type": "indication",
             "content": {
-              "latin": "Credo<goto id=2999>",
-              "pt-BR": "Credo<goto id=2999>"
+              "latin": "<link id=1>Credo</link>",
+              "pt-BR": "<link id=1>Credo</link>"
             }
           },
           {
@@ -2829,8 +2846,8 @@
           {
             "type": "indication",
             "content": {
-              "latin": "Pater noster<goto id=5999>",
-              "pt-BR": "Pai Nosso<goto id=5999>"
+              "latin": "<link id=2>Pater noster</link>",
+              "pt-BR": "<link id=2>Pai Nosso</link>"
             }
           },
           {
@@ -2843,8 +2860,8 @@
           {
             "type": "indication",
             "content": {
-              "latin": "Ave Maria<goto id=6999>",
-              "pt-BR": "Ave Maria<goto id=6999>"
+              "latin": "<link id=3>Ave Maria</link>",
+              "pt-BR": "<link id=3>Ave Maria</link>"
             }
           },
           {
@@ -2858,8 +2875,8 @@
             "horizontal-line": "two-halves",
             "type": "indication",
             "content": {
-              "latin": "Gloria<goto id=7999>, Orátio Fátimæ<goto id=8999>",
-              "pt-BR": "Glória<goto id=7999>, Oração de Fátima<goto id=8999>"
+              "latin": "<link id=4>Gloria</link>, <link id=5>Orátio Fátimæ</link>",
+              "pt-BR": "<link id=4>Glória</link>, <link id=5>Oração de Fátima</link>"
             }
           },
           {
@@ -2966,14 +2983,21 @@
       {"id": 16999, "title": "3-2-invitatorio"},
       {"id": 17999, "title": "4-santo-rosario"}
     ],
+    "link-map": [
+      {"id": 1, "url": "#2-1-credo", "alt": "Credo"},
+      {"id": 2, "url": "#2-2-pai-nosso", "alt": "Pai Nosso"},
+      {"id": 3, "url": "#2-3-ave-maria", "alt": "Ave Maria"},
+      {"id": 4, "url": "#2-4-gloria-ao-pai", "alt": "Glória ao Pai"},
+      {"id": 5, "url": "#2-5-oracao-de-fatima", "alt": "Oração de Fátima"}
+    ],
     "footnotes": [
       {
         "id": 1,
-        "content": "Retirado da Seleta de Orações, Cultor de Livros, 1ª edição, 2019."
+        "content": "Retirado da <i>Seleta de Orações</i>, Cultor de Livros, 1ª edição, 2019."
       },
       {
         "id": 2,
-        "content": "Texto baseado sobretudo n'A Chave do Céu – Novíssimo Livro de Missa e Outras Devoções, de Joaquim António Pacheco, Livraria Católica de Sousa Tavares, Lisboa, 4ª edição, 1930."
+        "content": "Texto baseado sobretudo n'<i>A Chave do Céu – Novíssimo Livro de Missa e Outras Devoções</i>, de Joaquim António Pacheco, Livraria Católica de Sousa Tavares, Lisboa, 4ª edição, 1930."
       }
     ]
   }

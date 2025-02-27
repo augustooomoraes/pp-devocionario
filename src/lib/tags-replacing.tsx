@@ -1,12 +1,10 @@
 import FootnoteTooltip from "@/components/common/tooltip/footnoteTooltip";
-import { Footnotes, LinkMap, SectionMap } from "./types/devocionarios";
-import { ArrowUp } from "lucide-react";
+import { Footnotes, LinkMap } from "./types/devocionarios";
 
 export function replaceAllStyleTags(
   text: string,
   footnotes: Footnotes,
   links: LinkMap,
-  sectionMap: SectionMap,
   setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
 ) {
   return replaceBreakAndAsteriskAndFootnoteTags(
@@ -47,7 +45,6 @@ export function replaceAllStyleTags(
   ),
     footnotes,
     links,
-    sectionMap,
     setStateFunction,
   );
 }
@@ -56,7 +53,6 @@ export function replaceBreakAndAsteriskAndFootnoteTags(
   parts: (string | React.JSX.Element)[],
   footnotes: Footnotes,
   links: LinkMap,
-  sectionMap: SectionMap,
   setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
 ) {
   return parts.flatMap((part, index) => {
@@ -104,30 +100,9 @@ export function replaceBreakAndAsteriskAndFootnoteTags(
             : [segment]
         );
 
-        const gotoReplaced = footnoteReplaced.flatMap((segment, i) =>
-          typeof segment === "string"
-            ? segment
-              .split(/(<goto id=[^>]+>)/g)
-              .flatMap((gotoPart, gotoIndex) => {
-                const match = gotoPart.match(/<goto id=([^>]+)>/);
-                if (match) {
-                  const gotoId = Number(match[1]);
-                  return (
-                    <a
-                      key={`${i}-${gotoIndex}-goto`}
-                      href={"#" + sectionMap.filter(sectionIndex => sectionIndex.id === gotoId)[0]?.title || "not-found"}
-                      className="inline-flex align-text-top hover:text-linkHover active:text-linkActive"
-                    >
-                      <ArrowUp className="ml-1 inline-block w-4 h-4" />
-                    </a>
-                  );
-                }
-                return gotoPart;
-              })
-            : [segment]
-        );
+        const linkReplaced = replaceLinkTags(footnoteReplaced, links)
 
-        return elements.concat(gotoReplaced);
+        return elements.concat(linkReplaced);
       });
     }
     return part;

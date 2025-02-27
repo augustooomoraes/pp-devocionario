@@ -91,6 +91,11 @@ export const sidebarData: SidebarData = {
           devStage: "done",
         },
         {
+          title: "Antífonas Marianas",
+          url: "/antifonas-marianas",
+          devStage: "mvp",
+        },
+        {
           title: "Santo Anjo",
           url: "/angele-dei",
           devStage: "done",

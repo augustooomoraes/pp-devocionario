@@ -2,12 +2,12 @@
 
 import React, { useState, useRef } from 'react';
 import Tooltip from './tooltip';
-import { LinkMap } from "@/lib/types/devocionarios";
+import { Footnotes, LinkMap } from "@/lib/types/devocionarios";
 import { useRouter } from "next/navigation";
 
 type FootnoteTooltipProps = {
   footnoteId: number,
-  footnotes: { id: number, content: string }[],
+  footnotes: Footnotes,
   links: LinkMap,
   setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
 };
@@ -70,7 +70,14 @@ const FootnoteTooltip: React.FC<FootnoteTooltipProps> = ({ footnoteId, footnotes
           {footnoteId}
         </span>
       </sup>
-      <Tooltip text={footnote.content} links={links} visible={visible} setVisible={setVisible} />
+      <Tooltip
+        text={footnote.content}
+        footnotes={footnotes}
+        links={links}
+        visible={visible}
+        setVisible={setVisible}
+        setStateFunction={setStateFunction}
+      />
     </span>
   );
 };
