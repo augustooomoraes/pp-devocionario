@@ -547,7 +547,7 @@ export function DevocionarioFile({
                       hover:bg-accent active:bg-black/10 transition-colors
                       w-full px-1.5 rounded-md
                       cursor-pointer
-                      ${selectedFootnotes[content.id - 1] && "!bg-black/15"}
+                      ${selectedFootnotes[content.id - 1] && "!bg-black/15 dark:!bg-white/20"}
                       transition-colors
                     `}
                     onClick={handleClick( "#rodape-origem-" + (content.id || "not-found") )}
