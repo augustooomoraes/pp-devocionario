@@ -1276,7 +1276,7 @@
   "antifonas-marianas": {
     "title": "Antífonas Marianas",
     "index": [
-      {"id": 1, "title": "alguma coisa..."},
+      {"id": 1, "title": "Sobre as Antífonas Marianas"},
       {"id": 2, "title": "Antífonas Marianas", "index": [
         {"id": 3, "title": "Alma Redemptoris"},
         {"id": 4, "title": "Ave Regina Cælorum"},
@@ -1287,12 +1287,12 @@
     "sections": [
       {
         "id": 1,
-        "title": "alguma coisa...",
-        "type": "paragraph",
+        "title": "Sobre as Antífonas Marianas",
+        "type": "regular-text",
         "contents": [
           {
             "type": "paragraph",
-            "content": "Sobre a récita no Ofício Divino, sobre os tempos litúrgicos em que são recitadas..."
+            "content": "Em sentido comum, <i>antífona</i> é um trecho de salmo ou de outro texto bíblico repetido entre versos. As Antífonas Marianas não são isto, mas orações tradicionais em honra à Santíssima Virgem Maria. São cantadas, ou rezadas, ao fim do ofício das Completas. Também são habitualmente cantadas ao final das missas.<br>São quatro, e cada uma é rezada conforme o tempo litúrgico:<br>• Do <i>Advento</i> até a <i>Apresentação do Senhor</i>: Alma Redemptoris<br>• Depois da <i>Apresentação do Senhor</i>, até o <i>Sábado de Aleluia</i>: Ave Regina Cælorum<br>• No <i>Tempo Pascal</i>: Regina Cæli<br>• Depois do <i>Tempo Pascal</i>, até antes do <i>Advento</i>: Salve Regina"
           }
         ]
       },
@@ -1559,42 +1559,42 @@
                 "type": "paragraph",
                 "content": {
                   "latin": "Quia quem meruísti portare, alleluia:",
-                  "pt-BR": "..."
+                  "pt-BR": "Porque Aquele que merecestes trazer no seio, aleluia,"
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Ressurréxit sicut dixit, alleluia.",
-                  "pt-BR": "..."
+                  "pt-BR": "Ressucitou, como dissera, aleluia."
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "Ora pro nobis Deum, alleluia.",
-                  "pt-BR": "..."
+                  "pt-BR": "Rogai a Deus por nós, aleluia."
                 }
               },
               {
                 "type": "v",
                 "content": {
                   "latin": "Gaude et lætare, Virgo Maria, alleluia.",
-                  "pt-BR": "..."
+                  "pt-BR": "Exultai e regozijai-Vos, ó Virgem Maria, aleluia."
                 }
               },
               {
                 "type": "r",
                 "content": {
                   "latin": "Quia surrexit Dóminus vere, alleluia.",
-                  "pt-BR": "..."
+                  "pt-BR": "Porque o Senhor ressucitou verdadeiramente, aleluia."
                 }
               },
               {
                 "type": "paragraph",
                 "content": {
                   "latin": "<i>Oremus:</i> Deus, qui per ressurrectionem Fílii tui, Dómini nostri Iesu Christi, mundum lætificare dignatus es: præsta, quǽsumus, ut per eius Genitrícem Vírginem Maríam, perpétuæ capiámus gáudia vitæ. Per eúndem Christum Dóminum nostrum.",
-                  "pt-BR": "<i>Oremos:</i> ...<footnote id=2>"
+                  "pt-BR": "<i>Oremos:</i> Ó Deus, que Vos dignastes alegrar o mundo com a ressurreição do Vosso Filho, Nosso Senhor Jesus Cristo, fazei que, auxiliados por Maria, Sua Mãe santíssima, alcancemos as alegrias da vida eterna. Pelo mesmo Cristo, Nosso Senhor.<footnote id=2>"
                 }
               },
               {
@@ -1693,7 +1693,7 @@
                 "type": "paragraph",
                 "content": {
                   "latin": "<i>Oremus:</i> Omnípotens sempiterne Deus, qui gloriosæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mereretur, Spíritu Sancto cooperante, præparásti: da, ut cuius commemoratione lætamur, eius pia intercessione, ab instántibus malis et a morte perpétua liberemur. Per eúndem Christum Dóminum nostrum.",
-                  "pt-BR": "<i>Oremos:</i> Deus eterno e todo-poderoso, que, pela cooperação do Espírito Santo, preparastes a alma e o corpo de Maria, gloriosa Virgem e Mãe, para ser um merecedor e digno habitáculo de vosso Filho: concedei que sejamos livres dos males presentes e da morte perpétua, pela pia intercessão daquela que comemoramos alegremente. Pelo mesmo Cristo, nosso Senhor."
+                  "pt-BR": "<i>Oremos:</i> Senhor eterno e onipotente, que pela intervenção do Espírito Santo Vos dignastes preparar o corpo e a alma da gloriosa Virgem Maria para digna morada do Vosso: fazei que sejamos livre da morte eterna e dos males que nos rodeiam, pela intercessão daquela cuja comemoração nos alegra. Pelo mesmo Cristo Nosso Senhor.<footnote id=3>"
                 }
               },
               {
@@ -1719,11 +1719,15 @@
     "footnotes": [
       {
         "id": 1,
-        "content": "Do <i>Missal Romano Quotidiano</i>, por Dom Gaspar Lefebvre e os monges Beneditinos de Santo André.<br>Pela <i>Seleta de Orações</i>, Cultor de Livros, 1ª edição, 2019:<br><i>Infundi, Senhor, nós Vos pedimos, em nossas almas a Vossa graça, para que nós, que conhecemos pela anunciação do Anjo a Encarnação de Jesus Cristo, vosso Filho, cheguemos, por Sua Paixão e Sua Cruz, à glória da Ressurreição. Pelo mesmo Jesus Cristo, Senhor Nosso.</i>"
+        "content": "Do <i>Missal Romano Quotidiano</i>, por Dom Gaspar Lefebvre e os monges Beneditinos de Santo André.<br>Pela <i>Seleta de Orações</i>, Cultor de Livros, 1ª edição, 2019:<br>Oremos: <i>infundi, Senhor, nós Vos pedimos, em nossas almas a Vossa graça, para que nós, que conhecemos pela anunciação do Anjo a Encarnação de Jesus Cristo, vosso Filho, cheguemos, por Sua Paixão e Sua Cruz, à glória da Ressurreição. Pelo mesmo Jesus Cristo, Senhor Nosso.</i><br>R. <i>Amém.</i>"
       },
       {
         "id": 2,
-        "content": "Do <i>Missal Romano Quotidiano</i>, por Dom Gaspar Lefebvre e os monges Beneditinos de Santo André.<br>Pela <i>Seleta de Orações</i>, Cultor de Livros, 1ª edição, 2019:<br><i>Rainha do Céu, alegrai-vos, aleluia,</i><br><i>Pois quem mereceste trazer em vosso seio, aleluia:</i><br><i>Ressucitou como disse, aleluia.</i><br><i>V. Alegrai-vos e exultai, Virgem Maria, aleluia.</i><br><i>R. Pois o Senhor ressucitou verdadeiramente, aleluia.</i><br>Oremos:<i> Ó Deus, que Vos dignastes alegrar o mundo com a Ressurreição do Vosso Filho Jesus Cristo, Senhor Nosso: concedei-nos, suplicamo-Vos, que por sua Mãe, a Virgem Maria, alcancemos as alegrias da vida eterna. Pelo mesmo Jesus Cristo, Senhor Nosso.</i>"
+        "content": "Do <i>Missal Romano Quotidiano</i>, por Dom Gaspar Lefebvre e os monges Beneditinos de Santo André.<br>Pela <i>Seleta de Orações</i>, Cultor de Livros, 1ª edição, 2019:<br><i>Rainha do Céu, alegrai-vos, aleluia,</i><br><i>Porque quem merecestes trazer em vosso seio, aleluia:</i><br><i>Ressucitou como disse, aleluia.</i><br><i>Rogai a Deus por nós, aleluia.</i><br>V. <i>Alegrai-vos e exultai, Virgem Maria, aleluia.</i><br>R. <i>Pois o Senhor ressucitou verdadeiramente, aleluia.</i><br>Oremos:<i> Ó Deus, que Vos dignastes alegrar o mundo com a Ressurreição do Vosso Filho Jesus Cristo, Senhor Nosso: concedei-nos, Vos suplicamos, que por sua Mãe, a Virgem Maria, alcancemos as alegrias da vida eterna. Pelo mesmo Jesus Cristo, Senhor Nosso.</i><br>R. <i>Amém.</i>"
+      },
+      {
+        "id": 3,
+        "content": "<i>\"Oremos\"</i> do <i>Missal Romano Quotidiano</i>, por Dom Gaspar Lefebvre e os monges Beneditinos de Santo André.<br>O próprio hino também difere nesta edição; neste caso, porém, optamos pela versão mais conhecida."
       }
     ]
   },
