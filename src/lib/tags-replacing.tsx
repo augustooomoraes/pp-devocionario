@@ -130,6 +130,7 @@ export function replaceLinkTags(
                     className="underline hover:text-linkHover active:text-linkActive"
                     href={link.url}
                     title={link.alt}
+                    target={link.url.startsWith("#") ? "_self" : "_blank"}
                   >
                     {textPart.replace(/<link id=\d+>|<\/link>/g, "")}
                   </a>

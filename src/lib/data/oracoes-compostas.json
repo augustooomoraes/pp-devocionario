@@ -1754,7 +1754,8 @@
         {"id": 15999, "title": "Sinal da Cruz"},
         {"id": 16999, "title": "Invitatório"}
       ]},
-      {"id": 17999, "title": "Santo Rosário"}
+      {"id": 17999, "title": "Santo Rosário"},
+      {"id": 18999, "title": "Mistérios do Santo Rosário"}
     ],
     "sections": [
       {
@@ -1768,15 +1769,23 @@
           },
           {
             "type": "paragraph",
-            "content": "Há quatro partes na recitação de cada mistério do Rosário: a enunciação e meditação da cena, o Pai Nosso, as dez Ave Marias e o Glória. Outras orações podem ser acrescentadas depois, de acordo com as tradições locais, mas não são parte essencial do Rosário. A mais conhecida destas orações é a jaculatória que a própria Santíssima Virgem ensinou às três crianças em Fátima: <i>Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno; levai as almas todas para o Céu e socorrei principalmente as que mais precisarem</i>."
+            "content": "Há quatro partes na recitação de cada mistério do Rosário: a enunciação e meditação da cena, o Pai Nosso, as dez Ave Marias e o Glória. Outras orações podem ser acrescentadas depois, de acordo com as tradições locais, mas não são parte essencial do Rosário. A mais conhecida destas orações é a jaculatória que a própria Santíssima Virgem ensinou às três crianças em Fátima: <i>Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno; levai as almas todas para o Céu e socorrei principalmente as que mais precisarem</i>.<footnote id=1>"
           },
           {
             "type": "paragraph",
-            "content": "No final dos cinco mistérios, pode-se rezar a <i>Ladainha Lauretana</i>, um conjunto de invocações e louvores à Santíssima Trindade e à Nossa Senhora<footnote id=1>."
+            "content": "Leão XIII, o Papa do Rosário, muito encorajou esta devoção, sobretudo sua récita no mês de outrubro, e fixou exercícios peculiares para este mês: entre eles, a <i>Oração a São José</i> e a <i>Ladainha Lauretana</i>. Isto fez com que a Ladainha fosse introduzida como um apêndice do Rosário. Na realidade, ela constitui uma oração própria, cuja origem está no século XVI, em Loreto, de onde provém seu nome."
+          },
+          {
+            "type": "paragraph",
+            "content": "Muitas são as indulgências concedidas pela recitação do Rosário. Exige-se sempre a meditação dos mistérios.<footnote id=2>"
+          },
+          {
+            "type": "paragraph",
+            "content": "O mesmo Papa Leão XIII, a 1884, escreveu a <i>Oração a São Miguel</i>, ordenando que fosse recitada após as missas. A ordem caiu entre as reformas litúrgicas da década de 1960<footnote id=3> mas, por santas recomendações contra o demônio, pelo combate espiritual, continua sendo recomendada, e por isto a adidionamos ao final do exercício proposto."
           },
           {
             "type": "header-1",
-            "content": "Sobre os Mistérios Luminosos<footnote id=2>"
+            "content": "Sobre os Mistérios Luminosos<footnote id=4>"
           },
           {
             "type": "paragraph",
@@ -2944,24 +2953,42 @@
           {
             "type": "indication",
             "content": {
-              "latin": "Salve Regina",
-              "pt-BR": "Salve Rainha"
+              "latin": "<link id=6>Salve Regina</link>",
+              "pt-BR": "<link id=6>Salve Rainha</link>"
             }
           },
           {
             "type": "indication",
             "content": {
-              "latin": "Oratio Sancti Ioseph",
-              "pt-BR": "Oração a São José"
+              "latin": "<link id=7>Litaniæ Lauretanæ</link>",
+              "pt-BR": "<link id=7>Ladainha Lauretana</link>"
+            }
+          },
+          {
+            "type": "indication",
+            "content": {
+              "latin": "<link id=8>Oratio Sancti Ioseph</link>",
+              "pt-BR": "<link id=8>Oração a São José</link>"
             }
           },
           {
             "subsection-break": true,
             "type": "indication",
             "content": {
-              "latin": "Oratio Sancti Michäelis",
-              "pt-BR": "Oração a São Miguel Arcanjo"
+              "latin": "<link id=9>Oratio Sancti Michäelis</link>",
+              "pt-BR": "<link id=9>Oração a São Miguel Arcanjo</link>"
             }
+          }
+        ]
+      },
+      {
+        "id": 18999,
+        "title": "Mistérios do Santo Rosário",
+        "type": "regular-text",
+        "contents": [
+          {
+            "type": "paragraph",
+            "content": "Encontram-se vários materiais de auxílio para a meditação dos mistérios do Rosário. Para ver alguns, acesse <link id=11>esta página</link>."
           }
         ]
       }
@@ -2979,20 +3006,26 @@
       {"id": 9999, "title": "2-6-salve-rainha"},
       {"id": 10999, "title": "2-7-ladainha-lauretana"},
       {"id": 11999, "title": "2-8-a-vossa-protecao"},
-      {"id": 12999, "title": "2-8-oracao-a-sao-jose"},
-      {"id": 13999, "title": "2-9-oracao-a-sao-miguel-arcanjo"},
-
+      {"id": 12999, "title": "2-9-oracao-a-sao-jose"},
+      {"id": 13999, "title": "2-10-oracao-a-sao-miguel-arcanjo"},
       {"id": 14999, "title": "3-inicio"},
       {"id": 15999, "title": "3-1-sinal-da-cruz"},
       {"id": 16999, "title": "3-2-invitatorio"},
-      {"id": 17999, "title": "4-santo-rosario"}
+      {"id": 17999, "title": "4-santo-rosario"},
+      {"id": 18999, "title": "5-misterios-do-santo-rosario"}
     ],
     "link-map": [
       {"id": 1, "url": "#2-1-credo", "alt": "Credo"},
       {"id": 2, "url": "#2-2-pai-nosso", "alt": "Pai Nosso"},
       {"id": 3, "url": "#2-3-ave-maria", "alt": "Ave Maria"},
       {"id": 4, "url": "#2-4-gloria-ao-pai", "alt": "Glória ao Pai"},
-      {"id": 5, "url": "#2-5-oracao-de-fatima", "alt": "Oração de Fátima"}
+      {"id": 5, "url": "#2-5-oracao-de-fatima", "alt": "Oração de Fátima"},
+      {"id": 6, "url": "#2-6-salve-rainha", "alt": "Salve Rainha"},
+      {"id": 7, "url": "#2-7-ladainha lauretana", "alt": "Ladainha Lauretana"},
+      {"id": 8, "url": "#2-9-oracao-a-sao-jose", "alt": "Oração a São José"},
+      {"id": 9, "url": "#2-10-oracao-a-sao-miguel-arcanjo", "alt": "Oração a São Miguel Arcanjo"},
+      {"id": 10, "url": "https://padrepauloricardo.org/blog/nao-esquecam-a-oracao-de-sao-miguel-arcanjo", "alt": "Não esqueçam a oração de São Miguel Arcanjo!, Bradley Eli, tradução pela equipe Christo Nihil Præponere, 15 de maio de 2017"},
+      {"id": 11, "url": "/santo-rosario/misterios", "alt": "Devocionário → Santo Rosário → Mistérios"}
     ],
     "footnotes": [
       {
@@ -3001,8 +3034,1232 @@
       },
       {
         "id": 2,
+        "content": "Texto baseado sobretudo no <i>Missal Romano Quotidiano</i>, por Dom Gaspar Lefebvre e os monges Beneditinos de Santo André, página 1617, mas também na <i>Seleta de Orações</i> supracitada."
+      },
+      {
+        "id": 3,
+        "content": "Conferir <link id=10>Não esqueçam a oração de São Miguel Arcanjo!</link>, disponível no site do Padre Paulo Ricardo."
+      },
+      {
+        "id": 4,
         "content": "Texto baseado sobretudo n'<i>A Chave do Céu – Novíssimo Livro de Missa e Outras Devoções</i>, de Joaquim António Pacheco, Livraria Católica de Sousa Tavares, Lisboa, 4ª edição, 1930."
       }
+    ]
+  },
+  "santo-rosario-misterios": {
+    "title": "Mistérios do Santo Rosário",
+    "index": [
+      {"id": 1, "title": "Frutos"},
+      {"id": 2, "title": "Textos para meditação", "index": [
+        {"id": 3, "title": "Breves"},
+        {"id": 4, "title": "Longos"},
+        {"id": 5, "title": "De São Josemaría Escrivá"}
+      ]}
+    ],
+    "sections": [
+      {
+        "id": 1,
+        "title": "Frutos<footnote id=1>",
+        "type": "regular-text",
+        "contents": [
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Ao início de cada dezena, pode-se meditar e suplicar pelo fruto correspondente ao mistério. A seguir, a lista dos frutos:"
+          },
+          {
+            "type": "header-2",
+            "content": "Mistérios Gozosos"
+          },
+          {
+            "type": "header-3",
+            "content": "1. Anunciação"
+          },
+          {
+            "type": "paragraph",
+            "content": "Humildade."
+          },
+          {
+            "type": "header-3",
+            "content": "2. Visitação"
+          },
+          {
+            "type": "paragraph",
+            "content": "Amor ao próximo."
+          },
+          {
+            "type": "header-3",
+            "content": "3. Nascimento de Jesus"
+          },
+          {
+            "type": "paragraph",
+            "content": "Desprendimento das riquezas."
+          },
+          {
+            "type": "header-3",
+            "content": "4. Apresentação no Templo"
+          },
+          {
+            "type": "paragraph",
+            "content": "Obediência."
+          },
+          {
+            "type": "header-3",
+            "content": "5. Jesus é encontrado no Templo"
+          },
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Procura de Jesus."
+          },
+          {
+            "type": "header-2",
+            "content": "Mistérios Dolorosos"
+          },
+          {
+            "type": "header-3",
+            "content": "1. Agonia de Nosso Senhor"
+          },
+          {
+            "type": "paragraph",
+            "content": "Contrição."
+          },
+          {
+            "type": "header-3",
+            "content": "2. Flagelação"
+          },
+          {
+            "type": "paragraph",
+            "content": "Mortificação dos sentidos."
+          },
+          {
+            "type": "header-3",
+            "content": "3. Coroação de espinhos"
+          },
+          {
+            "type": "paragraph",
+            "content": "Mortificação da carne."
+          },
+          {
+            "type": "header-3",
+            "content": "4. Jesus leva a cruz aos ombros"
+          },
+          {
+            "type": "paragraph",
+            "content": "Paciência e resignação."
+          },
+          {
+            "type": "header-3",
+            "content": "5. Crucifixão"
+          },
+          {
+            "subsection-break": true,
+            "type": "paragraph",
+            "content": "Amor de Deus e salvação das almas."
+          },
+          {
+            "type": "header-2",
+            "content": "Mistérios Gloriosos"
+          },
+          {
+            "type": "header-3",
+            "content": "1. Ressurreição"
+          },
+          {
+            "type": "paragraph",
+            "content": "Fé e conversão."
+          },
+          {
+            "type": "header-3",
+            "content": "2. Ascenção"
+          },
+          {
+            "type": "paragraph",
+            "content": "Esperança e desejo do Céu."
+          },
+          {
+            "type": "header-3",
+            "content": "3. Pentecostes"
+          },
+          {
+            "type": "paragraph",
+            "content": "Caridade e zelo."
+          },
+          {
+            "type": "header-3",
+            "content": "4. Assunção da Santíssima Virgem"
+          },
+          {
+            "type": "paragraph",
+            "content": "Boa morte e devoção a Maria."
+          },
+          {
+            "type": "header-3",
+            "content": "5. Coroação de Nossa Senhora"
+          },
+          {
+            "type": "paragraph",
+            "content": "Perseverança e confiança em Maria."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Textos para meditação",
+        "type": "regular-text",
+        "contents": [
+          {
+            "id": 3,
+            "type": "header-1",
+            "content": "Breves<footnote id=2>"
+          },
+          {
+            "type": "header-2",
+            "content": "Mistérios Gozosos"
+          },
+          {
+            "type": "header-3",
+            "content": "1. A Encarnação"
+          },
+          {
+            "type": "paragraph",
+            "content": "O Anjo do Senhor anuncia a Maria. Diz Maria ao Anjo: \"Como se fará isto se não conheço varão?\" O Anjo responde \"O Espírito Santo virá sobre ti, e a virtude do Altíssimo te cobrirá com a sua sombra, e por isso o Santo gerado de ti será chamado Filho de Deus\". Diz Maria: \"Eis aqui a escrava do Senhor; faça-se em mim segundo a tua palavra\" <i>(cf. Lc 1, 26-38)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "2. A Visitação de Nossa Senhora à sua prima Santa Isabel"
+          },
+          {
+            "type": "paragraph",
+            "content": "Maria levanta-se e dirige-se sem demora à montanha, a uma cidade de Judá, para visitar a sua prima Santa Isabel. Isabel fica cheia do Espírito Santo e exclama em voz alta: \"Bendita és tu entre as mulheres e bendito é o fruto do teu ventre\" <i>(cfr. Lc 1, 39-56)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "3. O Nascimento do Filho de Deus em Belém"
+          },
+          {
+            "type": "paragraph",
+            "content": "Maria dá à luz seu Filho primogênito, e envolve-o em panos e deita-o numa manjedoura, por não haver lugar para eles na estalagem <i>(cfr. Lc 2, 1-20)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "4. A Purificação de Nossa Senhora"
+          },
+          {
+            "type": "paragraph",
+            "content": "Assim que se completam os dias da purificação, levam o Menino ao Templo, conforme está escrito na Lei do Senhor <i>(cfr. Lc 2, 22-30)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "5. O Menino-Deus perdido e achado no Templo"
+          },
+          {
+            "type": "paragraph",
+            "content": "O Menino Jesus fica em Jerusalém e os seus pais, depois de O procurarem durante três dias, encontram-no no meio dos doutores, ouvindo-os e interrogando-os <i>(cfr. Lc 2, 41-50)</i>."
+          },
+          {
+            "type": "header-2",
+            "content": "Mistérios Luminosos"
+          },
+          {
+            "type": "header-3",
+            "content": "1. O Batismo no Jordão"
+          },
+          {
+            "type": "paragraph",
+            "content": "Enquanto Cristo desce à água do rio, como inocente que se fez pecador por nós <i>(cfr. 2 Cor 5, 21)</i>, o céu abre-se e a voz do Pai proclama-o Filho dileto <i>(cfr. Mt 3, 17)</i>, ao mesmo tempo que o Espírito vem sobre Ele para investi-lO na missão que o espera <i>(cfr. Lc 2, 41-50)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "2. A auto-revelação nas bodas de Caná"
+          },
+          {
+            "type": "paragraph",
+            "content": "Cristo, transformando a água em vinho, abre à fé o coração dos discípulos graças à intervenção de Maria, a primeira entre os fiéis <i>(cfr. Jo 2, 1-12)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "3. Anúncio do Reino e convite à conversão"
+          },
+          {
+            "type": "paragraph",
+            "content": "Jesus anuncia o advento do Reino de Deus e convida à conversão <i>(cfr. Mc 1, 15)</i>, perdoando os pecados de quem a Ele se dirige com humilde confiança <i>(cfr. Lc 7, 47-48)</i>. É o início do ministério de misericórdia que Ele prosseguirá exercendo até ao fim do mundo, especialmente através do sacramento da Reconciliação confiado à sua Igreja <i>(cfr. Jo 20, 22-23)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "4. A Transfiguração"
+          },
+          {
+            "type": "paragraph",
+            "content": "A glória da Divindade reluz no rosto de Cristo, enquanto o Pai o acredita diante dos Apóstolos extasiados para que o \"escutem\" <i>(cfr. Lc 9, 35)</i> e se disponham a viver com Ele o momento doloroso da Paixão, a fim de chegarem com Ele à glória da Ressurreição e a uma vida transfigurada pelo Espírito Santo."
+          },
+          {
+            "type": "header-3",
+            "content": "5. Instituição da Eucaristia"
+          },
+          {
+            "type": "paragraph",
+            "content": "Cristo faz-se alimento com o seu Corpo e o seu Sangue sob os sinais do pão e do vinho, testemunhando \"até ao extremo\" o seu amor pela humanidade <i>(cfr. Jo 13, 1)</i>, por cuja salvação se oferecerá em sacrifício."
+          },
+          {
+            "type": "header-2",
+            "content": "Mistérios Dolorosos"
+          },
+          {
+            "type": "header-3",
+            "content": "1. A Oração no Horto"
+          },
+          {
+            "type": "paragraph",
+            "content": "Jesus vai com os seus discípulos a um lugar chamado Getsêmani e diz: \"Pai, se quiseres, faz com que se afaste de mim este cálice... Não se faça, porém, a minha vontade, mas a tua\" <i>(cfr. Lc 22, 39-42)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "2. A Flagelação do Senhor"
+          },
+          {
+            "type": "paragraph",
+            "content": "Pilatos diz: \"Que farei de Jesus, que se chama o Cristo?\" E a multidão exaltada grita: \"Crucifica-o, crucifica-o!\" E Pilatos manda açoitar Jesus <i>(cfr. Mc 15, 1-15)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "3. A Coroação de Espinhos"
+          },
+          {
+            "type": "paragraph",
+            "content": "Os soldados cobrem Jesus com um trapo velho e sujo de púrpura, e coroam-nO com uma coroa de espinhos e começam a escarnecer dEle: \"Salve, Rei dos judeus\", ferindo-lhe a cabeça com uma cana e cuspindo nEle <i>(cfr. Mc 15, 16-20)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "4. A Cruz às costas"
+          },
+          {
+            "type": "paragraph",
+            "content": "Com a Cruz às costas, Jesus caminha para o lugar chamado Calvário, que em hebraico se cama Gólgota. Enquanto o conduzem, lançam mão de um certo Simão de Cirene, que vem do campo, e o carregam com a Cruz, para que a leve atrás de Jesus <i>(cfr. Lc 23, 26-32)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "5. Jesus morre na Cruz"
+          },
+          {
+            "type": "paragraph",
+            "content": "As trevas cobrem toda a terra; Jesus, clamando em alta voz, diz: \"Pai, em tuas mãos entrego o meu espírito\". Dizendo isso, expira <i>(cfr. Lc 23, 44-46)</i>."
+          },
+          {
+            "type": "header-2",
+            "content": "Mistérios Gloriosos"
+          },
+          {
+            "type": "header-3",
+            "content": "1. A Ressureição do Senhor"
+          },
+          {
+            "type": "paragraph",
+            "content": "Passado o sábado, já prestes a amanhecer o primeiro dia da semana, Maria Madalena e Maria, mãe de Tiago, vão ao sepulcro. Entrando, ficaram consternadas porque não encontram o corpo de Jesus. O Anjo, dirigindo-se às mulheres, diz: \"Não temais; sei que procurais Jesus Nazareno. Não está aqui porque ressuscitou, como tinha anunciado\" <i>(cfr. Mt 28, 1-7)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "2. A Ascenção do Senhor aos Céus"
+          },
+          {
+            "type": "paragraph",
+            "content": "Jesus leva os seus discípulos a caminho de Betânia, e, levantando as mãos, abençoa-os. E, enquanto os abençoa, afasta-se deles e eleva-se ao céu. E eles, depois de se prostrarem diante dEle, voltam a Jerusalém com grande alegria <i>(cfr. Lc 24, 50-53)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "3. A Vinda do Espírito Santo"
+          },
+          {
+            "type": "paragraph",
+            "content": "De repente vem do céu um estrondo como de vento impetuoso, que encheu toda a casa onde estão os discípulos. Ficam todos cheios do Espírito Santo e começam a falar em várias línguas <i>(cfr. At 2, 1-11)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "4. A Assunção de Nossa Senhora"
+          },
+          {
+            "type": "paragraph",
+            "content": "Maria é levada por Deus, em corpo e alma, para o céu. E os Anjos se alegram! Grandes coisas são ditas de ti, ó Maria, que és exaltada acima dos coros dos Anjos, e triunfas para sempre em Cristo <i>(cfr. Missal Romano, Antífona da Missa da Vigília da Assunção de Nossa Senhora)</i>."
+          },
+          {
+            "type": "header-3",
+            "content": "5. A Coroação de Maria Santíssima"
+          },
+          {
+            "type": "paragraph",
+            "content": "És toda formosa, e não há mancha em ti. És horto cerrado, minha irmã, Esposa, horto cerrado, fonte selada. Vem, serás coroada. Aparece no céu um sinal grandioso: uma Mulher revestida de Sol, com a Lua a seus pés; na cabeça, uma coroa com doze estrelas <i>(cfr. Ct 4, 7-12 e Ap 12, 1)</i>."
+          },
+
+
+          
+          {
+            "id": 4,
+            "type": "header-1",
+            "content": "Longos<footnote id=3>"
+          },
+          {
+            "type": "header-2",
+            "content": "Mistérios Gozosos"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "1. A Encarnação"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "2. A Visitação de Nossa Senhora à sua prima Santa Isabel"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "3. O Nascimento do Filho de Deus em Belém"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "4. A Purificação de Nossa Senhora"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "5. O Menino-Deus perdido e achado no Templo"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "1. O Batismo no Jordão"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "2. A auto-revelação nas bodas de Caná"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "3. Anúncio do Reino e convite à conversão"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "4. A Transfiguração"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "5. Instituição da Eucaristia"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "1. A Oração no Horto"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "2. A Flagelação do Senhor"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "3. A Coroação de Espinhos"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "4. A Cruz às costas"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "5. Jesus morre na Cruz"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "1. A Ressureição do Senhor"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "2. A Ascenção do Senhor aos Céus"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "3. A Vinda do Espírito Santo"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "4. A Assunção de Nossa Senhora"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+          {
+            "type": "header-3",
+            "content": "5. A Coroação de Maria Santíssima"
+          },
+          {
+            "type": "paragraph",
+            "content": "-"
+          },
+
+
+
+
+
+          {
+            "id": 5,
+            "type": "header-1",
+            "content": "De São Josemaría Escrivá<footnote id=4>"
+          },
+          {
+            "type": "index",
+            "contents": [
+              {"id": 6888, "title": "Prólogo e notas introdutórias"},
+              {"id": 7888, "title": "Mistérios Gozosos", "index": [
+                {"id": 8888, "title": "1. A Anunciação"},
+                {"id": 9888, "title": "2. Visitação de Nossa Senhora"},
+                {"id": 10888, "title": "3. Nascimento de Jesus"},
+                {"id": 11888, "title": "4. Purificação de Nossa Senhora"},
+                {"id": 12888, "title": "5. O Menino Perdido"}
+              ]},
+              {"id": 13888, "title": "Mistérios Luminosos", "index": [
+                {"id": 14888, "title": "Nota introdutória"},
+                {"id": 15888, "title": "1. Batismo do Senhor"},
+                {"id": 16888, "title": "2. As Bodas de Caná"},
+                {"id": 17888, "title": "3. O Anúncio do Reino"},
+                {"id": 18888, "title": "4. A Transfiguração"},
+                {"id": 19888, "title": "5. A Instituição da Eucaristia"}
+              ]},
+              {"id": 20888, "title": "Mistérios Dolorosos", "index": [
+                {"id": 21888, "title": "1. Oração no Horto"},
+                {"id": 22888, "title": "2. Flagelação do Senhor"},
+                {"id": 23888, "title": "3. Coroação de Espinhos"},
+                {"id": 24888, "title": "4. A Cruz às Costas"},
+                {"id": 25888, "title": "5. Morte de Jesus"}
+              ]},
+              {"id": 26888, "title": "Mistérios Gloriosos", "index": [
+                {"id": 27888, "title": "1. "},
+                {"id": 28888, "title": "2. "},
+                {"id": 29888, "title": "3. "},
+                {"id": 30888, "title": "4. "},
+                {"id": 31888, "title": "5. "}
+              ]},
+              {"id": 32888, "title": "Conclusão"}
+            ]
+          },
+          {
+            "id": 6888,
+            "type": "header-2",
+            "content": "Prólogo e notas introdutórias"
+          },
+          {
+            "type": "paragraph",
+            "content": "A recitação do Santo Rosário, com a consideração dos mistérios, a repetição do Pai-Nosso e da Ave-Maria, os louvores à Beatíssima Trindade e a constante invocação à Mãe de Deus, é um contínuo ato de fé, de esperança e de amor, de adoração e reparação."
+          },
+          {
+            "type": "paragraph",
+            "content": "<i>Roma, 9 de janeiro de 1973</i>"
+          },
+          {
+            "type": "paragraph",
+            "content": "Estas linhas não se escrevem para mulherzinhas. Escrevem-se para homens bem barbados e bem... homens, que alguma vez, sem dúvida, elevaram o seu coração a Deus, gritando-Lhe com o Salmista: <i>Notam fac mihi viam, in qua ambulem; quia ad te levavi animam meam.</i> – Dá-me a conhecer o caminho que devo seguir, pois a Ti elevei a minha alma <i>(Sl 142, 8)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Hei de contar a esses homens um segredo que muito bem pode ser o começo desse caminho por onde Cristo quer que andem."
+          },
+          {
+            "type": "paragraph",
+            "content": "Meu amigo: se tens desejos de ser grande, faz-te pequeno."
+          },
+          {
+            "type": "paragraph",
+            "content": "Para ser pequeno, é preciso crer como crêem as crianças, amar como amam as crianças, abandonar-se como se abandonam as crianças..., rezar como rezam as crianças."
+          },
+          {
+            "type": "paragraph",
+            "content": "E tudo isso junto é necessário para pôr em prática o que te vou descobrir nestas linhas:"
+          },
+          {
+            "type": "paragraph",
+            "content": "O princípio do caminho, que tem por fim a completa loucura por Jesus, é um confiado amor a Maria Santíssima."
+          },
+          {
+            "type": "paragraph",
+            "content": "– Queres amar a Virgem? – Pois então conversa com Ela! – Como? – Rezando bem o Rosário de Nossa Senhora."
+          },
+          {
+            "type": "paragraph",
+            "content": "– Mas no Rosário... dizemos sempre o mesmo! – Sempre o mesmo? E não dizem sempre a mesma coisa os que se amam?... Se há monotonia no teu Rosário, não será porque, em vez de pronunciares palavras como homem, emites sons como animal, enquanto o teu pensamento anda muito longe de Deus? – Além disso, repara: antes de cada dezena, indica-se o mistério que se vai contemplar. Tu... já alguma vez contemplaste estes mistérios?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Faz-te pequeno. Vem comigo e – este é o nervo da minha confidência – viveremos a vida de Jesus, Maria e José."
+          },
+          {
+            "type": "paragraph",
+            "content": "Todos os dias Lhes havemos de prestar um novo serviço. Ouviremos as suas conversas de família. Veremos crescer o Messias. Admiraremos os seus trinta anos de obscuridade... Assistiremos à sua Paixão e Morte... Pasmaremos ante a glória da sua Ressurreição... Numa palavra: contemplaremos, loucos de Amor – não há outro amor além do Amor –, todos e cada um dos instantes de Cristo Jesus."
+          },
+          {
+            "id": 7888,
+            "type": "header-2",
+            "content": "Mistérios Gozosos"
+          },
+          {
+            "id": 8888,
+            "type": "header-3",
+            "content": "1. A Anunciação"
+          },
+          {
+            "type": "paragraph",
+            "content": "Não te esqueças, meu amigo, de que somos crianças. A Senhora do doce nome, Maria, está recolhida em oração."
+          },
+          {
+            "type": "paragraph",
+            "content": "Tu és, naquela casa, o que quiseres ser: um amigo, um criado, um curioso, um vizinho... – Eu por agora não me atrevo a ser nada. Escondo-me atrás de ti e, pasmado, contemplo a cena."
+          },
+          {
+            "type": "paragraph",
+            "content": "O Arcanjo comunica a sua mensagem... – <i>Quomodo fiet istud, quoniam virum non cognosco?</i> – Como se fará isso, se não conheço varão? <i>(Lc 1, 34)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "A voz da nossa Mãe traz à minha memória, por contraste, todas as impurezas dos homens..., as minhas também."
+          },
+          {
+            "type": "paragraph",
+            "content": "E como odeio então essas baixas misérias da terra!... Que propósitos!"
+          },
+          {
+            "type": "paragraph",
+            "content": "<i>Fiat mihi secundum verbum tuum.</i> – Faça-se em mim segundo a tua palavra <i>(Lc 1, 38)</i>. Ao encanto destas palavras virginais, o Verbo se fez carne."
+          },
+          {
+            "type": "paragraph",
+            "content": "Vai terminar a primeira dezena... Ainda tenho tempo de dizer ao meu Deus, antes que nenhum mortal: Jesus, eu Te amo."
+          },
+          {
+            "id": 9888,
+            "type": "header-3",
+            "content": "2. Visitação de Nossa Senhora"
+          },
+          {
+            "type": "paragraph",
+            "content": "Agora, meu pequeno amigo, espero que já saibas mexer-te. – Acompanha alegremente José e Santa Maria... e escutarás tradições da Casa de Davi."
+          },
+          {
+            "type": "paragraph",
+            "content": "Ouvirás falar de Isabel e de Zacarias, enternecer-te-ás com o amor puríssimo de José, e baterá fortemente o teu coração cada vez que pronunciarem o nome do Menino que nascerá em Belém..."
+          },
+          {
+            "type": "paragraph",
+            "content": "Caminhamos apressadamente em direção às montanhas, até uma aldeia da tribo de Judá <i>(Lc 1, 39)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Chegamos. – É a casa onde vai nascer João Batista. – Isabel aclama, agradecida, a Mãe do seu Redentor: Bendita és tu entre as mulheres e bendito é o fruto do teu ventre! A que devo tamanho bem, que venha visitar-me a Mãe do meu Senhor? <i>(Lc 1, 42-43)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "O Batista, ainda por nascer, estremece... <i>(Lc 1, 41)</i>. – A humildade de Maria derrama-se no <i>Magníficat</i>... – E tu e eu, que somos – que éramos – uns soberbos, prometemos ser humildes."
+          },
+          {
+            "id": 10888,
+            "type": "header-3",
+            "content": "3. Nascimento de Jesus"
+          },
+          {
+            "type": "paragraph",
+            "content": "Foi promulgado um edito de César Augusto, que manda recensear toda a gente. Para isso, cada qual tem de ir à terra dos seus antepassados. – Como José é da casa e da família de Davi, vai, com a Virgem Maria, de Nazaré à cidade chamada Belém, na Judéia <i>(Lc 2, 1-5)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "E em Belém nasce o nosso Deus: Jesus Cristo! – Não há lugar na pousada: num estábulo. – E sua Mãe envolve-O em panos e reclina-O no presépio <i>(Lc 2, 7)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Frio. – Pobreza. – Sou um escravozinho de José. – Que bom é José! – Trata-me como um pai a seu filho. – Até me perdoa, se tomo o Menino em meus braços e fico, horas e horas, dizendo-Lhe coisas doces e ardentes!..."
+          },
+          {
+            "type": "paragraph",
+            "content": "E beijo-O – beija-O tu –, e O embalo, e canto para Ele, e Lhe chamo Rei, Amor, meu Deus, meu Único, meu Tudo!... Que lindo é o Menino... e que curta a dezena!"
+          },
+          {
+            "id": 11888,
+            "type": "header-3",
+            "content": "4. Purificação de Nossa Senhora"
+          },
+          {
+            "type": "paragraph",
+            "content": "Completado o tempo da purificação da Mãe, segundo a Lei de Moisés, é preciso ir com o Menino a Jerusalém para apresentá-Lo ao Senhor <i>(Lc 2, 22)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "E desta vez serás tu, meu amigo, quem leve a gaiola das rolas. – Estás vendo? Ela – a Imaculada! – submete-se à Lei como se estivesse imunda."
+          },
+          {
+            "type": "paragraph",
+            "content": "Aprenderás com este exemplo, menino bobo, a cumprir a Santa Lei de Deus, apesar de todos os sacrifícios pessoais?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Purificação! Tu e eu, sim, é que precisamos de purificação! Expiação, e, acima da expiação, o Amor. – Um amor que seja cautério, que abrase a imundície da nossa alma, e fogo que incendeie com chamas divinas a miséria do nosso coração."
+          },
+          {
+            "type": "paragraph",
+            "content": "Um homem justo e temente a Deus, que, conduzido pelo Espírito Santo, viera ao Templo – tinha-lhe sido revelado que não morreria antes de ver o Cristo –, toma o Messias em seus braços e diz-Lhe: – Agora, Senhor, agora já podes levar em paz deste mundo o teu servo, conforme a tua promessa..., porque meus olhos viram o Salvador <i>(Lc 2, 25-30)</i>."
+          },
+          {
+            "id": 12888,
+            "type": "header-3",
+            "content": "5. O Menino Perdido"
+          },
+          {
+            "type": "paragraph",
+            "content": "Onde está Jesus? – Senhora: o Menino!... Onde está?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Maria chora. – Bem que corremos tu e eu, de grupo em grupo, de caravana em caravana: não O viram. – José, depois de fazer esforços inúteis para não chorar, chora também... E tu... E eu."
+          },
+          {
+            "type": "paragraph",
+            "content": "Eu, como sou um criadinho tosco, choro sem parar e clamo ao céu e à terra..., pelas vezes em que O perdi por minha culpa e não clamei."
+          },
+          {
+            "type": "paragraph",
+            "content": "Jesus! Que eu nunca mais Te perca... E então a desgraça e a dor nos unem, como nos uniu o pecado, e saem de todo o nosso ser gemidos de profunda contrição e frases ardentes, que a pena não pode, não deve registrar."
+          },
+          {
+            "type": "paragraph",
+            "content": "E ao nos consolarmos com a alegria de encontrar Jesus – três dias de ausência! – disputando com os Mestres de Israel <i>(Lc 2, 46)</i>, ficará bem gravada na tua alma e na minha a obrigação de deixarmos os da nossa casa para servir o Pai Celestial."
+          },
+          {
+            "id": 13888,
+            "type": "header-2",
+            "content": "Mistérios Luminosos"
+          },
+          {
+            "id": 14888,
+            "type": "header-3",
+            "content": "Nota Introdutória"
+          },
+          {
+            "type": "paragraph",
+            "content": "O Santo Padre João Paulo II, na sua Carta Apostólica <i>Rosarium Virginis Mariae</i>, indicou que, pelo caráter cristológico desta devoção mariana, aos quinze mistérios tradicionais se acrescentassem cinco novos, aos quais chamou “mistérios luminosos”. Os comentários a estes mistérios não figuravam no livro Santo Rosário, escrito em 1931, mas São Josemaria, ao longo de toda a sua vida, contemplou-os e pregou-os com amor, como todas as passagens do Evangelho. Para facilitar aos leitores a meditação completa do Santo Rosário, foram tomados dos escritos do Fundador do Opus Dei alguns textos, dentre os muitos possíveis, que foram reunidos neste apêndice. Seremos fiéis ao espírito do autor do Santo Rosário se, cada vez que rezarmos os mistérios gozosos, luminosos, dolorosos e gloriosos, nos unirmos às intenções do sucessor de Pedro, Bispo de Roma. <i>Omnes cum Petro ad Iesum per Mariam!</i>"
+          },
+          {
+            "type": "paragraph",
+            "content": "<i>Roma, 14 de fevereiro de 2003. Javier Echevarría, Prelado do Opus Dei (1994-2016)</i>"
+          },
+          {
+            "id": 15888,
+            "type": "header-3",
+            "content": "1. Batismo do Senhor"
+          },
+          {
+            "type": "paragraph",
+            "content": "Então Jesus veio da Galileia ao Jordão, para ser batizado por João [...]. E uma voz dos céus disse: Este é o meu Filho, o amado, em quem pus as minhas complacências <i>(Mt 3, 13-17)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Pelo Batismo, o nosso Pai-Deus tomou posse das nossas vidas, incorporou-nos à vida de Cristo e enviou-nos o Espírito Santo."
+          },
+          {
+            "type": "paragraph",
+            "content": "A força e o poder de Deus iluminam a face da terra."
+          },
+          {
+            "type": "paragraph",
+            "content": "Faremos com que o mundo arda, nas chamas do fogo que vieste trazer à terra... E a luz da tua verdade, Jesus nosso, iluminará as inteligências, num dia sem fim."
+          },
+          {
+            "type": "paragraph",
+            "content": "Ouço-te clamar, meu Rei, com voz viva, que ainda vibra: <i>Ignem veni mittere in terram, et quid volo nisi ut accendatur?</i> – e respondo – todo eu – com os meus sentidos e as minhas potências: <i>Ecce ego: quia vocasti me!</i> O Senhor pôs na tua alma um selo indelével, por meio do Batismo: és filho de Deus."
+          },
+          {
+            "type": "paragraph",
+            "content": "Menino: não ardes em desejos de fazer que todos O amem?"
+          },
+          {
+            "id": 16888,
+            "type": "header-3",
+            "content": "2. As Bodas de Caná"
+          },
+          {
+            "type": "paragraph",
+            "content": "Entre tantos convidados de uma dessas ruidosas bodas do meio rural, a que comparecem pessoas de vários povoados, Maria percebe que falta vinho (cf. Jo 2, 3). Só Ela o percebe, e imediatamente. Como se nos revelam familiares as cenas da vida de Cristo! Porque a grandeza de Deus convive com o normal e o corrente. É próprio de uma mulher e de uma diligente dona de casa notar um descuido, prestar atenção a esses pequenos detalhes que tornam agradável a existência humana: e foi assim que Maria se comportou."
+          },
+          {
+            "type": "paragraph",
+            "content": "– Fazei o que Ele vos disser <i>(Jo 2, 5)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "<i>Implete hydrias (Jo 2, 7)</i>, enchei as talhas, e o milagre vem. Assim, com essa simplicidade. Tudo normal. Aqueles cumpriam o seu ofício. A água estava ao alcance das mãos. E é a primeira manifestação da Divindade do Senhor. O mais vulgar converte-se em extraordinário, em sobrenatural, quando temos a boa vontade de atender ao que Deus nos pede."
+          },
+          {
+            "type": "paragraph",
+            "content": "Quero, Senhor, abandonar todos os meus cuidados nas tuas mãos generosas. A nossa Mãe – a tua Mãe! –, a estas horas, como em Caná, já fez soar aos teus ouvidos: – Não têm!..."
+          },
+          {
+            "type": "paragraph",
+            "content": "Se a nossa fé for débil, recorramos a Maria. Conta São João que, devido ao milagre das bodas de Caná, que Cristo realizou a pedido de sua Mãe, os seus discípulos creram nEle (Jo 2, 11). A nossa Mãe intercede sempre diante do seu Filho para que nos atenda e se nos revele de tal modo que possamos confessar: Tu és o Filho de Deus."
+          },
+          {
+            "type": "paragraph",
+            "content": "Dá-me, ó Jesus, essa fé, que de verdade desejo! Minha Mãe e Senhora minha, Maria Santíssima, faz que eu creia!"
+          },
+          {
+            "id": 17888,
+            "type": "header-3",
+            "content": "3. O Anúncio do Reino"
+          },
+          {
+            "type": "paragraph",
+            "content": "Cumpriu-se o tempo e o Reino de Deus está para chegar: convertei-vos e crede no Evangelho <i>(Mc 1, 15)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Toda a multidão ia até Ele, e Ele os ensinava <i>(Mc 2, 13)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Jesus vê aquelas barcas na margem e sobe numa delas [...]. Com que naturalidade se mete Jesus na barca de cada um de nós!"
+          },
+          {
+            "type": "paragraph",
+            "content": "Quanto te aproximares do Senhor, pensa que Ele está muito perto de ti, em ti: <i>regnum Dei intra vos est (Lc 17, 21)</i>. Encontrá-lo-ás no teu coração."
+          },
+          {
+            "type": "paragraph",
+            "content": "Cristo deve reinar, acima de tudo, na nossa alma. Para que Ele reine em mim, preciso da sua graça em abundância: só assim é que até o último latejo do coração, até o último alento, até o olhar menos intenso, até a palavra mais intranscendente, até a sensação mais elementar se traduzirão num hosanna ao meu Cristo-Rei."
+          },
+          {
+            "type": "paragraph",
+            "content": "<i>Duc in altum</i> – Mar adentro! – Repele o pessimismo que te torna covarde. <i>Et laxate retia vestra in capturam</i> – e lança as redes para pescar."
+          },
+          {
+            "type": "paragraph",
+            "content": "Devemos confiar nessas palavras do Senhor, entrar na barca, empunhar os remos, içar as velas e lançar-nos a esse mar do mundo que Cristo nos entrega em herança."
+          },
+          {
+            "type": "paragraph",
+            "content": "<i>Et regni ejus non erit finis.</i> — O seu Reino não terá fim!"
+          },
+          {
+            "type": "paragraph",
+            "content": "Não te dá alegria trabalhar por um reinado assim?"
+          },
+          {
+            "id": 18888,
+            "type": "header-3",
+            "content": "4. A Transfiguração"
+          },
+          {
+            "type": "paragraph",
+            "content": "E transfigurou-se diante deles, de modo que o seu rosto se tornou resplandecente como o sol, e as suas vestes brancas como a luz <i>(Mt 16, 2)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Jesus: ver-Te, falar contigo! Permanecer assim, contemplando-Te, abismados na imensidade da tua formosura, e não cessar nunca, nunca, nessa contemplação! Oh, Cristo, quem Te pudesse ver! Quem Te pudesse ver, para ficar ferido de amor por Ti."
+          },
+          {
+            "type": "paragraph",
+            "content": "E uma voz vinda da nuvem disse: Este é o meu Filho, o Amado, em quem tenho as minhas complacências; escutai-o (Mt 17, 5)."
+          },
+          {
+            "type": "paragraph",
+            "content": "Senhor nosso, aqui nos tens dispostos a escutar tudo o que queiras dizer-nos. Fala-nos, estamos atentos à tua voz. Que as tuas palavras, caindo na nossa alma, abrasem a nossa vontade para que se lance fervorosamente a obedecer-Te."
+          },
+          {
+            "type": "paragraph",
+            "content": "<i>Vultum tuum, Domine, requiram (Sl 26, 8)</i>, buscarei, Senhor, o teu rosto. Encanta-me fechar os olhos e pensar que chegará o momento, quando Deus quiser, em que poderei vê-lo, não como em um espelho, e sob imagens obscuras..., mas face a face <i>(1 Cor 13, 12)</i>. Sim, o meu coração está sedento de Deus, do Deus vivo: quando irei e contemplarei a face de Deus? (Sl 41, 3)"
+          },
+          {
+            "id": 19888,
+            "type": "header-3",
+            "content": "5. A Instituição da Eucaristia"
+          },
+          {
+            "type": "paragraph",
+            "content": "Na véspera da festa da Páscoa, como Jesus sabia que havia chegado a sua hora de passar deste mundo para o Pai, tendo amado os seus que estavam no mundo, amou-os até o fim <i>(Jo 12, 1)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Caía a noite sobre o mundo, porque os velhos ritos, os antigos sinais da misericórdia infinita de Deus para com a humanidade se iam realizar plenamente, abrindo caminho a um verdadeiro amanhecer: a nova Páscoa. A Eucaristia foi instituída durante a noite, preparando de antemão a manhã da Ressurreição."
+          },
+          {
+            "type": "paragraph",
+            "content": "Jesus ficou na Eucaristia por amor..., por ti."
+          },
+          {
+            "type": "paragraph",
+            "content": "Ficou, sabendo como é que os homens O receberiam..., e como é que tu O recebes."
+          },
+          {
+            "type": "paragraph",
+            "content": "Ficou, para que O comas, para que O visites e Lhe contes as tuas coisas e, tratando-O com intimidade na oração junto do Sacrário e na recepção do Sacramento, te enamores mais de dia para dia, e faças que outras almas – muitas! – sigam o mesmo caminho."
+          },
+          {
+            "type": "paragraph",
+            "content": "Menino bom: os apaixonados desta terra, como beijam as flores, a carta, uma lembrança da pessoa que amam!..."
+          },
+          {
+            "type": "paragraph",
+            "content": "E tu? Poderás esquecer-te alguma vez de que O tens sempre ao teu lado..., a Ele!? – Esquecerás... que O podes comer?"
+          },
+          {
+            "type": "paragraph",
+            "content": "– Senhor, que eu não torne a voar colado à terra!, que esteja sempre iluminado pelos raios do divino Sol – Cristo – na Eucaristia!, que o meu voo não se interrompa enquanto não alcançar o descanso do teu Coração!"
+          },
+          {
+            "id": 20888,
+            "type": "header-2",
+            "content": "Mistérios Dolorosos"
+          },
+          {
+            "id": 21888,
+            "type": "header-3",
+            "content": "1. Oração no Horto"
+          },
+          {
+            "type": "paragraph",
+            "content": "Orai, para não entrardes em tentação. – E Pedro adormeceu. – E os demais Apóstolos. – E adormeceste tu, meu pequeno amigo..., e eu fui também outro Pedro dorminhoco."
+          },
+          {
+            "type": "paragraph",
+            "content": "Jesus, só e triste, sofria e empapava a terra com o seu sangue."
+          },
+          {
+            "type": "paragraph",
+            "content": "De joelhos sobre a terra dura, persevera em oração... Chora por ti... e por mim: esmaga-O o peso dos pecados dos homens."
+          },
+          {
+            "type": "paragraph",
+            "content": "<i>Pater, si vis, transfer calicem istum a me.</i> – Pai, se quiseres, faz com que se afaste de Mim este cálice... Não se faça, porém, a minha vontade, <i>sed tua fiat</i>, mas a tua <i>(Lc 22, 42)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Um Anjo do céu O conforta. – Jesus está em agonia. – Continua <i>prolixius</i>, orando mais intensamente... Aproxima-se de nós, que dormimos: – Levantai-vos, orai – repete-nos –, para não cairdes em tentação <i>(Lc 22, 46)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Judas, o traidor: um beijo. – A espada de Pedro brilha na noite. – Jesus fala: – Vindes buscar-Me como um ladrão? <i>(Mc 14, 48)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Somos covardes: seguimo-Lo de longe. Mas acordados e orando. – Oração... Oração..."
+          },
+          {
+            "id": 22888,
+            "type": "header-3",
+            "content": "2. Flagelação do Senhor"
+          },
+          {
+            "type": "paragraph",
+            "content": "Fala Pilatos: – Tendes o costume de que vos solte alguém pela Páscoa. Quem havemos de pôr em liberdade? Barrabás – ladrão, preso com outros por homicídio – ou Jesus? <i>(Mt 27, 17)</i>. – Manda matar este e solta Barrabás, clama o povo incitado pelos seus príncipes <i>(Lc 23, 18)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Pilatos fala de novo: – Então que farei de Jesus, que se chama o Cristo? <i>(Mt 27, 22)</i>. – Crucifige eum! – Crucifica-O! <i>(Mc 15, 14)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Diz-lhes Pilatos, pela terceira vez: – Mas que mal fez Ele? Não encontro nEle causa alguma de morte <i>(Lc 23, 22)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Aumentava o clamor da multidão: – Crucifica-O, crucifica-O! <i>(Mc 15, 14)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "E Pilatos, desejando contentar o povo, solta-lhes Barrabás e manda açoitar Jesus."
+          },
+          {
+            "type": "paragraph",
+            "content": "Atado à coluna. Cheio de chagas."
+          },
+          {
+            "type": "paragraph",
+            "content": "Ouvem-se os golpes dos azorragues na sua carne rasgada, na sua carne sem mancha, que padece pela tua carne pecadora. – Mais golpes. Mais sanha. Mais ainda... É o cúmulo da crueldade humana."
+          },
+          {
+            "type": "paragraph",
+            "content": "Por fim, rendidos, desprendem Jesus. E o corpo de Cristo rende-se também à dor e cai, como um verme, truncado e meio morto."
+          },
+          {
+            "type": "paragraph",
+            "content": "Tu e eu não podemos falar. – Não são precisas palavras. Olha para Ele, olha para Ele... devagar."
+          },
+          {
+            "type": "paragraph",
+            "content": "Depois... serás capaz de ter medo à expiação?"
+          },
+          {
+            "id": 23888,
+            "type": "header-3",
+            "content": "3. Coroação de Espinhos"
+          },
+          {
+            "type": "paragraph",
+            "content": "Vai ficando satisfeita a ânsia de sofrer do nosso Rei!"
+          },
+          {
+            "type": "paragraph",
+            "content": "- Levam o meu Senhor ao pátio do pretório, e ali convocam toda a coorte <i>(Mc 15, 16)</i>. – A soldadesca brutal desnudou a sua carne puríssima. – Com um farrapo de púrpura, velho e sujo, cobrem Jesus. – Por cetro, uma cana na mão direita..."
+          },
+          {
+            "type": "paragraph",
+            "content": "A coroa de espinhos, cravada a marteladas, faz dEle um Rei de comédia... <i>Ave Rex iudæorum!</i> – Salve, Rei dos judeus <i>(Mc 15, 18)</i>. E, à força de pancadas, ferem-Lhe a cabeça. E esbofeteiam-nO... e cospem nEle."
+          },
+          {
+            "type": "paragraph",
+            "content": "Coroado de espinhos e vestido com andrajos de púrpura, Jesus é mostrado ao povo judeu: <i>Ecce homo!</i> Aí tendes o homem. E de novo os pontífices e seus ministros rompem aos gritos, clamando: – Crucifica-O!, crucifica-O! <i>(Jo 19, 5-6)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "- Tu e eu não teremos voltado a coroá-Lo de espinhos, a esbofeteá-Lo e a cuspir-Lhe?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Nunca mais, Jesus, nunca mais... E um propósito firme e concreto põe fim a estas dez Ave-Marias."
+          },
+          {
+            "id": 24888,
+            "type": "header-3",
+            "content": "4. A Cruz às Costas"
+          },
+          {
+            "type": "paragraph",
+            "content": "Com a sua Cruz às costas, caminha para o Calvário, lugar que em hebraico é chamado Gólgota <i>(Jo 19, 17)</i>. E lançam mão de um tal Simão, natural de Cirene, que volta de uma granja, e o carregam com a Cruz, para que a leve atrás de Jesus <i>(Lc 23, 26)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Cumpriu-se o que Isaías tinha dito <i>(53, 12)</i>: <i>cum sceleratis reputatus est</i>, foi contado entre os malfeitores – porque levaram, para fazer morrer com Ele, outros dois homens, que eram ladrões <i>(Lc 23, 32)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Se alguém quiser vir após Mim... Menino amigo: estamos tristes, vivendo a Paixão de Jesus, Nosso Senhor. – Olha com que amor se abraça à Cruz. – Aprende com Ele. – Jesus leva a Cruz por ti; tu... leva-a por Jesus."
+          },
+          {
+            "type": "paragraph",
+            "content": "Mas não leves a Cruz de rastos... Leva-a erguida a prumo, porque a tua Cruz, levada assim, não será uma Cruz qualquer: será... a Santa Cruz. Não te resignes com a Cruz. Resignação é palavra pouco generosa. Quer a Cruz. Quando de verdade a quiseres, a tua Cruz será... uma Cruz sem Cruz."
+          },
+          {
+            "type": "paragraph",
+            "content": "E, com toda a certeza, tal como Ele, encontrarás Maria no caminho."
+          },
+          {
+            "id": 25888,
+            "type": "header-3",
+            "content": "5. Morte de Jesus"
+          },
+          {
+            "type": "paragraph",
+            "content": "Jesus Nazareno, Rei dos judeus, já tem preparado o trono triunfador. Tu e eu não O vemos contorcer-se, ao ser pregado; sofrendo tudo quanto se pode sofrer, estende os braços com gesto de Sacerdote Eterno."
+          },
+          {
+            "type": "paragraph",
+            "content": "Os soldados tomam as santas vestes e fazem quatro partes. – Para não dividirem a túnica, sorteiam-na para ver a quem tocará. – E assim, uma vez mais, se cumpre a Escritura que diz: Repartiram entre si as minhas vestes e sobre elas lançaram sortes <i>(Jo 19, 23-24)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Já está no alto... – E, junto de seu Filho, ao pé da Cruz, Santa Maria... e Maria, mulher de Cléofas, e Maria Madalena. E João, o discípulo que Ele amava. <i>Ecce mater tua!</i> – Aí tens a tua Mãe! Dá-nos a sua Mãe por Mãe nossa."
+          },
+          {
+            "type": "paragraph",
+            "content": "Tinham-Lhe oferecido antes vinho misturado com fel, mas, tendo-o provado, não o bebeu <i>(Mt 27, 34)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Agora tem sede... de amor, de almas."
+          },
+          {
+            "type": "paragraph",
+            "content": "<i>Consummatum est.</i> Tudo está consumado <i>(Jo 19, 30)</i>."
+          },
+          {
+            "type": "paragraph",
+            "content": "Menino bobo, olha: tudo isto..., tudo, sofreu por ti... e por mim. – Não choras?"
+          },
+          {
+            "id": 26888,
+            "type": "header-2",
+            "content": "Mistérios Gloriosos"
+          },
+          {
+            "id": 27888,
+            "type": "header-3",
+            "content": "1. "
+          },
+          {
+            "type": "paragraph",
+            "content": ""
+          },
+          {
+            "id": 28888,
+            "type": "header-3",
+            "content": "2. "
+          },
+          {
+            "type": "paragraph",
+            "content": ""
+          },
+          {
+            "id": 29888,
+            "type": "header-3",
+            "content": "3. "
+          },
+          {
+            "type": "paragraph",
+            "content": ""
+          },
+          {
+            "id": 30888,
+            "type": "header-3",
+            "content": "4. "
+          },
+          {
+            "type": "paragraph",
+            "content": ""
+          },
+          {
+            "id": 31888,
+            "type": "header-3",
+            "content": "5. "
+          },
+          {
+            "type": "paragraph",
+            "content": ""
+          },
+          {
+            "id": 32888,
+            "type": "header-2",
+            "content": "Conclusão"
+          },
+          {
+            "type": "paragraph",
+            "content": "Meu amigo: eu te descobri uma ponta do meu segredo. Cabe a ti, com a ajuda de Deus, descobrir o resto. Anima-te. Sê fiel."
+          },
+          {
+            "type": "paragraph",
+            "content": "Faz-te pequeno. O Senhor esconde-se dos soberbos e manifesta os tesouros da sua graça aos humildes."
+          },
+          {
+            "type": "paragraph",
+            "content": "Não tenhas receio se, ao meditares por tua conta, te escapam afetos e palavras audazes e pueris. Jesus quer isso mesmo. Maria te anima. Se rezares assim o Rosário, aprenderás a fazer boa oração."
+          }
+        ]
+      }
+    ],
+    "section-map": [
+      {"id": 1, "title": "1-frutos"},
+      {"id": 2, "title": "2-textos-para-meditacao"},
+      {"id": 3, "title": "2-1-breves"},
+      {"id": 4, "title": "2-2-longos"},
+      {"id": 5, "title": "2-3-de-sao-josemaria-escriva"},
+      {"id": 6888, "title": "2-3-1-prologo-e-notas-introdutorias"},
+      {"id": 7888, "title": "2-3-2-misterios-gozosos"},
+      {"id": 8888, "title": "2-3-2-1-a-anunciacao"},
+      {"id": 9888, "title": "2-3-2-2-visitacao-de-nossa-senhora"},
+      {"id": 10888, "title": "2-3-2-3-nascimento-de-jesus"},
+      {"id": 11888, "title": "2-3-2-4-purificacao-de-nossa-senhora"},
+      {"id": 12888, "title": "2-3-2-5-o-menino-perdido"},
+      {"id": 13888, "title": "2-3-3-misterios-luminosos"},
+      {"id": 14888, "title": "2-3-3-1-nota-introdutoria"},
+      {"id": 15888, "title": "2-3-3-2-batismo-do-senhor"},
+      {"id": 16888, "title": "2-3-3-3-as-bodas-de-cana"},
+      {"id": 17888, "title": "2-3-3-4-o-anuncio-do-reino"},
+      {"id": 18888, "title": "2-3-3-5-a-transfiguracao"},
+      {"id": 19888, "title": "2-3-3-6-a-instituicao-da-eucaristia"},
+      {"id": 20888, "title": "2-3-4-misterios-dolorosos"},
+      {"id": 21888, "title": "2-3-4-1-oracao-no-horto"},
+      {"id": 22888, "title": "2-3-4-2-flagelacao-do-Senhor"},
+      {"id": 23888, "title": "2-3-4-3-coroacao-de-espinhos"},
+      {"id": 24888, "title": "2-3-4-4-a-cruz-as-costas"},
+      {"id": 25888, "title": "2-3-4-5-morte-de-jesus"},
+      {"id": 26888, "title": "2-3-5-misterios-gloriosos"},
+      {"id": 27888, "title": "2-3-5-1-"},
+      {"id": 28888, "title": "2-3-5-2-"},
+      {"id": 29888, "title": "2-3-5-3-"},
+      {"id": 30888, "title": "2-3-5-4-"},
+      {"id": 31888, "title": "2-3-5-5-"},
+      {"id": 32888, "title": "2-3-6-conclusao"}
+    ],
+    "link-map": [
+      {"id": 1, "url": "https://opusdei.org/pt-br/article/santo-rosario/", "alt": "opusdei.org"},
+      {"id": 2, "url": "https://escriva.org/pt-br/santo-rosario/", "alt": "escriva.org"}
+    ],
+    "footnotes": [
+      {"id": 1, "content": "Texto baseado no <i>Missal Romano Quotidiano</i>, por Dom Gaspar Lefebvre e os monges Beneditinos de Santo André, página 1617."},
+      {"id": 2, "content": "Retirado da <i>Seleta de Orações</i>, Cultor de Livros, 1ª edição, 2019."},
+      {"id": 3, "content": "Retirado de algum lugar."},
+      {"id": 4, "content": "Retirado do <link id=1>site da Opus Dei</link> e do <link id=2>site de São Josemaría Escrivá</link>."}
     ]
   }
 }
