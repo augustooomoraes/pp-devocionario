@@ -1,5 +1,5 @@
 import { DownloadLink } from "@/lib/types/devocionarios"
-import { BookOpenText, Download, SquareArrowUpRight, TabletSmartphone } from "lucide-react"
+import { BookOpenText, Download, FileText, SquareArrowUpRight, TabletSmartphone } from "lucide-react"
 
 export default function DownloadLinksList({ downloadLinks } : { downloadLinks: DownloadLink[] }) {
   return (
@@ -27,17 +27,24 @@ export function LinksRow(
         flex flex-row justify-between items-center p-2 pl-4 h-full
       `
     }>
-      <div className={`flex flex-row items-center ${component === "SearchResultsList" ? "gap-2" : "gap-3"}`}>
+      <div className={`flex flex-row items-center pr-2 text-left ${component === "SearchResultsList" ? "gap-2" : "gap-3"}`}>
         {
           downloadLink.type === "pdf-booklet"
             ? <>
               <BookOpenText className={`${component === "SearchResultsList" && "w-4"}`} />
-              <span className={component === "SearchResultsList" ? "text-sm" : ""}>PDF: livreto</span>
+              <span className={component === "SearchResultsList" ? "text-sm" : ""}>{
+                downloadLink.title ? downloadLink.title : "PDF: livreto"
+              }</span>
             </>
-            : <>
-              <TabletSmartphone className={`${component === "SearchResultsList" && "w-4"}`} />
-              <span className={component === "SearchResultsList" ? "text-sm" : ""}>PDF: digital</span>
-            </>
+            : downloadLink.type === "pdf-digital"
+              ? <>
+                <TabletSmartphone className={`${component === "SearchResultsList" && "w-4"}`} />
+                <span className={component === "SearchResultsList" ? "text-sm" : ""}>{downloadLink.title ? downloadLink.title : "PDF: digital"}</span>
+              </>
+              : <>
+                <FileText className={`${component === "SearchResultsList" && "w-4"}`} />
+                <span className={component === "SearchResultsList" ? "text-sm" : ""}>{downloadLink.title ? downloadLink.title : "PDF: folhas"}</span>
+              </>
         }
       </div>
 

@@ -109,11 +109,13 @@ export type DownloadLink = {
   url: string,
   "direct-link": string,
   type: DownloadLinkTypes,
+  title?: string,
 }
 
 export type DownloadLinkTypes =
   "pdf-booklet" |
-  "pdf-digital"
+  "pdf-digital" |
+  "pdf-regular"
 
 // =x=x=x=x=x=x=x=x=
 
