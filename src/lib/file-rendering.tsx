@@ -50,13 +50,11 @@ export function DevocionarioFile({
     const parsedKey = key !== undefined ? key : "main-index";
     const length = index.length;
 
-    console.log(`➡️🧪 renderIndex: <ol /> key=${parsedKey}`) // TODO: remove testlog (DUPLICATE KEYS)
     return (
       <ol key={parsedKey} className="list-none space-y-1">
 
         {index.map((item, index) => {
           const parsedIndex = `${parsedKey}-li-${index}`
-          console.log(`➡️🧪 renderIndex → map: <li /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
           return <li
             key={parsedIndex}
             className="grid grid-cols-[28px_1fr]"
@@ -87,26 +85,7 @@ export function DevocionarioFile({
           </li>
         })}
 
-        {footnotes && (() => {
-          console.log(`➡️🧪 renderIndex → map: <li /> key=main-index-footnotes`); // TODO: remove testlog (DUPLICATE KEYS)
-          return (
-            <li key="main-index-footnotes" className="grid grid-cols-[28px_1fr]">
-              <span className="pl-1.5">{length + 1}</span>
-              <span
-                className="
-                  hover:bg-accent active:bg-black/10 transition-colors
-                  px-1.5 rounded-md
-                  cursor-pointer
-                "
-                onClick={handleClick("#notas")}
-              >
-                Notas
-              </span>
-            </li>
-          )
-        })()}
-
-        {/* {footnotes && <li key="index-footnotes" className="grid grid-cols-[28px_1fr]">
+        {footnotes && <li key="index-footnotes" className="grid grid-cols-[28px_1fr]">
             <span className="pl-1.5">{length + 1}</span>
             <span
               className="
@@ -118,28 +97,9 @@ export function DevocionarioFile({
             >
               Notas
             </span>
-        </li>} */}
+        </li>}
 
-        {downloadLinks && (() => {
-          console.log(`➡️🧪 renderIndex → map: <li /> key=main-index-download-links`); // TODO: remove testlog (DUPLICATE KEYS)
-          return (
-            <li key="main-index-download-links" className="grid grid-cols-[28px_1fr]">
-              <span className="pl-1.5">{footnotes ? length + 2 : length + 1}</span>
-              <span
-                className="
-                  hover:bg-accent active:bg-black/10 transition-colors
-                  px-1.5 rounded-md
-                  cursor-pointer
-                "
-                onClick={handleClick("#download")}
-              >
-                Links para download
-              </span>
-            </li>
-          )
-        })()}
-
-        {/* {downloadLinks && <li key="index-download-links" className="grid grid-cols-[28px_1fr]">
+        {downloadLinks && <li key="index-download-links" className="grid grid-cols-[28px_1fr]">
             <span className="pl-1.5">{footnotes ? length + 2 : length + 1}</span>
             <span
               className="
@@ -151,7 +111,7 @@ export function DevocionarioFile({
             >
               Links para download
             </span>
-        </li>} */}
+        </li>}
 
       </ol>
     )
@@ -168,7 +128,6 @@ export function DevocionarioFile({
 
         {sections.map((section, index) => {
           const parsedIndex = `section-${index}`
-          console.log(`➡️🧪 renderSections → map: <div /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
           return <div
             key={parsedIndex}
             id={sectionMap.filter(sectionIndex => sectionIndex.id === section.id)[0].title || "not-found"}
@@ -234,7 +193,6 @@ export function DevocionarioFile({
 
             switch(content.type) {
               case "header-1":
-                console.log(`➡️🧪 renderSectionContents → map: header-1 <div /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
                 return <div key={parsedIndex} className="flex items-center gap-2.5 mt-3">
                   <h3
                     className={clsx(
@@ -282,7 +240,6 @@ export function DevocionarioFile({
                 </div>
 
               case "header-2":
-                console.log(`➡️🧪 renderSectionContents → map: header-2 <h4 /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
                 return <h4
                   key={parsedIndex}
                   className={clsx(
@@ -311,7 +268,6 @@ export function DevocionarioFile({
                 </h4>
 
               case "header-3":
-                console.log(`➡️🧪 renderSectionContents → map: header-3 <h5 /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
                 return <h5
                   key={parsedIndex}
                   className={clsx(
@@ -340,7 +296,6 @@ export function DevocionarioFile({
                 </h5>
 
               case "paragraph":
-                console.log(`➡️🧪 renderSectionContents → map: paragraph <p /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
                 return <p
                   key={parsedIndex}
                   className={clsx(
@@ -359,7 +314,6 @@ export function DevocionarioFile({
                 </p>
 
               case "indication":
-                console.log(`➡️🧪 renderSectionContents → map: indication <div /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
                 return <div
                   key={parsedIndex}
                   className={clsx(
@@ -384,7 +338,6 @@ export function DevocionarioFile({
                 return renderIndex(content.contents as Index, sectionMap, `${parsedIndex}`)
 
               case "parallel-preces":
-                console.log(`➡️🧪 renderSectionContents → map: parallel-preces <div /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
                 return <div
                   key={parsedIndex}
                   className={clsx(content["subsection-break"] && "mb-5",)}
@@ -416,7 +369,6 @@ export function DevocionarioFile({
         let parsedIndex = `${index}-pp-${subindex}`
         switch(content.type) {
           case "v": // TODO: don't render "℣." when the element from before is also type="v"
-            console.log(`➡️🧪 renderParallelPreces → map: v <div /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
             return <div
               key={`${parsedIndex}`}
               className={clsx(
@@ -460,7 +412,6 @@ export function DevocionarioFile({
             </div>
 
           case "r":
-            console.log(`➡️🧪 renderParallelPreces → map: r <div /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
             return <div
               key={`${parsedIndex}`}
               className={clsx(
@@ -505,7 +456,6 @@ export function DevocionarioFile({
 
           // TODO: make this component collapsible
           case "gregorian-png":
-            console.log(`➡️🧪 renderParallelPreces → map: gregorian-png <div /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
             return (<div key={`${parsedIndex}`} className="w-full flex flex-col items-center mb-4">
 
               <div className="w-full max-w-[400px] hidden min-[280px]:!block min-[400px]:!hidden">
@@ -587,8 +537,7 @@ export function DevocionarioFile({
             </div>);
 
           default:
-            console.log(`➡️🧪 renderParallelPreces → map: default <div /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
-            return (<div
+            return <div
               key={`${parsedIndex}`}
               className={clsx(
                 content["end-break"] && "mb-1.5",
@@ -666,7 +615,7 @@ export function DevocionarioFile({
                   )}
                 </span>
               </div>
-            </div>)
+            </div>
         }
       })
     )
@@ -700,40 +649,37 @@ export function DevocionarioFile({
         <ul className="list-none space-y-1">
           {contents.map((content, index) => {
             const parsedIndex = `footnote-${index}`
-            console.log(`➡️🧪 renderFootnotes → map: <li /> key=${parsedIndex}`) // TODO: remove testlog (DUPLICATE KEYS)
-            return (
-              <li
-                key={parsedIndex}
-                id={`rodape-conteudo-${content.id}`}
-                className="grid grid-cols-[34px_1fr]"
-              >
-                <span>
-                  <span
-                    className={`
-                      hover:bg-accent active:bg-black/10 transition-colors
-                      w-full px-1.5 rounded-md
-                      cursor-pointer
-                      ${selectedFootnotes[content.id - 1] && "!bg-black/15 dark:!bg-white/20"}
-                      transition-colors
-                    `}
-                    onClick={handleClick( "#rodape-origem-" + (content.id || "not-found") )}
-                  >
-                    {content.id}.
-                  </span>
+            return <li
+              key={parsedIndex}
+              id={`rodape-conteudo-${content.id}`}
+              className="grid grid-cols-[34px_1fr]"
+            >
+              <span>
+                <span
+                  className={`
+                    hover:bg-accent active:bg-black/10 transition-colors
+                    w-full px-1.5 rounded-md
+                    cursor-pointer
+                    ${selectedFootnotes[content.id - 1] && "!bg-black/15 dark:!bg-white/20"}
+                    transition-colors
+                  `}
+                  onClick={handleClick( "#rodape-origem-" + (content.id || "not-found") )}
+                >
+                  {content.id}.
                 </span>
-                <span>
-                  {
-                    replaceAllStyleTags(
-                      content.content,
-                      contents,
-                      linkMap,
-                      setStateFunction,
-                      parsedIndex,
-                    )
-                  }
-                </span>
-              </li>
-            )
+              </span>
+              <span>
+                {
+                  replaceAllStyleTags(
+                    content.content,
+                    contents,
+                    linkMap,
+                    setStateFunction,
+                    parsedIndex,
+                  )
+                }
+              </span>
+            </li>
           })}
         </ul>
       </div>

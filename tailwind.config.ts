@@ -99,7 +99,7 @@ const config = {
   		},
   		fontFamily: {
   			fontManrope: ["var(--font-manrope)"],
-				fontEbGaramond: ["var(--font-eb-garamond)"], // TODO: replace this for a better serif font for web, and that matches Manrope's textbox's width
+				fontEbGaramond: ["var(--font-eb-garamond)"], // TODO: replace this with a serif font that's better for web, and that matches Manrope's textbox's width.
   		}
   	}
   },

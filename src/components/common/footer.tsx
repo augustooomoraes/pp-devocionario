@@ -75,7 +75,6 @@ export default function AppFooter() {
                 <Linkedin />
               </a>
 
-              {/* TODO: link this repo's page (when it's public... if that's gonna happen) */}
               <a
                 target="_blank"
                 href="https://github.com/augustooomoraes/pp-devocionario"
