@@ -2,12 +2,16 @@
 // TODO: check if this would ruin pre-fetching/pre-rendering, considering that data.json would be fetched from mongodb or whatever
 
 import clsx from "clsx"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useRouter } from "next/navigation";
 import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes, BadgeData, DownloadLink, ParallelPrecesContent, GregorianPngContent } from "./types/devocionarios";
 import { replaceAllStyleTags, replaceBreakAndAsteriskAndFootnoteTags } from "./tags-replacing";
 import DownloadLinksList from "@/components/common/downloadLinksList";
 import Image from "next/image";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/shadcnui/components/ui/collapsible";
+import { Button } from "@/shadcnui/components/ui/button";
+import { Music3 } from "lucide-react";
+import { getExpandedSheetMap, updateExpandedSheetMap } from "./gregorian-sheets-state";
 
 export function DevocionarioFile({
   file,
@@ -118,6 +122,7 @@ export function DevocionarioFile({
   }
 
   function renderSections(
+    fileId: string,
     sections: Sections,
     sectionMap: SectionMap,
     linkMap: LinkMap,
@@ -149,6 +154,7 @@ export function DevocionarioFile({
               )}
             </h2>
             {renderSectionContents(
+              fileId,
               section.type,
               section.contents,
               sectionMap,
@@ -164,6 +170,7 @@ export function DevocionarioFile({
   }
 
   function renderSectionContents(
+    fileId: string,
     sectionType: SectionTypes,
     contents: SectionContents,
     sectionMap: SectionMap,
@@ -342,7 +349,13 @@ export function DevocionarioFile({
                   key={parsedIndex}
                   className={clsx(content["subsection-break"] && "mb-5",)}
                 >{
-                  renderParallelPreces(content.contents as unknown as ParallelPreces, parsedIndex, sectionMap, linkMap)
+                  renderParallelPreces(
+                    fileId,
+                    content.contents as unknown as ParallelPreces,
+                    parsedIndex,
+                    sectionMap,
+                    linkMap,
+                  )
                 }</div>
 
               default:
@@ -351,7 +364,13 @@ export function DevocionarioFile({
           })
         )
       case "parallel-preces":
-        return renderParallelPreces(contents as unknown as ParallelPreces, key, sectionMap, linkMap)
+        return renderParallelPreces(
+          fileId,
+          contents as unknown as ParallelPreces,
+          key,
+          sectionMap,
+          linkMap,
+        )
 
       default:
         return
@@ -359,6 +378,7 @@ export function DevocionarioFile({
   }
 
   function renderParallelPreces(
+    fileId: string,
     contents: ParallelPreces,
     index: string,
     sectionMap: SectionMap,
@@ -454,87 +474,116 @@ export function DevocionarioFile({
               </div>
             </div>
 
-          // TODO: make this component collapsible
           case "gregorian-png":
-            return (<div key={`${parsedIndex}`} className="w-full flex flex-col items-center mb-4">
+            const [isOpen, setIsOpen] = useState(true)
+            const mapKey = `${fileId}-${parsedIndex}`
 
-              <div className="w-full max-w-[400px] hidden min-[280px]:!block min-[400px]:!hidden">
-                <Image
-                  src={`/gregorian-chant/${(content.content as GregorianPngContent).light[400]}.png`}
-                  alt={(content.content as GregorianPngContent).alt}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-auto dark:hidden"
-                />
-                <Image
-                  src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[400]}.png`}
-                  alt={(content.content as GregorianPngContent).alt}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-auto hidden dark:block"
-                />
-              </div>
+            useEffect(() => {
+              const map = getExpandedSheetMap()
+              setIsOpen(map[mapKey] ?? false)
+            }, [])
 
-              <div className="w-full max-w-[450px] hidden min-[400px]:!block min-[450px]:!hidden">
-                <Image
-                  src={`/gregorian-chant/${(content.content as GregorianPngContent).light[450]}.png`}
-                  alt={(content.content as GregorianPngContent).alt}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-auto dark:hidden"
-                />
-                <Image
-                  src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[450]}.png`}
-                  alt={(content.content as GregorianPngContent).alt}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-auto hidden dark:block"
-                />
-              </div>
+            const handleToggle = () => {
+              const newState = !isOpen
+              setIsOpen(newState)
+              updateExpandedSheetMap(mapKey, newState)
+            }
 
-              <div className="w-full max-w-[500px] hidden min-[450px]:!block min-[500px]:!hidden">
-                <Image
-                  src={`/gregorian-chant/${(content.content as GregorianPngContent).light[500]}.png`}
-                  alt={(content.content as GregorianPngContent).alt}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-auto dark:hidden"
-                />
-                <Image
-                  src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[500]}.png`}
-                  alt={(content.content as GregorianPngContent).alt}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-auto hidden dark:block"
-                />
-              </div>
+            return <Collapsible
+              key={`${parsedIndex}`}
+              open={isOpen}
+              onOpenChange={handleToggle}
+              className="w-full flex flex-col items-center mb-4"
+            >
+              <CollapsibleTrigger asChild>
+                <Button
+                  variant="ghost"
+                  className="w-full mb-2 flex items-center justify-start gap-2"
+                >
+                  <Music3 className="h-4 w-4" />
+                  {isOpen ? "Ocultar pautas de canto gregoriano" : "Mostrar pautas de canto gregoriano"}
+                </Button>
+              </CollapsibleTrigger>
 
-              <div className="w-full max-w-[578px] hidden min-[500px]:!block">
-                <Image
-                  src={`/gregorian-chant/${(content.content as GregorianPngContent).light[578]}.png`}
-                  alt={(content.content as GregorianPngContent).alt}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-auto dark:hidden"
-                />
-                <Image
-                  src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[578]}.png`}
-                  alt={(content.content as GregorianPngContent).alt}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-auto hidden dark:block"
-                />
-              </div>
+              <CollapsibleContent className="w-full flex flex-col items-center data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
+                <div className="w-full max-w-[400px] hidden min-[280px]:!block min-[400px]:!hidden">
+                  <Image
+                    src={`/gregorian-chant/${(content.content as GregorianPngContent).light[400]}.png`}
+                    alt={(content.content as GregorianPngContent).alt}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="w-full h-auto dark:hidden"
+                  />
+                  <Image
+                    src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[400]}.png`}
+                    alt={(content.content as GregorianPngContent).alt}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="w-full h-auto hidden dark:block"
+                  />
+                </div>
 
-            </div>);
+                <div className="w-full max-w-[450px] hidden min-[400px]:!block min-[450px]:!hidden">
+                  <Image
+                    src={`/gregorian-chant/${(content.content as GregorianPngContent).light[450]}.png`}
+                    alt={(content.content as GregorianPngContent).alt}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="w-full h-auto dark:hidden"
+                  />
+                  <Image
+                    src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[450]}.png`}
+                    alt={(content.content as GregorianPngContent).alt}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="w-full h-auto hidden dark:block"
+                  />
+                </div>
+
+                <div className="w-full max-w-[500px] hidden min-[450px]:!block min-[500px]:!hidden">
+                  <Image
+                    src={`/gregorian-chant/${(content.content as GregorianPngContent).light[500]}.png`}
+                    alt={(content.content as GregorianPngContent).alt}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="w-full h-auto dark:hidden"
+                  />
+                  <Image
+                    src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[500]}.png`}
+                    alt={(content.content as GregorianPngContent).alt}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="w-full h-auto hidden dark:block"
+                  />
+                </div>
+
+                <div className="w-full max-w-[578px] hidden min-[500px]:!block">
+                  <Image
+                    src={`/gregorian-chant/${(content.content as GregorianPngContent).light[578]}.png`}
+                    alt={(content.content as GregorianPngContent).alt}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="w-full h-auto dark:hidden"
+                  />
+                  <Image
+                    src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[578]}.png`}
+                    alt={(content.content as GregorianPngContent).alt}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="w-full h-auto hidden dark:block"
+                  />
+                </div>
+              </CollapsibleContent>
+
+            </Collapsible>
 
           default:
             return <div
@@ -715,6 +764,7 @@ export function DevocionarioFile({
         file["download-links"] && true,
       )}
       {renderSections(
+        file.id,
         file.sections,
         file["section-map"],
         file["link-map"],

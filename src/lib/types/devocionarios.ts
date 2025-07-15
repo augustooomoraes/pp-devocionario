@@ -1,5 +1,6 @@
 
 export type DevocionarioFile = {
+  id: string,
   title: string,
   index: Index,
   sections: Sections,
