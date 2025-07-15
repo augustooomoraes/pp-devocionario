@@ -1,4 +1,4 @@
-import { replaceAllStyleTags, replaceLinkTags } from "@/lib/tags-replacing";
+import { replaceAllStyleTags } from "@/lib/tags-replacing";
 import { Footnotes, LinkMap } from "@/lib/types/devocionarios";
 import React, { useRef, useState, useEffect } from "react";
 
@@ -94,7 +94,7 @@ const Tooltip: React.FC<TooltipProps> = ({
       onMouseLeave={() => setVisible(false)}
     >
       <span>
-        {replaceAllStyleTags(text, footnotes, links, setStateFunction)}
+        {replaceAllStyleTags(text, footnotes, links, setStateFunction, "tooltip")}
       </span>
     </div>
   );

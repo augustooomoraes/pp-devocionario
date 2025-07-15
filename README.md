@@ -59,5 +59,4 @@ Para já registrar a ideia:
       - `content`:
         - String.
         - No caso do `"type": "index"`, array.
-        - Também pode ser objeto com as keys `print-only` e `screen-only`.
   - `footnotes`: Array de objetos com `id`, que deve corresponder ao contido nos `<footnotes>`, e `content`, com o texto.

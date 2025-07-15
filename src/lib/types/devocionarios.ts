@@ -26,7 +26,7 @@ export type SectionContents = {
   id?: number,
   "link-id"?: number,
   type: SectionContentTypes | ParallelPrecesTypes,
-  content?: string | MediaRelativeContent,
+  content?: string,
   contents?: Index | ParallelPreces,
   "end-break": true,
   "subsection-break"?: boolean, // Isso aqui não está no README.
@@ -39,7 +39,7 @@ export type ParallelPreces = {
   id?: number,
   "link-id"?: number,
   type: ParallelPrecesTypes,
-  content: ParallelPrecesContent,
+  content: ParallelPrecesContent | GregorianPngContent,
   "end-break"?: boolean,
   "larger-break"?: boolean,
   "subsection-break"?: boolean, // Isso aqui não está no README.
@@ -51,9 +51,20 @@ export type ParallelPrecesContent = {
   "pt-BR": string,
 }
 
-export type MediaRelativeContent = {
-  "print-only": string,
-  "screen-only": string,
+export type GregorianPngContent = {
+  alt: string,
+  light: {
+    "400": string,
+    "450": string,
+    "500": string,
+    "578": string,
+  }
+  dark: {
+    "400": string,
+    "450": string,
+    "500": string,
+    "578": string,
+  }
 }
 
 export type HorizontalLineTypes = (
@@ -63,7 +74,6 @@ export type HorizontalLineTypes = (
 
 export type SectionTypes = (
   "regular-text" |
-  "gregorian-chant" |
   "parallel-preces"
 )
 
@@ -85,7 +95,8 @@ export type ParallelPrecesTypes = (
   "v" |
   "r" |
   "indication" | // Vide ~ l. 3066 (próximo de Gloria tibi sit, hæresum et dǽmonum intereptrix) e outras depois
-  "annotation"
+  "annotation" |
+  "gregorian-png"
 )
 
 export type Footnotes = {
@@ -116,8 +127,6 @@ export type DownloadLinkTypes =
   "pdf-booklet" |
   "pdf-digital" |
   "pdf-regular"
-
-// =x=x=x=x=x=x=x=x=
 
 export type BadgeData = {
   badge: number,

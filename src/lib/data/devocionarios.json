@@ -239,6 +239,24 @@
         "type": "parallel-preces",
         "contents": [
           {
+            "type": "gregorian-png",
+            "content": {
+              "alt": "Veni Creator Spiritus (pautas de canto gregoriano)",
+              "light": {
+                "400": "veni-creator-spiritus-light-400-1620",
+                "450": "veni-creator-spiritus-light-450-1417",
+                "500": "veni-creator-spiritus-light-500-1314",
+                "578": "veni-creator-spiritus-light-578-1112"
+              },
+              "dark": {
+                "400": "veni-creator-spiritus-dark-400-1620",
+                "450": "veni-creator-spiritus-dark-450-1417",
+                "500": "veni-creator-spiritus-dark-500-1314",
+                "578": "veni-creator-spiritus-dark-578-1112"
+              }
+            }
+          },
+          {
             "type": "header-2",
             "content": {
               "latin": "Veni, Creator Spíritus",
