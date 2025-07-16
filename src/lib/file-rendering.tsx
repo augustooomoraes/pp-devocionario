@@ -480,7 +480,9 @@ export function DevocionarioFile({
 
             useEffect(() => {
               const map = getExpandedSheetMap()
-              setIsOpen(map[mapKey] ?? false)
+              if (mapKey in map) {
+                setIsOpen(map[mapKey])
+              }
             }, [])
 
             const handleToggle = () => {
@@ -505,82 +507,86 @@ export function DevocionarioFile({
                 </Button>
               </CollapsibleTrigger>
 
-              <CollapsibleContent className="w-full flex flex-col items-center data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
-                <div className="w-full max-w-[400px] hidden min-[280px]:!block min-[400px]:!hidden">
-                  <Image
-                    src={`/gregorian-chant/${(content.content as GregorianPngContent).light[400]}.png`}
-                    alt={(content.content as GregorianPngContent).alt}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto dark:hidden"
-                  />
-                  <Image
-                    src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[400]}.png`}
-                    alt={(content.content as GregorianPngContent).alt}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto hidden dark:block"
-                  />
-                </div>
+              <CollapsibleContent className="w-full flex flex-col items-center gap-4 data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
+                {(content.content as GregorianPngContent).map((sheet, index) => {
+                  return <div className="w-full flex flex-col items-center" key={`${parsedIndex}-${index}`}>
+                    <div className="w-full max-w-[400px] hidden min-[280px]:!block min-[400px]:!hidden">
+                      <Image
+                        src={`/gregorian-chant/${sheet.light[400]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto dark:hidden"
+                      />
+                      <Image
+                        src={`/gregorian-chant/${sheet.dark[400]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto hidden dark:block"
+                      />
+                    </div>
 
-                <div className="w-full max-w-[450px] hidden min-[400px]:!block min-[450px]:!hidden">
-                  <Image
-                    src={`/gregorian-chant/${(content.content as GregorianPngContent).light[450]}.png`}
-                    alt={(content.content as GregorianPngContent).alt}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto dark:hidden"
-                  />
-                  <Image
-                    src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[450]}.png`}
-                    alt={(content.content as GregorianPngContent).alt}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto hidden dark:block"
-                  />
-                </div>
+                    <div className="w-full max-w-[450px] hidden min-[400px]:!block min-[450px]:!hidden">
+                      <Image
+                        src={`/gregorian-chant/${sheet.light[450]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto dark:hidden"
+                      />
+                      <Image
+                        src={`/gregorian-chant/${sheet.dark[450]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto hidden dark:block"
+                      />
+                    </div>
 
-                <div className="w-full max-w-[500px] hidden min-[450px]:!block min-[500px]:!hidden">
-                  <Image
-                    src={`/gregorian-chant/${(content.content as GregorianPngContent).light[500]}.png`}
-                    alt={(content.content as GregorianPngContent).alt}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto dark:hidden"
-                  />
-                  <Image
-                    src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[500]}.png`}
-                    alt={(content.content as GregorianPngContent).alt}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto hidden dark:block"
-                  />
-                </div>
+                    <div className="w-full max-w-[500px] hidden min-[450px]:!block min-[500px]:!hidden">
+                      <Image
+                        src={`/gregorian-chant/${sheet.light[500]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto dark:hidden"
+                      />
+                      <Image
+                        src={`/gregorian-chant/${sheet.dark[500]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto hidden dark:block"
+                      />
+                    </div>
 
-                <div className="w-full max-w-[578px] hidden min-[500px]:!block">
-                  <Image
-                    src={`/gregorian-chant/${(content.content as GregorianPngContent).light[578]}.png`}
-                    alt={(content.content as GregorianPngContent).alt}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto dark:hidden"
-                  />
-                  <Image
-                    src={`/gregorian-chant/${(content.content as GregorianPngContent).dark[578]}.png`}
-                    alt={(content.content as GregorianPngContent).alt}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto hidden dark:block"
-                  />
-                </div>
+                    <div className="w-full max-w-[578px] hidden min-[500px]:!block">
+                      <Image
+                        src={`/gregorian-chant/${sheet.light[578]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto dark:hidden"
+                      />
+                      <Image
+                        src={`/gregorian-chant/${sheet.dark[578]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto hidden dark:block"
+                      />
+                    </div>
+                  </div>
+                })}
               </CollapsibleContent>
 
             </Collapsible>

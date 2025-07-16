@@ -241,21 +241,23 @@
         "contents": [
           {
             "type": "gregorian-png",
-            "content": {
-              "alt": "Veni Creator Spiritus (pautas de canto gregoriano)",
-              "light": {
-                "400": "veni-creator-spiritus-light-400-1620",
-                "450": "veni-creator-spiritus-light-450-1417",
-                "500": "veni-creator-spiritus-light-500-1314",
-                "578": "veni-creator-spiritus-light-578-1112"
-              },
-              "dark": {
-                "400": "veni-creator-spiritus-dark-400-1620",
-                "450": "veni-creator-spiritus-dark-450-1417",
-                "500": "veni-creator-spiritus-dark-500-1314",
-                "578": "veni-creator-spiritus-dark-578-1112"
+            "content": [
+              {
+                "alt": "Veni Creator Spiritus (pautas de canto gregoriano)",
+                "light": {
+                  "400": "veni-creator-spiritus-light-400-1620",
+                  "450": "veni-creator-spiritus-light-450-1417",
+                  "500": "veni-creator-spiritus-light-500-1314",
+                  "578": "veni-creator-spiritus-light-578-1112"
+                },
+                "dark": {
+                  "400": "veni-creator-spiritus-dark-400-1620",
+                  "450": "veni-creator-spiritus-dark-450-1417",
+                  "500": "veni-creator-spiritus-dark-500-1314",
+                  "578": "veni-creator-spiritus-dark-578-1112"
+                }
               }
-            }
+            ]
           },
           {
             "type": "header-2",
@@ -348,6 +350,26 @@
         "type": "parallel-preces",
         "contents": [
           {
+            "type": "gregorian-png",
+            "content": [
+              {
+                "alt": "Ave Maris Stella (pautas de canto gregoriano)",
+                "light": {
+                  "400": "ave-maris-stella-light-400-1330",
+                  "450": "ave-maris-stella-light-450-1225",
+                  "500": "ave-maris-stella-light-500-1113",
+                  "578": "ave-maris-stella-light-578-1006"
+                },
+                "dark": {
+                  "400": "ave-maris-stella-dark-400-1330",
+                  "450": "ave-maris-stella-dark-450-1225",
+                  "500": "ave-maris-stella-dark-500-1113",
+                  "578": "ave-maris-stella-dark-578-1006"
+                }
+              }
+            ]
+          },
+          {
             "type": "header-2",
             "content": {
               "latin": "Ave Maris Stella",
@@ -414,6 +436,26 @@
         ],
         "type": "parallel-preces",
         "contents": [
+          {
+            "type": "gregorian-png",
+            "content": [
+              {
+                "alt": "Magníficat (pautas de canto gregoriano)",
+                "light": {
+                  "400": "magnificat-2-monasticus-solemn-light-400-1760",
+                  "450": "magnificat-2-monasticus-solemn-light-450-1559",
+                  "500": "magnificat-2-monasticus-solemn-light-500-1368",
+                  "578": "magnificat-2-monasticus-solemn-light-578-1167"
+                },
+                "dark": {
+                  "400": "magnificat-2-monasticus-solemn-dark-400-1760",
+                  "450": "magnificat-2-monasticus-solemn-dark-450-1559",
+                  "500": "magnificat-2-monasticus-solemn-dark-500-1368",
+                  "578": "magnificat-2-monasticus-solemn-dark-578-1167"
+                }
+              }
+            ]
+          },
           {
             "type": "paragraph",
             "content": {
@@ -1788,6 +1830,41 @@
               "latin": "<i>Oremus:</i> Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia. Per Christum Dóminum Nostrum. Amen.",
               "pt-BR": "<i>Oremos:</i> Senhor Deus, nós Vos suplicamos que concedais aos vossos servos perpétua saúde de alma e de corpo; e que, pela gloriosa intercessão da bem-aventurada sempre Virgem Maria, sejamos livres da tristeza do século e gozemos da eterna alegria. Por Cristo, Senhor Nosso. Amém."
             }
+          },
+          {
+            "type": "gregorian-png",
+            "content": [
+              {
+                "alt": "Ora pro nobis etc. (pautas de canto gregoriano)",
+                "light": {
+                  "400": "ora-pro-nobis-light-400-188",
+                  "450": "ora-pro-nobis-light-450-188",
+                  "500": "ora-pro-nobis-light-500-188",
+                  "578": "ora-pro-nobis-light-578-188"
+                },
+                "dark": {
+                  "400": "ora-pro-nobis-dark-400-188",
+                  "450": "ora-pro-nobis-dark-450-188",
+                  "500": "ora-pro-nobis-dark-500-188",
+                  "578": "ora-pro-nobis-dark-578-188"
+                }
+              },
+              {
+                "alt": "Oremus etc. (pautas de canto gregoriano)",
+                "light": {
+                  "400": "oremus-light-400-581",
+                  "450": "oremus-light-450-577",
+                  "500": "oremus-light-500-483",
+                  "578": "oremus-light-578-387"
+                },
+                "dark": {
+                  "400": "oremus-dark-400-581",
+                  "450": "oremus-dark-450-577",
+                  "500": "oremus-dark-500-483",
+                  "578": "oremus-dark-578-387"
+                }
+              }
+            ]
           }
         ]
       },
@@ -3304,6 +3381,26 @@
             "subsection-break": true,
             "type": "parallel-preces",
             "contents": [
+              {
+                "type": "gregorian-png",
+                "content": [
+                  {
+                    "alt": "Sub tuum præsídium (pautas de canto gregoriano)",
+                    "light": {
+                      "400": "sub-tuum-præsidium-light-400-508",
+                      "450": "sub-tuum-præsidium-light-450-415",
+                      "500": "sub-tuum-præsidium-light-500-410",
+                      "578": "sub-tuum-præsidium-light-578-311"
+                    },
+                    "dark": {
+                      "400": "sub-tuum-præsidium-dark-400-508",
+                      "450": "sub-tuum-præsidium-dark-450-415",
+                      "500": "sub-tuum-præsidium-dark-500-410",
+                      "578": "sub-tuum-præsidium-dark-578-311"
+                    }
+                  }
+                ]
+              },
               {
                 "type": "header-2",
                 "content": {

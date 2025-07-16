@@ -66,7 +66,7 @@ export type GregorianPngContent = {
     "500": string,
     "578": string,
   }
-}
+}[]
 
 export type HorizontalLineTypes = (
   "full" |
