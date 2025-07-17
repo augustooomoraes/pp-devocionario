@@ -3041,7 +3041,7 @@
       {"id": 8, "url": "#2-9-oracao-a-sao-jose", "alt": "Oração a São José"},
       {"id": 9, "url": "#2-10-oracao-a-sao-miguel-arcanjo", "alt": "Oração a São Miguel Arcanjo"},
       {"id": 10, "url": "https://padrepauloricardo.org/blog/nao-esquecam-a-oracao-de-sao-miguel-arcanjo", "alt": "Não esqueçam a oração de São Miguel Arcanjo!, Bradley Eli, tradução pela equipe Christo Nihil Præponere, 15 de maio de 2017"},
-      {"id": 11, "url": "/santo-rosario/misterios", "alt": "Devocionário → Santo Rosário → Mistérios"},
+      {"id": 11, "url": "/santo-rosario-misterios", "alt": "Devocionário → Santo Rosário → Mistérios"},
       {"id": 12, "url": "https://blog.cancaonova.com/tododemaria/a-origem-do-rosario-de-nossa-senhora/", "alt": "blog.cancaonova.com"}
     ],
     "footnotes": [
@@ -3067,7 +3067,7 @@
       },
       {
         "id": 6,
-        "content": "Há outra tradução, talvez mais utilizada:<br><i>O mi Iesu, dimitte nobis débita nostra, líbera nos ab igne inferni, conduc in cælum omnes ánimas, præsertim illas quæ máxime índigent misericórdia tua.</i>"
+        "content": "Há outra tradução, talvez mais utilizada:<br><i>O mi Iesu, dimítte nobis débita nostra, líbera nos ab igne inférni, conduc in cælum omnes ánimas, præsértim illas quæ máxime índigent misericórdia tua.</i>"
       }
     ]
   },
@@ -4024,32 +4024,32 @@
             "type": "index",
             "contents": [
               {"id": 801, "title": "Mistérios Gozosos", "index": [
-                {"id": 802, "title": "1. A Anunciação"},
-                {"id": 803, "title": "2. Visitação de Nossa Senhora"},
-                {"id": 804, "title": "3. Nascimento de Jesus"},
-                {"id": 805, "title": "4. Purificação de Nossa Senhora"},
-                {"id": 806, "title": "5. O Menino Perdido"}
+                {"id": 802, "title": "A Anunciação"},
+                {"id": 803, "title": "Visitação de Nossa Senhora"},
+                {"id": 804, "title": "Nascimento de Jesus"},
+                {"id": 805, "title": "Purificação de Nossa Senhora"},
+                {"id": 806, "title": "O Menino Perdido"}
               ]},
               {"id": 807, "title": "Mistérios Luminosos", "index": [
-                {"id": 808, "title": "1. Batismo do Senhor"},
-                {"id": 809, "title": "2. As Bodas de Caná"},
-                {"id": 810, "title": "3. O Anúncio do Reino"},
-                {"id": 811, "title": "4. A Transfiguração"},
-                {"id": 812, "title": "5. A Instituição da Eucaristia"}
+                {"id": 808, "title": "Batismo do Senhor"},
+                {"id": 809, "title": "As Bodas de Caná"},
+                {"id": 810, "title": "O Anúncio do Reino"},
+                {"id": 811, "title": "A Transfiguração"},
+                {"id": 812, "title": "A Instituição da Eucaristia"}
               ]},
               {"id": 813, "title": "Mistérios Dolorosos", "index": [
-                {"id": 814, "title": "1. Oração no Horto"},
-                {"id": 815, "title": "2. Flagelação do Senhor"},
-                {"id": 816, "title": "3. Coroação de Espinhos"},
-                {"id": 817, "title": "4. A Cruz às Costas"},
-                {"id": 818, "title": "5. Morte de Jesus"}
+                {"id": 814, "title": "Oração no Horto"},
+                {"id": 815, "title": "Flagelação do Senhor"},
+                {"id": 816, "title": "Coroação de Espinhos"},
+                {"id": 817, "title": "A Cruz às Costas"},
+                {"id": 818, "title": "Morte de Jesus"}
               ]},
               {"id": 819, "title": "Mistérios Gloriosos", "index": [
-                {"id": 820, "title": "1. Ressurreição do Senhor"},
-                {"id": 821, "title": "2. A Ascensão do Senhor"},
-                {"id": 822, "title": "3. Pentecostes"},
-                {"id": 823, "title": "4. Assunção de Nossa Senhora"},
-                {"id": 824, "title": "5. Coroação de Nossa Senhora"}
+                {"id": 820, "title": "Ressurreição do Senhor"},
+                {"id": 821, "title": "A Ascensão do Senhor"},
+                {"id": 822, "title": "Pentecostes"},
+                {"id": 823, "title": "Assunção de Nossa Senhora"},
+                {"id": 824, "title": "Coroação de Nossa Senhora"}
               ]}
             ]
           },
@@ -4488,33 +4488,33 @@
             "contents": [
               {"id": 901, "title": "Prólogo e notas introdutórias"},
               {"id": 902, "title": "Mistérios Gozosos", "index": [
-                {"id": 903, "title": "1. A Anunciação"},
-                {"id": 904, "title": "2. Visitação de Nossa Senhora"},
-                {"id": 905, "title": "3. Nascimento de Jesus"},
-                {"id": 906, "title": "4. Purificação de Nossa Senhora"},
-                {"id": 907, "title": "5. O Menino Perdido"}
+                {"id": 903, "title": "A Anunciação"},
+                {"id": 904, "title": "Visitação de Nossa Senhora"},
+                {"id": 905, "title": "Nascimento de Jesus"},
+                {"id": 906, "title": "Purificação de Nossa Senhora"},
+                {"id": 907, "title": "O Menino Perdido"}
               ]},
               {"id": 908, "title": "Mistérios Luminosos", "index": [
-                {"id": 909, "title": "Nota introdutória"},
-                {"id": 910, "title": "1. Batismo do Senhor"},
-                {"id": 911, "title": "2. As Bodas de Caná"},
-                {"id": 912, "title": "3. O Anúncio do Reino"},
-                {"id": 913, "title": "4. A Transfiguração"},
-                {"id": 914, "title": "5. A Instituição da Eucaristia"}
+                {"id": 909, "title": "a introdutória"},
+                {"id": 910, "title": "Batismo do Senhor"},
+                {"id": 911, "title": "As Bodas de Caná"},
+                {"id": 912, "title": "O Anúncio do Reino"},
+                {"id": 913, "title": "A Transfiguração"},
+                {"id": 914, "title": "A Instituição da Eucaristia"}
               ]},
               {"id": 915, "title": "Mistérios Dolorosos", "index": [
-                {"id": 916, "title": "1. Oração no Horto"},
-                {"id": 917, "title": "2. Flagelação do Senhor"},
-                {"id": 918, "title": "3. Coroação de Espinhos"},
-                {"id": 919, "title": "4. A Cruz às Costas"},
-                {"id": 920, "title": "5. Morte de Jesus"}
+                {"id": 916, "title": "Oração no Horto"},
+                {"id": 917, "title": "Flagelação do Senhor"},
+                {"id": 918, "title": "Coroação de Espinhos"},
+                {"id": 919, "title": "A Cruz às Costas"},
+                {"id": 920, "title": "Morte de Jesus"}
               ]},
               {"id": 921, "title": "Mistérios Gloriosos", "index": [
-                {"id": 922, "title": "1. Ressurreição do Senhor"},
-                {"id": 923, "title": "2. A Ascensão do Senhor"},
-                {"id": 924, "title": "3. Pentecostes"},
-                {"id": 925, "title": "4. Assunção de Nossa Senhora"},
-                {"id": 926, "title": "5. Coroação de Nossa Senhora"}
+                {"id": 922, "title": "Ressurreição do Senhor"},
+                {"id": 923, "title": "A Ascensão do Senhor"},
+                {"id": 924, "title": "Pentecostes"},
+                {"id": 925, "title": "Assunção de Nossa Senhora"},
+                {"id": 926, "title": "Coroação de Nossa Senhora"}
               ]},
               {"id": 927, "title": "Conclusão"}
             ]

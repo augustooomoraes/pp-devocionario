@@ -19,7 +19,7 @@ export default function AppFooter() {
           <Image
             width={800}
             height={533}
-            alt="Logo do Devocionário."
+            alt="Ad maiorem Dei gloriam"
             src={AmdgBlack}
             priority
             className="block dark:hidden"
@@ -34,7 +34,7 @@ export default function AppFooter() {
           <Image
             width={800}
             height={533}
-            alt="Logo do Devocionário."
+            alt="Ad maiorem Dei gloriam"
             src={AmdgWhite}
             priority
             className="hidden dark:block"
