@@ -91,15 +91,25 @@ const config = {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+				'collapsible-down': {
+					from: { height: '0' },
+					to: { height: 'var(--radix-collapsible-content-height)' },
+				},
+				// 'collapsible-up': {
+				// 	from: { height: 'var(--radix-collapsible-content-height)' },
+				// 	to: { height: '0' },
+				// },
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+				'collapsible-down': 'collapsible-down 300ms ease-out',
+				// 'collapsible-up': 'collapsible-up 300ms ease-out',
   		},
   		fontFamily: {
   			fontManrope: ["var(--font-manrope)"],
-				fontEbGaramond: ["var(--font-eb-garamond)"],
+				fontEbGaramond: ["var(--font-eb-garamond)"], // TODO: replace this with a serif font that's better for web, and that matches Manrope's textbox's width.
   		}
   	}
   },

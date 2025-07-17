@@ -3,13 +3,13 @@ import { DevocionarioFile } from "@/lib/file-rendering";
 import file from "@/lib/data/oracoes-compostas.json"
 
 export const metadata = {
-  title: "Santo Rosário",
+  title: "Mistérios do Santo Rosário",
 };
 
 export default function Page() {
   return (
     <RegularMain>
-      <DevocionarioFile file={file["santo-rosario"]} />
+      <DevocionarioFile file={file["santo-rosario-misterios"]} />
     </RegularMain>
   );
 }

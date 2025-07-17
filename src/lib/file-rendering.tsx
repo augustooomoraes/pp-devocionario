@@ -2,11 +2,16 @@
 // TODO: check if this would ruin pre-fetching/pre-rendering, considering that data.json would be fetched from mongodb or whatever
 
 import clsx from "clsx"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useRouter } from "next/navigation";
-import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes, BadgeData, DownloadLink } from "./types/devocionarios";
-import { replaceAllStyleTags, replaceBreakAndAsteriskAndFootnoteTags, replaceLinkTags } from "./tags-replacing";
+import { Footnotes, Index, LinkMap, ParallelPreces, SectionMap, SectionContents, Sections, SectionTypes, BadgeData, DownloadLink, ParallelPrecesContent, GregorianPngContent } from "./types/devocionarios";
+import { replaceAllStyleTags, replaceBreakAndAsteriskAndFootnoteTags } from "./tags-replacing";
 import DownloadLinksList from "@/components/common/downloadLinksList";
+import Image from "next/image";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/shadcnui/components/ui/collapsible";
+import { Button } from "@/shadcnui/components/ui/button";
+import { Music3 } from "lucide-react";
+import { getExpandedSheetMap, updateExpandedSheetMap } from "./gregorian-sheets-state";
 
 export function DevocionarioFile({
   file,
@@ -31,7 +36,13 @@ export function DevocionarioFile({
     }
   };
 
-  function renderIndex(index: Index, sectionMap: SectionMap, key?: number | string, footnotes?: boolean, downloadLinks?: boolean) {
+  function renderIndex(
+    index: Index,
+    sectionMap: SectionMap,
+    key: number | string | undefined,
+    footnotes?: boolean,
+    downloadLinks?: boolean,
+  ) {
 
     const handleClick = (target: string) => {    
       return (e: React.MouseEvent) => {
@@ -40,15 +51,16 @@ export function DevocionarioFile({
       };
     };
 
-    const parsedKey = key ? key : "main";
+    const parsedKey = key !== undefined ? key : "main-index";
     const length = index.length;
 
     return (
-      <ol key={key} className="list-none space-y-1">
+      <ol key={parsedKey} className="list-none space-y-1">
 
         {index.map((item, index) => {
+          const parsedIndex = `${parsedKey}-li-${index}`
           return <li
-            key={`${parsedKey}-${index}`}
+            key={parsedIndex}
             className="grid grid-cols-[28px_1fr]"
           >
             <span className="pl-1.5">{item["no-list-number"] ? "" : `${index + 1}.`}</span>
@@ -65,12 +77,13 @@ export function DevocionarioFile({
                 file.footnotes,
                 file["link-map"],
                 setSelectedFootnotes,
+                parsedIndex,
               )}
             </span>
             {item.index && (
               <div className="grid grid-cols-[28px_1fr] mt-1 col-span-2">
                 <span />
-                {renderIndex(item.index, sectionMap, `${parsedKey}-${index}`)}
+                {renderIndex(item.index, sectionMap, parsedIndex)}
               </div>
             )}
           </li>
@@ -108,13 +121,20 @@ export function DevocionarioFile({
     )
   }
 
-  function renderSections(sections: Sections, sectionMap: SectionMap, linkMap: LinkMap, badges?: BadgeData[]) {
+  function renderSections(
+    fileId: string,
+    sections: Sections,
+    sectionMap: SectionMap,
+    linkMap: LinkMap,
+    badges?: BadgeData[],
+  ) {
     return (
       <div className="mt-5 first">
 
         {sections.map((section, index) => {
+          const parsedIndex = `section-${index}`
           return <div
-            key={index}
+            key={parsedIndex}
             id={sectionMap.filter(sectionIndex => sectionIndex.id === section.id)[0].title || "not-found"}
           >
             <h2
@@ -130,14 +150,16 @@ export function DevocionarioFile({
                 file.footnotes,
                 file["link-map"],
                 setSelectedFootnotes,
+                parsedIndex,
               )}
             </h2>
             {renderSectionContents(
+              fileId,
               section.type,
               section.contents,
               sectionMap,
               linkMap,
-              index,
+              parsedIndex,
               badges || undefined
             )}
           </div>
@@ -147,11 +169,20 @@ export function DevocionarioFile({
     )
   }
 
-  function renderSectionContents(sectionType: SectionTypes, contents: SectionContents, sectionMap: SectionMap, linkMap: LinkMap, key: number, badges?: BadgeData[]) {
+  function renderSectionContents(
+    fileId: string,
+    sectionType: SectionTypes,
+    contents: SectionContents,
+    sectionMap: SectionMap,
+    linkMap: LinkMap,
+    key: string,
+    badges?: BadgeData[],
+  ) {
     switch(sectionType) {
       case "regular-text":
         return (
           contents.map((content, index) => {
+            let parsedIndex = `${key}-content-${index}`
             let badgeData;
             if (content["badge"] && badges) {
               badgeData = badges.filter(badge => badge.badge === content["badge"])[0]
@@ -169,9 +200,8 @@ export function DevocionarioFile({
 
             switch(content.type) {
               case "header-1":
-                return <div key={index} className="flex items-center gap-2.5 mt-3">
+                return <div key={parsedIndex} className="flex items-center gap-2.5 mt-3">
                   <h3
-                    
                     className={clsx(
                       content["id"] && "cursor-pointer hover:underline",
                       content["link-id"] && "",
@@ -196,6 +226,7 @@ export function DevocionarioFile({
                       file.footnotes,
                       file["link-map"],
                       setSelectedFootnotes,
+                      parsedIndex,
                     )}
                   </h3>
 
@@ -217,7 +248,7 @@ export function DevocionarioFile({
 
               case "header-2":
                 return <h4
-                  key={index}
+                  key={parsedIndex}
                   className={clsx(
                     content["id"] && "cursor-pointer hover:underline",
                     content["subsection-break"] && "mb-5",
@@ -239,12 +270,41 @@ export function DevocionarioFile({
                     file.footnotes,
                     file["link-map"],
                     setSelectedFootnotes,
+                    parsedIndex,
                   )}
                 </h4>
 
+              case "header-3":
+                return <h5
+                  key={parsedIndex}
+                  className={clsx(
+                    content["id"] && "cursor-pointer hover:underline",
+                    content["subsection-break"] && "mb-5",
+                    "text-sm font-semibold uppercase mt-1.5 mb-0.5",
+                  )}
+                  id={
+                    content["id"]
+                      ? sectionMap.filter(sectionIndex => sectionIndex.id === content.id)[0].title || "not-found"
+                      : content["link-id"]
+                        ? linkMap.filter(link => link.id === content["link-id"])[0].url.startsWith("#")
+                          ? linkMap.filter(link => link.id === content["link-id"])[0].url.slice(1)
+                          : "not-found"
+                        : undefined
+                  }
+                  onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
+                >
+                  {replaceAllStyleTags(
+                    content.content as string,
+                    file.footnotes,
+                    file["link-map"],
+                    setSelectedFootnotes,
+                    parsedIndex,
+                  )}
+                </h5>
+
               case "paragraph":
                 return <p
-                  key={index}
+                  key={parsedIndex}
                   className={clsx(
                     content["end-break"] && "mb-1.5",
                     content["subsection-break"] && "mb-5",
@@ -256,12 +316,13 @@ export function DevocionarioFile({
                     file.footnotes,
                     file["link-map"],
                     setSelectedFootnotes,
+                    parsedIndex,
                   )}
                 </p>
 
               case "indication":
                 return <div
-                  key={index}
+                  key={parsedIndex}
                   className={clsx(
                     content["subsection-break"] && "mb-5",
                     content["increased-vertical-spacing"] === true ? "my-5" : "my-1",
@@ -274,20 +335,28 @@ export function DevocionarioFile({
                       file.footnotes,
                       file["link-map"],
                       setSelectedFootnotes,
+                      parsedIndex,
                     )}
                   </span>
                 </div>
 
               case "index":
-                return renderIndex(content.contents as Index, sectionMap, `section-${key}-${index}`)
+                parsedIndex += "-index"
+                return renderIndex(content.contents as Index, sectionMap, `${parsedIndex}`)
 
               case "parallel-preces":
-              return <div
-                key={index}
-                className={clsx(content["subsection-break"] && "mb-5",)}
-              >{
-                renderParallelPreces(content.contents as unknown as ParallelPreces, index, sectionMap, linkMap)
-              }</div>
+                return <div
+                  key={parsedIndex}
+                  className={clsx(content["subsection-break"] && "mb-5",)}
+                >{
+                  renderParallelPreces(
+                    fileId,
+                    content.contents as unknown as ParallelPreces,
+                    parsedIndex,
+                    sectionMap,
+                    linkMap,
+                  )
+                }</div>
 
               default:
                 return
@@ -295,23 +364,33 @@ export function DevocionarioFile({
           })
         )
       case "parallel-preces":
-        return renderParallelPreces(contents as unknown as ParallelPreces, 0, sectionMap, linkMap)
-
-      case "gregorian-chant":
-        return <></>
+        return renderParallelPreces(
+          fileId,
+          contents as unknown as ParallelPreces,
+          key,
+          sectionMap,
+          linkMap,
+        )
 
       default:
         return
     }
   }
 
-  function renderParallelPreces(contents: ParallelPreces, index: number, sectionMap: SectionMap, linkMap: LinkMap) {
+  function renderParallelPreces(
+    fileId: string,
+    contents: ParallelPreces,
+    index: string,
+    sectionMap: SectionMap,
+    linkMap: LinkMap,
+  ) {
     return (
       contents.map((content, subindex) => {
+        let parsedIndex = `${index}-pp-${subindex}`
         switch(content.type) {
           case "v": // TODO: don't render "℣." when the element from before is also type="v"
             return <div
-              key={`${index}-${subindex}`}
+              key={`${parsedIndex}`}
               className={clsx(
                 content["end-break"] && "mb-1.5",
                 content["larger-break"] && "mb-2",
@@ -327,10 +406,11 @@ export function DevocionarioFile({
                 <span className="font-bold text-rubrics rubrics-font">℣.</span>
                 <span>
                   {replaceAllStyleTags(
-                    content.content["pt-BR"],
+                    (content.content as ParallelPrecesContent)["pt-BR"],
                     file.footnotes,
                     file["link-map"],
                     setSelectedFootnotes,
+                    `${parsedIndex}-vernacular`,
                   )}
                 </span>
               </div>
@@ -341,10 +421,11 @@ export function DevocionarioFile({
                 <span className="font-bold text-rubrics rubrics-font">℣.</span>
                 <span>
                   {replaceAllStyleTags(
-                    content.content["latin"],
+                    (content.content as ParallelPrecesContent)["latin"],
                     file.footnotes,
                     file["link-map"],
                     setSelectedFootnotes,
+                    `${parsedIndex}-latin`
                   )}
                 </span>
               </div>
@@ -352,7 +433,7 @@ export function DevocionarioFile({
 
           case "r":
             return <div
-              key={`${index}-${subindex}`}
+              key={`${parsedIndex}`}
               className={clsx(
                 content["end-break"] && "mb-1.5",
                 content["larger-break"] && "mb-2",
@@ -368,10 +449,11 @@ export function DevocionarioFile({
                 <span className="font-bold text-rubrics rubrics-font">℟.</span>
                 <span>
                   {replaceAllStyleTags(
-                    content.content["pt-BR"],
+                    (content.content as ParallelPrecesContent)["pt-BR"],
                     file.footnotes,
                     file["link-map"],
                     setSelectedFootnotes,
+                    `${parsedIndex}-vernacular`
                   )}
                 </span>
               </div>
@@ -382,18 +464,136 @@ export function DevocionarioFile({
                 <span className="font-bold text-rubrics rubrics-font">℟.</span>
                 <span>
                   {replaceAllStyleTags(
-                    content.content["latin"],
+                    (content.content as ParallelPrecesContent)["latin"],
                     file.footnotes,
                     file["link-map"],
                     setSelectedFootnotes,
+                    `${parsedIndex}-latin`
                   )}
                 </span>
               </div>
             </div>
 
+          case "gregorian-png":
+            const [isOpen, setIsOpen] = useState(true)
+            const mapKey = `${fileId}-${parsedIndex}`
+
+            useEffect(() => {
+              const map = getExpandedSheetMap()
+              if (mapKey in map) {
+                setIsOpen(map[mapKey])
+              }
+            }, [])
+
+            const handleToggle = () => {
+              const newState = !isOpen
+              setIsOpen(newState)
+              updateExpandedSheetMap(mapKey, newState)
+            }
+
+            return <Collapsible
+              key={`${parsedIndex}`}
+              open={isOpen}
+              onOpenChange={handleToggle}
+              className="w-full flex flex-col items-center mb-4"
+            >
+              <CollapsibleTrigger asChild>
+                <Button
+                  variant="ghost"
+                  className="w-full mb-2 flex items-center justify-start gap-2"
+                >
+                  <Music3 className="h-4 w-4" />
+                  {isOpen ? "Ocultar pautas de canto gregoriano" : "Mostrar pautas de canto gregoriano"}
+                </Button>
+              </CollapsibleTrigger>
+
+              <CollapsibleContent className="w-full flex flex-col items-center gap-4 data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
+                {(content.content as GregorianPngContent).map((sheet, index) => {
+                  return <div className="w-full flex flex-col items-center" key={`${parsedIndex}-${index}`}>
+                    <div className="w-full max-w-[400px] hidden min-[280px]:!block min-[400px]:!hidden">
+                      <Image
+                        src={`/gregorian-chant/${sheet.light[400]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto dark:hidden"
+                      />
+                      <Image
+                        src={`/gregorian-chant/${sheet.dark[400]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto hidden dark:block"
+                      />
+                    </div>
+
+                    <div className="w-full max-w-[450px] hidden min-[400px]:!block min-[450px]:!hidden">
+                      <Image
+                        src={`/gregorian-chant/${sheet.light[450]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto dark:hidden"
+                      />
+                      <Image
+                        src={`/gregorian-chant/${sheet.dark[450]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto hidden dark:block"
+                      />
+                    </div>
+
+                    <div className="w-full max-w-[500px] hidden min-[450px]:!block min-[500px]:!hidden">
+                      <Image
+                        src={`/gregorian-chant/${sheet.light[500]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto dark:hidden"
+                      />
+                      <Image
+                        src={`/gregorian-chant/${sheet.dark[500]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto hidden dark:block"
+                      />
+                    </div>
+
+                    <div className="w-full max-w-[578px] hidden min-[500px]:!block">
+                      <Image
+                        src={`/gregorian-chant/${sheet.light[578]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto dark:hidden"
+                      />
+                      <Image
+                        src={`/gregorian-chant/${sheet.dark[578]}.png`}
+                        alt={sheet.alt}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto hidden dark:block"
+                      />
+                    </div>
+                  </div>
+                })}
+              </CollapsibleContent>
+
+            </Collapsible>
+
           default:
             return <div
-              key={`${index}-${subindex}`}
+              key={`${parsedIndex}`}
               className={clsx(
                 content["end-break"] && "mb-1.5",
                 content["larger-break"] && "mb-2",
@@ -402,6 +602,7 @@ export function DevocionarioFile({
                 "grid grid-cols-2 gap-3",
                 content.type === "header-1" && "text-base font-semibold text-center",
                 content.type === "header-2" && "text-lg font-medium",
+                content.type === "header-3" && "text-sm font-semibold uppercase",
                 content.type === "paragraph" && "mb-1.5 mt-1.5",
                 content.type === "indication" && "my-1.5 leading-tight italic text-base font-light",
                 content.type === "annotation" && "my-1 leading-tight italic text-ann font-light"
@@ -412,6 +613,7 @@ export function DevocionarioFile({
               <div
                 className={clsx(
                   content.type === "header-2" && "mx-5",
+                  content.type === "header-3" && "mx-2 mt-1",
                   content.type === "indication" && "mx-5",
                   content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
                 )}
@@ -430,16 +632,18 @@ export function DevocionarioFile({
                   onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
                 >
                   {replaceAllStyleTags(
-                    content.content["pt-BR"],
+                    (content.content as ParallelPrecesContent)["pt-BR"],
                     file.footnotes,
                     file["link-map"],
                     setSelectedFootnotes,
+                    `${parsedIndex}-vernacular`,
                   )}
                 </span>
               </div>
               <div
                 className={clsx(
                   content.type === "header-2" && "mx-5",
+                  content.type === "header-3" && "mx-2 mt-1",
                   content.type === "indication" && "mx-5",
                   content["horizontal-line"] === "two-halves" && "border-b border-b-gray-400 pb-2.5 mb-1",
                 )}
@@ -458,10 +662,11 @@ export function DevocionarioFile({
                   onClick={content["id"] ? () => handleNavigation(content.id || 0, sectionMap) : undefined}
                 >
                   {replaceAllStyleTags(
-                    content.content["latin"],
+                    (content.content as ParallelPrecesContent)["latin"],
                     file.footnotes,
                     file["link-map"],
                     setSelectedFootnotes,
+                    `${parsedIndex}-latin`,
                   )}
                 </span>
               </div>
@@ -471,7 +676,11 @@ export function DevocionarioFile({
     )
   }
 
-  function renderFootnotes(contents: Footnotes, linkMap: LinkMap) {
+  function renderFootnotes(
+    contents: Footnotes,
+    linkMap: LinkMap,
+    setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
+  ) {
 
     const handleClick = (target: string) => {    
       return (e: React.MouseEvent) => {
@@ -494,31 +703,38 @@ export function DevocionarioFile({
         </h2>
         <ul className="list-none space-y-1">
           {contents.map((content, index) => {
-            return (
-              <li
-                key={index}
-                id={`rodape-conteudo-${content.id}`}
-                className="grid grid-cols-[34px_1fr]"
-              >
-                <span>
-                  <span
-                    className={`
-                      hover:bg-accent active:bg-black/10 transition-colors
-                      w-full px-1.5 rounded-md
-                      cursor-pointer
-                      ${selectedFootnotes[content.id - 1] && "!bg-black/15"}
-                      transition-colors
-                    `}
-                    onClick={handleClick( "#rodape-origem-" + (content.id || "not-found") )}
-                  >
-                    {content.id}.
-                  </span>
+            const parsedIndex = `footnote-${index}`
+            return <li
+              key={parsedIndex}
+              id={`rodape-conteudo-${content.id}`}
+              className="grid grid-cols-[34px_1fr]"
+            >
+              <span>
+                <span
+                  className={`
+                    hover:bg-accent active:bg-black/10 transition-colors
+                    w-full px-1.5 rounded-md
+                    cursor-pointer
+                    ${selectedFootnotes[content.id - 1] && "!bg-black/15 dark:!bg-white/20"}
+                    transition-colors
+                  `}
+                  onClick={handleClick( "#rodape-origem-" + (content.id || "not-found") )}
+                >
+                  {content.id}.
                 </span>
-                <span>
-                  {replaceLinkTags([content.content], linkMap)}
-                </span>
-              </li>
-            )
+              </span>
+              <span>
+                {
+                  replaceAllStyleTags(
+                    content.content,
+                    contents,
+                    linkMap,
+                    setStateFunction,
+                    parsedIndex,
+                  )
+                }
+              </span>
+            </li>
           })}
         </ul>
       </div>
@@ -554,6 +770,7 @@ export function DevocionarioFile({
         file["download-links"] && true,
       )}
       {renderSections(
+        file.id,
         file.sections,
         file["section-map"],
         file["link-map"],
@@ -562,6 +779,7 @@ export function DevocionarioFile({
       {file.footnotes && renderFootnotes(
         file.footnotes,
         file["link-map"],
+        setSelectedFootnotes,
       )}
       {file["download-links"] && renderDownloadLinks(
         file["download-links"],

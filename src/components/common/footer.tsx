@@ -19,7 +19,7 @@ export default function AppFooter() {
           <Image
             width={800}
             height={533}
-            alt="Logo do Devocionário."
+            alt="Ad maiorem Dei gloriam"
             src={AmdgBlack}
             priority
             className="block dark:hidden"
@@ -34,7 +34,7 @@ export default function AppFooter() {
           <Image
             width={800}
             height={533}
-            alt="Logo do Devocionário."
+            alt="Ad maiorem Dei gloriam"
             src={AmdgWhite}
             priority
             className="hidden dark:block"
@@ -75,7 +75,6 @@ export default function AppFooter() {
                 <Linkedin />
               </a>
 
-              {/* TODO: link this repo's page (when it's public... if that's gonna happen) */}
               <a
                 target="_blank"
                 href="https://github.com/augustooomoraes/pp-devocionario"

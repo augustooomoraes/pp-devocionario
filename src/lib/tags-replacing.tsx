@@ -6,6 +6,7 @@ export function replaceAllStyleTags(
   footnotes: Footnotes,
   links: LinkMap,
   setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
+  key: string,
 ) {
   return replaceBreakAndAsteriskAndFootnoteTags(
     replaceLinkTags(text
@@ -13,39 +14,42 @@ export function replaceAllStyleTags(
       .map((part, index) => {
         if (part.startsWith("<paragraph>")) {
           return (
-            <span key={index} className="font-bold text-rubrics">
+            <span key={`${index}-paragraph`} className="font-bold text-rubrics">
               {"§ " + part.replace(/<\/?paragraph>/g, "") + ". "}
             </span>
           );
         }
         if (part.startsWith("<i>")) {
           return (
-            <span key={index} className="italic">
+            <span key={`${index}-italic`} className="italic">
               {part.replace(/<\/?i>/g, "")}
             </span>
           );
         }
         if (part.startsWith("<b>")) {
           return (
-            <span key={index} className="font-semibold">
+            <span key={`${index}-break`} className="font-semibold">
               {part.replace(/<\/?b>/g, "")}
             </span>
           );
         }
         if (part.startsWith("<u>")) {
           return (
-            <span key={index} className="underline">
+            <span key={`${index}-underline`} className="underline">
               {part.replace(/<\/?u>/g, "")}
             </span>
           );
         }
-        return part; // Return plain text as-is
+        return part;
       }
-    ), links
+    ),
+    links,
+    key,
   ),
     footnotes,
     links,
     setStateFunction,
+    key,
   );
 }
 
@@ -54,32 +58,41 @@ export function replaceBreakAndAsteriskAndFootnoteTags(
   footnotes: Footnotes,
   links: LinkMap,
   setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
+  baseIndex: string,
 ) {
   return parts.flatMap((part, index) => {
     if (typeof part === "string") {
       return part.split("<br>").flatMap((subPart, subIndex) => {
         const elements: (string | React.ReactNode)[] = [];
-        if (subIndex > 0) elements.push(<br key={`${index}-${subIndex}-br`} />);
+        const parsedKey = `${baseIndex}-${index}-${subIndex}`
+        if (subIndex > 0) elements.push(<br key={`${parsedKey}-br`} />);
 
-        const replaced = subPart.split("<*>").flatMap((segment, i) => 
-          i > 0 ? [<span
-            key={`${index}-${subIndex}-span-${i}`}
-            className="font-bold text-rubrics"
-          >*</span>, segment] : [segment]
+        const replaced = subPart.split("<*>").flatMap((segment, i) =>
+          i > 0
+            ? [
+              <span
+                key={`${parsedKey}-span-${i}`}
+                className="font-bold text-rubrics"
+              >
+                *
+              </span>,
+              segment,
+            ]
+            : [segment]
         );
 
-        const footnoteReplaced = replaced.flatMap((segment, i) => 
+        const footnoteReplaced = replaced.flatMap((segment, i) =>
           typeof segment === "string"
             ? segment
               .split(/(<footnote id=\d+>)/g)
-              .map((footnotePart, footnoteIndex) => {
+              .flatMap((footnotePart, footnoteIndex) => {
                 if (footnotePart.startsWith("<footnote")) {
                   const match = footnotePart.match(/<footnote id=(\d+)>/);
                   if (match) {
                     const footnoteId = match[1];
                     return (
                       <FootnoteTooltip
-                        key={`${i}-${footnoteIndex}-footnote`}
+                        key={`${parsedKey}-${i}-${footnoteIndex}-footnote`}
                         footnoteId={Number(footnoteId)}
                         footnotes={footnotes}
                         links={links}
@@ -93,7 +106,9 @@ export function replaceBreakAndAsteriskAndFootnoteTags(
             : [segment]
         );
 
-        return elements.concat(footnoteReplaced);
+        const linkReplaced = replaceLinkTags(footnoteReplaced, links, parsedKey)
+
+        return elements.concat(linkReplaced);
       });
     }
     return part;
@@ -102,11 +117,11 @@ export function replaceBreakAndAsteriskAndFootnoteTags(
 
 export function replaceLinkTags(
   part: (string | JSX.Element)[],
-  links: LinkMap
+  links: LinkMap,
+  baseIndex: string,
 ): (string | JSX.Element)[] {
   return part.flatMap((subPart, index) => {
     if (typeof subPart === "string") {
-      // Process strings for <link> tags
       return subPart
         .split(/(<link id=\d+>.*?<\/link>)/g)
         .map((textPart, textIndex) => {
@@ -118,10 +133,11 @@ export function replaceLinkTags(
               if (link) {
                 return (
                   <a
-                    key={`${index}-${textIndex}`}
+                    key={`${baseIndex}-${index}-${textIndex}-anchor`}
                     className="underline hover:text-linkHover active:text-linkActive"
                     href={link.url}
                     title={link.alt}
+                    target={link.url.startsWith("#") ? "_self" : "_blank"}
                   >
                     {textPart.replace(/<link id=\d+>|<\/link>/g, "")}
                   </a>
@@ -132,7 +148,6 @@ export function replaceLinkTags(
           return textPart;
         });
     } else {
-      // Keep JSX elements unchanged
       return subPart;
     }
   });

@@ -1,15 +1,24 @@
-import { replaceLinkTags } from "@/lib/tags-replacing";
-import { LinkMap } from "@/lib/types/devocionarios";
+import { replaceAllStyleTags } from "@/lib/tags-replacing";
+import { Footnotes, LinkMap } from "@/lib/types/devocionarios";
 import React, { useRef, useState, useEffect } from "react";
 
 type TooltipProps = {
   text: string;
+  footnotes: Footnotes
   links: LinkMap;
   visible: boolean;
   setVisible: (visible: boolean) => void;
+  setStateFunction: React.Dispatch<React.SetStateAction<boolean[]>>,
 };
 
-const Tooltip: React.FC<TooltipProps> = ({ text, links, visible, setVisible }) => {
+const Tooltip: React.FC<TooltipProps> = ({
+  text,
+  footnotes,
+  links,
+  visible,
+  setVisible,
+  setStateFunction
+}) => {
   const [tooltipStyle, setTooltipStyle] = useState<React.CSSProperties>({});
   const tooltipRef = useRef<HTMLDivElement>(null);
 
@@ -85,7 +94,7 @@ const Tooltip: React.FC<TooltipProps> = ({ text, links, visible, setVisible }) =
       onMouseLeave={() => setVisible(false)}
     >
       <span>
-        {replaceLinkTags([text], links)}
+        {replaceAllStyleTags(text, footnotes, links, setStateFunction, "tooltip")}
       </span>
     </div>
   );

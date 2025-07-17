@@ -9,6 +9,8 @@ import { Contents, ParallelPreces } from "./types/oracoes";
 // TODO: put these different funcionalities in the regular DevocionarioFile, so style updates don't have to be made on more than one file.
 // TODO: with that, clean up all these comments.
 
+// TODO: check if mapped elements' 'key' fix from DevocionarioFile should be implemented here.
+
 export function OracaoFile({
   file,
 } : {

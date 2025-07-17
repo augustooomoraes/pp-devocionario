@@ -1,43 +1,52 @@
 import { DownloadLink } from "@/lib/types/devocionarios"
-import { BookOpenText, Download, SquareArrowUpRight, TabletSmartphone } from "lucide-react"
+import { BookOpenText, Download, FileText, SquareArrowUpRight, TabletSmartphone } from "lucide-react"
 
 export default function DownloadLinksList({ downloadLinks } : { downloadLinks: DownloadLink[] }) {
   return (
-      <ul className="list-none gap-4 flex flex-col">
-        {downloadLinks.map( (downloadLink, index) => LinksRow(downloadLink, "DownloadLinksList", index) )}
-      </ul>
+    <ul className="list-none gap-4 flex flex-col">
+      {downloadLinks.map( (downloadLink, index) => LinksRow(downloadLink, "DownloadLinksList", index) )}
+    </ul>
   )
 }
 
 export function LinksRow(
   downloadLink: DownloadLink,
   component: "DownloadLinksList" | "SearchResultsList",
-  index?: number,
+  key?: number,
 ) {
-  if (!index) index = 0;
+  if (!key) key = 0;
+  const parsedKey = `download-link-${key}`
 
   return (
     <div
-    key={component === "SearchResultsList" ? undefined :`download-link-${index + 1}`}
-    className={
-      component === "SearchResultsList"
-      ? "flex flex-row justify-between items-center"
-      : `
-        rounded-lg border bg-card text-card-foreground shadow-sm
-        flex flex-row justify-between items-center p-2 pl-4 h-full
-      `
-    }>
-      <div className={`flex flex-row items-center ${component === "SearchResultsList" ? "gap-2" : "gap-3"}`}>
+      key={component === "SearchResultsList" ? undefined : parsedKey}
+      className={
+        component === "SearchResultsList"
+        ? "flex flex-row justify-between items-center"
+        : `
+          rounded-lg border bg-card text-card-foreground shadow-sm
+          flex flex-row justify-between items-center p-2 pl-4 h-full
+        `
+      }
+    >
+      <div className={`flex flex-row items-center pr-2 text-left ${component === "SearchResultsList" ? "gap-2" : "gap-3"}`}>
         {
           downloadLink.type === "pdf-booklet"
             ? <>
               <BookOpenText className={`${component === "SearchResultsList" && "w-4"}`} />
-              <span className={component === "SearchResultsList" ? "text-sm" : ""}>PDF: livreto</span>
+              <span className={component === "SearchResultsList" ? "text-sm" : ""}>{
+                downloadLink.title ? downloadLink.title : "PDF: livreto"
+              }</span>
             </>
-            : <>
-              <TabletSmartphone className={`${component === "SearchResultsList" && "w-4"}`} />
-              <span className={component === "SearchResultsList" ? "text-sm" : ""}>PDF: digital</span>
-            </>
+            : downloadLink.type === "pdf-digital"
+              ? <>
+                <TabletSmartphone className={`${component === "SearchResultsList" && "w-4"}`} />
+                <span className={component === "SearchResultsList" ? "text-sm" : ""}>{downloadLink.title ? downloadLink.title : "PDF: digital"}</span>
+              </>
+              : <>
+                <FileText className={`${component === "SearchResultsList" && "w-4"}`} />
+                <span className={component === "SearchResultsList" ? "text-sm" : ""}>{downloadLink.title ? downloadLink.title : "PDF: folhas"}</span>
+              </>
         }
       </div>
 

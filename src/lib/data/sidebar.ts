@@ -47,12 +47,12 @@ export const sidebarData: SidebarData = {
         {
           title: "Ángelus",
           url: "/angelus",
-          devStage: "mvp",
+          devStage: "done",
         },
         {
           title: "Santo Rosário",
           url: "/santo-rosario",
-          devStage: "started",
+          devStage: "mvp",
         },
         {
           title: "Pequena Coroa da Santíssima Virgem",
@@ -89,6 +89,11 @@ export const sidebarData: SidebarData = {
           title: "Glória ao Pai",
           url: "/gloria-patri",
           devStage: "done",
+        },
+        {
+          title: "Antífonas Marianas",
+          url: "/antifonas-marianas",
+          devStage: "mvp",
         },
         {
           title: "Santo Anjo",

@@ -66,16 +66,28 @@ export const titles: TitleMeta[] = [
   // =x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=
   // =x=x=x=x=x=x=x= Orações compostas
   {
-    title: "coroa-angelica",
-    displayName: "Coroa Angélica",
-  },
-  {
     title: "angelus",
     displayName: "Ángelus",
   },
   {
+    title: "santo-rosario",
+    displayName: "Santo Rosário",
+  },
+  {
+    title: "santo-rosario-misterios",
+    displayName: "Mistérios do Santo Rosário",
+  },
+  {
     title: "pequena-coroa-da-santissima-virgem",
     displayName: "Pequena Coroa da Santíssima Virgem",
+  },
+  {
+    title: "coroa-angelica",
+    displayName: "Coroa Angélica",
+  },
+  {
+    title: "coroa-do-senhor",
+    displayName: "Coroa do Senhor",
   },
   // =x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=
   // =x=x=x=x=x=x=x=x=x=x=x=x= Kyriale
